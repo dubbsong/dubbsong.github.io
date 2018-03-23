@@ -1,0 +1,22 @@
+.me {
+  width: 12rem;
+  height: 5rem;
+  align-self: center;
+  margin-right: 20px;
+  position: relative;
+
+  @media screen and (min-width: $break-point-1) {
+    width: 12rem;
+    height: 5rem;
+  }
+
+  @media screen and (min-width: $break-point-2) {
+    width: 12rem;
+    height: 5rem;
+  }
+
+  @media screen and (min-width: $break-point-3) {
+    width: 12rem;
+    height: 5rem;
+  }
+}
