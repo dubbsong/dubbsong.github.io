@@ -5,7 +5,7 @@ title: "isOldEnoughToDrink.js"
 
 subtitle: "조건문 + 불린 알고리즘"
 
-categories: about dev
+categories: codewars
 
 tags: javascript toy algorithm
 ---
