@@ -4,5 +4,5 @@ title: Github
 slug: github
 category: dev
 menu: false
-order: 3
+order: 2
 ---
