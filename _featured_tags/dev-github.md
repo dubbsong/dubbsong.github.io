@@ -2,7 +2,7 @@
 layout: tag-blog
 title: Github
 slug: github
-category: dev
+category: about dev
 menu: false
 order: 2
 ---
