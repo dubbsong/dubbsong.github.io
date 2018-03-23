@@ -1,3 +1,4 @@
+---
 layout: post
 
 title: "isOldEnoughToDrink.js"
@@ -7,6 +8,7 @@ subtitle: "조건문 + 불린 알고리즘"
 categories: dev
 
 tags: javascript toy algorithm
+---
 
 ## isOldEnoughToDrink
 
