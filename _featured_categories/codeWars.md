@@ -1,6 +1,6 @@
 ---
 layout: list
-title: CodeWars
+title: Codewars
 slug: codewars
 menu: true
 submenu: false

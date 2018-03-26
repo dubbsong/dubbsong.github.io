@@ -5,34 +5,9 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 23 Mar 2018 20:19:52 +0900</pubDate>
-    <lastBuildDate>Fri, 23 Mar 2018 20:19:52 +0900</lastBuildDate>
+    <pubDate>Mon, 26 Mar 2018 14:35:55 +0900</pubDate>
+    <lastBuildDate>Mon, 26 Mar 2018 14:35:55 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
-    
-      <item>
-        <title>Testing</title>
-        <description>&lt;h2 id=&quot;test&quot;&gt;test&lt;/h2&gt;
-
-&lt;h6 id=&quot;testing&quot;&gt;testing&lt;/h6&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;test&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;testsong&quot;&gt;testSong&lt;/h4&gt;
-</description>
-        <pubDate>Fri, 23 Mar 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/dubbsong</link>
-        <guid isPermaLink="true">http://localhost:4000/dubbsong</guid>
-        
-        <category>test</category>
-        
-        
-        <category>codewars</category>
-        
-      </item>
     
   </channel>
 </rss>

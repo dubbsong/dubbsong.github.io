@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
 title: Basic Algorithm
-slug: basic algorithm
-category: about dev
+slug: algo
+category: dev
 menu: false
 order: 1
 ---
