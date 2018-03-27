@@ -30,7 +30,7 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
-<meta property="og:title" content="React">
+<meta property="og:title" content="러닝 리액트 (Learning React)">
 <meta property="og:type" content="article">
 
 
@@ -45,13 +45,15 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 
 
 
-  <title>React &middot; ㅇㅁㅂ</title>
+  <title>러닝 리액트 (Learning React) &middot; ㅇㅁㅂ</title>
 
 
 
-<meta name="description" content="about React
+<meta name="description" content="Learning React - Alex Banks, Eve Porcello
+
 ">
-<meta property="og:description" content="about React
+<meta property="og:description" content="Learning React - Alex Banks, Eve Porcello
+
 ">
 
 
@@ -59,15 +61,17 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <!-- =============== -->
 <!-- LINKS           -->
 <!-- =============== -->
-<link rel="canonical" href="http://localhost:4000/category/react/">
-<meta property="og:url" content="http://localhost:4000/category/react/">
+<link rel="canonical" href="http://localhost:4000/react/2017/12/30/react-Learning-React/">
+<meta property="og:url" content="http://localhost:4000/react/2017/12/30/react-Learning-React/">
 
 <link rel="alternate" type="application/atom+xml" title="ㅇㅁㅂ Feed" href="http://localhost:4000/feed.xml">
 
 
-  <link rel="prev" href="http://localhost:4000/category/javascript/">
+  <link rel="prev" href="http://localhost:4000/dev/2017/11/24/letterGradeHelper/">
 
 
+
+  <link rel="next" href="http://localhost:4000/dev/2018/01/01/terminal-alias/">
 
 
 <link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
@@ -154,45 +158,344 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
     <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/mainColor.jpg">
       
 
-
-
+<article id="post-react/2017/12/30/react-Learning-React" class="post" role="article">
   <header>
-    <h1 class="page-title">React</h1>
+    <h1 class="post-title">
+      
+        러닝 리액트 (Learning React)
+      
+    </h1>
+
+    <p class="post-date heading">
+      <time datetime="2017-12-30T00:00:00+09:00">30 Dec 2017</time>
+      
+
+
+
+
+
+
+
+
+
+in <a href="/category/react/" data-flip="title">React</a>
+
+      
+
+
+
+
+
+
+
+
+
+on <span>React</span>
+
+    </p>
+
     
-  
-  
-<p class="message">about React</p>
-
-
+  <div class="hr" style="padding-bottom:0"></div>
 
 
   </header>
-  <hr class="sr-only"/>
-
-
-
   
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+    <div class="markdown-body">
+
+
+<style>
+.myAd1190 { display:block; width:98%; height: 280px; }
+@media(min-width: 600px) { .myAd1190 { display: none; } }
+</style>
+<ins class="adsbygoogle myAd1190"
+    data-ad-client="ca-pub-9134477021095729"
+    data-ad-slot="6559875097"
+    ></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+      <h2 id="learning-react---alex-banks-eve-porcello">Learning React - Alex Banks, Eve Porcello</h2>
+
+<hr />
+
+<p><br /></p>
+
+<h4 id="옮긴이의-말">옮긴이의 말</h4>
+
+<ul>
+  <li>앵귤러 1이 위용을 떨치던 2013년에 태어난 리액트는 어느덧 앵귤러 2보다 널리 쓰이는 웹 개발 프레임워크로 자리 잡았다.</li>
+  <li>게다가 2015년에 공개된 리액트 네이티브의 등장으로 리액트는 웹 뿐만 아니라 모바일까지 아우르는 프레임워크로 자리 잡았다.</li>
+  <li>리액트를 사용하면 UI 컴포넌트를 정의하고 선언전으로 활용해 UI를 구축하고 제어할 수 있다.</li>
+</ul>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="chapter-01-리액트-소개">CHAPTER 01 리액트 소개</h2>
+
+<ul>
+  <li>리액트는 사용자 인터페이스를 설계할 때 사용하는 유명한 라이브러리다.</li>
+  <li>페이스북은 데이터를 기반으로 하는 대규모 웹사이트를 서비스하면서 발생하는 여러 문제를 해결하기 위해 2013년에 리액트를 만들었다.</li>
+  <li>리액트를 사용하면 JS 안에서 HTML처럼 보이는 코드를 작성할 수 있다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="11-장애물">1.1 장애물</h3>
+
+<ul>
+  <li>리액트를 실제 상용 코드에 적용하기 위해 극복해야 하는 장애물이 몇 가지 있다.</li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="111-리액트를-라이브러리다">1.1.1 리액트를 라이브러리다</h4>
+
+<ul>
+  <li>리액트 라이브러리는 작고, 전체 웹 개발 중 단 한 부분만 담당한다.</li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="112-새로운-ecmascript-문법">1.1.2 새로운 ECMAScript 문법</h4>
+
+<ul>
+  <li>리액트는 JS 역사상 가장 중요하지만 혼란스러운 시기에 태어났다.</li>
+  <li>리액트 문서에서는 독자들이 최신 ECMAScript 문법을 잘 알고 있다고 가정한다. 그러므로 최신 언어 명세에 익숙하지 않다면 리액트 코드를 읽기 벅찰 수도 있다.</li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="113-함수형-js가-유명해짐">1.1.3 함수형 JS가 유명해짐</h4>
+
+<ul>
+  <li>JS가 함수형 언어는 아니지만 함수형 언어의 기법을 JS 코드에 적용할 수는 있다.</li>
+  <li>리액트는 객체 지향 프로그래밍보다 함수형 프로그래밍을 더 강조한다.</li>
+  <li>상당히 많은 리액트 관련 문서가 독자들이 함수형 패러다임에 익숙하다고 가정하고 있다.</li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="114-js-툴링-피로">1.1.4 JS 툴링 피로</h4>
+
+<ul>
+  <li>리액트와 친해지기 위해서는 웹팩 전문가가 되어 코드의 분리, 압축, 테스트 등 많은 작업을 처리해야 한다.</li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="115-리액트를-쉽게-배우기-위한-안내">1.1.5 리액트를 쉽게 배우기 위한 안내</h4>
+
+<ul>
+  <li>이 책의 목표는 리액트와 관련 있는 모든 요소를 제대로 된 순서로 배열하여 리액트를 배우는 과정에서 발생할 수 있는 혼란을 피하고 리액트를 더 잘 배울 수 있는 토대를 만드는 것이다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="12-리액트의-미래">1.2 리액트의 미래</h3>
+
+<ul>
+  <li>리액트는 여전히 새로운 라이브러리다.</li>
+  <li>리액트의 새 버전에는 리액트의 핵심 알고리즘을 재구현한 파이버(Fiber)가 들어갈 예정이다. 파이버의 목표는 렌더링 속도 향상이다. 아직 파이버가 리액트 개발자들에게 어떤 영향을 끼칠지 가정해서 이야기하기는 조금 이르지만 앱이 렌더링되고 갱신되는 속도가 빨라질 것임은 확실하다.</li>
+  <li>2015년에 나온 리액트 네이티브(react native)를 사용하면 리액트 애플리케이션의 장점을 iOS나 안드로이드 네이티브 앱에서도 살릴 수 있다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="13-변화하는-기술-계속-따라잡기">1.3 변화하는 기술 계속 따라잡기</h3>
+
+<ul>
+  <li>리액트와 관련 도구들은 계속 변하고 있다. 때로는 기존의 코드와 호환되지 않는 변화가 이루어지기도 한다.</li>
+  <li>이 책을 모두 읽은 뒤에도 공식 리액트 블로그(https://facebook.github.io/react/blog)의 정보를 계속 살펴보기 바란다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="14-예제-파일-사용법">1.4 예제 파일 사용법</h3>
+
+<p><br /></p>
+
+<h4 id="141-깃허브-저장소">1.4.1 깃허브 저장소</h4>
+
+<ul>
+  <li>코드 예제는 깃허브 저장소에서 내려받을 수 있다.
+https://github.com/moonhighway/learning-react</li>
+  <li>현지화한 코드 예제는 역자의 깃허브 저장소에서 확인할 수 있다.
+https://github.com/enshahar/learning-react-kor</li>
+  <li>JSBin은 CodePen이나 JSFiddle 같은 온라인 코드 편집기다.</li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="142-리액트-개발자-도구">1.4.2 리액트 개발자 도구</h4>
+
+<ul>
+  <li>react-detector: 어떤 웹 사이트가 리액트를 사용하고 있는지 알려주는 크롬 확장이다.</li>
+  <li>show-me-the-react: 크롬에서 사용할 수 있는 도구로, 인터넷을 브라우징하는 동안 리액트를 감지해준다.</li>
+  <li>React Developer Tools: 브라우저 개발자 도구의 기능을 확장해주는 플러그인이다. 브라우저 개발자 도구에 새로운 탭을 추가해주며, 그 안에서 리액트 엘리먼트를 볼 수 있다.</li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="143-노드-설치하기">1.4.3 노드 설치하기</h4>
+
+<ul>
+  <li>노드(Node.js)는 브라우저 없이 사용할 수 있는 JS다.</li>
+  <li>리액트를 사용할 때 꼭 노드가 필요한 것은 아니다. 하지만 리액트를 다루는 동안 노드 패키지 관리자인 npm을 사용해 리액트가 의존하는 여러 라이브러리를 설치해야 한다. 노드를 설치하면 npm도 자동으로 설치된다.</li>
+  <li>노드 설치 확인 방법
+<code class="highlighter-rouge">$ node -v</code></li>
+  <li>yarn 설치
+<code class="highlighter-rouge">$ npm install -g yarn</code></li>
+</ul>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="chapter-02-최신-js">CHAPTER 02 최신 JS</h2>
+
+<ul>
+  <li>​</li>
+</ul>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="chapter-03-js를-활용한-함수형-프로그래밍">CHAPTER 03 JS를 활용한 함수형 프로그래밍</h2>
+
+<ul>
+  <li>​</li>
+</ul>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="chapter-04-순수-리액트">CHAPTER 04 순수 리액트</h2>
+
+<ul>
+  <li>​</li>
+</ul>
+
+<hr />
+
+<p><br /></p>
+
+
+      <br/>
+      <br/>
+      <!-- 블로그-하단-반응형 -->
+      <ins class="adsbygoogle"
+          style="display:block; width:100%; height:300px;"
+          data-ad-client="ca-pub-9134477021095729"
+          data-ad-slot="2380354290"
+          data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <script>
+
+    </script>
+  
+
+</article>
+
+  <hr class="dingbat" />
+
+  <div class="share">
+      <h2>Share this post</h2>
+      <div class="share-body">
+        <a href="http://twitter.com/share?text=러닝 리액트 (Learning React)&amp;url=http://localhost:4000/react/2017/12/30/react-Learning-React/"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <span class="icon-twitter">
+            </span>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/react/2017/12/30/react-Learning-React/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <span class="icon-facebook">
+            </span>
+        </a>
+    </div>
+  </div>
+  <br/>
+
+
+
+
+
+
+  <aside class="author" role="complementary">
+    <div class="author">
+  <h2 class="page-title hr">
+    About
+  </h2>
+<div class="author-body">
   
     
-    <h2 id="y2017" class="hr">2017</h2>
-    <ul class="related-posts">
+  
+
+  
+
+  <img
+    src="/assets/img/me.png"
+    class="me"
+    alt="dubbsong"
     
+    
+  />
+
+
   
-  
+  <div class="author-body-description">
+    <p>오늘도 많이 배웁니다</p>
+
+  </div>
+</div>
+</div>
+
+  </aside>
 
 
-<li class="h4">
-  <a href="/react/2017/12/30/react-Learning-React/" data-flip="title">
-    <span>러닝 리액트 (Learning React)</span>
-  </a>
-  <small><time datetime="2017-12-30T00:00:00+09:00">
-    30 Dec
-  </time></small>
-</li>
 
+
+
+<aside class="related" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
+      
+      
+      
+        
+          
+          
+    
   </ul>
+</aside>
 
 
+
+      
+        <aside class="comments" role="complementary">
+  <h2>Comments</h2>
+  <hr/>
+
+  <div id="disqus_thread"></div>
+
+  <script>
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="러닝 리액트 (Learning React)",this.page.identifier="/react/2017/12/30/react-Learning-React",this.page.url="http://localhost:4000/react/2017/12/30/react-Learning-React/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//dubbsong.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
 
       
 
@@ -333,7 +636,7 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
     <li>
       <input type="checkbox" id="list-item-4"/>
       <div  class="list-wrapper">
-      <a class="sidebar-nav-item active" href="/category/react/">React</a>
+      <a class="sidebar-nav-item" href="/category/react/">React</a>
        
     </div>
      <ul class="list-body">

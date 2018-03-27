@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Mar 2018 13:55:12 +0900</pubDate>
-    <lastBuildDate>Tue, 27 Mar 2018 13:55:12 +0900</lastBuildDate>
+    <pubDate>Tue, 27 Mar 2018 14:48:08 +0900</pubDate>
+    <lastBuildDate>Tue, 27 Mar 2018 14:48:08 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
@@ -308,6 +308,189 @@
         
         
         <category>dev</category>
+        
+      </item>
+    
+      <item>
+        <title>러닝 리액트 (Learning React)</title>
+        <description>&lt;h2 id=&quot;learning-react---alex-banks-eve-porcello&quot;&gt;Learning React - Alex Banks, Eve Porcello&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;옮긴이의-말&quot;&gt;옮긴이의 말&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;앵귤러 1이 위용을 떨치던 2013년에 태어난 리액트는 어느덧 앵귤러 2보다 널리 쓰이는 웹 개발 프레임워크로 자리 잡았다.&lt;/li&gt;
+  &lt;li&gt;게다가 2015년에 공개된 리액트 네이티브의 등장으로 리액트는 웹 뿐만 아니라 모바일까지 아우르는 프레임워크로 자리 잡았다.&lt;/li&gt;
+  &lt;li&gt;리액트를 사용하면 UI 컴포넌트를 정의하고 선언전으로 활용해 UI를 구축하고 제어할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;chapter-01-리액트-소개&quot;&gt;CHAPTER 01 리액트 소개&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;리액트는 사용자 인터페이스를 설계할 때 사용하는 유명한 라이브러리다.&lt;/li&gt;
+  &lt;li&gt;페이스북은 데이터를 기반으로 하는 대규모 웹사이트를 서비스하면서 발생하는 여러 문제를 해결하기 위해 2013년에 리액트를 만들었다.&lt;/li&gt;
+  &lt;li&gt;리액트를 사용하면 JS 안에서 HTML처럼 보이는 코드를 작성할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;11-장애물&quot;&gt;1.1 장애물&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;리액트를 실제 상용 코드에 적용하기 위해 극복해야 하는 장애물이 몇 가지 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;111-리액트를-라이브러리다&quot;&gt;1.1.1 리액트를 라이브러리다&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;리액트 라이브러리는 작고, 전체 웹 개발 중 단 한 부분만 담당한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;112-새로운-ecmascript-문법&quot;&gt;1.1.2 새로운 ECMAScript 문법&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;리액트는 JS 역사상 가장 중요하지만 혼란스러운 시기에 태어났다.&lt;/li&gt;
+  &lt;li&gt;리액트 문서에서는 독자들이 최신 ECMAScript 문법을 잘 알고 있다고 가정한다. 그러므로 최신 언어 명세에 익숙하지 않다면 리액트 코드를 읽기 벅찰 수도 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;113-함수형-js가-유명해짐&quot;&gt;1.1.3 함수형 JS가 유명해짐&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;JS가 함수형 언어는 아니지만 함수형 언어의 기법을 JS 코드에 적용할 수는 있다.&lt;/li&gt;
+  &lt;li&gt;리액트는 객체 지향 프로그래밍보다 함수형 프로그래밍을 더 강조한다.&lt;/li&gt;
+  &lt;li&gt;상당히 많은 리액트 관련 문서가 독자들이 함수형 패러다임에 익숙하다고 가정하고 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;114-js-툴링-피로&quot;&gt;1.1.4 JS 툴링 피로&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;리액트와 친해지기 위해서는 웹팩 전문가가 되어 코드의 분리, 압축, 테스트 등 많은 작업을 처리해야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;115-리액트를-쉽게-배우기-위한-안내&quot;&gt;1.1.5 리액트를 쉽게 배우기 위한 안내&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;이 책의 목표는 리액트와 관련 있는 모든 요소를 제대로 된 순서로 배열하여 리액트를 배우는 과정에서 발생할 수 있는 혼란을 피하고 리액트를 더 잘 배울 수 있는 토대를 만드는 것이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;12-리액트의-미래&quot;&gt;1.2 리액트의 미래&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;리액트는 여전히 새로운 라이브러리다.&lt;/li&gt;
+  &lt;li&gt;리액트의 새 버전에는 리액트의 핵심 알고리즘을 재구현한 파이버(Fiber)가 들어갈 예정이다. 파이버의 목표는 렌더링 속도 향상이다. 아직 파이버가 리액트 개발자들에게 어떤 영향을 끼칠지 가정해서 이야기하기는 조금 이르지만 앱이 렌더링되고 갱신되는 속도가 빨라질 것임은 확실하다.&lt;/li&gt;
+  &lt;li&gt;2015년에 나온 리액트 네이티브(react native)를 사용하면 리액트 애플리케이션의 장점을 iOS나 안드로이드 네이티브 앱에서도 살릴 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;13-변화하는-기술-계속-따라잡기&quot;&gt;1.3 변화하는 기술 계속 따라잡기&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;리액트와 관련 도구들은 계속 변하고 있다. 때로는 기존의 코드와 호환되지 않는 변화가 이루어지기도 한다.&lt;/li&gt;
+  &lt;li&gt;이 책을 모두 읽은 뒤에도 공식 리액트 블로그(https://facebook.github.io/react/blog)의 정보를 계속 살펴보기 바란다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;14-예제-파일-사용법&quot;&gt;1.4 예제 파일 사용법&lt;/h3&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;141-깃허브-저장소&quot;&gt;1.4.1 깃허브 저장소&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;코드 예제는 깃허브 저장소에서 내려받을 수 있다.
+https://github.com/moonhighway/learning-react&lt;/li&gt;
+  &lt;li&gt;현지화한 코드 예제는 역자의 깃허브 저장소에서 확인할 수 있다.
+https://github.com/enshahar/learning-react-kor&lt;/li&gt;
+  &lt;li&gt;JSBin은 CodePen이나 JSFiddle 같은 온라인 코드 편집기다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;142-리액트-개발자-도구&quot;&gt;1.4.2 리액트 개발자 도구&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;react-detector: 어떤 웹 사이트가 리액트를 사용하고 있는지 알려주는 크롬 확장이다.&lt;/li&gt;
+  &lt;li&gt;show-me-the-react: 크롬에서 사용할 수 있는 도구로, 인터넷을 브라우징하는 동안 리액트를 감지해준다.&lt;/li&gt;
+  &lt;li&gt;React Developer Tools: 브라우저 개발자 도구의 기능을 확장해주는 플러그인이다. 브라우저 개발자 도구에 새로운 탭을 추가해주며, 그 안에서 리액트 엘리먼트를 볼 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;143-노드-설치하기&quot;&gt;1.4.3 노드 설치하기&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;노드(Node.js)는 브라우저 없이 사용할 수 있는 JS다.&lt;/li&gt;
+  &lt;li&gt;리액트를 사용할 때 꼭 노드가 필요한 것은 아니다. 하지만 리액트를 다루는 동안 노드 패키지 관리자인 npm을 사용해 리액트가 의존하는 여러 라이브러리를 설치해야 한다. 노드를 설치하면 npm도 자동으로 설치된다.&lt;/li&gt;
+  &lt;li&gt;노드 설치 확인 방법
+&lt;code class=&quot;highlighter-rouge&quot;&gt;$ node -v&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;yarn 설치
+&lt;code class=&quot;highlighter-rouge&quot;&gt;$ npm install -g yarn&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;chapter-02-최신-js&quot;&gt;CHAPTER 02 최신 JS&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;chapter-03-js를-활용한-함수형-프로그래밍&quot;&gt;CHAPTER 03 JS를 활용한 함수형 프로그래밍&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;chapter-04-순수-리액트&quot;&gt;CHAPTER 04 순수 리액트&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 30 Dec 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/react/2017/12/30/react-Learning-React/</link>
+        <guid isPermaLink="true">http://localhost:4000/react/2017/12/30/react-Learning-React/</guid>
+        
+        <category>react</category>
+        
+        
+        <category>react</category>
         
       </item>
     
