@@ -82,7 +82,135 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/24/letterGradeHelper/</loc>
+      <loc>http://localhost:4000/dev/2017/12/02/basic-repeatString/</loc>
+      
+        <lastmod>2017-12-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/12/01/basic-rangeSum/</loc>
+      
+        <lastmod>2017-12-01T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/30/basic-modulo/</loc>
+      
+        <lastmod>2017-11-30T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/29/basic-indexOf/</loc>
+      
+        <lastmod>2017-11-29T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/28/basic-fibonacci/</loc>
+      
+        <lastmod>2017-11-28T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/27/basic-factorial/</loc>
+      
+        <lastmod>2017-11-27T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/26/basic-countChars/</loc>
+      
+        <lastmod>2017-11-26T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/25/basic-counter/</loc>
+      
+        <lastmod>2017-11-25T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/24/basic-letterGradeHelper/</loc>
       
         <lastmod>2017-11-24T00:00:00+09:00</lastmod>
       
@@ -98,7 +226,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/23/convertScoreToGradeWithPlusAndMinus/</loc>
+      <loc>http://localhost:4000/dev/2017/11/23/basic-convertScoreToGradeWithPlusAndMinus/</loc>
       
         <lastmod>2017-11-23T00:00:00+09:00</lastmod>
       
@@ -114,7 +242,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/22/scoreToGrade/</loc>
+      <loc>http://localhost:4000/dev/2017/11/22/basic-scoreToGrade/</loc>
       
         <lastmod>2017-11-22T00:00:00+09:00</lastmod>
       
@@ -130,7 +258,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/21/bouncerBlackList/</loc>
+      <loc>http://localhost:4000/dev/2017/11/21/basic-bouncerBlackList/</loc>
       
         <lastmod>2017-11-21T00:00:00+09:00</lastmod>
       
@@ -146,7 +274,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/20/generateRandomInteger/</loc>
+      <loc>http://localhost:4000/dev/2017/11/20/basic-generateRandomInteger/</loc>
       
         <lastmod>2017-11-20T00:00:00+09:00</lastmod>
       
@@ -162,7 +290,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/19/isEven/</loc>
+      <loc>http://localhost:4000/dev/2017/11/19/basic-isEven/</loc>
       
         <lastmod>2017-11-19T00:00:00+09:00</lastmod>
       
@@ -178,7 +306,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/18/getLargerString/</loc>
+      <loc>http://localhost:4000/dev/2017/11/18/basic-getLargerString/</loc>
       
         <lastmod>2017-11-18T00:00:00+09:00</lastmod>
       
@@ -194,7 +322,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/17/getMax/</loc>
+      <loc>http://localhost:4000/dev/2017/11/17/basic-getMax/</loc>
       
         <lastmod>2017-11-17T00:00:00+09:00</lastmod>
       
@@ -210,7 +338,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/16/bouncer/</loc>
+      <loc>http://localhost:4000/dev/2017/11/16/basic-bouncer/</loc>
       
         <lastmod>2017-11-16T00:00:00+09:00</lastmod>
       
@@ -226,7 +354,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/15/isPasswordLongEnough/</loc>
+      <loc>http://localhost:4000/dev/2017/11/15/basic-isPasswordLongEnough/</loc>
       
         <lastmod>2017-11-15T00:00:00+09:00</lastmod>
       
@@ -242,7 +370,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/14/areSameLength/</loc>
+      <loc>http://localhost:4000/dev/2017/11/14/basic-areSameLength/</loc>
       
         <lastmod>2017-11-14T00:00:00+09:00</lastmod>
       
@@ -274,7 +402,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/13/isOldEnoughToDrink/</loc>
+      <loc>http://localhost:4000/dev/2017/11/13/books-%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%80%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8C%E1%85%B3%E1%86%B7-%E1%84%92%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%8B%E1%85%A7%E1%84%92%E1%85%A2%E1%86%BC%E1%84%8C%E1%85%A1%E1%84%83%E1%85%B3%E1%86%AF%E1%84%8B%E1%85%B3%E1%86%AF-%E1%84%8B%E1%85%B1%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A2%E1%84%89%E1%85%A5/</loc>
       
         <lastmod>2017-11-13T00:00:00+09:00</lastmod>
       
@@ -290,7 +418,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/13/books-%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%80%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8C%E1%85%B3%E1%86%B7-%E1%84%92%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%8B%E1%85%A7%E1%84%92%E1%85%A2%E1%86%BC%E1%84%8C%E1%85%A1%E1%84%83%E1%85%B3%E1%86%AF%E1%84%8B%E1%85%B3%E1%86%AF-%E1%84%8B%E1%85%B1%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A2%E1%84%89%E1%85%A5/</loc>
+      <loc>http://localhost:4000/dev/2017/11/13/basic-isOldEnoughToDrink/</loc>
       
         <lastmod>2017-11-13T00:00:00+09:00</lastmod>
       
