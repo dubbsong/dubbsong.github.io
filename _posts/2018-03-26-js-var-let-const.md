@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "var let const 비교"
+title: "var ・ let ・ const 비교"
 categories: javascript
 tags: javascript
 ---
 
-#### not yet, keep going
+#### Not yet, keep going
 
 <br>
 
