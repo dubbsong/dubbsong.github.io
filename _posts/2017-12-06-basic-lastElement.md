@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "firstElement.js"
+title: "lastElement.js"
 categories: dev
 tags: algo
 ---
@@ -31,6 +31,6 @@ function lastElement(array) {
 
 lastElement([8, 6, 8, 8]);		// 8
 lastElement(['ssup', 'bro', 8688]);	// 8688
-lastElement([]);		// null
+lastElement([]);			// null
 ```
 
