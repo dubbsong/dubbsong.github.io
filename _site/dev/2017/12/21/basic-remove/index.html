@@ -30,7 +30,7 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
-<meta property="og:title" content="Posts">
+<meta property="og:title" content="remove.js">
 <meta property="og:type" content="article">
 
 
@@ -45,13 +45,15 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 
 
 
-  <title>Posts &middot; ㅇㅁㅂ</title>
+  <title>remove.js &middot; ㅇㅁㅂ</title>
 
 
 
-<meta name="description" content="
+<meta name="description" content="반복문(for loop) + 조건문(if) + 배열(array) 알고리즘 문제
+
 ">
-<meta property="og:description" content="
+<meta property="og:description" content="반복문(for loop) + 조건문(if) + 배열(array) 알고리즘 문제
+
 ">
 
 
@@ -59,13 +61,17 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <!-- =============== -->
 <!-- LINKS           -->
 <!-- =============== -->
-<link rel="canonical" href="http://localhost:4000/posts/">
-<meta property="og:url" content="http://localhost:4000/posts/">
+<link rel="canonical" href="http://localhost:4000/dev/2017/12/21/basic-remove/">
+<meta property="og:url" content="http://localhost:4000/dev/2017/12/21/basic-remove/">
 
 <link rel="alternate" type="application/atom+xml" title="ㅇㅁㅂ Feed" href="http://localhost:4000/feed.xml">
 
 
+  <link rel="prev" href="http://localhost:4000/dev/2017/12/20/basic-shortestWord/">
 
+
+
+  <link rel="next" href="http://localhost:4000/dev/2017/12/29/basic-countCharacters/">
 
 
 <link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
@@ -152,43 +158,208 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
     <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/mainColor.jpg">
       
 
-
-
+<article id="post-dev/2017/12/21/basic-remove" class="post" role="article">
   <header>
-    <h1 class="page-title">Posts</h1>
+    <h1 class="post-title">
+      
+        remove.js
+      
+    </h1>
+
+    <p class="post-date heading">
+      <time datetime="2017-12-21T00:00:00+09:00">21 Dec 2017</time>
+      
+
+
+
+
+
+
+
+
+
+in <a href="/category/dev/" data-flip="title">about Dev</a>
+
+      
+
+
+
+
+
+
+
+
+
+on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
+
+    </p>
+
     
   <div class="hr" style="padding-bottom:0"></div>
 
 
   </header>
-  <hr class="sr-only"/>
-
-
-
   
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+    <div class="markdown-body">
+
+
+<style>
+.myAd1190 { display:block; width:98%; height: 280px; }
+@media(min-width: 600px) { .myAd1190 { display: none; } }
+</style>
+<ins class="adsbygoogle myAd1190"
+    data-ad-client="ca-pub-9134477021095729"
+    data-ad-slot="6559875097"
+    ></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+      <h4 id="반복문for-loop--조건문if--배열array-알고리즘-문제">반복문(for loop) + 조건문(if) + 배열(array) 알고리즘 문제</h4>
+
+<p><br /></p>
+
+<h2 id="problem">problem</h2>
+
+<p>Write a function ‘<code class="highlighter-rouge">remove</code>’</p>
+
+<p>that accepts an array and an element and returns</p>
+
+<p>an array with all occurrences of element removed.</p>
+
+<p><br /></p>
+
+<h2 id="solution-01">solution 01</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">remove</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+   <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[];</span>
+   
+   <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">!==</span> <span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+         <span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+   <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="nx">remove</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="mi">4</span><span class="p">);</span>	<span class="c1">// [2, 9]</span>
+<span class="nx">remove</span><span class="p">([</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="mi">8</span><span class="p">);</span>	<span class="c1">// [6]</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="solution-02">solution 02</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">remove</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+   <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[];</span>
+   
+   <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">!==</span> <span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+         <span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+   <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="nx">remove</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="mi">4</span><span class="p">);</span>	<span class="c1">// [2, 9]</span>
+<span class="nx">remove</span><span class="p">([</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="mi">8</span><span class="p">);</span>	<span class="c1">// [6]</span>
+</code></pre></div></div>
+
+
+      <br/>
+      <br/>
+      <!-- 블로그-하단-반응형 -->
+      <ins class="adsbygoogle"
+          style="display:block; width:100%; height:300px;"
+          data-ad-client="ca-pub-9134477021095729"
+          data-ad-slot="2380354290"
+          data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <script>
+
+    </script>
+  
+
+</article>
+
+  <hr class="dingbat" />
+
+  <div class="share">
+      <h2>Share this post</h2>
+      <div class="share-body">
+        <a href="http://twitter.com/share?text=remove.js&amp;url=http://localhost:4000/dev/2017/12/21/basic-remove/"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <span class="icon-twitter">
+            </span>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/dev/2017/12/21/basic-remove/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <span class="icon-facebook">
+            </span>
+        </a>
+    </div>
+  </div>
+  <br/>
+
+
+
+
+
+
+  <aside class="author" role="complementary">
+    <div class="author">
+  <h2 class="page-title hr">
+    About
+  </h2>
+<div class="author-body">
   
     
-    <h2 id="y2018" class="hr">2018</h2>
-    <ul class="related-posts">
+  
+
+  
+
+  <img
+    src="/assets/img/me.png"
+    class="me"
+    alt="dubbsong"
     
-  
-  
+    
+  />
 
 
-<li class="h4">
-  <a href="/javascript/2018/03/26/js-var-let-const/" data-flip="title">
-    <span>var ・ let ・ const 비교</span>
-  </a>
-  <small><time datetime="2018-03-26T00:00:00+09:00">
-    26 Mar
-  </time></small>
-</li>
+  
+  <div class="author-body-description">
+    <p>오늘도 많이 배웁니다</p>
 
-  
+  </div>
+</div>
+</div>
 
-  
-  
-  
+  </aside>
+
+
+
+
+
+<aside class="related" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
+      
+      
+      
+        
+        
+          
 
 
 <li class="h4">
@@ -196,15 +367,15 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
     <span>Github + Jekyll 블로그 만들기</span>
   </a>
   <small><time datetime="2018-03-23T00:00:00+09:00">
-    23 Mar
+    23 Mar 2018
   </time></small>
 </li>
 
-  
-
-  
-  
-  
+        
+      
+        
+        
+          
 
 
 <li class="h4">
@@ -212,15 +383,15 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
     <span>알고리즘 시간복잡도 Big-O</span>
   </a>
   <small><time datetime="2018-03-14T00:00:00+09:00">
-    14 Mar
+    14 Mar 2018
   </time></small>
 </li>
 
-  
-
-  
-  
-  
+        
+      
+        
+        
+          
 
 
 <li class="h4">
@@ -228,722 +399,34 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
     <span>터미널에서 키워드로 쉽게 경로 이동</span>
   </a>
   <small><time datetime="2018-01-01T00:00:00+09:00">
-    01 Jan
+    01 Jan 2018
   </time></small>
 </li>
 
-  
-
-  
-  
-    </ul>
-    <h2 id="y2017" class="hr">2017</h2>
-    <ul class="related-posts">
+        
+      
+        
+        
+      
     
-  
-  
-
-
-<li class="h4">
-  <a href="/react/2017/12/30/react-Learning-React/" data-flip="title">
-    <span>러닝 리액트 (Learning React)</span>
-  </a>
-  <small><time datetime="2017-12-30T00:00:00+09:00">
-    30 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/29/basic-countWords/" data-flip="title">
-    <span>countWords.js</span>
-  </a>
-  <small><time datetime="2017-12-29T00:00:00+09:00">
-    29 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/29/basic-countCharacters/" data-flip="title">
-    <span>countCharacters.js</span>
-  </a>
-  <small><time datetime="2017-12-29T00:00:00+09:00">
-    29 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/21/basic-remove/" data-flip="title">
-    <span>remove.js</span>
-  </a>
-  <small><time datetime="2017-12-21T00:00:00+09:00">
-    21 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/20/basic-shortestWord/" data-flip="title">
-    <span>shortestWord.js</span>
-  </a>
-  <small><time datetime="2017-12-20T00:00:00+09:00">
-    20 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/19/basic-longestWord/" data-flip="title">
-    <span>longestWord.js</span>
-  </a>
-  <small><time datetime="2017-12-19T00:00:00+09:00">
-    19 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/18/basic-average/" data-flip="title">
-    <span>average.js</span>
-  </a>
-  <small><time datetime="2017-12-18T00:00:00+09:00">
-    18 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/17/basic-min/" data-flip="title">
-    <span>min.js</span>
-  </a>
-  <small><time datetime="2017-12-17T00:00:00+09:00">
-    17 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/16/basic-max/" data-flip="title">
-    <span>max.js</span>
-  </a>
-  <small><time datetime="2017-12-16T00:00:00+09:00">
-    16 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/15/basic-sumOfArray/" data-flip="title">
-    <span>sumOfArray.js</span>
-  </a>
-  <small><time datetime="2017-12-15T00:00:00+09:00">
-    15 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/14/basic-onlyEvenElements/" data-flip="title">
-    <span>onlyEvenElements.js</span>
-  </a>
-  <small><time datetime="2017-12-14T00:00:00+09:00">
-    14 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/13/basic-eachElementSquared/" data-flip="title">
-    <span>eachElementSquared.js</span>
-  </a>
-  <small><time datetime="2017-12-13T00:00:00+09:00">
-    13 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/12/basic-conj/" data-flip="title">
-    <span>conj.js</span>
-  </a>
-  <small><time datetime="2017-12-12T00:00:00+09:00">
-    12 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/11/basic-cons/" data-flip="title">
-    <span>cons.js</span>
-  </a>
-  <small><time datetime="2017-12-11T00:00:00+09:00">
-    11 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/10/basic-rest/" data-flip="title">
-    <span>rest.js</span>
-  </a>
-  <small><time datetime="2017-12-10T00:00:00+09:00">
-    10 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/09/basic-butLast/" data-flip="title">
-    <span>butLast.js</span>
-  </a>
-  <small><time datetime="2017-12-09T00:00:00+09:00">
-    09 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/08/basic-nthElement/" data-flip="title">
-    <span>nthElement.js</span>
-  </a>
-  <small><time datetime="2017-12-08T00:00:00+09:00">
-    08 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/07/basic-oddToEven/" data-flip="title">
-    <span>oddToEven.js</span>
-  </a>
-  <small><time datetime="2017-12-07T00:00:00+09:00">
-    07 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/06/basic-lastElement/" data-flip="title">
-    <span>lastElement.js</span>
-  </a>
-  <small><time datetime="2017-12-06T00:00:00+09:00">
-    06 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/05/basic-firstElement/" data-flip="title">
-    <span>firstElement.js</span>
-  </a>
-  <small><time datetime="2017-12-05T00:00:00+09:00">
-    05 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/04/basic-sum/" data-flip="title">
-    <span>sum.js</span>
-  </a>
-  <small><time datetime="2017-12-04T00:00:00+09:00">
-    04 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/03/basic-stringLength/" data-flip="title">
-    <span>stringLength.js</span>
-  </a>
-  <small><time datetime="2017-12-03T00:00:00+09:00">
-    03 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/02/basic-repeatString/" data-flip="title">
-    <span>repeatString.js</span>
-  </a>
-  <small><time datetime="2017-12-02T00:00:00+09:00">
-    02 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/12/01/basic-rangeSum/" data-flip="title">
-    <span>rangeSum.js</span>
-  </a>
-  <small><time datetime="2017-12-01T00:00:00+09:00">
-    01 Dec
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/30/basic-modulo/" data-flip="title">
-    <span>modulo.js</span>
-  </a>
-  <small><time datetime="2017-11-30T00:00:00+09:00">
-    30 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/29/basic-indexOf/" data-flip="title">
-    <span>indexOf.js</span>
-  </a>
-  <small><time datetime="2017-11-29T00:00:00+09:00">
-    29 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/28/basic-fibonacci/" data-flip="title">
-    <span>fibonacci.js</span>
-  </a>
-  <small><time datetime="2017-11-28T00:00:00+09:00">
-    28 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/27/basic-factorial/" data-flip="title">
-    <span>factorial.js</span>
-  </a>
-  <small><time datetime="2017-11-27T00:00:00+09:00">
-    27 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/26/basic-countChars/" data-flip="title">
-    <span>countChars.js</span>
-  </a>
-  <small><time datetime="2017-11-26T00:00:00+09:00">
-    26 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/25/basic-counter/" data-flip="title">
-    <span>counter.js</span>
-  </a>
-  <small><time datetime="2017-11-25T00:00:00+09:00">
-    25 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/24/basic-letterGradeHelper/" data-flip="title">
-    <span>letterGradeHelper.js</span>
-  </a>
-  <small><time datetime="2017-11-24T00:00:00+09:00">
-    24 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/23/basic-convertScoreToGradeWithPlusAndMinus/" data-flip="title">
-    <span>convertScoreToGradeWithPlusAndMinus.js</span>
-  </a>
-  <small><time datetime="2017-11-23T00:00:00+09:00">
-    23 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/22/basic-scoreToGrade/" data-flip="title">
-    <span>scoreToGrade.js</span>
-  </a>
-  <small><time datetime="2017-11-22T00:00:00+09:00">
-    22 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/21/basic-bouncerBlackList/" data-flip="title">
-    <span>bouncerBlackList.js</span>
-  </a>
-  <small><time datetime="2017-11-21T00:00:00+09:00">
-    21 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/20/basic-generateRandomInteger/" data-flip="title">
-    <span>generateRandomInteger.js</span>
-  </a>
-  <small><time datetime="2017-11-20T00:00:00+09:00">
-    20 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/19/basic-isEven/" data-flip="title">
-    <span>isEven.js</span>
-  </a>
-  <small><time datetime="2017-11-19T00:00:00+09:00">
-    19 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/18/basic-getLargerString/" data-flip="title">
-    <span>getLargerString.js</span>
-  </a>
-  <small><time datetime="2017-11-18T00:00:00+09:00">
-    18 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/17/basic-getMax/" data-flip="title">
-    <span>getMax.js</span>
-  </a>
-  <small><time datetime="2017-11-17T00:00:00+09:00">
-    17 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/16/basic-bouncer/" data-flip="title">
-    <span>bouncer.js</span>
-  </a>
-  <small><time datetime="2017-11-16T00:00:00+09:00">
-    16 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/15/basic-isPasswordLongEnough/" data-flip="title">
-    <span>isPasswordLongEnough.js</span>
-  </a>
-  <small><time datetime="2017-11-15T00:00:00+09:00">
-    15 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/14/basic-areSameLength/" data-flip="title">
-    <span>areSameLength.js</span>
-  </a>
-  <small><time datetime="2017-11-14T00:00:00+09:00">
-    14 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/javascript/2017/11/13/js-JavaScript-The-Good-Parts/" data-flip="title">
-    <span>자바스크립트 핵심 가이드 - 더글라스 크락포드</span>
-  </a>
-  <small><time datetime="2017-11-13T00:00:00+09:00">
-    13 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/13/books-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%96%89%EC%84%B1-%EC%97%AC%ED%96%89%EC%9E%90%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%95%88%EB%82%B4%EC%84%9C/" data-flip="title">
-    <span>알고리즘 행성 여행자들을 위한 안내서</span>
-  </a>
-  <small><time datetime="2017-11-13T00:00:00+09:00">
-    13 Nov
-  </time></small>
-</li>
-
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/dev/2017/11/13/basic-isOldEnoughToDrink/" data-flip="title">
-    <span>isOldEnoughToDrink.js</span>
-  </a>
-  <small><time datetime="2017-11-13T00:00:00+09:00">
-    13 Nov
-  </time></small>
-</li>
-
   </ul>
+</aside>
 
 
+
+      
+        <aside class="comments" role="complementary">
+  <h2>Comments</h2>
+  <hr/>
+
+  <div id="disqus_thread"></div>
+
+  <script>
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="remove.js",this.page.identifier="/dev/2017/12/21/basic-remove",this.page.url="http://localhost:4000/dev/2017/12/21/basic-remove/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//dubbsong.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
 
       
 

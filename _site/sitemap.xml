@@ -82,6 +82,134 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/dev/2017/12/29/basic-countWords/</loc>
+      
+        <lastmod>2017-12-29T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/12/29/basic-countCharacters/</loc>
+      
+        <lastmod>2017-12-29T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/12/21/basic-remove/</loc>
+      
+        <lastmod>2017-12-21T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/12/20/basic-shortestWord/</loc>
+      
+        <lastmod>2017-12-20T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/12/19/basic-longestWord/</loc>
+      
+        <lastmod>2017-12-19T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/12/18/basic-average/</loc>
+      
+        <lastmod>2017-12-18T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/12/17/basic-min/</loc>
+      
+        <lastmod>2017-12-17T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/12/16/basic-max/</loc>
+      
+        <lastmod>2017-12-16T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/dev/2017/12/15/basic-sumOfArray/</loc>
       
         <lastmod>2017-12-15T00:00:00+09:00</lastmod>
