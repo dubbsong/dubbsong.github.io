@@ -24,6 +24,7 @@ except for the first one.
 ```javascript
 const array = [3, 2, 7, 5];
 
+
 function rest(array) {
    return array.slice(1, array.length);
 }

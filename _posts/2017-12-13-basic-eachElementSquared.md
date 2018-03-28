@@ -28,6 +28,7 @@ a new array of each element squared.
 ```javascript
 const array = [3, 2, 7, 5];
 
+
 function eachElementSquared(array) {
    for (let i = 0; i < array.length; i++) {
       array[i] *= array[i];
@@ -45,6 +46,7 @@ eachElementSquared(array);	// [9, 4, 49, 25]
 
 ```javascript
 const array = [3, 2, 7, 5];
+
 
 function eachElementSquared(array) {
    let result = [];
@@ -66,6 +68,7 @@ eachElementSquared(array);	// [9, 4, 49, 25]
 ```javascript
 const array = [3, 2, 7, 5];
 
+
 function eachElementSquared(array) {
    let result = [];
    
@@ -85,6 +88,7 @@ eachElementSquared(array);	// [9, 4, 49, 25]
 
 ```javascript
 const array = [3, 2, 7, 5];
+
 
 function eachElementSquared(array) {
    return array.map((a) => { return a * a });

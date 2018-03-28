@@ -34,6 +34,7 @@ except for the last one.
 ```javascript
 const array = [3, 2, 7, 5];
 
+
 function butLast(array) {
    return array.slice(0, array.length - 1);
 }

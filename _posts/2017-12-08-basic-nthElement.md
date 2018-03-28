@@ -24,6 +24,7 @@ and returns the element at that index.
 ```javascript
 const animals = ['cat', 'dog', 'elephant'];
 
+
 function nth(array, index) {
    return array[index];
 }

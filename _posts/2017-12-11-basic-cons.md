@@ -34,6 +34,7 @@ to the front of the array.
 ```javascript
 const array = [3, 2, 7, 5];
 
+
 function cons(x, array) {
    array.unshift(x);
    return array;
@@ -49,6 +50,7 @@ cons([4, 4], array);	// [[4, 4], 3, 2, 7, 5]
 
 ```javascript
 const array = [3, 2, 7, 5];
+
 
 function cons(x, array) {
    return [x, ...array];

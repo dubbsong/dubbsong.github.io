@@ -24,6 +24,7 @@ Assume all elements are numbers.
 ```javascript
 const array = [3, 2, 7, 5];
 
+
 function sumOfArray(array) {
    let result = 0;
    
@@ -44,6 +45,7 @@ sumOfArray(array);	// 17
 ```javascript
 const array = [3, 2, 7, 5];
 
+
 function sumOfArray(array) {
    let result = 0;
    
@@ -63,6 +65,7 @@ sumOfArray(array);	// 17
 
 ```javascript
 const array = [3, 2, 7, 5];
+
 
 function sumOfArray(array) {
    return array.reduce((a, b) => { return a + b });

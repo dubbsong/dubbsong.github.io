@@ -34,6 +34,7 @@ to the end of the array.
 ```javascript
 const array = [3, 2, 7, 5];
 
+
 function conj(array, x) {
    array.push(x);
    return array;
@@ -49,6 +50,7 @@ conj(array, [4, 4]);	// [3, 2, 7, 5, [4, 4]]
 
 ```javascript
 const array = [3, 2, 7, 5];
+
 
 function conj(array, x) {
    return [...array, x];

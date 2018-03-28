@@ -24,6 +24,7 @@ of just the even numbers.
 ```javascript
 const array = [3, 2, 7, 5];
 
+
 function onlyEvenElements(array) {
    let result = [];
    
@@ -45,6 +46,7 @@ onlyEvenElements(array);	// [2]
 
 ```javascript
 const array = [3, 2, 7, 5];
+
 
 function onlyEvenElements(array) {
    let result = [];
