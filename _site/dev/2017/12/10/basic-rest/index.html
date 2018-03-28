@@ -30,7 +30,7 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
-<meta property="og:title" content="터미널에서 키워드로 쉽게 경로 이동">
+<meta property="og:title" content="rest.js">
 <meta property="og:type" content="article">
 
 
@@ -45,14 +45,14 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 
 
 
-  <title>터미널에서 키워드로 쉽게 경로 이동 &middot; ㅇㅁㅂ</title>
+  <title>rest.js &middot; ㅇㅁㅂ</title>
 
 
 
-<meta name="description" content="터미널에서 키워드로 쉽게 경로 이동하기
+<meta name="description" content="배열(array) 알고리즘 문제
 
 ">
-<meta property="og:description" content="터미널에서 키워드로 쉽게 경로 이동하기
+<meta property="og:description" content="배열(array) 알고리즘 문제
 
 ">
 
@@ -61,17 +61,17 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <!-- =============== -->
 <!-- LINKS           -->
 <!-- =============== -->
-<link rel="canonical" href="http://localhost:4000/dev/2018/01/01/terminal-alias/">
-<meta property="og:url" content="http://localhost:4000/dev/2018/01/01/terminal-alias/">
+<link rel="canonical" href="http://localhost:4000/dev/2017/12/10/basic-rest/">
+<meta property="og:url" content="http://localhost:4000/dev/2017/12/10/basic-rest/">
 
 <link rel="alternate" type="application/atom+xml" title="ㅇㅁㅂ Feed" href="http://localhost:4000/feed.xml">
 
 
-  <link rel="prev" href="http://localhost:4000/react/2017/12/30/react-Learning-React/">
+  <link rel="prev" href="http://localhost:4000/dev/2017/12/09/basic-butLast/">
 
 
 
-  <link rel="next" href="http://localhost:4000/dev/2018/03/14/dev-Big-O/">
+  <link rel="next" href="http://localhost:4000/dev/2017/12/11/basic-cons/">
 
 
 <link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
@@ -158,16 +158,16 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
     <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/mainColor.jpg">
       
 
-<article id="post-dev/2018/01/01/terminal-alias" class="post" role="article">
+<article id="post-dev/2017/12/10/basic-rest" class="post" role="article">
   <header>
     <h1 class="post-title">
       
-        터미널에서 키워드로 쉽게 경로 이동
+        rest.js
       
     </h1>
 
     <p class="post-date heading">
-      <time datetime="2018-01-01T00:00:00+09:00">01 Jan 2018</time>
+      <time datetime="2017-12-10T00:00:00+09:00">10 Dec 2017</time>
       
 
 
@@ -190,7 +190,7 @@ in <a href="/category/dev/" data-flip="title">about Dev</a>
 
 
 
-on <a href="/tag/dev-terminal/" data-flip="title">Terminal</a>
+on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
 
     </p>
 
@@ -218,26 +218,32 @@ on <a href="/tag/dev-terminal/" data-flip="title">Terminal</a>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <br/>
-      <h2 id="터미널에서-키워드로-쉽게-경로-이동하기">터미널에서 키워드로 쉽게 경로 이동하기</h2>
-
-<ol>
-  <li>터미널 실행 후 <code class="highlighter-rouge">$ nano .bash_profile</code> 입력</li>
-  <li>터미널 상단에 <code class="highlighter-rouge">alias [단축키]='cd /Users/song/Desktop/[원하는 경로 위치]'</code> 입력</li>
-  <li>press <code class="highlighter-rouge">ctrl + x</code></li>
-  <li>press <code class="highlighter-rouge">y</code></li>
-  <li>press <code class="highlighter-rouge">enter</code></li>
-</ol>
+      <h4 id="배열array-알고리즘-문제">배열(array) 알고리즘 문제</h4>
 
 <p><br /></p>
 
-<h2 id="활용법">활용법</h2>
+<h2 id="problem">problem</h2>
 
-<ul>
-  <li>블로그 로컬 서버 실행 시, 터미널 실행 후 <code class="highlighter-rouge">io</code>만 입력하면 해당 폴더로 이동 후 쉽게 서버 실행 가능</li>
-  <li><code class="highlighter-rouge">til</code> 단축키 입력으로 TIL(Today I Learned) 폴더로 이동 후 쉽게 push</li>
-</ul>
+<p>Write a function ‘<code class="highlighter-rouge">rest</code>’</p>
+
+<p>that returns all the elements in the array</p>
+
+<p>except for the first one.</p>
 
 <p><br /></p>
+
+<h2 id="solution">solution</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+
+<span class="kd">function</span> <span class="nx">rest</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">return</span> <span class="nx">array</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+<span class="nx">rest</span><span class="p">(</span><span class="nx">array</span><span class="p">);</span>	<span class="c1">// [2, 7, 5]</span>
+</code></pre></div></div>
+
 
       <br/>
       <br/>
@@ -263,12 +269,12 @@ on <a href="/tag/dev-terminal/" data-flip="title">Terminal</a>
   <div class="share">
       <h2>Share this post</h2>
       <div class="share-body">
-        <a href="http://twitter.com/share?text=터미널에서 키워드로 쉽게 경로 이동&amp;url=http://localhost:4000/dev/2018/01/01/terminal-alias/"
+        <a href="http://twitter.com/share?text=rest.js&amp;url=http://localhost:4000/dev/2017/12/10/basic-rest/"
     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
             <span class="icon-twitter">
             </span>
         </a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/dev/2018/01/01/terminal-alias/"
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/dev/2017/12/10/basic-rest/"
     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
             <span class="icon-facebook">
             </span>
@@ -358,22 +364,22 @@ on <a href="/tag/dev-terminal/" data-flip="title">Terminal</a>
         
       
         
-          
-          
-        
         
           
 
 
 <li class="h4">
-  <a href="/dev/2017/12/15/basic-sumOfArray/" data-flip="title">
-    <span>sumOfArray.js</span>
+  <a href="/dev/2018/01/01/terminal-alias/" data-flip="title">
+    <span>터미널에서 키워드로 쉽게 경로 이동</span>
   </a>
-  <small><time datetime="2017-12-15T00:00:00+09:00">
-    15 Dec 2017
+  <small><time datetime="2018-01-01T00:00:00+09:00">
+    01 Jan 2018
   </time></small>
 </li>
 
+        
+      
+        
         
       
     
@@ -390,7 +396,7 @@ on <a href="/tag/dev-terminal/" data-flip="title">Terminal</a>
   <div id="disqus_thread"></div>
 
   <script>
-    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="터미널에서 키워드로 쉽게 경로 이동",this.page.identifier="/dev/2018/01/01/terminal-alias",this.page.url="http://localhost:4000/dev/2018/01/01/terminal-alias/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//dubbsong.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="rest.js",this.page.identifier="/dev/2017/12/10/basic-rest",this.page.url="http://localhost:4000/dev/2017/12/10/basic-rest/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//dubbsong.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
 
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
