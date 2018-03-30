@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Mar 2018 15:58:33 +0900</pubDate>
-    <lastBuildDate>Thu, 29 Mar 2018 15:58:33 +0900</lastBuildDate>
+    <pubDate>Fri, 30 Mar 2018 14:53:25 +0900</pubDate>
+    <lastBuildDate>Fri, 30 Mar 2018 14:53:25 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
@@ -174,6 +174,32 @@
       </item>
     
       <item>
+        <title>단일 페이지 애플리케이션 SPA</title>
+        <description>&lt;h2 id=&quot;single-page-application&quot;&gt;Single Page Application&lt;/h2&gt;
+
+&lt;h4 id=&quot;단일-페이지-애플리케이션-spa&quot;&gt;단일 페이지 애플리케이션 (SPA)&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SPA에서 처음에 브라우저는 HTML 문서를 하나 적재한다. 사용자는 사이트를 내비게이션하지만 실제로는 같은 페이지 안에 계속 머문다. JS는 사용자가 애플리케이션과 상호작용하는 것에 맞춰 표시 중이던 인터페이스를 없애고 새로운 사용자 인터페이스를 만든다. 사용자가 느끼기에는 한 페이지에서 다른 페이지로 이동한 것 같지만 실제로는 여전히 같은 HTML 페이지 안에 머물 뿐이고 JS가 모든 힘든 처리를 대신 해준다.&lt;/li&gt;
+  &lt;li&gt;SPA는 기본적으로 웹 애플리케이션에 필요한 모든 정적 리소스를 최초에 한 번 다운로드한다. 이후 새로운 페이지 요청 시, 페이지 갱신에 필요한 데이터만을 전달받아 페이지를 갱신하므로 전체적인 트래픽을 감소할 수 있고, 전체 페이지를 다시 렌더링하지 않고 변경되는 부분만을 갱신하므로 새로고침이 발생하지 않아 네이티브 앱과 유사한 사용자 경험을 제공할 수 있다.&lt;/li&gt;
+  &lt;li&gt;전통적인 웹은 요청 시마다 새로고침이 일어나며, 페이지가 로딩될 때마다 서버로부터 리소스들을 전달받아 해석한 뒤 화면에 렌더링한다. 이를 해소하기 위해 캐싱과 압축이라는 방식으로 어느 정도 해소하였지만 결국 브라우저는 모든 CSS, JS, HTML을 해석한 뒤에 이들을 화면에 렌더링한다. SPA는 최초 한 번 페이지 전체를 로딩한 후 이후부터는 데이터만 변경해서 사용할 수 있는 웹 애플리케이션을 말한다.&lt;/li&gt;
+  &lt;li&gt;화면 전환 시마다 REST API 서버를 통해 데이터를 바인딩한다.&lt;/li&gt;
+  &lt;li&gt;SPA의 핵심 가치는 &lt;strong&gt;사용자 경험(UX) 향상&lt;/strong&gt;에 있으며, 부가적으로 애플리케이션 속도의 향상도 기대할 수 있어서 모바일 퍼스트(Mobile First) 전략에 부합한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Wed, 14 Mar 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/dev/2018/03/14/etc-SPA/</link>
+        <guid isPermaLink="true">http://localhost:4000/dev/2018/03/14/etc-SPA/</guid>
+        
+        <category>etc</category>
+        
+        
+        <category>dev</category>
+        
+      </item>
+    
+      <item>
         <title>알고리즘 시간복잡도 Big-O</title>
         <description>&lt;h2 id=&quot;시간복잡도&quot;&gt;시간복잡도&lt;/h2&gt;
 
@@ -267,8 +293,8 @@
 
 </description>
         <pubDate>Wed, 14 Mar 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/dev/2018/03/14/dev-Big-O/</link>
-        <guid isPermaLink="true">http://localhost:4000/dev/2018/03/14/dev-Big-O/</guid>
+        <link>http://localhost:4000/dev/2018/03/14/etc-Big-O/</link>
+        <guid isPermaLink="true">http://localhost:4000/dev/2018/03/14/etc-Big-O/</guid>
         
         <category>etc</category>
         
@@ -312,7 +338,7 @@
       </item>
     
       <item>
-        <title>러닝 리액트 (Learning React)</title>
+        <title>러닝 리액트 (Learning React), 1st cycle</title>
         <description>&lt;h2 id=&quot;learning-react---alex-banks-eve-porcello&quot;&gt;Learning React - Alex Banks, Eve Porcello&lt;/h2&gt;
 
 &lt;hr /&gt;
@@ -475,6 +501,209 @@ https://github.com/enshahar/learning-react-kor&lt;/li&gt;
 &lt;h2 id=&quot;chapter-04-순수-리액트&quot;&gt;CHAPTER 04 순수 리액트&lt;/h2&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;리액트 내부에서 어떤 일이 벌어지는지 이해하기 위해 시간을 투자한다면 더 효율적인 리액트 프로그래머가 될 수 있다. 리액트 코드를 디버깅해야 하는 경우 특히 더 그렇다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;41-페이지-설정&quot;&gt;4.1 페이지 설정&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;리액트를 브라우저에서 다루려면 React와 ReactDOM 라이브러리를 불러와야 한다.&lt;/li&gt;
+  &lt;li&gt;React는 뷰를 만들기 위한 라이브러리이다.&lt;/li&gt;
+  &lt;li&gt;ReactDOM은 UI를 실제로 브라우저에서 렌더링할 때 사용하는 라이브러리이다.&lt;/li&gt;
+  &lt;li&gt;ReactDOM이 UI를 렌더링하기 위해 사용할 HTML 엘리먼트가 필요하다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;42-가상-dom&quot;&gt;4.2 가상 DOM&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;HTML은 브라우저가 문서 객체 모델(DOM)을 구성하기 위해 따라야 하는 절차라고 간단히 말할 수 있다.&lt;/li&gt;
+  &lt;li&gt;HTML 문서를 이루는 엘리먼트는 브라우저가 HTML 문서를 읽어 들이면 DOM 엘리먼트가 되고, 이 DOM이 화면에 사용자 인터페이스를 표시한다.&lt;/li&gt;
+  &lt;li&gt;전통적으로 웹사이트는 독립적인 HTML 페이지들로 만들어졌다. 사용자가 페이지 사이를 내비게이션하면 브라우저는 매번 다른 HTML 문서를 요청해서 로딩한다. AJAX가 생기면서 단일 페이지 앱(SPA, Single Page Application)이 생겼다. 브라우저가 AJAX를 사용해 아주 작은 데이터를 요청해서 가져올 수 있게 됨에 따라 이제는 전체 웹 애플리케이션이 한 페이지로 실행되면서 JS에 의존해 사용자 인터페이스를 갱신할 수 있게 되었다.&lt;/li&gt;
+  &lt;li&gt;SPA에서 처음에 브라우저는 HTML 문서를 하나 적재한다. 사용자는 사이트를 내비게이션하지만 실제로는 같은 페이지 안에 계속 머문다. JS는 사용자가 애플리케이션과 상호작용하는 것에 맞춰 표시 중이던 인터페이스를 없애고 새로운 사용자 인터페이스를 만든다. 사용자가 느끼기에는 한 페이지에서 다른 페이지로 이동한 것 같지만 실제로는 여전히 같은 HTML 페이지 안에 머물 뿐이고 JS가 모든 힘든 처리를 대신 해준다.&lt;/li&gt;
+  &lt;li&gt;DOM API는 브라우저의 DOM을 변경하기 위해 JS가 사용할 수 있는 객체의 모음이다. &lt;code class=&quot;highlighter-rouge&quot;&gt;document.createElement&lt;/code&gt;나 &lt;code class=&quot;highlighter-rouge&quot;&gt;document.appendChild&lt;/code&gt;를 써봤다면 이미 DOM을 써본 것이다. 화면에 표시된 DOM 엘리먼트를 JS로 갱신하거나 변경하는 것은 상대적으로 쉽다. 하지만 새 엘리먼트를 추가하려면 시간이 엄청나게 오래 걸린다. 이는 웹 개발자가 UI를 변경하는 방법을 세밀하고 정확하게 신경 써야 애플리케이션 성능을 향상시킬 수 있다는 뜻이다.&lt;/li&gt;
+  &lt;li&gt;JS를 사용해 DOM 변경을 효율적으로 처리하는 일은 아주 복잡하고 시간이 오래 걸리는 일이다.&lt;/li&gt;
+  &lt;li&gt;문제는 새로운 애플리케이션을 만들 때마다 그 애플리케이션이 DOM API를 효율적으로 사용하게 만들 수 있는 고급 지식이나 시간이 우리에게 없다는 점이다. 이에 대한 해법이 리액트다.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;리액트는 브라우저 DOM을 갱신하기 위해 만든 라이브러리다.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;리액트가 모든 처리를 대신 해주기 때문에, 더 이상 SPA를 더 효율적으로 만들기 위해 여러 복잡한 내용을 신경 쓸 필요가 없다.&lt;/li&gt;
+  &lt;li&gt;DOM API를 직접 조작하지 않는다. 대신 &lt;strong&gt;가상 DOM&lt;/strong&gt;을 다루거나, 리액트가 UI를 생성하고 브라우저와 상호작용하기 위해 사용하는 몇 가지 명령을 다룬다.&lt;/li&gt;
+  &lt;li&gt;가상 DOM은 리액트 엘리먼트로 이루어진다. 리액트 엘리먼트는 개념상 HTML 엘리먼트와 비슷하지만, 실제로는 JS 객체다. DOM API를 직접 다루는 것보다 JS 객체인 가상 DOM을 직접 다루는 편이 훨씬 빠르다.&lt;/li&gt;
+  &lt;li&gt;가상 DOM을 변경하면 리액트는 DOM API를 사용해 변경사항을 가장 효율적으로 렌더링해준다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;43-리액트-엘리먼트&quot;&gt;4.3 리액트 엘리먼트&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;브라우저 DOM은 DOM 엘리먼트로 이루어진다.&lt;/li&gt;
+  &lt;li&gt;리액트 DOM은 리액트 엘리먼트로 이루어진다.&lt;/li&gt;
+  &lt;li&gt;DOM 엘리먼트와 리액트 엘리먼트의 겉모습은 비슷해 보일지 몰라도 그 실체는 상당히 다르다.&lt;/li&gt;
+  &lt;li&gt;리액트 엘리먼트는 브라우저 DOM을 만드는 방법을 알려주는 명령이다.&lt;/li&gt;
+  &lt;li&gt;리액트 엘리먼트는 리액트 DOM 엘리먼트를 구성하는 방법을 알려주는 JS 리터럴일 뿐이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;44-reactdom&quot;&gt;4.4 ReactDOM&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ReactDOM에는 리액트 엘리먼트를 브라우저에 렌더링하는 데 필요한 모든 도구가 들어 있다.&lt;/li&gt;
+  &lt;li&gt;ReactDOM에는 &lt;code class=&quot;highlighter-rouge&quot;&gt;render 메소드&lt;/code&gt;가 들어 있고, 서버에서 사용하기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;renderToString&lt;/code&gt;과 &lt;code class=&quot;highlighter-rouge&quot;&gt;renderToStaticMarkup&lt;/code&gt; 메소드도 들어 있다.&lt;/li&gt;
+  &lt;li&gt;리액트 엘리먼트와 그 모든 자식 엘리먼트를 함께 렌더링하기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;ReactDOM.render&lt;/code&gt;를 사용한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;45-자식&quot;&gt;4.5 자식&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ReactDOM에서는 항상 한 엘리먼트만 DOM으로 렌더링할 수 있다.&lt;/li&gt;
+  &lt;li&gt;리액트는 렌더링할 엘리먼트에 &lt;code class=&quot;highlighter-rouge&quot;&gt;data-reactroot&lt;/code&gt;라는 꼬리표를 단다. 모든 다른 리액트 엘리먼트는 이 루트 엘리먼트 아래에 내포된다.&lt;/li&gt;
+  &lt;li&gt;리액트는 &lt;code class=&quot;highlighter-rouge&quot;&gt;props.children&lt;/code&gt;을 사용해 자식 엘리먼트를 렌더링한다.&lt;/li&gt;
+  &lt;li&gt;텍스트가 아닌 다른 리액트 엘리먼트를 자식으로 렌더링할 수도 있고, 그렇게 하면 엘리먼트의 트리가 생긴다. 그래서 &lt;strong&gt;컴포넌트 트리&lt;/strong&gt;라는 말을 사용한다. 트리에는 루트 컴포넌트가 하나 존재하고, 루트 아래로 많은 가지가 자란다.&lt;/li&gt;
+  &lt;li&gt;가상 DOM은 단일 루트로부터 뻗어 나온 리액트 엘리먼트의 트리다.&lt;/li&gt;
+  &lt;li&gt;리액트 엘리먼트는 리액트가 브라우저에서 UI를 어떻게 구성할지 지시하는 명령이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;46-데이터로-엘리먼트-만들기&quot;&gt;4.6 데이터로 엘리먼트 만들기&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;리액트 사용의 가장 큰 장점은 UI 엘리먼트와 데이터를 분리할 수 있다는 것이다.&lt;/li&gt;
+  &lt;li&gt;리액트는 단순한 JS이기 때문에 리액트 컴포넌트 트리를 더 편하게 구성하기 위한 JS 로직을 얼마든지 추가할 수 있다. 예를 들어 배열에 재료를 저장해두고 그 배열을 리액트 엘리먼트로 map할 수 있다.&lt;/li&gt;
+  &lt;li&gt;배열을 이터레이션해서 자식 엘리먼트의 리스트를 만드는 경우, 리액트에서는 각 자식 엘리먼트에 key 프로퍼티를 넣을 것을 권장한다. 리액트는 key를 사용해 DOM을 더 효율적으로 갱신할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;47-리액트-컴포넌트&quot;&gt;4.7 리액트 컴포넌트&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;리액트에서 각 부분을 &lt;strong&gt;컴포넌트&lt;/strong&gt;라 부른다.&lt;/li&gt;
+  &lt;li&gt;컴포넌트를 사용하면 서로 다른 조리법이나 서로 다른 데이터 집합에 같은 DOM 구조를 재사용할 수 있다.&lt;/li&gt;
+  &lt;li&gt;리액트로 만들고 싶은 사용자 인터페이스를 생각할 때는 엘리먼트를 재사용 가능한 조각으로 나눌 수 있는지 고려해보라.&lt;/li&gt;
+  &lt;li&gt;컴포넌트를 만드는 3가지 방법은 &lt;code class=&quot;highlighter-rouge&quot;&gt;createClass&lt;/code&gt;를 사용하는 방법, &lt;code class=&quot;highlighter-rouge&quot;&gt;ES6 클래스&lt;/code&gt;를 사용하는 방법, &lt;code class=&quot;highlighter-rouge&quot;&gt;상태가 없는 함수형 컴포넌트&lt;/code&gt;를 사용하는 방법이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;471-reactcreateclass&quot;&gt;4.7.1 React.createClass&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;2013년 리액트가 처음 등장했을 때는 컴포넌트를 만드는 유일한 방법이 &lt;code class=&quot;highlighter-rouge&quot;&gt;createClass&lt;/code&gt; 함수를 사용하는 것이었다. 하지만 리액트 팀은 향후 언젠가는 createClass를 사용 중단시킬 예정이라고 한다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;IngredientsList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;displayName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;IngredientsList&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+     
+   &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ul&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;className&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ingredients&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+      	&lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;li&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;연어 500rmfoa&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+			&lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;li&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;잣 1컵&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+			&lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;li&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;마늘 3쪽&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;IngredientsList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;ReactDOM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'react-container'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;컴포넌트를 사용하면 데이터로부터 재사용 가능한 UI를 만들 수 있다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt; 함수에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; 키워드를 사용해 컴포넌트 인스턴스를 가리킬 수 있고, 그 인스턴스의 프로퍼티를 &lt;code class=&quot;highlighter-rouge&quot;&gt;this.props&lt;/code&gt;로 접근할 수 있다.&lt;/li&gt;
+  &lt;li&gt;리액트 컴포넌트에 데이터를 넘길 때는 프로퍼티로 넘긴다.&lt;/li&gt;
+  &lt;li&gt;컴포넌트는 객체다. 따라서 일반 JS 클래스와 마찬가지로 내부에 코드를 캡슐화할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;472-reactcomponent&quot;&gt;4.7.2 React.Component&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;ES6 명세의 핵심 특징 중 하나는 클래스 선언이다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;리액트 컴포넌트를 새로 만들 때는 &lt;code class=&quot;highlighter-rouge&quot;&gt;React.Component&lt;/code&gt;를 추상 클래스로 사용할 수 있다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ES6 구문으로 이 추상 클래스를 상속하면 커스텀 컴포넌트를 만들 수 있다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;IngredientsList&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+     
+   &lt;span class=&quot;nx&quot;&gt;renderListItem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ingredient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;li&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ingredient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+     
+   &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ul&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ingredients&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+      	&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;renderListItem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;                          
+		&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;473-상태가-없는-함수형-컴포넌트&quot;&gt;4.7.3 상태가 없는 함수형 컴포넌트&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;상태가 없는 함수형 컴포넌트는 객체가 아니라 함수다. 따라서 그런 컴포넌트 영역에는 ‘this’가 없다.&lt;/li&gt;
+  &lt;li&gt;일반적으로는 상태가 없는 함수형 컴포넌트를 더 많이 사용할수록 더 좋다.&lt;/li&gt;
+  &lt;li&gt;상태가 없는 함수형 컴포넌트를 사용하면 애플리케이션 아키텍처를 단순하게 유지할 수 있다.&lt;/li&gt;
+  &lt;li&gt;리액트 팀은 상태가 없는 함수형 컴포넌트를 사용할 때 성능이 더 좋아진다고 말한다. 하지만 기능을 캡슐화해야 하거나 this가 필요하면 이를 사용할 수 없다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;48-dom-렌더링&quot;&gt;4.8 DOM 렌더링&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;데이터를 컴포넌트에 프로퍼티로 넘길 수 있으므로 UI를 만들 때 사용하는 로직과 데이터를 분리할 수 있다. 이렇게 따로 분리된 데이터는 DOM보다 훨씬 더 쉽게 다룰 수 있다는 장점이 있다. 독립된 데이터 집합의 값을 변경하면 애플리케이션의 상태가 바뀐다.&lt;/li&gt;
+  &lt;li&gt;애플리케이션에 있는 모든 데이터를 한 JS 객체에 저장했다고 상상해보자. 이 객체를 변경할 때마다 그 객체를 컴포넌트에 프로퍼티로 전달하고 UI를 렌더링해야 한다. 이는 ReactDOM.render가 대부분의 힘든 작업을 처리해야 한다는 뜻이다.&lt;/li&gt;
+  &lt;li&gt;리액트가 수긍할만한 시간 안에 작동하게 만들기 위해 ReactDOM.render는 더 영리하게 작동해야 하며, 실제로도 영리하게 작동한다. 전체 DOM을 없애고 재구축하는 대신 ReactDOM.render는 현재의 DOM을 남겨둔 채 가능한 한 DOM을 적게 변경하면서 새로운 UI를 만들어낸다.&lt;/li&gt;
+  &lt;li&gt;UI를 바꾸는 한 가지 비효율적인 방법은 전체 DOM을 지우고 재구성하는 것이다.&lt;/li&gt;
+  &lt;li&gt;엘리먼트를 DOM에 삽입하는 것은 DOM API 연산 중 가장 비싼 연산이다. 즉, DOM 엘리먼트 삽입은 느리다. 반면 이미 제 위치에 있는 DOM 엘리먼트를 갱신하면 새로운 엘리먼트를 삽입하는 것보다 훨씬 더 빠르다.&lt;/li&gt;
+  &lt;li&gt;ReactDOM.render는 현재 DOM을 그대로 두고 갱신이 필요한 DOM 엘리먼트만 변경한다.&lt;/li&gt;
+  &lt;li&gt;애플리케이션의 상태가 자주 바뀌기 때문에 리액트가 수긍할만한 시간 안에 제대로 작동하게 하려면 영리한 DOM 렌더링이 필요하다.&lt;/li&gt;
+  &lt;li&gt;우리는 애플리케이션의 상태가 변할 때마다 ReactDOM.render에 의존해 UI를 효율적으로 렌더링한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;49-팩토리&quot;&gt;4.9 팩토리&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;factory를 사용해 리액트 엘리먼트를 만들 수도 있다.&lt;/li&gt;
+  &lt;li&gt;factory는 객체를 인스턴스화하는 자세한 과정을 감추고 객체 생성 과정을 추상화해주는 특별한 객체다.&lt;/li&gt;
+  &lt;li&gt;리액트에서는 리액트 엘리먼트 인스턴스를 만들 때 팩토리를 사용한다.&lt;/li&gt;
+  &lt;li&gt;리액트 엘리먼트를 정의하는 가장 쉽고 흔한 방법은 JSX 태그를 사용하는 것이다. JSX를 리액트와 사용한다면 팩토리를 사용할 기회가 거의 없을 것이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;chapter-05-jsx를-사용하는-리액트&quot;&gt;CHAPTER 05 JSX를 사용하는 리액트&lt;/h2&gt;
+
+&lt;ul&gt;
   &lt;li&gt;​&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -483,9 +712,9 @@ https://github.com/enshahar/learning-react-kor&lt;/li&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 30 Dec 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/react/2017/12/30/react-Learning-React/</link>
-        <guid isPermaLink="true">http://localhost:4000/react/2017/12/30/react-Learning-React/</guid>
+        <pubDate>Mon, 01 Jan 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/react/2018/01/01/react-Learning-React-1st/</link>
+        <guid isPermaLink="true">http://localhost:4000/react/2018/01/01/react-Learning-React-1st/</guid>
         
         <category>react</category>
         
@@ -2397,75 +2626,6 @@ https://github.com/enshahar/learning-react-kor&lt;/li&gt;
         <pubDate>Sun, 26 Nov 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/dev/2017/11/26/basic-cons/</link>
         <guid isPermaLink="true">http://localhost:4000/dev/2017/11/26/basic-cons/</guid>
-        
-        <category>algo</category>
-        
-        
-        <category>dev</category>
-        
-      </item>
-    
-      <item>
-        <title>conj.js</title>
-        <description>&lt;h4 id=&quot;배열array-알고리즘-문제&quot;&gt;배열(array) 알고리즘 문제&lt;/h4&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;problem&quot;&gt;problem&lt;/h2&gt;
-
-&lt;p&gt;Complete the function ‘&lt;code class=&quot;highlighter-rouge&quot;&gt;conj&lt;/code&gt;’&lt;/p&gt;
-
-&lt;p&gt;that accepts an array and an element,&lt;/p&gt;
-
-&lt;p&gt;and returns an array with the element added&lt;/p&gt;
-
-&lt;p&gt;to the end of the array.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;var fruits = [‘Banana’, ‘Orange’, ‘Apple’];&lt;/p&gt;
-
-  &lt;p&gt;fruits.push(‘Kiwi’);&lt;/p&gt;
-
-  &lt;p&gt;// [‘Banana’, ‘Orange’, ‘Apple’, ‘Kiwi’]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;solution-01&quot;&gt;solution 01&lt;/h2&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-
-
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;conj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-
-&lt;span class=&quot;nx&quot;&gt;conj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// [3, 2, 7, 5, [4, 4]]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;solution-02&quot;&gt;solution 02&lt;/h2&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-
-
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;conj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[...&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-
-&lt;span class=&quot;nx&quot;&gt;conj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// [3, 2, 7, 5, [4, 4]]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-</description>
-        <pubDate>Sun, 26 Nov 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/dev/2017/11/26/basic-conj/</link>
-        <guid isPermaLink="true">http://localhost:4000/dev/2017/11/26/basic-conj/</guid>
         
         <category>algo</category>
         
