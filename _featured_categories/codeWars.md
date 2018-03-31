@@ -6,5 +6,7 @@ menu: true
 submenu: false
 order: 2
 description: >
-  about Algorithm
+  about Codewars Algorithm
+  <br>
+  www.codewars.com
 ---

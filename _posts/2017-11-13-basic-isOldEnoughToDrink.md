@@ -5,7 +5,7 @@ categories: dev
 tags: algo
 ---
 
-#### 조건문 + boolean 알고리즘 문제
+#### 조건문(if) + 불린(boolean) 알고리즘 문제
 
 <br>
 
