@@ -66,6 +66,54 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/codewars/2018/01/11/codewars-tripleTrouble-8kyu/</loc>
+      
+        <lastmod>2018-01-11T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/11/codewars-sumWithoutHighAndLow-8kyu/</loc>
+      
+        <lastmod>2018-01-11T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/11/codewars-isDivideBy-8kyu/</loc>
+      
+        <lastmod>2018-01-11T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/codewars/2018/01/10/codewars-squareSum-8kyu/</loc>
       
         <lastmod>2018-01-10T00:00:00+09:00</lastmod>
@@ -130,6 +178,22 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/codewars/2018/01/10/codewars-arrayPlusArray-8kyu/</loc>
+      
+        <lastmod>2018-01-10T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/codewars/2018/01/09/codewars-countSheeps-8kyu/</loc>
       
         <lastmod>2018-01-09T00:00:00+09:00</lastmod>
@@ -165,6 +229,22 @@
       <loc>http://localhost:4000/codewars/2018/01/07/codewars-numberToPower-8kyu/</loc>
       
         <lastmod>2018-01-07T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/06/codewars-simpleMultiplication-8kyu/</loc>
+      
+        <lastmod>2018-01-06T00:00:00+09:00</lastmod>
       
 
       
