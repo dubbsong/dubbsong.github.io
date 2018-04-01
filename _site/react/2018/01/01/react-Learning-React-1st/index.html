@@ -576,12 +576,243 @@ https://github.com/enshahar/learning-react-kor</li>
 <h2 id="chapter-05-jsx를-사용하는-리액트">CHAPTER 05 JSX를 사용하는 리액트</h2>
 
 <ul>
-  <li>​</li>
+  <li>React.createElement를 번거롭게 입력하는 대신 사용할 수 있는 대안은 <code class="highlighter-rouge">JSX</code>다.</li>
+  <li>JSX는 JS의 확장으로 HTML과 비슷한 구문을 사용해 리액트 엘리먼트를 정의할 수 있게 해준다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="51-jsx로-리액트-엘리먼트-정의하기">5.1 JSX로 리액트 엘리먼트 정의하기</h3>
+
+<ul>
+  <li>페이스북의 리액트 팀은 리액트를 내놓으면서 JSX도 함께 내놓았다.</li>
+  <li>JSX는 애트리뷰트가 붙은 복잡한 DOM 트리를 작성할 수 있는 간편한 문법을 제공한다.</li>
+  <li>JSX에서는 태그를 사용해 엘리먼트의 타입을 지정한다. 태그의 애트리뷰트는 프로퍼티를 표현한다. 여는 태그와 닫는 태그 사이에 엘리먼트의 자식을 넣는다.</li>
+  <li>재료 배열을 컴포넌트로 넘길 때는 중괄호 {}로 감싸야 한다. 중괄호로 감싼 코드를 <strong>JS 식</strong>이라고 부른다.</li>
+  <li>JSX에서 컴포넌트에 프로퍼티 값으로 JS 값을 넘기려면 JS 식을 사용해야 한다.</li>
+</ul>
+
+<h4 id="511-jsx-팁">5.1.1 JSX 팁</h4>
+
+<h6 id="내포된-컴포넌트">내포된 컴포넌트</h6>
+
+<ul>
+  <li>JSX에서는 다른 컴포넌트의 자식으로 컴포넌트를 추가할 수 있다.</li>
+</ul>
+
+<h6 id="classname">className</h6>
+
+<ul>
+  <li>JS에서는 class가 예약어이므로 className을 사용한다.</li>
+</ul>
+
+<h6 id="js-식">JS 식</h6>
+
+<ul>
+  <li>JS 식을 중괄호로 감싸면 중괄호 안의 식을 평가해서 결과값을 돌려줘야 한다는 뜻이다.</li>
+</ul>
+
+<h6 id="평가">평가</h6>
+
+<ul>
+  <li>중괄호 안에 들어간 JS 코드는 그 값을 평가받는다.</li>
+  <li>이는 JS 식 안에 함수 호출 구문이 있다면 그 함수가 호출된다는 뜻이기도 하다.</li>
+</ul>
+
+<h6 id="배열을-jsx로-매핑하기">배열을 JSX로 매핑하기</h6>
+
+<ul>
+  <li>
+    <p>JSX는 JS이므로 JS 함수 안에서 JSX를 직접 사용할 수 있다.</p>
+  </li>
+  <li>
+    <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// JSX와 Array.map() 사용하기</span>
+
+<span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+	<span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">ingredients</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">ingredient</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span>
+   	<span class="p">&lt;</span><span class="nt">li</span> <span class="nt">key</span><span class="err">{</span><span class="nt">i</span><span class="err">}</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">ingredient</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+	<span class="p">)}</span>
+<span class="p">&lt;</span><span class="err">/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="52-바벨">5.2 바벨</h3>
+
+<ul>
+  <li>대부분의 소프트웨어 언어는 소스 코드를 컴파일한다.</li>
+  <li>JS는 인터프리터 언어라서 브라우저가 코드 텍스트를 해석하기 때문에 컴파일할 필요가 없다.</li>
+  <li>하지만 모든 브라우저가 ES6나 ES7 문법을 지원하지는 않는다. 그리고 어떤 브라우저도 JSX를 지원하지 않는다.</li>
+  <li>우리는 JSX와 함께 최신 jS 기능을 활용하고 싶기 때문에 작성한 소스 코드를 브라우저가 해석할 수 있는 코드로 변환해줄 수단이 필요하다. 이런 변환 과정을 트랜스파일링이라고 부르며 <code class="highlighter-rouge">바벨</code>이 그런 일을 해준다.</li>
+  <li>바벨 프로젝트는 처음에 6to5라고 불렸다. 6to5는 ES6 문법으로 작성된 코드를 당시 여러 웹 브라우저가 지원하고 있던 ES5 문법에 맞는 코드로 변환해주는 도구였다. 프로젝트가 커짐에 따라 ES6뿐만 아니라 이후 발생한 ECMAScript의 변화를 모두 지원하는 플랫폼 역할을 하는 것으로 목표를 재설정했다. 또한 바벨은 JSX를 순수 리액트로 트랜스파일링 하는 것을 지원하도록 발전했다.</li>
+  <li>이제는 바벨이 JSX 처리 표준이다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="53-조리법을-jsx로-작성하기">5.3 조리법을 JSX로 작성하기</h3>
+
+<ul>
+  <li>
+    <p>저자가 리액트를 좋아하는 이유 중 하나는 리액트를 사용하면 웹 애플리케이션을 아름다운 코드로 작성할 수 있기 때문이다.</p>
+  </li>
+  <li>
+    <p>애플리케이션의 기능을 명확히 보여주는 아름답게 작성된 모듈을 만들면 좋은 점이 아주 많다.</p>
+  </li>
+  <li>
+    <p>JSX는 코드에서 리액트 엘리먼트를 멋지고 깔끔하게 기술할 수 있게 해주며, JSX로 작성한 코드는 작성자 스스로 볼 때도 이해하기 쉽고 리액트 커뮤니티의 다른 엔지니어들이 볼 때도 거의 즉시 이해할 수 있을 정도로 읽기 좋다.</p>
+  </li>
+  <li>
+    <p>JSX의 단점은 브라우저가 JSX를 해석하지 못한다는 것이다. 따라서 JSX를 순수 리액트로 변환해야 한다.</p>
+  </li>
+  <li>
+    <p>조리법 앱의 구조</p>
+
+    <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 데이터는 조리법 객체의 배열이다.</span>
+<span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">[</span> <span class="p">...</span> <span class="p">]</span>
+              
+              
+<span class="c1">// 조리법 하나를 표현하는 상태가 없는 함수형 컴포넌트다.</span>
+<span class="kd">const</span> <span class="nx">Recipe</span> <span class="o">=</span> <span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">(</span>
+	<span class="p">...</span>
+<span class="p">)</span>
+              
+              
+<span class="c1">// 조리법으로 이루어진 메뉴를 표현하는 상태가 없는 함수형 컴포넌트다.</span>
+<span class="kd">const</span> <span class="nx">Menu</span> <span class="o">=</span> <span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">(</span>
+	<span class="p">...</span>            
+<span class="p">)</span>
+              
+              
+<span class="c1">// ReactDOM.render를 호출해서 Menu를 현재의 DOM 안에 렌더링한다.</span>
+<span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+	<span class="p">&lt;</span><span class="nc">Menu</span> <span class="na">recipes=</span><span class="si">{</span><span class="nx">data</span><span class="si">}</span> <span class="na">title=</span><span class="s2">"맛있는 조리법"</span> <span class="p">/&gt;,</span>
+	<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"react-container"</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>메뉴 컴포넌트 구조</p>
+
+    <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">Menu</span> <span class="o">=</span> <span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="o">=&gt;</span>
+	<span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+   		<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">title</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+   	<span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+   	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"recipes"</span><span class="p">&gt;</span>
+   	<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>조리법 데이터 변환하기</p>
+
+    <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"recipes"</span><span class="o">&gt;</span>
+	<span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">recipes</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">recipe</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span>
+   	<span class="p">&lt;</span><span class="nc">Recipe</span> <span class="na">key=</span><span class="si">{</span><span class="nx">i</span><span class="si">}</span> <span class="na">name=</span><span class="si">{</span><span class="nx">recipe</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span>
+         <span class="na">ingredients=</span><span class="si">{</span><span class="nx">recipe</span><span class="p">.</span><span class="nx">ingredients</span><span class="si">}</span>
+         <span class="na">steps=</span><span class="si">{</span><span class="nx">recipe</span><span class="p">.</span><span class="nx">steps</span><span class="si">}</span><span class="p">/&gt;</span>
+	<span class="p">)}</span>
+<span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>개선: JSX 스프레드 연산자 사용</p>
+
+    <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">recipes</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">recipe</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span>
+	<span class="p">&lt;</span><span class="nc">Recipe</span> <span class="na">key=</span><span class="si">{</span><span class="nx">i</span><span class="si">}</span> <span class="err">{</span><span class="p">...</span><span class="nt">recipe</span><span class="err">}</span> <span class="p">/&gt;</span>                  
+<span class="p">)}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>객체 구조 분해를 사용하면 props의 필드를 변수에 담을 수 있으므로 title과 recipes를 직접 사용할 수 있고 항상 props를 덧붙여야 하는 번거로움을 줄일 수 있다.</p>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="54-웹팩-소개">5.4 웹팩 소개</h3>
+
+<ul>
+  <li>JSX와 ES6 이상의 트랜스파일링을 어떻게 처리해야 할까?</li>
+  <li>프로젝트의 의존관계를 어떻게 처리해야 할까?</li>
+  <li>이미지와 CSS를 어떻게 최적화할까?</li>
+  <li>이런 질문을 해결해주는 여러 도구가 있다. 브라우저리파이(Browserify), 걸프(Gulp), 그런트(Grunt), 웹팩(Webpack) 등이 대표 도구다.</li>
+  <li>웹팩은 모듈 번들러(module bundler)로 알려져 있다. 모듈 번들러는 여러 파일(JS, LESS, CSS, JSX, ES6 등)을 받아서 하나의 파일로 묶어준다.</li>
+  <li>모듈을 하나로 묶어서 얻는 두 가지 이익은 <strong>모듈성(modularity)</strong>과 <strong>네트워크 성능(network perfomance)</strong>이다.</li>
+  <li>모듈성은 소스 코드를 작업하기 쉽게 여러 부분 또는 모듈로 나눠서 다룰 수 있게 해준다. 특히 팀 환경에서는 모듈성이 중요하다.</li>
+  <li>의존관계가 있는 여러 파일을 묶은 번들을 브라우저가 한 번만 읽어 들이기 때문에 네트워크 성능이 좋아진다.</li>
+  <li>각 script 태그는 HTTP 요청을 만들어내며, 그런 HTTP 요청마다 약간의 대기 시간(latency)이 발생한다. 모든 의존관계를 하나의 파일에 넣으면 단 한 번의 HTTP 요청으로 가져올 수 있으므로 추가 대기 시간을 방지할 수 있다.</li>
+  <li>웹팩이 처리할 수 있는 일
+    <ul>
+      <li>코드 분리</li>
+      <li>코드 축소</li>
+      <li>특징 켜고 끄기</li>
+      <li>HMR (hot module replacement)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="541-웹팩-로더">5.4.1 웹팩 로더</h4>
+
+<ul>
+  <li><strong>로더(loader)</strong>는 빌드 과정에서 코드를 변환하는 방식을 처리하는 기능이다.</li>
+  <li>애플리케이션이 브라우저가 이해할 수 없는 다른 언어 등을 사용한다면 webpack.config.js에 필요한 로더를 지정해서 애플리케이션 코드를 브라우저가 이해할 수 있는 코드로 변환하게 만들어야 한다.</li>
+  <li>예를 들어 babel-loader를 포함시키면 ES6나 리액트 코드를 트랜스파일링 할 수 있다. 바벨을 실행해야 하는 파일의 종류를 지정하면 웹팩이 나머지 처리를 알아서 해준다.</li>
+  <li>로더를 사용하는 다른 경우는 페이지의 스타일을 바꾸는 것이다. css-loader는 .scss 확장자를 가진 파일을 찾아서 CSS 파일로 컴파일한다.</li>
 </ul>
 
 <hr />
 
 <p><br /></p>
+
+<h2 id="chapter-6-프로퍼티-상태-컴포넌트-트리">CHAPTER 6 프로퍼티, 상태, 컴포넌트 트리</h2>
+
+<ul>
+  <li>컴포넌트 트리 안에서 데이터를 처리할 수 있다는 점은 리액트를 사용해 작업을 할 때 얻을 수 있는 중요한 이점 중 하나다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="61-프로퍼티-검증">6.1 프로퍼티 검증</h3>
+
+<ul>
+  <li>JS는 타입 검증이 느슨한 언어다. 따라서 변수값의 데이터 타입이 바뀔 수 있다. 변수 타입을 비효율적으로 다루면 애플리케이션을 디버깅할 때 시간이 아주 오래 걸릴 수 있다.</li>
+  <li>리액트 컴포넌트는 프로퍼티 타입을 지정하고 검증하는 방법을 제공한다. 이 기능을 사용하면 애플리케이션을 디버깅할 때 드는 시간을 크게 줄일 수 있으며, 프로퍼티에 잘못된 타입의 값을 지정하면 경고가 표시되기 때문에 버그를 쉽게 찾을 수 있다. 그런 경고가 없다면 잘못된 값이 나중에 애플리케이션을 중단시킬 수 있다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="62-참조">6.2 참조</h3>
+
+<ul>
+  <li>참조(reference, 짧게 ref라고 씀)는 리액트 컴포넌트가 자식 엘리먼트와 상호작용할 때 필요한 기능이다.</li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="621-역방향-데이터-흐름">6.2.1 역방향 데이터 흐름</h4>
+
+<ul>
+  <li>입력 데이터를 알림창에 띄워주면 멋지기는 하지만 그런 제품으로는 돈을 벌 수 없다. 실제 필요한 것은 사용자로부터 데이터를 수집한 뒤 처리할 수 있는 곳으로 보내는 기능이다. 이는 수집한 데이터를 언젠가는 서버로 보내야 한다는 뜻이다. 우선은 폼에서 얻은 데이터를 모아서 전달할 수 있어야 한다.</li>
+  <li>리액트 컴포넌트에서 데이터를 수집하는 일반적인 방법은 <strong>역방향 데이터 흐름(inverse data flow)</strong>을 사용하는 것이다.</li>
+  <li>역방향 데이터 흐름은 컴포넌트가 데이터를 돌려줄 때 사용할 수 있는 콜백 함수를 컴포넌트의 프로퍼티로 설정하는 것이다.</li>
+  <li>역방향 데이터 흐름이라 불리는 이유는, 함수를 컴포넌트에 프로퍼티로 넘기고 컴포넌트는 데이터를 그 함수의 인자로 돌려주기 때문이다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="63-리액트-상태-관리">6.3 리액트 상태 관리</h3>
+
+<ul>
+  <li>프로퍼티는 변경 불가능하다. 일단 렌더링하고 나면 컴포넌트의 프로퍼티는 바뀌지 않는다. UI를 바꾸기 위해서는 컴포넌트 트리를 새로운 프로퍼티로 새로 그려주는 다른 메커니즘이 필요하다.</li>
+  <li>리액트 상태는 컴포넌트 안에서 바뀌는 데이터를 관리하기 위해 리액트가 기본으로 제공하는 기능이다. 애플리케이션의 상태가 바뀌면 UI는 자동으로 그 상태를 반영해 새로 렌더링된다.</li>
+  <li>​</li>
+</ul>
 
 
       
