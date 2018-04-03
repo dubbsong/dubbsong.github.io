@@ -66,6 +66,38 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/codewars/2018/01/13/codewars-squareOrSquareRoot-8kyu/</loc>
+      
+        <lastmod>2018-01-13T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/13/codewars-rockPaperScissors-8kyu/</loc>
+      
+        <lastmod>2018-01-13T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/codewars/2018/01/13/codewars-mathOperations-8kyu/</loc>
       
         <lastmod>2018-01-13T00:00:00+09:00</lastmod>
@@ -245,6 +277,22 @@
       <loc>http://localhost:4000/codewars/2018/01/10/codewars-arrayPlusArray-8kyu/</loc>
       
         <lastmod>2018-01-10T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/09/codewars-findMaxAndMin-8kyu/</loc>
+      
+        <lastmod>2018-01-09T00:00:00+09:00</lastmod>
       
 
       

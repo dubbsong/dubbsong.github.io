@@ -30,7 +30,7 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
-<meta property="og:title" content="calAverage.js (8kyu)">
+<meta property="og:title" content="rockPaperScissors.js (8kyu)">
 <meta property="og:type" content="article">
 
 
@@ -45,14 +45,14 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 
 
 
-  <title>calAverage.js (8kyu) &middot; ㅇㅁㅂ</title>
+  <title>rockPaperScissors.js (8kyu) &middot; ㅇㅁㅂ</title>
 
 
 
-<meta name="description" content="반복문(for loop) + 배열(array) 알고리즘 문제
+<meta name="description" content="조건문(if) 알고리즘 문제
 
 ">
-<meta property="og:description" content="반복문(for loop) + 배열(array) 알고리즘 문제
+<meta property="og:description" content="조건문(if) 알고리즘 문제
 
 ">
 
@@ -61,17 +61,17 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <!-- =============== -->
 <!-- LINKS           -->
 <!-- =============== -->
-<link rel="canonical" href="http://localhost:4000/codewars/2018/01/03/codewars-calAverage-8kyu/">
-<meta property="og:url" content="http://localhost:4000/codewars/2018/01/03/codewars-calAverage-8kyu/">
+<link rel="canonical" href="http://localhost:4000/codewars/2018/01/13/codewars-rockPaperScissors-8kyu/">
+<meta property="og:url" content="http://localhost:4000/codewars/2018/01/13/codewars-rockPaperScissors-8kyu/">
 
 <link rel="alternate" type="application/atom+xml" title="ㅇㅁㅂ Feed" href="http://localhost:4000/feed.xml">
 
 
-  <link rel="prev" href="http://localhost:4000/codewars/2018/01/02/codewars-sumArray-8kyu/">
+  <link rel="prev" href="http://localhost:4000/codewars/2018/01/13/codewars-mathOperations-8kyu/">
 
 
 
-  <link rel="next" href="http://localhost:4000/codewars/2018/01/03/codewars-reverseWord-8kyu/">
+  <link rel="next" href="http://localhost:4000/codewars/2018/01/13/codewars-squareOrSquareRoot-8kyu/">
 
 
 <link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
@@ -158,16 +158,16 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
     <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/mainColor.jpg">
       
 
-<article id="post-codewars/2018/01/03/codewars-calAverage-8kyu" class="post" role="article">
+<article id="post-codewars/2018/01/13/codewars-rockPaperScissors-8kyu" class="post" role="article">
   <header>
     <h1 class="post-title">
       
-        calAverage.js (8kyu)
+        rockPaperScissors.js (8kyu)
       
     </h1>
 
     <p class="post-date heading">
-      <time datetime="2018-01-03T00:00:00+09:00">03 Jan 2018</time>
+      <time datetime="2018-01-13T00:00:00+09:00">13 Jan 2018</time>
       
 
 
@@ -211,53 +211,113 @@ on <span>Algorithm</span>, <span>Codewars</span>
 @media(min-width: 600px) { .myAd1190 { display: none; } }
 </style>
 
-      <h4 id="반복문for-loop--배열array-알고리즘-문제">반복문(for loop) + 배열(array) 알고리즘 문제</h4>
+      <h4 id="조건문if-알고리즘-문제">조건문(if) 알고리즘 문제</h4>
 
 <p><br /></p>
 
 <h2 id="problem">problem</h2>
 
-<p>Write a function average</p>
+<p>Let’s Play!</p>
 
-<p>which calculates average of numbers</p>
+<p>You have to return which player won!</p>
 
-<p>in given list.</p>
+<p>In case of a draw return Draw!</p>
 
 <p><br /></p>
 
 <h2 id="solution-01">solution 01</h2>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">calAverage</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
-   <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-   
-   <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">result</span> <span class="o">+=</span> <span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
-   <span class="p">}</span>
-   <span class="k">return</span> <span class="nx">result</span> <span class="o">/</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">rockPaperScissors</span><span class="p">(</span><span class="nx">p1</span><span class="p">,</span> <span class="nx">p2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">p1</span> <span class="o">===</span> <span class="nx">p2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Draw!`</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">p1</span> <span class="o">===</span> <span class="s1">'rock'</span> <span class="o">&amp;&amp;</span> <span class="nx">p2</span> <span class="o">===</span> <span class="s1">'paper'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Player 2 won!`</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">p1</span> <span class="o">===</span> <span class="s1">'rock'</span> <span class="o">&amp;&amp;</span> <span class="nx">p2</span> <span class="o">===</span> <span class="s1">'scissors'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Player 1 won!`</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">p1</span> <span class="o">===</span> <span class="s1">'paper'</span> <span class="o">&amp;&amp;</span> <span class="nx">p2</span> <span class="o">===</span> <span class="s1">'rock'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Player 1 won!`</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">p1</span> <span class="o">===</span> <span class="s1">'paper'</span> <span class="o">&amp;&amp;</span> <span class="nx">p2</span> <span class="o">===</span> <span class="s1">'scissors'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Player 2 won!`</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">p1</span> <span class="o">===</span> <span class="s1">'scissors'</span> <span class="o">&amp;&amp;</span> <span class="nx">p2</span> <span class="o">===</span> <span class="s1">'rock'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Player 2 won!`</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">p1</span> <span class="o">===</span> <span class="s1">'scissors'</span> <span class="o">&amp;&amp;</span> <span class="nx">p2</span> <span class="o">===</span> <span class="s1">'paper'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Player 1 won!`</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
 
-<span class="nx">calAverage</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]);</span>	<span class="c1">// 2.5</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rockPaperScissors</span><span class="p">(</span><span class="s1">'rock'</span><span class="p">,</span> <span class="s1">'rock'</span><span class="p">));</span> <span class="c1">// Draw!</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rockPaperScissors</span><span class="p">(</span><span class="s1">'rock'</span><span class="p">,</span> <span class="s1">'scissors'</span><span class="p">));</span> <span class="c1">// Player 1 won!</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rockPaperScissors</span><span class="p">(</span><span class="s1">'paper'</span><span class="p">,</span> <span class="s1">'scissors'</span><span class="p">));</span> <span class="c1">// Player 2 won!</span>
 </code></pre></div></div>
 
 <p><br /></p>
 
 <h2 id="solution-02">solution 02</h2>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">calAverage</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
-   <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-   <span class="k">return</span> <span class="nx">result</span> <span class="o">/</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">rockPaperScissors</span><span class="p">(</span><span class="nx">p1</span><span class="p">,</span> <span class="nx">p2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">p1</span> <span class="o">===</span> <span class="nx">p2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Draw!`</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">p1</span> <span class="o">===</span> <span class="s1">'rock'</span> <span class="o">&amp;&amp;</span> <span class="nx">p2</span> <span class="o">===</span> <span class="s1">'scissors'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Player 1 won!`</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">p1</span> <span class="o">===</span> <span class="s1">'paper'</span> <span class="o">&amp;&amp;</span> <span class="nx">p2</span> <span class="o">===</span> <span class="s1">'rock'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Player 1 won!`</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">p1</span> <span class="o">===</span> <span class="s1">'scissors'</span> <span class="o">&amp;&amp;</span> <span class="nx">p2</span> <span class="o">===</span> <span class="s1">'paper'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Player 1 won!`</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Player 2 won!`</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
 
-<span class="nx">calAverage</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]);</span>	<span class="c1">// 2.5</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rockPaperScissors</span><span class="p">(</span><span class="s1">'rock'</span><span class="p">,</span> <span class="s1">'rock'</span><span class="p">));</span> <span class="c1">// Draw!</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rockPaperScissors</span><span class="p">(</span><span class="s1">'rock'</span><span class="p">,</span> <span class="s1">'scissors'</span><span class="p">));</span> <span class="c1">// Player 1 won!</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rockPaperScissors</span><span class="p">(</span><span class="s1">'paper'</span><span class="p">,</span> <span class="s1">'scissors'</span><span class="p">));</span> <span class="c1">// Player 2 won!</span>
 </code></pre></div></div>
 
 <p><br /></p>
 
 <h2 id="solution-03">solution 03</h2>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">calAverage</span> <span class="o">=</span> <span class="nx">array</span> <span class="o">=&gt;</span> <span class="nx">array</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">/</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">rockPaperScissors</span><span class="p">(</span><span class="nx">p1</span><span class="p">,</span> <span class="nx">p2</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">if</span> <span class="p">(</span><span class="nx">p1</span> <span class="o">===</span> <span class="nx">p2</span><span class="p">)</span> <span class="k">return</span> <span class="s2">`Draw!`</span><span class="p">;</span>
+   
+   <span class="kd">let</span> <span class="nx">rules</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">rock</span><span class="p">:</span> <span class="s1">'scissors'</span><span class="p">,</span>
+      <span class="na">paper</span><span class="p">:</span> <span class="s1">'rock'</span><span class="p">,</span>
+      <span class="na">scissors</span><span class="p">:</span> <span class="s1">'paper'</span>
+   <span class="p">}</span>
+   
+   <span class="k">if</span> <span class="p">(</span><span class="nx">rules</span><span class="p">[</span><span class="nx">p1</span><span class="p">]</span> <span class="o">===</span> <span class="nx">p2</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="s2">`Player 1 won!`</span><span class="p">;</span>
+   <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="s2">`Player 2 won!`</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rockPaperScissors</span><span class="p">(</span><span class="s1">'rock'</span><span class="p">,</span> <span class="s1">'rock'</span><span class="p">));</span> <span class="c1">// Draw!</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rockPaperScissors</span><span class="p">(</span><span class="s1">'rock'</span><span class="p">,</span> <span class="s1">'scissors'</span><span class="p">));</span> <span class="c1">// Player 1 won!</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rockPaperScissors</span><span class="p">(</span><span class="s1">'paper'</span><span class="p">,</span> <span class="s1">'scissors'</span><span class="p">));</span> <span class="c1">// Player 2 won!</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="solution-04">solution 04</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">rockPaperScissors</span><span class="p">(</span><span class="nx">p1</span><span class="p">,</span> <span class="nx">p2</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">if</span> <span class="p">(</span><span class="nx">p1</span> <span class="o">===</span> <span class="nx">p2</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="s2">`Draw!`</span><span class="p">;</span>
+   <span class="p">}</span>
+   <span class="k">return</span> <span class="s2">`Player </span><span class="p">${</span><span class="o">/</span><span class="nx">rockscissors</span><span class="o">|</span><span class="nx">scissorspaper</span><span class="o">|</span><span class="nx">paperrock</span><span class="o">/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">p1</span> <span class="o">+</span> <span class="nx">p2</span><span class="p">)</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">2</span><span class="p">}</span><span class="s2"> won!`</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rockPaperScissors</span><span class="p">(</span><span class="s1">'rock'</span><span class="p">,</span> <span class="s1">'rock'</span><span class="p">));</span> <span class="c1">// Draw!</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rockPaperScissors</span><span class="p">(</span><span class="s1">'rock'</span><span class="p">,</span> <span class="s1">'scissors'</span><span class="p">));</span> <span class="c1">// Player 1 won!</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rockPaperScissors</span><span class="p">(</span><span class="s1">'paper'</span><span class="p">,</span> <span class="s1">'scissors'</span><span class="p">));</span> <span class="c1">// Player 2 won!</span>
 </code></pre></div></div>
 
 
@@ -275,12 +335,12 @@ on <span>Algorithm</span>, <span>Codewars</span>
   <div class="share">
       <h2>Share this post</h2>
       <div class="share-body">
-        <a href="http://twitter.com/share?text=calAverage.js (8kyu)&amp;url=http://localhost:4000/codewars/2018/01/03/codewars-calAverage-8kyu/"
+        <a href="http://twitter.com/share?text=rockPaperScissors.js (8kyu)&amp;url=http://localhost:4000/codewars/2018/01/13/codewars-rockPaperScissors-8kyu/"
     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
             <span class="icon-twitter">
             </span>
         </a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/codewars/2018/01/03/codewars-calAverage-8kyu/"
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/codewars/2018/01/13/codewars-rockPaperScissors-8kyu/"
     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
             <span class="icon-facebook">
             </span>
@@ -354,21 +414,8 @@ on <span>Algorithm</span>, <span>Codewars</span>
         
       
         
-        
           
-
-
-<li class="h4">
-  <a href="/codewars/2018/01/13/codewars-rockPaperScissors-8kyu/" data-flip="title">
-    <span>rockPaperScissors.js (8kyu)</span>
-  </a>
-  <small><time datetime="2018-01-13T00:00:00+09:00">
-    13 Jan 2018
-  </time></small>
-</li>
-
-        
-      
+          
         
         
           
@@ -387,6 +434,19 @@ on <span>Algorithm</span>, <span>Codewars</span>
       
         
         
+          
+
+
+<li class="h4">
+  <a href="/codewars/2018/01/13/codewars-busStop-8kyu/" data-flip="title">
+    <span>busStop.js (8kyu)</span>
+  </a>
+  <small><time datetime="2018-01-13T00:00:00+09:00">
+    13 Jan 2018
+  </time></small>
+</li>
+
+        
       
     
   </ul>
@@ -402,7 +462,7 @@ on <span>Algorithm</span>, <span>Codewars</span>
   <div id="disqus_thread"></div>
 
   <script>
-    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="calAverage.js (8kyu)",this.page.identifier="/codewars/2018/01/03/codewars-calAverage-8kyu",this.page.url="http://localhost:4000/codewars/2018/01/03/codewars-calAverage-8kyu/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//dubbsong.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="rockPaperScissors.js (8kyu)",this.page.identifier="/codewars/2018/01/13/codewars-rockPaperScissors-8kyu",this.page.url="http://localhost:4000/codewars/2018/01/13/codewars-rockPaperScissors-8kyu/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//dubbsong.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
 
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
