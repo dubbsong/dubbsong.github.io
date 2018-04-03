@@ -466,6 +466,22 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/codewars/2018/01/03/codewars-invertValue-8kyu/</loc>
+      
+        <lastmod>2018-01-03T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/codewars/2018/01/03/codewars-calAverage-8kyu/</loc>
       
         <lastmod>2018-01-03T00:00:00+09:00</lastmod>
@@ -514,7 +530,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/react/2018/01/01/react-Learning-React-1st/</loc>
+      <loc>http://localhost:4000/react/2018/01/01/react-Learning-React/</loc>
       
         <lastmod>2018-01-01T00:00:00+09:00</lastmod>
       

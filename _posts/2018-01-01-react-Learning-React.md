@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "러닝 리액트 (Learning React), 1st cycle"
+title: "러닝 리액트 (Learning React)"
 categories: react
 tags: react
 ---
