@@ -27,7 +27,7 @@ but excluding zero.
 function countMonkey(n) {
    let result = [];
    
-   for (let i = 0; i <= n; i++) {
+   for (let i = 1; i <= n; i++) {
       result.push(i);
    }
    return result;
