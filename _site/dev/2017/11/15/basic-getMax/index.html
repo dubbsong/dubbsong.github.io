@@ -223,6 +223,8 @@ on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
 
 <p>‘getMax’ returns the larger of these two numbers.</p>
 
+<p><br /></p>
+
 <p>* <u>If the two numbers are equal, return either one.</u></p>
 
 <p><br /></p>
@@ -262,6 +264,17 @@ on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">getMax</span><span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">)</span> <span class="p">{</span>
    <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">);</span>
 <span class="p">}</span>
+
+
+<span class="nx">getMax</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span> <span class="mi">34</span><span class="p">);</span>		<span class="c1">// 34</span>
+<span class="nx">getMax</span><span class="p">(</span><span class="mf">2.3</span><span class="p">,</span> <span class="o">-</span><span class="mi">19</span><span class="p">);</span>	<span class="c1">// 2.3</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="solution-04">solution 04</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">getMax</span> <span class="o">=</span> <span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">num1</span> <span class="o">&gt;</span> <span class="nx">num2</span> <span class="p">?</span> <span class="nx">num1</span> <span class="p">:</span> <span class="nx">num2</span><span class="p">;</span>
 
 
 <span class="nx">getMax</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span> <span class="mi">34</span><span class="p">);</span>		<span class="c1">// 34</span>

@@ -19,6 +19,8 @@ in this case a name and an age,
 
 or tells them to go away.
 
+<br>
+
 \* <u>The legal drinking age in the United States is 21.</u>
 
 \* <u>Pay close attention to the puncuation in your answer.</u>
@@ -37,8 +39,8 @@ function bouncer(name, age) {
 }
 
 
-bouncer('Leo', 26);	// Welcome, Leo!
-bouncer('Sam', 19);	// Go home, Sam.
+bouncer('Leo', 20);	// Go home, Leo.
+bouncer('Sam', 21);	// Welcome, Sam!
 ```
 
 <br>
@@ -51,7 +53,19 @@ function bouncer(name, age) {
 }
 
 
-bouncer('Leo', 26);	// Welcome, Leo!
-bouncer('Sam', 19);	// Go home, Sam.
+bouncer('Leo', 20);	// Go home, Leo.
+bouncer('Sam', 21);	// Welcome, Sam!
+```
+
+<br>
+
+## solution 03
+
+```javascript
+const bouncer = (name, age) => age >= 21 ? `Welcome, ${name}!` : `Go home, ${name}.`;
+
+
+bouncer('Leo', 20);	// Go home, Leo.
+bouncer('Sam', 21);	// Welcome, Sam!
 ```
 

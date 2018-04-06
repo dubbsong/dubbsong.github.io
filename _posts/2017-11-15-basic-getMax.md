@@ -17,6 +17,8 @@ Given two numbers,
 
 'getMax' returns the larger of these two numbers.
 
+<br>
+
 \* <u>If the two numbers are equal, return either one.</u>
 
 <br>
@@ -59,6 +61,18 @@ getMax(2.3, -19);	// 2.3
 function getMax(num1, num2) {
    return Math.max(num1, num2);
 }
+
+
+getMax(19, 34);		// 34
+getMax(2.3, -19);	// 2.3
+```
+
+<br>
+
+## solution 04
+
+```javascript
+const getMax = (num1, num2) => num1 > num2 ? num1 : num2;
 
 
 getMax(19, 34);		// 34

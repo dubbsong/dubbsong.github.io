@@ -225,6 +225,8 @@ on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
 
 <p>or tells them to go away.</p>
 
+<p><br /></p>
+
 <p>* <u>The legal drinking age in the United States is 21.</u></p>
 
 <p>* <u>Pay close attention to the puncuation in your answer.</u></p>
@@ -242,8 +244,8 @@ on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
 <span class="p">}</span>
 
 
-<span class="nx">bouncer</span><span class="p">(</span><span class="s1">'Leo'</span><span class="p">,</span> <span class="mi">26</span><span class="p">);</span>	<span class="c1">// Welcome, Leo!</span>
-<span class="nx">bouncer</span><span class="p">(</span><span class="s1">'Sam'</span><span class="p">,</span> <span class="mi">19</span><span class="p">);</span>	<span class="c1">// Go home, Sam.</span>
+<span class="nx">bouncer</span><span class="p">(</span><span class="s1">'Leo'</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>	<span class="c1">// Go home, Leo.</span>
+<span class="nx">bouncer</span><span class="p">(</span><span class="s1">'Sam'</span><span class="p">,</span> <span class="mi">21</span><span class="p">);</span>	<span class="c1">// Welcome, Sam!</span>
 </code></pre></div></div>
 
 <p><br /></p>
@@ -255,8 +257,19 @@ on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
 <span class="p">}</span>
 
 
-<span class="nx">bouncer</span><span class="p">(</span><span class="s1">'Leo'</span><span class="p">,</span> <span class="mi">26</span><span class="p">);</span>	<span class="c1">// Welcome, Leo!</span>
-<span class="nx">bouncer</span><span class="p">(</span><span class="s1">'Sam'</span><span class="p">,</span> <span class="mi">19</span><span class="p">);</span>	<span class="c1">// Go home, Sam.</span>
+<span class="nx">bouncer</span><span class="p">(</span><span class="s1">'Leo'</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>	<span class="c1">// Go home, Leo.</span>
+<span class="nx">bouncer</span><span class="p">(</span><span class="s1">'Sam'</span><span class="p">,</span> <span class="mi">21</span><span class="p">);</span>	<span class="c1">// Welcome, Sam!</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="solution-03">solution 03</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">bouncer</span> <span class="o">=</span> <span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">age</span> <span class="o">&gt;=</span> <span class="mi">21</span> <span class="p">?</span> <span class="s2">`Welcome, </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2">!`</span> <span class="p">:</span> <span class="s2">`Go home, </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2">.`</span><span class="p">;</span>
+
+
+<span class="nx">bouncer</span><span class="p">(</span><span class="s1">'Leo'</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>	<span class="c1">// Go home, Leo.</span>
+<span class="nx">bouncer</span><span class="p">(</span><span class="s1">'Sam'</span><span class="p">,</span> <span class="mi">21</span><span class="p">);</span>	<span class="c1">// Welcome, Sam!</span>
 </code></pre></div></div>
 
 

@@ -238,8 +238,8 @@ on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
 <span class="p">}</span>
 
 
-<span class="nx">isPasswordLongEnough</span><span class="p">(</span><span class="s1">'ssupbro'</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span> 	<span class="c1">// true</span>
-<span class="nx">isPasswordLongEnough</span><span class="p">(</span><span class="s1">'ssupbro'</span><span class="p">,</span> <span class="mi">12</span><span class="p">);</span>	<span class="c1">// false</span>
+<span class="nx">isPasswordLongEnough</span><span class="p">(</span><span class="s1">'qlqjs12'</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span> 	<span class="c1">// false</span>
+<span class="nx">isPasswordLongEnough</span><span class="p">(</span><span class="s1">'votmdnjem'</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>	<span class="c1">// true</span>
 </code></pre></div></div>
 
 <p><br /></p>
@@ -251,8 +251,19 @@ on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
 <span class="p">}</span>
 
 
-<span class="nx">isPasswordLongEnough</span><span class="p">(</span><span class="s1">'ssupbro'</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span> 	<span class="c1">// true</span>
-<span class="nx">isPasswordLongEnough</span><span class="p">(</span><span class="s1">'ssupbro'</span><span class="p">,</span> <span class="mi">12</span><span class="p">);</span>	<span class="c1">// false</span>
+<span class="nx">isPasswordLongEnough</span><span class="p">(</span><span class="s1">'qlqjs12'</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span> 	<span class="c1">// false</span>
+<span class="nx">isPasswordLongEnough</span><span class="p">(</span><span class="s1">'votmdnjem'</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>	<span class="c1">// true</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="solution-03">solution 03</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">isPasswordLongEnough</span> <span class="o">=</span> <span class="p">(</span><span class="nx">password</span><span class="p">,</span> <span class="nx">minimumLength</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">password</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;=</span> <span class="nx">minimumLength</span> <span class="p">?</span> <span class="kc">true</span> <span class="p">:</span> <span class="kc">false</span><span class="p">;</span>
+
+
+<span class="nx">isPasswordLongEnough</span><span class="p">(</span><span class="s1">'qlqjs12'</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span> 	<span class="c1">// false</span>
+<span class="nx">isPasswordLongEnough</span><span class="p">(</span><span class="s1">'votmdnjem'</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>	<span class="c1">// true</span>
 </code></pre></div></div>
 
 

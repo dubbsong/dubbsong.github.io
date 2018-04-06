@@ -21,6 +21,8 @@ of this given age is old enough to legally drink
 
 in the United States.
 
+<br>
+
 \* <u>The legal drinking age in the United States is 21.</u>
 
 <br>
@@ -55,5 +57,15 @@ isOldEnoughToDrink(21);		// true
 isOldEnoughToDrink(20);		// false
 ```
 
+<br>
 
+## solution 03
+
+```javascript
+const isOldEnoughToDrink = age => age >= 21 ? true : false;
+
+
+isOldEnoughToDrink(21);		// true
+isOldEnoughToDrink(20);		// false
+```
 

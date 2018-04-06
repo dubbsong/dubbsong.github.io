@@ -223,6 +223,8 @@ on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
 
 <p>‘getLargerString’ return the longer string.</p>
 
+<p><br /></p>
+
 <p>* <u>If the strings are the same length, return string1.</u></p>
 
 <p><br /></p>
@@ -249,6 +251,17 @@ on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">getLargerString</span><span class="p">(</span><span class="nx">string1</span><span class="p">,</span> <span class="nx">string2</span><span class="p">)</span> <span class="p">{</span>
    <span class="k">return</span> <span class="nx">string1</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;=</span> <span class="nx">string2</span><span class="p">.</span><span class="nx">length</span> <span class="p">?</span> <span class="nx">string1</span> <span class="p">:</span> <span class="nx">string2</span><span class="p">;</span>
 <span class="p">}</span>
+
+
+<span class="nx">getLargerString</span><span class="p">(</span><span class="s1">'Wassup'</span><span class="p">,</span> <span class="s1">'bro?'</span><span class="p">);</span>	<span class="c1">// Wassup</span>
+<span class="nx">getLargerString</span><span class="p">(</span><span class="s1">'Leo'</span><span class="p">,</span> <span class="s1">'Sam'</span><span class="p">);</span>		<span class="c1">// Leo</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="solution-03">solution 03</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">getLargerString</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string1</span><span class="p">,</span> <span class="nx">string2</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">string1</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;=</span> <span class="nx">string2</span><span class="p">.</span><span class="nx">length</span> <span class="p">?</span> <span class="nx">string1</span> <span class="p">:</span> <span class="nx">string2</span><span class="p">;</span>
 
 
 <span class="nx">getLargerString</span><span class="p">(</span><span class="s1">'Wassup'</span><span class="p">,</span> <span class="s1">'bro?'</span><span class="p">);</span>	<span class="c1">// Wassup</span>

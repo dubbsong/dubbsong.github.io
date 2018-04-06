@@ -33,8 +33,8 @@ function isPasswordLongEnough(password, minimumLength) {
 }
 
 
-isPasswordLongEnough('ssupbro', 6); 	// true
-isPasswordLongEnough('ssupbro', 12);	// false
+isPasswordLongEnough('qlqjs12', 8); 	// false
+isPasswordLongEnough('votmdnjem', 8);	// true
 ```
 
 <br>
@@ -47,7 +47,19 @@ function isPasswordLongEnough(password, minimumLength) {
 }
 
 
-isPasswordLongEnough('ssupbro', 6); 	// true
-isPasswordLongEnough('ssupbro', 12);	// false
+isPasswordLongEnough('qlqjs12', 8); 	// false
+isPasswordLongEnough('votmdnjem', 8);	// true
+```
+
+<br>
+
+## solution 03
+
+```javascript
+const isPasswordLongEnough = (password, minimumLength) => password.length >= minimumLength ? true : false;
+
+
+isPasswordLongEnough('qlqjs12', 8); 	// false
+isPasswordLongEnough('votmdnjem', 8);	// true
 ```
 

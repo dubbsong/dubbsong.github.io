@@ -17,9 +17,11 @@ Given an integer,
 
 'isEven' returns whether the integer is even or not.
 
-\* <u>even: true</u>
+<br>
 
-\* <u>odd: false</u>
+> \* even: true
+
+>  \* odd: false
 
 <br>
 
@@ -47,6 +49,18 @@ isEven(19);	// false
 function isEven(num) {
    return num % 2 === 0 ? true: false;
 }
+
+
+isEven(42);	// true
+isEven(19);	// false
+```
+
+<br>
+
+## solution 03
+
+```javascript
+const isEven = num => num % 2 === 0 ? true : false;
 
 
 isEven(42);	// true

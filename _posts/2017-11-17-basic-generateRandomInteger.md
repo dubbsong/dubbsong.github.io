@@ -57,9 +57,9 @@ function generateRandomInteger(num) {
 }
 
 
-generateRandomInteger(42);	// could be between 1 and 42
 generateRandomInteger(0);	// 0
 generateRandomInteger(-19);	// false
+generateRandomInteger(42);	// could be between 1 and 42
 ```
 
 

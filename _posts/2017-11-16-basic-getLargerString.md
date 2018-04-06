@@ -17,6 +17,8 @@ Given two strings,
 
 'getLargerString' return the longer string.
 
+<br>
+
 \* <u>If the strings are the same length, return string1.</u>
 
 <br>
@@ -51,7 +53,15 @@ getLargerString('Wassup', 'bro?');	// Wassup
 getLargerString('Leo', 'Sam');		// Leo
 ```
 
+<br>
+
+## solution 03
+
+```javascript
+const getLargerString = (string1, string2) => string1.length >= string2.length ? string1 : string2;
 
 
-
+getLargerString('Wassup', 'bro?');	// Wassup
+getLargerString('Leo', 'Sam');		// Leo
+```
 

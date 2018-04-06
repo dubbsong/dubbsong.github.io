@@ -225,6 +225,8 @@ on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
 
 <p>in the United States.</p>
 
+<p><br /></p>
+
 <p>* <u>The legal drinking age in the United States is 21.</u></p>
 
 <p><br /></p>
@@ -251,6 +253,17 @@ on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">isOldEnoughToDrink</span><span class="p">(</span><span class="nx">age</span><span class="p">)</span> <span class="p">{</span>
    <span class="k">return</span> <span class="nx">age</span> <span class="o">&gt;=</span> <span class="mi">21</span> <span class="p">?</span> <span class="kc">true</span> <span class="p">:</span> <span class="kc">false</span><span class="p">;</span>
 <span class="p">}</span>
+
+
+<span class="nx">isOldEnoughToDrink</span><span class="p">(</span><span class="mi">21</span><span class="p">);</span>		<span class="c1">// true</span>
+<span class="nx">isOldEnoughToDrink</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>		<span class="c1">// false</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="solution-03">solution 03</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">isOldEnoughToDrink</span> <span class="o">=</span> <span class="nx">age</span> <span class="o">=&gt;</span> <span class="nx">age</span> <span class="o">&gt;=</span> <span class="mi">21</span> <span class="p">?</span> <span class="kc">true</span> <span class="p">:</span> <span class="kc">false</span><span class="p">;</span>
 
 
 <span class="nx">isOldEnoughToDrink</span><span class="p">(</span><span class="mi">21</span><span class="p">);</span>		<span class="c1">// true</span>

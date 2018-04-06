@@ -35,8 +35,8 @@ function areSameLength(string1, string2) {
 }
 
 
-areSameLength('Wassup', 'bro?');	// false
 areSameLength('Sam', 'Leo');		// true
+areSameLength('Wassup', 'bro?');	// false
 ```
 
 <br>
@@ -49,9 +49,19 @@ function areSameLength(string1, string2) {
 }
 
 
-areSameLength('Wassup', 'bro?');	// false
 areSameLength('Sam', 'Leo');		// true
+areSameLength('Wassup', 'bro?');	// false
 ```
 
+<br>
 
+## solution 03
+
+```javascript
+const areSameLength = (string1, string2) => string1.length === string2.length ? true : false;
+
+
+areSameLength('Sam', 'Leo');		// true
+areSameLength('Wassup', 'bro?');	// false
+```
 
