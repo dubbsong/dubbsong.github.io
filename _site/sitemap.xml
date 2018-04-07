@@ -66,6 +66,38 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/codewars/2018/01/15/codewars-checkExam-8kyu/</loc>
+      
+        <lastmod>2018-01-15T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/15/codewars-century-8kyu/</loc>
+      
+        <lastmod>2018-01-15T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/codewars/2018/01/14/codewars-removeQuestionMarks-8kyu/</loc>
       
         <lastmod>2018-01-14T00:00:00+09:00</lastmod>
@@ -450,6 +482,22 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/codewars/2018/01/06/codewars-repeatIt-8kyu/</loc>
+      
+        <lastmod>2018-01-06T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/codewars/2018/01/06/codewars-reduceButGrow-8kyu/</loc>
       
         <lastmod>2018-01-06T00:00:00+09:00</lastmod>
@@ -565,6 +613,22 @@
       <loc>http://localhost:4000/codewars/2018/01/04/codewars-betterThanAverage-8kyu/</loc>
       
         <lastmod>2018-01-04T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/03/codewars-sumString-8kyu/</loc>
+      
+        <lastmod>2018-01-03T00:00:00+09:00</lastmod>
       
 
       
