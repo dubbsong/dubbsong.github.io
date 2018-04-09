@@ -30,7 +30,7 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
-<meta property="og:title" content="mathOperations.js (8kyu)">
+<meta property="og:title" content="mango.js (8kyu)">
 <meta property="og:type" content="article">
 
 
@@ -45,14 +45,14 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 
 
 
-  <title>mathOperations.js (8kyu) &middot; ㅇㅁㅂ</title>
+  <title>mango.js (8kyu) &middot; ㅇㅁㅂ</title>
 
 
 
-<meta name="description" content="조건문(if/switch) 알고리즘 문제
+<meta name="description" content="단순 계산 + 메소드 활용 알고리즘 문제
 
 ">
-<meta property="og:description" content="조건문(if/switch) 알고리즘 문제
+<meta property="og:description" content="단순 계산 + 메소드 활용 알고리즘 문제
 
 ">
 
@@ -61,17 +61,17 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <!-- =============== -->
 <!-- LINKS           -->
 <!-- =============== -->
-<link rel="canonical" href="http://localhost:4000/codewars/2018/01/13/codewars-mathOperations-8kyu/">
-<meta property="og:url" content="http://localhost:4000/codewars/2018/01/13/codewars-mathOperations-8kyu/">
+<link rel="canonical" href="http://localhost:4000/codewars/2018/01/08/codewars-mango-8kyu/">
+<meta property="og:url" content="http://localhost:4000/codewars/2018/01/08/codewars-mango-8kyu/">
 
 <link rel="alternate" type="application/atom+xml" title="ㅇㅁㅂ Feed" href="http://localhost:4000/feed.xml">
 
 
-  <link rel="prev" href="http://localhost:4000/codewars/2018/01/13/codewars-humanCatDogYears-8kyu/">
+  <link rel="prev" href="http://localhost:4000/codewars/2018/01/08/codewars-doubleChar-8kyu/">
 
 
 
-  <link rel="next" href="http://localhost:4000/codewars/2018/01/13/codewars-rockPaperScissors-8kyu/">
+  <link rel="next" href="http://localhost:4000/codewars/2018/01/08/codewars-rentalCarCost-8kyu/">
 
 
 <link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
@@ -158,16 +158,16 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
     <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/mainColor.jpg">
       
 
-<article id="post-codewars/2018/01/13/codewars-mathOperations-8kyu" class="post" role="article">
+<article id="post-codewars/2018/01/08/codewars-mango-8kyu" class="post" role="article">
   <header>
     <h1 class="post-title">
       
-        mathOperations.js (8kyu)
+        mango.js (8kyu)
       
     </h1>
 
     <p class="post-date heading">
-      <time datetime="2018-01-13T00:00:00+09:00">13 Jan 2018</time>
+      <time datetime="2018-01-08T00:00:00+09:00">08 Jan 2018</time>
       
 
 
@@ -211,93 +211,79 @@ on <span>Algorithm</span>, <span>Codewars</span>
 @media(min-width: 600px) { .myAd1190 { display: none; } }
 </style>
 
-      <h4 id="조건문ifswitch-알고리즘-문제">조건문(if/switch) 알고리즘 문제</h4>
+      <h4 id="단순-계산--메소드-활용-알고리즘-문제">단순 계산 + 메소드 활용 알고리즘 문제</h4>
 
 <p><br /></p>
 
 <h2 id="problem">problem</h2>
 
-<p>Your task is to create a function</p>
+<p>There’s a ‘<code class="highlighter-rouge">3 for 2 (2 + 1)</code>’ offer on mangoes.</p>
 
-<p>that does four basic mathematical operations.</p>
+<p>For a given quantity and price,</p>
 
-<p><br /></p>
-
-<p>The function should take three arguments:</p>
-
-<p>operation(string/char), value1(number), value2(number).</p>
-
-<p><br /></p>
-
-<p>The function should return result of numbers</p>
-
-<p>after applying the chosen operation.</p>
+<p>calculate the total cost of the mangoes.</p>
 
 <p><br /></p>
 
 <h2 id="solution-01">solution 01</h2>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">mathOperations</span><span class="p">(</span><span class="nx">operation</span><span class="p">,</span> <span class="nx">value1</span><span class="p">,</span> <span class="nx">value2</span><span class="p">)</span> <span class="p">{</span>
-   <span class="k">if</span> <span class="p">(</span><span class="nx">operation</span> <span class="o">===</span> <span class="s1">'+'</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="nx">value1</span> <span class="o">+</span> <span class="nx">value2</span><span class="p">;</span>
-   <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">operation</span> <span class="o">===</span> <span class="s1">'-'</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="nx">value1</span> <span class="o">-</span> <span class="nx">value2</span><span class="p">;</span>
-   <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">operation</span> <span class="o">===</span> <span class="s1">'*'</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="nx">value1</span> <span class="o">*</span> <span class="nx">value2</span><span class="p">;</span>
-   <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">operation</span> <span class="o">===</span> <span class="s1">'/'</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="nx">value1</span> <span class="o">/</span> <span class="nx">value2</span><span class="p">;</span>
-   <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-   <span class="p">}</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">mango</span><span class="p">(</span><span class="nx">quantity</span><span class="p">,</span> <span class="nx">price</span><span class="p">)</span> <span class="p">{</span>
+   <span class="kd">let</span> <span class="nx">free</span> <span class="o">=</span> <span class="nx">quantity</span> <span class="o">/</span> <span class="mi">3</span><span class="p">;</span>
+   <span class="k">return</span> <span class="p">(</span><span class="nx">quantity</span> <span class="o">-</span> <span class="nx">free</span><span class="p">)</span> <span class="o">*</span> <span class="nx">price</span><span class="p">;</span>
 <span class="p">}</span>
 
 
-<span class="nx">mathOperations</span><span class="p">(</span><span class="s1">'+'</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>	<span class="c1">// 6</span>
-<span class="nx">mathOperations</span><span class="p">(</span><span class="s1">'-'</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>	<span class="c1">// 2</span>
-<span class="nx">mathOperations</span><span class="p">(</span><span class="s1">'*'</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>	<span class="c1">// 8</span>
-<span class="nx">mathOperations</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>	<span class="c1">// 6</span>
+<span class="nx">mango</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>	<span class="c1">// 6</span>
+<span class="nx">mango</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>	<span class="c1">// 30</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>* 자바스크립트의 부동 소수점 연산 오류를 생각하면</p>
+
+<p><code class="highlighter-rouge">Math.floor()</code> 메소드를 사용해야 한다.</p>
+
+<p><br /></p>
+
+<p>* 자바스크립트의 숫자(number)는</p>
+
+<p><code class="highlighter-rouge">내부적으로 64비트 부동 소수점 형식</code>을 지닌다.</p>
+
+<p><br /></p>
+
+<blockquote>
+  <p>214500 / 1.1 = 195000 (구글 계산기)</p>
+
+  <p>214500 / 1.1 = 195000 (네이버 계산기)</p>
+
+  <p>214500 / 1.1 = 194999.99999999997 (자바스크립트)</p>
+</blockquote>
+
+<p><br /></p>
+
+<h2 id="solution-012">solution 01(2)</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">mango</span><span class="p">(</span><span class="nx">quantity</span><span class="p">,</span> <span class="nx">price</span><span class="p">)</span> <span class="p">{</span>
+   <span class="kd">let</span> <span class="nx">free</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">quantity</span> <span class="o">/</span> <span class="mi">3</span><span class="p">);</span>
+   <span class="k">return</span> <span class="p">(</span><span class="nx">quantity</span> <span class="o">-</span> <span class="nx">free</span><span class="p">)</span> <span class="o">*</span> <span class="nx">price</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="nx">mango</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>	<span class="c1">// 6</span>
+<span class="nx">mango</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>	<span class="c1">// 30</span>
 </code></pre></div></div>
 
 <p><br /></p>
 
 <h2 id="solution-02">solution 02</h2>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">mathOperations</span><span class="p">(</span><span class="nx">operation</span><span class="p">,</span> <span class="nx">value1</span><span class="p">,</span> <span class="nx">value2</span><span class="p">)</span> <span class="p">{</span>
-   <span class="k">switch</span> <span class="p">(</span><span class="nx">operation</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">case</span> <span class="s1">'+'</span><span class="p">:</span> <span class="k">return</span> <span class="nx">value1</span> <span class="o">+</span> <span class="nx">value2</span><span class="p">;</span>
-      <span class="k">case</span> <span class="s1">'-'</span><span class="p">:</span> <span class="k">return</span> <span class="nx">value1</span> <span class="o">-</span> <span class="nx">value2</span><span class="p">;</span>
-      <span class="k">case</span> <span class="s1">'*'</span><span class="p">:</span> <span class="k">return</span> <span class="nx">value1</span> <span class="o">*</span> <span class="nx">value2</span><span class="p">;</span>
-      <span class="k">case</span> <span class="s1">'/'</span><span class="p">:</span> <span class="k">return</span> <span class="nx">value1</span> <span class="o">/</span> <span class="nx">value2</span><span class="p">;</span>
-      <span class="nl">default</span><span class="p">:</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-   <span class="p">}</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">mango</span><span class="p">(</span><span class="nx">quantity</span><span class="p">,</span> <span class="nx">price</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">return</span> <span class="nx">price</span> <span class="o">*</span> <span class="p">(</span><span class="nx">quantity</span> <span class="o">-</span> <span class="p">(</span><span class="nx">quantity</span> <span class="o">/</span> <span class="mi">3</span><span class="p">));</span>
 <span class="p">}</span>
 
 
-<span class="nx">mathOperations</span><span class="p">(</span><span class="s1">'+'</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>	<span class="c1">// 6</span>
-<span class="nx">mathOperations</span><span class="p">(</span><span class="s1">'-'</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>	<span class="c1">// 2</span>
-<span class="nx">mathOperations</span><span class="p">(</span><span class="s1">'*'</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>	<span class="c1">// 8</span>
-<span class="nx">mathOperations</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>	<span class="c1">// 6</span>
-</code></pre></div></div>
-
-<p><br /></p>
-
-<h2 id="solution-03">solution 03</h2>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">mathOperations</span><span class="p">(</span><span class="nx">operation</span><span class="p">,</span> <span class="nx">value1</span><span class="p">,</span> <span class="nx">value2</span><span class="p">)</span> <span class="p">{</span>
-   <span class="kd">const</span> <span class="nx">cases</span> <span class="o">=</span> <span class="p">{</span>
-      <span class="s1">'+'</span><span class="p">:</span> <span class="nx">value1</span> <span class="o">+</span> <span class="nx">value2</span><span class="p">,</span>
-      <span class="s1">'-'</span><span class="p">:</span> <span class="nx">value1</span> <span class="o">-</span> <span class="nx">value2</span><span class="p">,</span>
-      <span class="s1">'*'</span><span class="p">:</span> <span class="nx">value1</span> <span class="o">*</span> <span class="nx">value2</span><span class="p">,</span>
-      <span class="s1">'/'</span><span class="p">:</span> <span class="nx">value1</span> <span class="o">/</span> <span class="nx">value2</span>
-   <span class="p">}</span>
-   <span class="k">return</span> <span class="nx">cases</span><span class="p">[</span><span class="nx">operation</span><span class="p">];</span>
-<span class="p">}</span>
-
-
-<span class="nx">mathOperations</span><span class="p">(</span><span class="s1">'+'</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>	<span class="c1">// 6</span>
-<span class="nx">mathOperations</span><span class="p">(</span><span class="s1">'-'</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>	<span class="c1">// 2</span>
-<span class="nx">mathOperations</span><span class="p">(</span><span class="s1">'*'</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>	<span class="c1">// 8</span>
-<span class="nx">mathOperations</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>	<span class="c1">// 6</span>
+<span class="nx">mango</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>	<span class="c1">// 6</span>
+<span class="nx">mango</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>	<span class="c1">// 30</span>
 </code></pre></div></div>
 
 
@@ -315,12 +301,12 @@ on <span>Algorithm</span>, <span>Codewars</span>
   <div class="share">
       <h2>Share this post</h2>
       <div class="share-body">
-        <a href="http://twitter.com/share?text=mathOperations.js (8kyu)&amp;url=http://localhost:4000/codewars/2018/01/13/codewars-mathOperations-8kyu/"
+        <a href="http://twitter.com/share?text=mango.js (8kyu)&amp;url=http://localhost:4000/codewars/2018/01/08/codewars-mango-8kyu/"
     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
             <span class="icon-twitter">
             </span>
         </a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/codewars/2018/01/13/codewars-mathOperations-8kyu/"
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/codewars/2018/01/08/codewars-mango-8kyu/"
     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
             <span class="icon-facebook">
             </span>
@@ -442,7 +428,7 @@ on <span>Algorithm</span>, <span>Codewars</span>
   <div id="disqus_thread"></div>
 
   <script>
-    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="mathOperations.js (8kyu)",this.page.identifier="/codewars/2018/01/13/codewars-mathOperations-8kyu",this.page.url="http://localhost:4000/codewars/2018/01/13/codewars-mathOperations-8kyu/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//dubbsong.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="mango.js (8kyu)",this.page.identifier="/codewars/2018/01/08/codewars-mango-8kyu",this.page.url="http://localhost:4000/codewars/2018/01/08/codewars-mango-8kyu/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//dubbsong.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
 
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
