@@ -30,7 +30,7 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
-<meta property="og:title" content="reverseWord.js (8kyu)">
+<meta property="og:title" content="validateUser.js (8kyu)">
 <meta property="og:type" content="article">
 
 
@@ -45,14 +45,14 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 
 
 
-  <title>reverseWord.js (8kyu) &middot; ㅇㅁㅂ</title>
+  <title>validateUser.js (8kyu) &middot; ㅇㅁㅂ</title>
 
 
 
-<meta name="description" content="문자열(string) 알고리즘 문제
+<meta name="description" content="정규표현식(RegExp) 알고리즘 문제
 
 ">
-<meta property="og:description" content="문자열(string) 알고리즘 문제
+<meta property="og:description" content="정규표현식(RegExp) 알고리즘 문제
 
 ">
 
@@ -61,17 +61,17 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <!-- =============== -->
 <!-- LINKS           -->
 <!-- =============== -->
-<link rel="canonical" href="http://localhost:4000/codewars/2018/01/03/codewars-reverseWord-8kyu/">
-<meta property="og:url" content="http://localhost:4000/codewars/2018/01/03/codewars-reverseWord-8kyu/">
+<link rel="canonical" href="http://localhost:4000/codewars/2018/01/15/codewars-validateUser-8kyu/">
+<meta property="og:url" content="http://localhost:4000/codewars/2018/01/15/codewars-validateUser-8kyu/">
 
 <link rel="alternate" type="application/atom+xml" title="ㅇㅁㅂ Feed" href="http://localhost:4000/feed.xml">
 
 
-  <link rel="prev" href="http://localhost:4000/codewars/2018/01/03/codewars-reverseSequence-8kyu/">
+  <link rel="prev" href="http://localhost:4000/codewars/2018/01/15/codewars-mergeSort-8kyu/">
 
 
 
-  <link rel="next" href="http://localhost:4000/codewars/2018/01/03/codewars-sumString-8kyu/">
+  <link rel="next" href="http://localhost:4000/dev/2018/03/14/etc-Big-O/">
 
 
 <link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
@@ -158,16 +158,16 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
     <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/mainColor.jpg">
       
 
-<article id="post-codewars/2018/01/03/codewars-reverseWord-8kyu" class="post" role="article">
+<article id="post-codewars/2018/01/15/codewars-validateUser-8kyu" class="post" role="article">
   <header>
     <h1 class="post-title">
       
-        reverseWord.js (8kyu)
+        validateUser.js (8kyu)
       
     </h1>
 
     <p class="post-date heading">
-      <time datetime="2018-01-03T00:00:00+09:00">03 Jan 2018</time>
+      <time datetime="2018-01-15T00:00:00+09:00">15 Jan 2018</time>
       
 
 
@@ -211,40 +211,106 @@ on <span>Algorithm</span>, <span>Codewars</span>
 @media(min-width: 600px) { .myAd1190 { display: none; } }
 </style>
 
-      <h4 id="문자열string-알고리즘-문제">문자열(string) 알고리즘 문제</h4>
+      <h4 id="정규표현식regexp-알고리즘-문제">정규표현식(RegExp) 알고리즘 문제</h4>
 
 <p><br /></p>
 
 <h2 id="problem">problem</h2>
 
-<p>You need to write a function</p>
+<p>Write a simple Reg Exp</p>
 
-<p>that reverses the words in a given string.</p>
+<p>to validate a ‘<code class="highlighter-rouge">username</code>’.</p>
 
-<p>A word can also fit an empty string.</p>
+<p><br /></p>
+
+<p>Allowed characters are:</p>
+
+<p><code class="highlighter-rouge">lowercase letters</code>, <code class="highlighter-rouge">numbers</code>, <code class="highlighter-rouge">underscore</code></p>
+
+<p><br /></p>
+
+<p>Length should be</p>
+
+<p><code class="highlighter-rouge">between 4 and 16</code> characters.</p>
+
+<p><br /></p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">정규표현식 (Regular Expression)</code></p>
+
+  <p>^: 입력의 시작에 일치</p>
+
+  <p>$: 입력의 끝에 일치</p>
+
+  <p>\d: 숫자 문자에 일치</p>
+
+  <p>{n}: 앞 문자가 n번 나타날 경우 일치</p>
+
+  <p>{n, m}: 앞 문자가 최소 n개, 최대 m개 나타날 경우 일치 (n &lt;= m)</p>
+
+  <p>.test(): 일치하는 문자열을 검사하는 RegExp 메소드 (true나 false를 반환)</p>
+</blockquote>
 
 <p><br /></p>
 
 <h2 id="solution-01">solution 01</h2>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">reverseWord</span><span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="p">{</span>
-   <span class="k">return</span> <span class="nx">string</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">).</span><span class="nx">reverse</span><span class="p">().</span><span class="nx">join</span><span class="p">(</span><span class="s1">' '</span><span class="p">);</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">validateUser</span><span class="p">(</span><span class="nx">username</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">return</span> <span class="sr">/^</span><span class="se">[</span><span class="sr">a-z0-9_</span><span class="se">]{4,16}</span><span class="sr">$/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">username</span><span class="p">);</span>
 <span class="p">}</span>
 
 
-<span class="nx">reverseWord</span><span class="p">(</span><span class="s1">'Codewars'</span><span class="p">);</span>	<span class="c1">// Codewars</span>
-<span class="nx">reverseWord</span><span class="p">(</span><span class="s1">'Wassup bro?'</span><span class="p">);</span>	<span class="c1">// bro? Wassup</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'a'</span><span class="p">);</span>		<span class="c1">// false</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'dubbsong'</span><span class="p">);</span>	<span class="c1">// true</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'Dubbsong'</span><span class="p">);</span>	<span class="c1">// false</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'code wars'</span><span class="p">);</span>	<span class="c1">// false</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'code_wars'</span><span class="p">);</span>	<span class="c1">// true</span>
 </code></pre></div></div>
 
 <p><br /></p>
 
 <h2 id="solution-02">solution 02</h2>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">reverseWord</span> <span class="o">=</span> <span class="nx">string</span> <span class="o">=&gt;</span> <span class="nx">string</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">).</span><span class="nx">reverse</span><span class="p">().</span><span class="nx">join</span><span class="p">(</span><span class="s1">' '</span><span class="p">);</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">validateUser</span><span class="p">(</span><span class="nx">username</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">return</span> <span class="sr">/^</span><span class="se">[</span><span class="sr">a-z_0-9</span><span class="se">]{4,16}</span><span class="sr">$/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">username</span><span class="p">);</span>
+<span class="p">}</span>
 
 
-<span class="nx">reverseWord</span><span class="p">(</span><span class="s1">'Codewars'</span><span class="p">);</span>	<span class="c1">// Codewars</span>
-<span class="nx">reverseWord</span><span class="p">(</span><span class="s1">'Wassup bro?'</span><span class="p">);</span>	<span class="c1">// bro? Wassup</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'a'</span><span class="p">);</span>		<span class="c1">// false</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'dubbsong'</span><span class="p">);</span>	<span class="c1">// true</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'Dubbsong'</span><span class="p">);</span>	<span class="c1">// false</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'code wars'</span><span class="p">);</span>	<span class="c1">// false</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'code_wars'</span><span class="p">);</span>	<span class="c1">// true</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="solution-03">solution 03</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">validateUser</span><span class="p">(</span><span class="nx">username</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">return</span> <span class="sr">/^</span><span class="se">[</span><span class="sr">a-z</span><span class="se">\d</span><span class="sr">_</span><span class="se">]{4,16}</span><span class="sr">$/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">username</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'a'</span><span class="p">);</span>		<span class="c1">// false</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'dubbsong'</span><span class="p">);</span>	<span class="c1">// true</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'Dubbsong'</span><span class="p">);</span>	<span class="c1">// false</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'code wars'</span><span class="p">);</span>	<span class="c1">// false</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'code_wars'</span><span class="p">);</span>	<span class="c1">// true</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="solution-04">solution 04</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">validateUser</span> <span class="o">=</span> <span class="nx">username</span> <span class="o">=&gt;</span> <span class="sr">/^</span><span class="se">[</span><span class="sr">a-z0-9_</span><span class="se">]{4,16}</span><span class="sr">$/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">username</span><span class="p">);</span>
+
+
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'a'</span><span class="p">);</span>		<span class="c1">// false</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'dubbsong'</span><span class="p">);</span>	<span class="c1">// true</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'Dubbsong'</span><span class="p">);</span>	<span class="c1">// false</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'code wars'</span><span class="p">);</span>	<span class="c1">// false</span>
+<span class="nx">validateUser</span><span class="p">(</span><span class="s1">'code_wars'</span><span class="p">);</span>	<span class="c1">// true</span>
 </code></pre></div></div>
 
 
@@ -262,12 +328,12 @@ on <span>Algorithm</span>, <span>Codewars</span>
   <div class="share">
       <h2>Share this post</h2>
       <div class="share-body">
-        <a href="http://twitter.com/share?text=reverseWord.js (8kyu)&amp;url=http://localhost:4000/codewars/2018/01/03/codewars-reverseWord-8kyu/"
+        <a href="http://twitter.com/share?text=validateUser.js (8kyu)&amp;url=http://localhost:4000/codewars/2018/01/15/codewars-validateUser-8kyu/"
     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
             <span class="icon-twitter">
             </span>
         </a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/codewars/2018/01/03/codewars-reverseWord-8kyu/"
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/codewars/2018/01/15/codewars-validateUser-8kyu/"
     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
             <span class="icon-facebook">
             </span>
@@ -325,6 +391,9 @@ on <span>Algorithm</span>, <span>Codewars</span>
       
       
         
+          
+          
+        
         
           
 
@@ -332,6 +401,22 @@ on <span>Algorithm</span>, <span>Codewars</span>
 <li class="h4">
   <a href="/codewars/2018/01/15/codewars-mergeSort-8kyu/" data-flip="title">
     <span>mergeSort.js (8kyu)</span>
+  </a>
+  <small><time datetime="2018-01-15T00:00:00+09:00">
+    15 Jan 2018
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/codewars/2018/01/15/codewars-countLowercase-8kyu/" data-flip="title">
+    <span>countLowercase.js (8kyu)</span>
   </a>
   <small><time datetime="2018-01-15T00:00:00+09:00">
     15 Jan 2018
@@ -356,25 +441,6 @@ on <span>Algorithm</span>, <span>Codewars</span>
 
         
       
-        
-        
-          
-
-
-<li class="h4">
-  <a href="/codewars/2018/01/15/codewars-century-8kyu/" data-flip="title">
-    <span>century.js (8kyu)</span>
-  </a>
-  <small><time datetime="2018-01-15T00:00:00+09:00">
-    15 Jan 2018
-  </time></small>
-</li>
-
-        
-      
-        
-        
-      
     
   </ul>
 </aside>
@@ -389,7 +455,7 @@ on <span>Algorithm</span>, <span>Codewars</span>
   <div id="disqus_thread"></div>
 
   <script>
-    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="reverseWord.js (8kyu)",this.page.identifier="/codewars/2018/01/03/codewars-reverseWord-8kyu",this.page.url="http://localhost:4000/codewars/2018/01/03/codewars-reverseWord-8kyu/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//dubbsong.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="validateUser.js (8kyu)",this.page.identifier="/codewars/2018/01/15/codewars-validateUser-8kyu",this.page.url="http://localhost:4000/codewars/2018/01/15/codewars-validateUser-8kyu/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//dubbsong.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
 
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>

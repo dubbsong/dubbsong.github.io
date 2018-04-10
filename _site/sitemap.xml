@@ -66,7 +66,39 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/codewars/2018/01/15/codewars-validateUser-8kyu/</loc>
+      
+        <lastmod>2018-01-15T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/codewars/2018/01/15/codewars-mergeSort-8kyu/</loc>
+      
+        <lastmod>2018-01-15T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/15/codewars-countLowercase-8kyu/</loc>
       
         <lastmod>2018-01-15T00:00:00+09:00</lastmod>
       
@@ -610,7 +642,87 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/codewars/2018/01/05/codewars-superSize-8kyu/</loc>
+      
+        <lastmod>2018-01-05T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/05/codewars-reverseWord-8kyu/</loc>
+      
+        <lastmod>2018-01-05T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/05/codewars-reverseSequence-8kyu/</loc>
+      
+        <lastmod>2018-01-05T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/codewars/2018/01/05/codewars-noSpace-8kyu/</loc>
+      
+        <lastmod>2018-01-05T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/05/codewars-generateRange-8kyu/</loc>
+      
+        <lastmod>2018-01-05T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/05/codewars-countBy-8kyu/</loc>
       
         <lastmod>2018-01-05T00:00:00+09:00</lastmod>
       
@@ -722,38 +834,6 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/codewars/2018/01/03/codewars-reverseWord-8kyu/</loc>
-      
-        <lastmod>2018-01-03T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/codewars/2018/01/03/codewars-reverseSequence-8kyu/</loc>
-      
-        <lastmod>2018-01-03T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
       <loc>http://localhost:4000/codewars/2018/01/03/codewars-invertValue-8kyu/</loc>
       
         <lastmod>2018-01-03T00:00:00+09:00</lastmod>
@@ -787,22 +867,6 @@
   
     <url>
       <loc>http://localhost:4000/codewars/2018/01/03/codewars-countMonkey-8kyu/</loc>
-      
-        <lastmod>2018-01-03T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/codewars/2018/01/03/codewars-countBy-8kyu/</loc>
       
         <lastmod>2018-01-03T00:00:00+09:00</lastmod>
       
