@@ -501,7 +501,186 @@ tags: react
 
 - 프로퍼티는 변경 불가능하다. 일단 렌더링하고 나면 컴포넌트의 프로퍼티는 바뀌지 않는다. UI를 바꾸기 위해서는 컴포넌트 트리를 새로운 프로퍼티로 새로 그려주는 다른 메커니즘이 필요하다.
 - 리액트 상태는 컴포넌트 안에서 바뀌는 데이터를 관리하기 위해 리액트가 기본으로 제공하는 기능이다. 애플리케이션의 상태가 바뀌면 UI는 자동으로 그 상태를 반영해 새로 렌더링된다.
-- ​
+- 사용자는 애플리케이션과 상호작용한다.
+- 사용자는 페이지를 내비게이션하고, 페이지 안에서 원하는 내용을 검색하고 걸러내며, 데이터를 선택하거나 추가하거나 갱신한다.
+- 사용자가 애플리케이션과 상호작용하면 애플리케이션 상태가 바뀌고 바뀐 애플리케이션 상태는 다시 UI에서 사용자에게 표시된다.
+- 여러 화면이나 메뉴가 나타났다가 사라지고, 페이지 내용이 바뀌며, 표시가 켜지거나 꺼진다.
+- 리액트에서 UI는 애플리케이션 상태를 반영한다.
+- 리액트 컴포넌트에서는 상태를 JS 객체 하나로 표현할 수 있다.
+- 컴포넌트의 상태가 바뀌면 컴포넌트는 그렇게 바뀐 상태를 반영하는 새로운 UI를 렌더링한다.
+- 데이터가 주어지면 리액트 컴포넌트는 그 데이터를 UI로 표시한다.
+- 데이터가 바뀌면 리액트는 그 변경을 가능한 한 효율적으로 반영하면서 UI를 바꾼다.
+
+
+<br>
+
+#### 6.3.1 컴포넌트 상태 소개
+
+- 상태는 컴포넌트 안에서 우리가 바꾸고 싶어 하는 데이터를 표현한다.
+- StarRating 컴포넌트
+
+```react
+const Star = ({ selected=false, onClick=f=>f }) =>
+	<div className={(selected) ? "star selected" : "star"}
+      onClick={onClick}>
+	</div>
+
+Star.propTypes = {
+   selected: PropTypes.bool,
+   onClick: PropTypes.func
+}
+```
+
+- Star는 상태가 없는 함수형 컴포넌트다. 즉, 상태를 가질 수 없다.
+- 상태가 없는 함수형 컴포넌트는 더 복잡한 상태가 있는 컴포넌트의 자식 역할을 하도록 만든 컴포넌트다.
+- 가능한 한 많은 컴포넌트를 상태가 없는 컴포넌트로 유지하면 좋다.
+- Star 컴포넌트가 준비되었으므로 그 컴포넌트를 이용해 StarRating 컴포넌트를 만들 수 있다.
+- StarRating은 컴포넌트의 프로퍼티에서 표시할 별의 개수를 얻는다.
+- 사용자가 변경할 수 있는 값인 평점 정보는 상태에 저장된다.
+- createClass로 정의한 컴포넌트 안에 상태를 집어넣는 방법
+
+```react
+const StarRating = createClass({
+   displayName: 'StarRating',
+   propTypes: {
+      totalStars: PropTypes.number
+   },
+   getDefaultProps() {
+      return {
+         totalStars: 5
+      }
+   },
+   getInitialState() {
+      return {
+         starsSelected: 0
+      }
+   },
+   change(starsSelected) {
+      this.setState({starsSelected})
+   },
+   render() {
+      const {totalStars} = this.props
+      const {starsSelected} = this.state
+      return (
+      	<div className="star-rating">
+         	{[...Array(totalStars)].map((n, i) =>
+					<Star key={i}
+                  selected={i<starsSelected}
+                  onClick={() => this.change(i+1)}
+					/>
+				)}
+            <p>별점: {starsSelected} / {totalStars}</p>
+         </div>
+      )
+   }
+})
+```
+
+- createClass를 사용할 때 getInitialState를 컴포넌트 설정에 넣는 방식으로 상태를 초기화할 수 있다.
+- getInitialState는 starsSelected라는 상태 변수를 0으로 초기화한 JS 객체를 반환한다.
+- 이 컴포넌트를 렌더링할 때 컴포넌트의 프로퍼티에서 totalStars를 가져와 표시할 Star 엘리먼트 개수를 정한다.
+- 특히 렌더링할 때 스프레드 연산자를 Array 생성자와 함께 사용해 필요한 Star 엘리먼트 수만큼 원소가 들어 있는 새 배열을 만들고 그 배열을 map해서 star 엘리먼트의 배열로 만든다.
+- 렌더링할 때 구조 분해를 사용하여 this.state로부터 상태 변수 starSelected를 가져온다.
+- starsSelected를 사용해 p 엘리먼트에서 텍스트로 별점을 표시하고 selected 클래스로 지정해야 할 Star 엘리먼트의 개수를 정한다. 예를 들어 starSelected가 3이라면 최초 3개의 Star 엘리먼트의 selected 프로퍼티는 true로 만들고 나머지 Star 엘리먼트의 selected 프로퍼티는 false로 만든다.
+- 사용자가 어떤 별(Star 엘리먼트)을 클릭하면 그 Star 엘리먼트의 인덱스에 1을 더한 값을 change 메소드에 전달한다. 이때 1을 더하는 이유는 배열의 인덱스가 1이 아니라 0부터 시작하기 때문이다.
+- ES6 컴포넌트 클래스에서 상태를 초기화하는 방식은 createClass를 사용할 때와 조금 다르다.
+- ES6 컴포넌트 클래스에서는 생성자에게 상태를 초기화할 수 있다.
+
+```react
+class StarRating extends Component {
+   constructor(props) {
+      super(props)
+      this.state = {
+         starsSelected: 0
+      }
+      this.change = this.change.bind(this)
+   }
+   change(starsSelected) {
+      this.setState({starsSelected})
+   }
+   render() {
+      const {totalStars} = this.props
+      const {starsSelected} = this.state
+      return (
+      	<div className="star-rating">
+         	{[...Array(totalStars)].map((n, i) =>
+					<Star key={i}
+                  selected={i<starsSelected}
+                  onClick={() => this.change(i+1)}
+					/>
+				)}
+            <p>별점: {starsSelected} / {totalStars}</p>
+         </div>
+      )
+   }
+}
+
+StarRating.propTypes = {
+   totalStars: PropTypes.number
+}
+
+StarRating.defaultProps = {
+   totalStars: 5
+}
+```
+
+- ES6 컴포넌트를 마운트할 때는 그 컴포넌트의 생성자가 호출되면서 프로퍼티가 첫 번재 인자로 전달된다. 이 프로퍼티는 다시 super 호출에 의해 상위 클래스에 전달된다.
+- 여기서는 상위 클래스가 React.Component다.
+- super를 호출하면 상위 클래스 컴포넌트 인스턴스가 초기화되는데 React.Component는 상태를 관리해주는 기능으로 인스턴스를 꾸며준다. 따라서 super를 호출하고 나서 컴포넌트의 상태 변수를 초기화할 수 있다.
+- 상태를 초기화하고 나면 ES6 컴포넌트도 createClass로 만든 컴포넌트와 마찬가지로 작동한다.
+- this.setState를 호출해서 상태 객체의 특정 부분을 바꾸는 방식으로만 상태를 변경할 수 있다.
+- 모든 setState 호출 뒤에는 자동으로 render 함수가 호출되어 변경된 상태를 반영한 새 UI를 렌더링한다.
+
+<br>
+
+#### 6.3.2 프로퍼티로부터 상태 초기화하기
+
+- 컴포넌트의 입력 프로퍼티로부터 상태 변수를 초기화할 수 있다. 이런 패턴을 가장 자주 사용하는 예는 애플리케이션 전반에 걸쳐 여러 다른 컴포넌트 트리에서 쓰일 수 있는 재사용 가능한 컴포넌트를 만드는 경우다.
+- componentWillMount는 컴포넌트 생애주기의 일부다.
+- componentWillMount를 사용하면 컴포넌트를 createClass나 ES6 클래스 컴포넌트를 사용해 생성할 때 설정한 프로퍼티 값을 기초로 상태를 초기화할 수 있다.
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
