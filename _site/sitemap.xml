@@ -98,6 +98,22 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/codewars/2018/01/17/codewars-ES6Class-8kyu/</loc>
+      
+        <lastmod>2018-01-17T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/codewars/2018/01/16/codewars-validateUser-8kyu/</loc>
       
         <lastmod>2018-01-16T00:00:00+09:00</lastmod>
@@ -181,6 +197,22 @@
       <loc>http://localhost:4000/codewars/2018/01/15/codewars-bigToSmall-8kyu/</loc>
       
         <lastmod>2018-01-15T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/14/codewars-removeQuestionMarks2-8kyu/</loc>
+      
+        <lastmod>2018-01-14T00:00:00+09:00</lastmod>
       
 
       
@@ -1042,6 +1074,22 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/codewars/2018/01/02/codewars-milliSeconds-8kyu/</loc>
+      
+        <lastmod>2018-01-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/codewars/2018/01/02/codewars-animal-8kyu/</loc>
       
         <lastmod>2018-01-02T00:00:00+09:00</lastmod>
@@ -1125,6 +1173,22 @@
       <loc>http://localhost:4000/codewars/2018/01/01/codewars-evenOrOdd-8kyu/</loc>
       
         <lastmod>2018-01-01T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/12/09/basic-thisKeyword/</loc>
+      
+        <lastmod>2017-12-09T00:00:00+09:00</lastmod>
       
 
       
