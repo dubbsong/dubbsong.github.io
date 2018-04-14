@@ -53,6 +53,10 @@ areSameLength('Sam', 'Leo');		// true
 areSameLength('Wassup', 'bro?');	// false
 ```
 
+> `삼항 연산자 (ternary operator)`
+>
+> 조건식 `?` 조건이 true일 때 반환하는 값 `:` 조건이 false일 때 반환하는 값
+
 <br>
 
 ## solution 03

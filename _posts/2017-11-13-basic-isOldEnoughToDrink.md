@@ -57,6 +57,10 @@ isOldEnoughToDrink(21);		// true
 isOldEnoughToDrink(20);		// false
 ```
 
+> `삼항 연산자 (ternary operator)`
+>
+> 조건식 `?` 조건이 true일 때 반환하는 값 `:` 조건이 false일 때 반환하는 값
+
 <br>
 
 ## solution 03
@@ -69,3 +73,8 @@ isOldEnoughToDrink(21);		// true
 isOldEnoughToDrink(20);		// false
 ```
 
+> `Arrow function`(`=>`)은 [익명 함수](https://dubbsong.github.io/javascript/2017/11/14/js-function-expression/)로만 사용할 수 있다.
+>
+> 따라서 `=>`을 호출하기 위해서는 [함수 표현식](https://dubbsong.github.io/javascript/2017/11/14/js-function-expression/)을 사용한다.
+
+<br>
