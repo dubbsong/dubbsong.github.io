@@ -73,8 +73,8 @@ isOldEnoughToDrink(21);		// true
 isOldEnoughToDrink(20);		// false
 ```
 
-> `Arrow function`(`=>`)은 [익명 함수](https://dubbsong.github.io/javascript/2017/11/14/js-function-expression/)로만 사용할 수 있다.
+> `Arrow function`(`=>`)은 [함수 표현식](https://dubbsong.github.io/javascript/2017/11/14/js-function-expression/)을 사용한다.
 >
-> 따라서 `=>`을 호출하기 위해서는 [함수 표현식](https://dubbsong.github.io/javascript/2017/11/14/js-function-expression/)을 사용한다.
+> `const` 변수명 `=` 매개변수 `=>` 조건식 `?` true `:` false
 
 <br>
