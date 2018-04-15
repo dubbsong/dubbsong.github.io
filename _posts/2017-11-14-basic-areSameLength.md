@@ -39,6 +39,12 @@ areSameLength('Sam', 'Leo');		// true
 areSameLength('Wassup', 'bro?');	// false
 ```
 
+> `조건문 (if/else)`
+>
+> `if` (조건식) `{` return true; `}`
+>
+> `else` `{` return false; `}`
+
 <br>
 
 ## solution 02
@@ -69,3 +75,8 @@ areSameLength('Sam', 'Leo');		// true
 areSameLength('Wassup', 'bro?');	// false
 ```
 
+> `Arrow function`(`=>`)은 [함수 표현식](https://dubbsong.github.io/javascript/2017/11/14/js-function-expression/)을 사용한다.
+>
+> `const` 변수명 `=` (매개변수1, 매개변수2) `=>` 조건식 `?` true `:` false
+
+<br>

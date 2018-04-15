@@ -35,14 +35,6 @@ between 0 and n.
 
 <br>
 
-> Math.floor(Math.random() * 10);	// between 0 and 9
->
-> Math.floor(Math.random() * 11);	// between 0 and 10
->
-> Math.floor(Math.random() * 10) + 1;	// between 1 and 10
-
-<br>
-
 ## solution
 
 ```javascript
@@ -62,5 +54,26 @@ generateRandomInteger(-19);	// false
 generateRandomInteger(42);	// could be between 1 and 42
 ```
 
+> `Math.floor()` 메소드
+>
+> 가장 가까운 정수로 버림한 다음 결과를 반환한다.
 
+<br>
 
+> `Math.random()` 메소드
+>
+> 0(포함)과 1(제외) 사이의 난수(random number)를 반환한다.
+>
+> `Math.floor()` 메소드와 함께 사용해 임의의 정수를 반환할 수 있다.
+
+<br>
+
+> `Math.floor()` + `Math.random()`
+>
+> Math.floor(Math.random() * 10);	// between 0 and 9
+>
+> Math.floor(Math.random() * 11);	// between 0 and 10
+>
+> Math.floor(Math.random() * 10) + 1;	// between 1 and 10
+
+<br>

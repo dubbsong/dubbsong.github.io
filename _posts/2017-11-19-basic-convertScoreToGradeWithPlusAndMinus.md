@@ -146,3 +146,8 @@ convertScoreToGradeWithPlusAndMinus(60);	// D-
 convertScoreToGradeWithPlusAndMinus(59);	// F
 ```
 
+> `to.String()` 메소드
+>
+> 어떠한 객체를 나타내는 문자열을 반환한다.
+
+<br>

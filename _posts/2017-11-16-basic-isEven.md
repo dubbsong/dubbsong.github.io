@@ -20,8 +20,8 @@ Given an integer,
 <br>
 
 > \* even: true
-
->  \* odd: false
+>
+> \* odd: false
 
 <br>
 
@@ -41,6 +41,12 @@ isEven(42);	// true
 isEven(19);	// false
 ```
 
+> `조건문 (if/else)`
+>
+> `if` (조건식) `{` return true; `}`
+>
+> `else` `{` return false; `}`
+
 <br>
 
 ## solution 02
@@ -55,6 +61,10 @@ isEven(42);	// true
 isEven(19);	// false
 ```
 
+> `삼항 연산자 (ternary operator)`
+>
+> 조건식 `?` 조건이 true일 때 반환하는 값 `:` 조건이 false일 때 반환하는 값
+
 <br>
 
 ## solution 03
@@ -67,3 +77,8 @@ isEven(42);	// true
 isEven(19);	// false
 ```
 
+> `Arrow function`(`=>`)은 [함수 표현식](https://dubbsong.github.io/javascript/2017/11/14/js-function-expression/)을 사용한다.
+>
+> `const` 변수명 `=` 매개변수 `=>` 조건식 `?` true `:` false
+
+<br>

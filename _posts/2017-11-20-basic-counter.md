@@ -36,6 +36,16 @@ counter();	// 2
 counter();	// 3
 ```
 
+> `대입 연산자 (Assignment Operators)`
+>
+> `+=`: `x += y` = `x = x + y`
+>
+> `-=`: `x -= y` = `x = x - y`
+>
+> `*=`: `x *= y` = `x = x * y`
+>
+> `/=`: `x /= y` = `x = x / y`
+
 <br>
 
 ## solution 02
@@ -53,3 +63,6 @@ counter();	// 2
 counter();	// 3
 ```
 
+> `++`: `x++` = `x = x + 1`
+
+<br>

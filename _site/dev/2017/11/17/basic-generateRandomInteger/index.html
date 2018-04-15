@@ -241,16 +241,6 @@ on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
 
 <p><br /></p>
 
-<blockquote>
-  <p>Math.floor(Math.random() * 10);	// between 0 and 9</p>
-
-  <p>Math.floor(Math.random() * 11);	// between 0 and 10</p>
-
-  <p>Math.floor(Math.random() * 10) + 1;	// between 1 and 10</p>
-</blockquote>
-
-<p><br /></p>
-
 <h2 id="solution">solution</h2>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">generateRandomInteger</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
@@ -269,6 +259,35 @@ on <a href="/tag/dev-basical/" data-flip="title">Basic Algorithm</a>
 <span class="nx">generateRandomInteger</span><span class="p">(</span><span class="mi">42</span><span class="p">);</span>	<span class="c1">// could be between 1 and 42</span>
 </code></pre></div></div>
 
+<blockquote>
+  <p><code class="highlighter-rouge">Math.floor()</code> 메소드</p>
+
+  <p>가장 가까운 정수로 버림한 다음 결과를 반환한다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">Math.random()</code> 메소드</p>
+
+  <p>0(포함)과 1(제외) 사이의 난수(random number)를 반환한다.</p>
+
+  <p><code class="highlighter-rouge">Math.floor()</code> 메소드와 함께 사용해 임의의 정수를 반환할 수 있다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">Math.floor()</code> + <code class="highlighter-rouge">Math.random()</code></p>
+
+  <p>Math.floor(Math.random() * 10);	// between 0 and 9</p>
+
+  <p>Math.floor(Math.random() * 11);	// between 0 and 10</p>
+
+  <p>Math.floor(Math.random() * 10) + 1;	// between 1 and 10</p>
+</blockquote>
+
+<p><br /></p>
 
       
     </div>

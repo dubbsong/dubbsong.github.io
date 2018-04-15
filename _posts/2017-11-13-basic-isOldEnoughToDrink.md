@@ -43,6 +43,12 @@ isOldEnoughToDrink(21);		// true
 isOldEnoughToDrink(20);		// false
 ```
 
+> `조건문 (if/else)`
+>
+> `if` (조건식) `{` return true; `}`
+>
+> `else` `{` return false; `}`
+
 <br>
 
 ## solution 02
