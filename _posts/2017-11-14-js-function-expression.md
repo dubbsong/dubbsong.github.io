@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "함수 표현식 (function expression)"
+title: "함수 표현식 / 익명 함수 / 화살표 함수"
 categories: javascript
 tags: JavaScript
 ---
 
-#### 함수 표현식 (function expression)
+## 함수 표현식 (function expression)
 
 - 함수의 일급 객체(first-class object) 특성을 이용하여 `함수 리터럴` 방식으로 함수를 정의하고 변수에 할당할 수 있다.
 
@@ -17,10 +17,10 @@ var foo = function multiply(a, b) {
 
 <br>
 
-#### 익명 함수 (anonymous function)
+## 익명 함수 (anonymous function)
 
-- 함수 표현식에서는 함수명을 생략하는 것이 일반적이다.
-- 이러한 함수를 `익명 함수(anonymous function)`라 한다.
+- `함수 표현식`에서는 함수명을 생략하는 것이 일반적이다.
+- 이러한 함수를 `익명 함수`라 한다.
 
 ```javascript
 var foo = function(a, b) {
@@ -30,9 +30,9 @@ var foo = function(a, b) {
 
 <br>
 
-#### Arrow function 호출
+## Arrow function(=>) 호출
 
-- Arrow function(`=>`)은 익명 함수로만 사용할 수 있다.
+- Arrow function은 `익명 함수`로만 사용할 수 있다.
 - 따라서 `=>`을 호출하기 위해서는 `함수 표현식`을 사용한다.
 
 ```javascript
