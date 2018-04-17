@@ -5,7 +5,7 @@ categories: react
 tags: react webpack
 ---
 
-## Learning React - Alex Banks, Eve Porcello
+###### Learning React - Alex Banks, Eve Porcello
 
 <br>
 
