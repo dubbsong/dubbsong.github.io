@@ -30,7 +30,7 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
-<meta property="og:title" content="Terminal">
+<meta property="og:title" content="JS 핵심 가이드 - 정규표현식">
 <meta property="og:type" content="article">
 
 
@@ -45,13 +45,15 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 
 
 
-  <title>Terminal &middot; ㅇㅁㅂ</title>
+  <title>JS 핵심 가이드 - 정규표현식 &middot; ㅇㅁㅂ</title>
 
 
 
-<meta name="description" content="
+<meta name="description" content=", 더글라스 크락포드 저 | 김명신 역
+
 ">
-<meta property="og:description" content="
+<meta property="og:description" content=", 더글라스 크락포드 저 | 김명신 역
+
 ">
 
 
@@ -59,15 +61,17 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <!-- =============== -->
 <!-- LINKS           -->
 <!-- =============== -->
-<link rel="canonical" href="http://localhost:4000/tag/dev-terminal/">
-<meta property="og:url" content="http://localhost:4000/tag/dev-terminal/">
+<link rel="canonical" href="http://localhost:4000/javascript/2018/02/04/js-goodParts-RegExp/">
+<meta property="og:url" content="http://localhost:4000/javascript/2018/02/04/js-goodParts-RegExp/">
 
 <link rel="alternate" type="application/atom+xml" title="ㅇㅁㅂ Feed" href="http://localhost:4000/feed.xml">
 
 
-  <link rel="prev" href="http://localhost:4000/tag/dev-nodejs/">
+  <link rel="prev" href="http://localhost:4000/codewars/2018/01/17/codewars-removeVowels-8kyu/">
 
 
+
+  <link rel="next" href="http://localhost:4000/javascript/2018/02/05/js-goodParts-Method/">
 
 
 <link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
@@ -154,19 +158,16 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
     <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/mainColor.jpg">
       
 
-
-  
-
-<article id="post-dev/2018/01/01/terminal-alias" class="post mb6" role="article">
+<article id="post-javascript/2018/02/04/js-goodParts-RegExp" class="post" role="article">
   <header>
     <h1 class="post-title">
-      <a href="/dev/2018/01/01/terminal-alias/" data-flip="title">
-        터미널에서 키워드로 쉽게 경로 이동
-      </a>
+      
+        JS 핵심 가이드 - 정규표현식
+      
     </h1>
 
     <p class="post-date heading">
-      <time datetime="2018-01-01T00:00:00+09:00">01 Jan 2018</time>
+      <time datetime="2018-02-04T00:00:00+09:00">04 Feb 2018</time>
       
 
 
@@ -177,7 +178,7 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 
 
 
-in <a href="/category/dev/" data-flip="title">about Dev</a>
+in <a href="/category/javascript/" data-flip="title">JavaScript</a>
 
       
 
@@ -189,7 +190,7 @@ in <a href="/category/dev/" data-flip="title">about Dev</a>
 
 
 
-on <a href="/tag/dev-terminal/" data-flip="title">Terminal</a>
+on <span>Javascript</span>
 
     </p>
 
@@ -202,34 +203,362 @@ on <a href="/tag/dev-terminal/" data-flip="title">Terminal</a>
 
   
   
-    <h2 id="터미널에서-키워드로-쉽게-경로-이동하기">터미널에서 키워드로 쉽게 경로 이동하기</h2>
+    <div class="markdown-body">
 
 
-    <p class="read-more"><a class="heading" href="/dev/2018/01/01/terminal-alias/" data-flip="title">Continue reading </a></p>
+<style>
+.myAd1190 { display:block; width:98%; height: 280px; }
+@media(min-width: 600px) { .myAd1190 { display: none; } }
+</style>
+
+      <h6 id="-더글라스-크락포드-저--김명신-역"><자바스크립트 핵심="" 가이드="">, 더글라스 크락포드 저 | 김명신 역</자바스크립트></h6>
+
+<p><br /></p>
+
+<h2 id="chapter-07-정규표현식">CHAPTER 07 정규표현식</h2>
+
+<ul>
+  <li>JS의 많은 부분은 다른 언어들에서 차용한 것이다.
+    <ul>
+      <li><u>구문</u>은 <code class="highlighter-rouge">자바</code>에서 비롯</li>
+      <li><u>함수</u>는 <code class="highlighter-rouge">Scheme</code>에서 비롯</li>
+      <li><u>프로토타입에 의한 상속</u>은 <code class="highlighter-rouge">Self</code>에서 비롯</li>
+      <li><u>정규표현식</u>은 <code class="highlighter-rouge">Perl</code>에서 비롯</li>
+    </ul>
+  </li>
+  <li>정규표현식은 간단한 언어 구문의 특화된 형태이다.</li>
+  <li>정규표현식은 문자열에서 특정 내용을 찾거나 대체 또는 발췌하는데 사용한다.</li>
+  <li>정규표현식은 보통 <strong>같은 문자열에 대해 반복해서 연산을 수행할 때 주목할 만한 성능상의 이점</strong>이 있다.</li>
+  <li>정규표현식을 바르게 읽기 위해서는 복잡한 정규표현식 체계 전체를 온전히 이해해야 한다.</li>
+  <li>JS의 정규표현식은 주석이나 공백을 허용하지 않기 때문에 다소 읽기가 어렵다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="01-예제">01 예제</h3>
+
+<ul>
+  <li>정규표현식은 한 줄이어야만 한다.</li>
+  <li>공백 문자(white space)는 사용할 수 없다.</li>
+  <li>정규표현식은 길이가 짧고 간단할 때 최상이라고 할 수 있다.</li>
+  <li>가장 이식성이 떨어지는 부분이 정규표현식 구현 부분이다.</li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+  <li>분해</li>
+</ul>
+
+<blockquote>
+  <p><code class="highlighter-rouge">^</code>: 문자열의 시작을 나타낸다.</p>
+
+  <p><code class="highlighter-rouge">[…]</code>: 문자 클래스를 나타낸다.</p>
+
+  <p>접미사 <code class="highlighter-rouge">+</code>: 문자 클래스가 한 번 이상 일치한다는 것을 나타낸다.</p>
+
+  <p><code class="highlighter-rouge">:</code>: 그 위치에 <code class="highlighter-rouge">:</code> 문자가 일치해야 한다는 뜻이다.</p>
+
+  <p><code class="highlighter-rouge">\/</code>: <code class="highlighter-rouge">/(슬래시)</code>와 일치해야 한다는 것을 의미한다.</p>
+
+  <p><code class="highlighter-rouge">\(백슬래시)</code>: 이스케이프.</p>
+
+  <p><code class="highlighter-rouge">\d</code>: 숫자 문자를 나타낸다.</p>
+
+  <p><code class="highlighter-rouge">*</code>: 0번 이상 일치한다는 것을 의미한다.</p>
+
+  <p><code class="highlighter-rouge">$</code>: 문자열의 끝을 의미한다.</p>
+
+  <p><code class="highlighter-rouge">i</code>: 문자가 일치하는지를 검사할 때 대소문자를 구분하지 않게 한다.</p>
+
+  <p><code class="highlighter-rouge">\d</code>: 숫자에 대응한다. (= <code class="highlighter-rouge">[0-9]</code>)</p>
+
+  <p><code class="highlighter-rouge">+</code>: 하나 이상의 숫자에 일치한다는 것을 의미한다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<h3 id="02-정규표현식-객체-생성">02 정규표현식 객체 생성</h3>
+
+<ul>
+  <li>정규표현식 객체인 RegExp 객체는 <code class="highlighter-rouge">정규표현식 리터럴</code>과 <code class="highlighter-rouge">정규표현식 RegExp 생성자</code> 두 가지 방법으로 만들 수 있다.</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// JS의 문자열에 일치하는 정규표현식 객체 생성</span>
+
+<span class="kd">var</span> <span class="nx">my_regexp</span> <span class="o">=</span> <span class="sr">/"</span><span class="se">(?:\\</span><span class="sr">.|</span><span class="se">[^\\\"])</span><span class="sr">*"/g</span><span class="p">;</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// JS의 문자열에 일치하는 정규표현식 객체 생성</span>
+
+<span class="kd">var</span> <span class="nx">my_regexp</span> <span class="o">=</span>
+    <span class="k">new</span> <span class="nb">RegExp</span> <span class="p">(</span><span class="s2">"</span><span class="se">\"</span><span class="s2">(?:</span><span class="err">\\</span><span class="s2">.|[^</span><span class="err">\\\\\\</span><span class="se">\"</span><span class="s2">]*</span><span class="se">\"</span><span class="s2">"</span><span class="p">,</span> <span class="s1">'g'</span><span class="p">));</span>
+</code></pre></div></div>
+
+<ul>
+  <li>RegExp에는 3가지 플래그가 있다.
+    <ul>
+      <li><code class="highlighter-rouge">g</code>: 여러 번 일치한다. (정확한 의미는 메소드에 따라 다름) (Global)</li>
+      <li><code class="highlighter-rouge">i</code>: 대소문자를 구분하지 않는다. (Insensitive)</li>
+      <li><code class="highlighter-rouge">m</code>: <code class="highlighter-rouge">^</code>와 <code class="highlighter-rouge">$</code>이 라인 끝 문자에 일치할 수 있다. (Multiline)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="03-구성요소">03 구성요소</h3>
+
+<ul>
+  <li>각 시퀀스는 <code class="highlighter-rouge">|</code> 문자로 구분된다.</li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="시퀀스">시퀀스</h4>
+
+<ul>
+  <li>각각의 요소 뒤에는 정규표현식 요소가 몇 번 반복해서 나오는지를 나타내는 수량자(*, + 등)를 선택적으로 붙일 수 있다.</li>
+  <li>수량자(quantifier)가 없다면 그 요소는 정확히 한 번 일치하는 것이다.</li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="정규표현식-요소">정규표현식 요소</h4>
+
+<ul>
+  <li>정규표현식 요소는 문자, 괄호로 묶인 그룹, 문자 클래스, 이스케이프 시퀀스 등이 될 수 있다.</li>
+  <li>제어문자나 다음과 같은 특별한 문자를 제외한 모든 문자는 리터럴로 다뤄진다.
+    <ul>
+      <li><code class="highlighter-rouge">\ / [ ] ( ) { } ? + * | . ^ $</code></li>
+      <li>이 문자들이 리터럴로 다뤄지게 하려면 앞에 <code class="highlighter-rouge">\</code>를 붙여 <code class="highlighter-rouge">이스케이프</code>시켜야 한다.</li>
+      <li>의심이 가는 경우 원하는 <u>특수 문자 앞에</u> <code class="highlighter-rouge">\</code>를 붙여 리터럴로 만들 수 있다.</li>
+      <li>일반 숫자나 문자 앞에는 <code class="highlighter-rouge">\</code>를 붙여봤자 효용이 없다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="이스케이프">이스케이프</h4>
+
+<ul>
+  <li><code class="highlighter-rouge">역슬래시(\)</code>는 정규표현식 요소와 문자열에서 모두 이스케이프됐다는 것을 나타낸다.</li>
+  <li>하지만 <code class="highlighter-rouge">\b</code>는 역스페이스 문자가 아니다.</li>
+  <li>분해</li>
+</ul>
+
+<blockquote>
+  <p><code class="highlighter-rouge">\d</code>: 아라비아 숫자에 일치한다. (= <code class="highlighter-rouge">[0-9]</code>)</p>
+
+  <p><code class="highlighter-rouge">\D</code>: (= <code class="highlighter-rouge">[^0-9]</code>)</p>
+
+  <p><code class="highlighter-rouge">\w</code>: (= <code class="highlighter-rouge">[0-9A-Z_a-z]</code>)</p>
+
+  <p><code class="highlighter-rouge">\W</code>: (= <code class="highlighter-rouge">[^0-9A-Z_a-z]</code>)</p>
+
+  <p><code class="highlighter-rouge">\b</code>: 단어 경계를 나타내어 텍스트를 문자 기반으로 일치시키기 쉽게 하기 위해 고안된 것이다.</p>
+
+  <p><code class="highlighter-rouge">\1</code>: 첫 번째 그룹에 캡처된 텍스트에 대한 참조이다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<h4 id="그룹">그룹</h4>
+
+<ol>
+  <li>캡처: 캡처 그룹은 괄호로 묶인 정규표현식 선택이다.</li>
+  <li>비캡처: 비캡처 그룹은 <code class="highlighter-rouge">(?:</code> 접두어가 있다.</li>
+  <li>긍정형 룩어헤드 (positive lookahead): <code class="highlighter-rouge">(?=</code> 접두어를 갖는다.</li>
+  <li>부정형 룩어헤드 (negative lookahead): <code class="highlighter-rouge">(?!</code> 접두어를 갖는다.</li>
+</ol>
+
+<p><br /></p>
+
+<h4 id="클래스">클래스</h4>
+
+<ul>
+  <li>클래스는 특정 문자 집합 하나를 지정하는데 편리한 방법이다.</li>
+  <li>클래스는 두 가지의 편리함을 제공한다.
+    <ul>
+      <li>문자의 범위를 지정할 수 있다.</li>
+      <li>부정형 클래스이다. (다음에 <code class="highlighter-rouge">^</code>를 붙이면 클래스는 지정된 문자들을 배제한다.)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="클래스-내의-이스케이프">클래스 내의 이스케이프</h4>
+
+<ul>
+  <li><code class="highlighter-rouge">[\b]</code>는 단어 경계가 아니고, 역스페이스 문자이다.</li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="수량자-quantifier">수량자 (Quantifier)</h4>
+
+<ul>
+  <li>정규표현식 요소에는 뒤에 붙어 요소가 몇 번 일치해야 하는지를 결정하는 수량자가 있다.</li>
+  <li>중괄호로 묶인 숫자는 표현식 요소가 일치하는 회수를 의미한다.
+    <ul>
+      <li><code class="highlighter-rouge">/www/</code> = <code class="highlighter-rouge">/w{3}/</code></li>
+      <li><code class="highlighter-rouge">{3, 6}</code> = 3번에서 6번 일치한다는 의미</li>
+      <li><code class="highlighter-rouge">{3,}</code> = 3번 이상을 의미</li>
+      <li><code class="highlighter-rouge">?</code> = <code class="highlighter-rouge">{0,1}</code></li>
+      <li><code class="highlighter-rouge">*</code> = <code class="highlighter-rouge">{0,}</code></li>
+      <li><code class="highlighter-rouge">+</code> = <code class="highlighter-rouge">{1,}</code></li>
+    </ul>
+  </li>
+</ul>
+
+      
+    </div>
+    <script>
+
+    </script>
   
 
 </article>
 
+  <hr class="dingbat" />
+
+  <div class="share">
+      <h2>Share this post</h2>
+      <div class="share-body">
+        <a href="http://twitter.com/share?text=JS 핵심 가이드 - 정규표현식&amp;url=http://localhost:4000/javascript/2018/02/04/js-goodParts-RegExp/"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <span class="icon-twitter">
+            </span>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/javascript/2018/02/04/js-goodParts-RegExp/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <span class="icon-facebook">
+            </span>
+        </a>
+    </div>
+  </div>
+  <br/>
 
 
 
-<h2 class="sr-only">Pagination</h2>
-<nav class="pagination heading" role="navigation">
-  <ul>
-    <li class="pagination-item older" >
+
+
+
+  <aside class="author" role="complementary">
+    <div class="author">
+  <h2 class="page-title hr">
+    About
+  </h2>
+<div class="author-body">
+  
+    
+  
+
+  
+
+  <img
+    src="/assets/img/me.png"
+    class="me"
+    alt="dubbsong"
+    
+    
+  />
+
+
+  
+  <div class="author-body-description">
+    <p>오늘도 많이 배웁니다</p>
+
+  </div>
+</div>
+</div>
+
+  </aside>
+
+
+
+
+
+<aside class="related" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
       
-        <span>Older</span>
       
-    </li>
-    <li class="pagination-item newer" >
       
-        <span>Newer</span>
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/javascript/2018/03/26/js-var-let-const/" data-flip="title">
+    <span>var ・ let ・ const 비교</span>
+  </a>
+  <small><time datetime="2018-03-26T00:00:00+09:00">
+    26 Mar 2018
+  </time></small>
+</li>
+
+        
       
-    </li>
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/javascript/2018/02/05/js-goodParts-Method/" data-flip="title">
+    <span>JS 핵심 가이드 - 메소드</span>
+  </a>
+  <small><time datetime="2018-02-05T00:00:00+09:00">
+    05 Feb 2018
+  </time></small>
+</li>
+
+        
+      
+        
+          
+          
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/javascript/2017/11/14/js-function-expression/" data-flip="title">
+    <span>함수 표현식 / 익명 함수 / 화살표 함수</span>
+  </a>
+  <small><time datetime="2017-11-14T00:00:00+09:00">
+    14 Nov 2017
+  </time></small>
+</li>
+
+        
+      
+    
   </ul>
-</nav>
+</aside>
 
 
+
+      
+        <aside class="comments" role="complementary">
+  <h2>Comments</h2>
+  <hr/>
+
+  <div id="disqus_thread"></div>
+
+  <script>
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="JS 핵심 가이드 - 정규표현식",this.page.identifier="/javascript/2018/02/04/js-goodParts-RegExp",this.page.url="http://localhost:4000/javascript/2018/02/04/js-goodParts-RegExp/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//dubbsong.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
 
       
 
@@ -290,8 +619,6 @@ on <a href="/tag/dev-terminal/" data-flip="title">Terminal</a>
          
            
          
-           
-         
      </ul>
     </li>
 
@@ -305,8 +632,6 @@ on <a href="/tag/dev-terminal/" data-flip="title">Terminal</a>
     </div>
      <ul class="list-body">
        
-           
-         
            
          
            
@@ -340,8 +665,6 @@ on <a href="/tag/dev-terminal/" data-flip="title">Terminal</a>
          
            
          
-           
-         
      </ul>
     </li>
 
@@ -355,8 +678,6 @@ on <a href="/tag/dev-terminal/" data-flip="title">Terminal</a>
     </div>
      <ul class="list-body">
        
-           
-         
            
          
            
@@ -395,12 +716,6 @@ on <a href="/tag/dev-terminal/" data-flip="title">Terminal</a>
            
              <li>
                <a class="sidebar-nav-subitem" href="/tag/dev-git/">Git</a>
-             </li>
-           
-         
-           
-             <li>
-               <a class="sidebar-nav-subitem active" href="/tag/dev-terminal/">Terminal</a>
              </li>
            
          

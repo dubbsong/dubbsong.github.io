@@ -393,6 +393,8 @@ class Square extends React.Component {
 
 
 
+<br>
+
 - After: You should see a number in each square in the rendered output.
   - 각 사각형 안에 출력된 숫자들을 확인할 수 있다.
 

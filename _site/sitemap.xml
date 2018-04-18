@@ -18,6 +18,22 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/dev/2018/04/18/etc-terminal-alias/</loc>
+      
+        <lastmod>2018-04-18T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/react/2018/04/04/react-Learning-React-routing/</loc>
       
         <lastmod>2018-04-04T00:00:00+09:00</lastmod>
@@ -130,7 +146,23 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/javascript/2018/02/04/js-The-Good-Parts/</loc>
+      <loc>http://localhost:4000/javascript/2018/02/05/js-goodParts-Method/</loc>
+      
+        <lastmod>2018-02-05T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/javascript/2018/02/04/js-goodParts-RegExp/</loc>
       
         <lastmod>2018-02-04T00:00:00+09:00</lastmod>
       
@@ -1269,22 +1301,6 @@
       <loc>http://localhost:4000/codewars/2018/01/02/codewars-animal-8kyu/</loc>
       
         <lastmod>2018-01-02T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2018/01/01/terminal-alias/</loc>
-      
-        <lastmod>2018-01-01T00:00:00+09:00</lastmod>
       
 
       

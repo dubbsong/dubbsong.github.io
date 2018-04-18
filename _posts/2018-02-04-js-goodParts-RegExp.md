@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "정규표현식 (JS 핵심 가이드)"
+title: "JS 핵심 가이드 - 정규표현식"
 categories: javascript
 tags: JavaScript
 ---
+
+###### <자바스크립트 핵심 가이드>, 더글라스 크락포드 저 | 김명신 역
+
+<br>
 
 ## CHAPTER 07 정규표현식
 

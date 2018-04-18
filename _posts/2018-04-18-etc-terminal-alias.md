@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "터미널에서 키워드로 쉽게 경로 이동"
+title: "터미널에서 단축키로 쉽게 경로 이동"
 categories: dev
-tags: terminal
+tags: etc
 ---
 
-## 터미널에서 키워드로 쉽게 경로 이동하기
+## 단축키 설정으로 쉽게 경로 이동하기
 
 1. 터미널 실행 후 `$ nano .bash_profile` 입력
 2. 터미널 상단에 `alias [단축키]='cd /Users/song/Desktop/[원하는 경로 위치]'` 입력
