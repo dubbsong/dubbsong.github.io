@@ -5,7 +5,7 @@ categories: react
 tags: react routing
 ---
 
-###### Learning React - Alex Banks, Eve Porcello
+###### \<Learning React>, Alex Banks, Eve Porcello 저 | 오현석 역
 
 <br>
 
