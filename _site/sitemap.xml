@@ -2,6 +2,22 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
+      <loc>http://localhost:4000/react/2018/04/18/react-tutorial-trans/</loc>
+      
+        <lastmod>2018-04-18T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/react/2018/04/04/react-Learning-React-routing/</loc>
       
         <lastmod>2018-04-04T00:00:00+09:00</lastmod>
@@ -37,22 +53,6 @@
       <loc>http://localhost:4000/react/2018/04/02/react-Learning-React-webpack/</loc>
       
         <lastmod>2018-04-02T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/nodejs/2018/04/01/nodejs-Node-JS/</loc>
-      
-        <lastmod>2018-04-01T00:00:00+09:00</lastmod>
       
 
       

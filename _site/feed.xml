@@ -5,9 +5,751 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Apr 2018 19:32:32 +0900</pubDate>
-    <lastBuildDate>Tue, 17 Apr 2018 19:32:32 +0900</lastBuildDate>
+    <pubDate>Wed, 18 Apr 2018 18:16:45 +0900</pubDate>
+    <lastBuildDate>Wed, 18 Apr 2018 18:16:45 +0900</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
+    
+      <item>
+        <title>리액트 공식 문서 번역</title>
+        <description>&lt;h1 id=&quot;tutorial-intro-to-react&quot;&gt;Tutorial: Intro To React&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://reactjs.org/tutorial/tutorial.html&quot;&gt;React 공식 문서&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Before We Start (시작하기 전에)&lt;/li&gt;
+    &lt;li&gt;Overview (개요)&lt;/li&gt;
+    &lt;li&gt;Lifting State Up&lt;/li&gt;
+    &lt;li&gt;Storing A History (히스토리 저장)&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;before-we-start&quot;&gt;Before We Start&lt;/h2&gt;
+
+&lt;h6 id=&quot;시작하기-전에&quot;&gt;시작하기 전에&lt;/h6&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-were-building-무엇을-만들-것인가&quot;&gt;What We’re Building (무엇을 만들 것인가)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Today, we’re going to build an interactive tic-tac-toe game.
+    &lt;ul&gt;
+      &lt;li&gt;우리는 틱택토 게임을 만들 것이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;If you like, you can check out the final result here: &lt;a href=&quot;https://codepen.io/gaearon/pen/gWWZgR?editors=0010&quot;&gt;Final Result&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;원한다면 &lt;a href=&quot;https://codepen.io/gaearon/pen/gWWZgR?editors=0010&quot;&gt;여기서&lt;/a&gt; 최종 결과물을 확인할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Don’t worry if the code doesn’t make sense to you yet, or if it uses an unfamiliar syntax.
+    &lt;ul&gt;
+      &lt;li&gt;아직 코드가 이해가지 않거나 문법이 친숙하지 않아도 걱정하지 마라.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;We will be learning how to build this game step by step throughout this tutorial.
+    &lt;ul&gt;
+      &lt;li&gt;우리는 이 튜토리얼을 통해서 이 게임을 어떻게 만드는지 차근차근 배울 것이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Try playing the game.
+    &lt;ul&gt;
+      &lt;li&gt;게임을 플레이해봐라.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;You can also click on a button in the move list to go “back in time”
+    &lt;ul&gt;
+      &lt;li&gt;이동 리스트에 있는 버튼을 클릭해서 돌아갈 수 있고&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;and see what the board looked like just after that move was made.
+    &lt;ul&gt;
+      &lt;li&gt;돌아간 후 보드가 어떻게 보이는지 볼 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Once you get a little familiar with the game, feel free to close that tab,
+    &lt;ul&gt;
+      &lt;li&gt;게임에 익숙해지면, 마음 편히 탭을 닫고,&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;as we’ll start from a simpler template in the next sections.
+    &lt;ul&gt;
+      &lt;li&gt;다음 섹션에서 간단한 템플릿으로 시작할 것이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;prerequisites-전제-조건&quot;&gt;Prerequisites (전제 조건)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We’ll assume some familiarity with HTML and JavaScript,
+    &lt;ul&gt;
+      &lt;li&gt;니가 HTML과 JavaScript에 익숙하다고 가정하지만,&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;but you should be able to follow along even if you haven’t used them before.
+    &lt;ul&gt;
+      &lt;li&gt;전에 사용한 적이 없다 하더라도 따라올 수 있어야 한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If you need a refresher on JavaScript, we recommend reading &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript&quot;&gt;this guide&lt;/a&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;JavaScript를 다시 배워야 한다면, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript&quot;&gt;이것&lt;/a&gt;을 읽어보길 추천한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Note that we’re also using some features from ES6, a recent version of JavaScript.
+    &lt;ul&gt;
+      &lt;li&gt;약간의 ES6와 최신 JavaScript도 사용할 것을 알고 있어라.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In this tutorial, we’re using &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions&quot;&gt;arrow functions&lt;/a&gt;, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes&quot;&gt;classes&lt;/a&gt;, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let&quot;&gt;let&lt;/a&gt;, and &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const&quot;&gt;const&lt;/a&gt; statements.
+    &lt;ul&gt;
+      &lt;li&gt;이 튜토리얼에서 우리는 &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions&quot;&gt;화살표 함수&lt;/a&gt;, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes&quot;&gt;클래스&lt;/a&gt;, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let&quot;&gt;let&lt;/a&gt;, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const&quot;&gt;const&lt;/a&gt; 표현법을 사용할 것이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;You can use the &lt;a href=&quot;https://babeljs.io/repl/#?presets=react&amp;amp;code_lz=MYewdgzgLgBApgGzgWzmWBeGAeAFgRgD4AJRBEAGhgHcQAnBAEwEJsB6AwgbgChRJY_KAEMAlmDh0YWRiGABXVOgB0AczhQAokiVQAQgE8AkowAUAcjogQUcwEpeAJTjDgUACIB5ALLK6aRklTRBQ0KCohMQk6Bx4gA&quot;&gt;Babel REPL&lt;/a&gt; to check what ES6 code compiles to.
+    &lt;ul&gt;
+      &lt;li&gt;ES6 코드가 어떻게 컴파일 되는지 확인하기 위해 &lt;a href=&quot;https://babeljs.io/repl/#?presets=react&amp;amp;code_lz=MYewdgzgLgBApgGzgWzmWBeGAeAFgRgD4AJRBEAGhgHcQAnBAEwEJsB6AwgbgChRJY_KAEMAlmDh0YWRiGABXVOgB0AczhQAokiVQAQgE8AkowAUAcjogQUcwEpeAJTjDgUACIB5ALLK6aRklTRBQ0KCohMQk6Bx4gA&quot;&gt;Babel REPL&lt;/a&gt;을 사용할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-follow-along-학습하는-방법&quot;&gt;How to Follow Along (학습하는 방법)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;There are two ways to complete this tutorial:
+    &lt;ul&gt;
+      &lt;li&gt;이 튜토리얼을 완료하기 위해서는 두 가지 방법이 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;you could either write the code right in the browser,
+    &lt;ul&gt;
+      &lt;li&gt;브라우저에서 코드를 작성하거나,&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;or you could set up a local development environment on your machine.
+    &lt;ul&gt;
+      &lt;li&gt;니 컴퓨터의 로컬 개발 환경을 설정할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;You can choose either option depending on what you feel comfortable with.
+    &lt;ul&gt;
+      &lt;li&gt;니가 편한대로 선택할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;if-you-prefer-to-write-code-in-the-browser-브라우저에서-코드를-작성하기-원한다면&quot;&gt;If You Prefer to Write Code in the Browser (브라우저에서 코드를 작성하기 원한다면)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This is the quickest way to get started!
+    &lt;ul&gt;
+      &lt;li&gt;이것은 가장 빠르게 시작할 수 있는 방법이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;First, open this &lt;a href=&quot;https://codepen.io/gaearon/pen/oWWQNa?editors=0010&quot;&gt;starter code&lt;/a&gt; in a new tab.
+    &lt;ul&gt;
+      &lt;li&gt;우선, 새 탭에 &lt;a href=&quot;https://codepen.io/gaearon/pen/oWWQNa?editors=0010&quot;&gt;이것&lt;/a&gt;을 열어라.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;It should display an empty tic-tac-toe field.
+    &lt;ul&gt;
+      &lt;li&gt;빈 틱택토 작업 환경이 보일 것이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;We will be editing that code during this tutorial.
+    &lt;ul&gt;
+      &lt;li&gt;이 튜토리얼을 진행하는 동안 저 코드를 수정할 것이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You can now skip the next section about setting up a local development environment and head straight to the &lt;a href=&quot;https://reactjs.org/tutorial/tutorial.html#overview&quot;&gt;overview&lt;/a&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;로컬 개발 환경 세팅을 스킵할 수 있으니 바로 &lt;a href=&quot;https://reactjs.org/tutorial/tutorial.html#overview&quot;&gt;개요&lt;/a&gt;로 가라.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;if-you-prefer-to-write-code-in-your-editor-에디터에서-코드를-작성하기-원한다면&quot;&gt;If you Prefer to Write Code in Your Editor (에디터에서 코드를 작성하기 원한다면)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Alternatively, you can set up a project on your computer.
+    &lt;ul&gt;
+      &lt;li&gt;니 컴퓨터에서 프로젝트를 세팅할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Note: &lt;strong&gt;this is completely optional and not required for this tutorial!&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;주석: 이것은 완전히 선택 사항이지 필수 사항이 아니다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This is more work, but lets you work from the comfort of your editor.
+    &lt;ul&gt;
+      &lt;li&gt;이 방법은 손이 더 많이 가겠지만 에디터의 편리함을 누리며 작업할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If you want to do it, here are the steps to follow:
+    &lt;ul&gt;
+      &lt;li&gt;이 방법을 원한다면 따라야 할 몇 가지 절차가 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Make sure you have a recent version of &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt; installed.
+        &lt;ul&gt;
+          &lt;li&gt;설치된 &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt;가 최신 버전인지 확인해라.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Follow the &lt;a href=&quot;https://reactjs.org/docs/add-react-to-a-new-app.html&quot;&gt;installation instructions&lt;/a&gt; to create a new project.
+        &lt;ul&gt;
+          &lt;li&gt;새로운 프로젝트를 만들기 위해 &lt;a href=&quot;https://reactjs.org/docs/add-react-to-a-new-app.html&quot;&gt;설치 방법&lt;/a&gt;을 따라라.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ npm install -g create-react-app&lt;/p&gt;
+
+  &lt;p&gt;$ create-react-app my-app&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Delete all files in the &lt;code class=&quot;highlighter-rouge&quot;&gt;src/&lt;/code&gt; folder of the new project(don’t delete the folder, just its contents).
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;src/&lt;/code&gt; 폴더에 있는 모든 파일을 삭제해라(폴더는 지우지 않고, 파일만 삭제).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ cd my-app&lt;/p&gt;
+
+  &lt;p&gt;$ -f src/*&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Add a file named &lt;code class=&quot;highlighter-rouge&quot;&gt;index.css&lt;/code&gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;src/&lt;/code&gt; folder with &lt;a href=&quot;https://codepen.io/gaearon/pen/oWWQNa?editors=0100&quot;&gt;this CSS code&lt;/a&gt;.
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;src/&lt;/code&gt; 폴더 안에 &lt;code class=&quot;highlighter-rouge&quot;&gt;index.css&lt;/code&gt; 파일을 생성하고 &lt;a href=&quot;https://codepen.io/gaearon/pen/oWWQNa?editors=0100&quot;&gt;이 CSS code&lt;/a&gt;를 작성해라.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Add a file named &lt;code class=&quot;highlighter-rouge&quot;&gt;index.js&lt;/code&gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;src/&lt;/code&gt; folder with &lt;a href=&quot;https://codepen.io/gaearon/pen/oWWQNa?editors=0010&quot;&gt;this JS code&lt;/a&gt;.
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;src/&lt;/code&gt; 폴더 안에 &lt;code class=&quot;highlighter-rouge&quot;&gt;index.js&lt;/code&gt; 파일을 생성하고 &lt;a href=&quot;https://codepen.io/gaearon/pen/oWWQNa?editors=0010&quot;&gt;이 JS code&lt;/a&gt;를 작성해라.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Add these three lines to the top of &lt;code class=&quot;highlighter-rouge&quot;&gt;index.js&lt;/code&gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;src/&lt;/code&gt; folder:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;src/&lt;/code&gt; 폴더 안의 &lt;code class=&quot;highlighter-rouge&quot;&gt;index.js&lt;/code&gt; 파일 맨 위에 아래 3줄을 추가해라.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// index.js&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'react'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ReactDOM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'react-dom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'./index.css'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Now if you run &lt;code class=&quot;highlighter-rouge&quot;&gt;npm start&lt;/code&gt; in the project folder and open &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:3000&lt;/code&gt; in the browser, you should see an empty tic-tac-toe field.
+    &lt;ul&gt;
+      &lt;li&gt;프로젝트 폴더 안에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;$ npm start&lt;/code&gt;를 실행하고 &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:3000&lt;/code&gt;을 브라우저에서 열면, 빈 틱택토 작업환경을 볼 수 있을 것이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We recommend following &lt;a href=&quot;http://babeljs.io/docs/editors&quot;&gt;these instructions&lt;/a&gt; to configure syntax highlighting for your editor.
+    &lt;ul&gt;
+      &lt;li&gt;에디터에서 하이라이팅 문법을 설정하려면 &lt;a href=&quot;http://babeljs.io/docs/editors&quot;&gt;이 문서&lt;/a&gt;를 따라하기를 추천한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;help-im-stuck-문제-발생-시&quot;&gt;Help, I’m Stuck! (문제 발생 시)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If you get stuck, check out the &lt;a href=&quot;https://reactjs.org/community/support.html&quot;&gt;community support resources&lt;/a&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;문제가 생겼다면, &lt;a href=&quot;https://reactjs.org/community/support.html&quot;&gt;여기&lt;/a&gt;를 살펴봐라.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In particular, &lt;a href=&quot;https://reactjs.org/community/support.html#reactiflux-chat&quot;&gt;Reactiflux chat&lt;/a&gt; is a great way to get quick help.
+    &lt;ul&gt;
+      &lt;li&gt;특히, &lt;a href=&quot;https://reactjs.org/community/support.html#reactiflux-chat&quot;&gt;여기&lt;/a&gt;가 빠르게 도움을 받을 수 있는 좋은 방법이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;If you don’t get a good answer anywhere, please file an issue, and we’ll help you out.
+    &lt;ul&gt;
+      &lt;li&gt;어디서든 좋은 해답을 찾지 못했다면, 우리가 도와줄테니 파일을 보내달라.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;With this out of the way, let’s get started!
+    &lt;ul&gt;
+      &lt;li&gt;이제 시작해보자.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;h6 id=&quot;개요&quot;&gt;개요&lt;/h6&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-react-리액트란&quot;&gt;What is React? (리액트란?)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;React is a declarative, efficient, and flexible JavaScript library for building user interfaces.
+    &lt;ul&gt;
+      &lt;li&gt;리액트는 유저 인터페이스를 만들기 위한 선언적이고, 효율적이며, 유연한 JS 라이브러리이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;React has a few different kinds of components, but we’ll start with &lt;code class=&quot;highlighter-rouge&quot;&gt;React.Component&lt;/code&gt; subclasses:
+    &lt;ul&gt;
+      &lt;li&gt;리액트는 조금 여러 종류의 컴포넌트를 가지고 있지만, 우리는 서브클래스 &lt;code class=&quot;highlighter-rouge&quot;&gt;React.Componen&lt;/code&gt;로 시작할 것이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ShoppingList&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      	&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;className=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;shopping-list&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+         	&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;Shopping List for &lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+            	&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;Instagram&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+               &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;WhatsApp&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+               &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;Oculus&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+         &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Example usage: &amp;lt;ShoppingList name=&quot;Mark&quot; /&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We’ll get to the funny XML-like tags in a second.
+    &lt;ul&gt;
+      &lt;li&gt;XML 같은 태그를 잠깐 사용할 것이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Your components tell React what you want to render -
+    &lt;ul&gt;
+      &lt;li&gt;작성한 컴포넌트는 니가 렌더하고 싶은 것을 리액트에게 알려준다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;then React will efficiently update and render just the right components when your data changes.
+    &lt;ul&gt;
+      &lt;li&gt;그리고 리액트는 데이터가 변경될 때 컴포넌트를 효율적으로 업데이트 하고 렌더링한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Here, ShoppingList is a &lt;strong&gt;React component class, **or **React component type&lt;/strong&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;여기에서, ShoppingList는 &lt;strong&gt;리액트 컴포넌트 클래스&lt;/strong&gt;이거나 &lt;strong&gt;리액트 컴포넌트 타입&lt;/strong&gt;이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A component takes in parameters, called &lt;code class=&quot;highlighter-rouge&quot;&gt;props&lt;/code&gt;,
+    &lt;ul&gt;
+      &lt;li&gt;컴포넌트는 &lt;code class=&quot;highlighter-rouge&quot;&gt;props&lt;/code&gt;라 불리는 파라미터를 가져오고,&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;and returns a hierarchy of views to display via the &lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt; method.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt; 메소드를 통해 나타낼 계층 구조를 반환한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt; method returns a &lt;em&gt;description&lt;/em&gt; of what you want to render,
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt; 메소드는 렌더링하기를 원하는 내용을 반환하고,&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;and then React takes that description and renders it to the screen.
+    &lt;ul&gt;
+      &lt;li&gt;리액트는 그 내용을 가져와서 스크린에 렌더링한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In particular, &lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt; returns a &lt;strong&gt;React element&lt;/strong&gt;, which is a lightweight description of what to render.
+    &lt;ul&gt;
+      &lt;li&gt;특히, &lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt;는 렌더링할 간단한 내용인 &lt;strong&gt;리액트 엘리먼트&lt;/strong&gt;를 반환한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Most React developers use a special syntax called JSX which makes it easier to write these structures.
+    &lt;ul&gt;
+      &lt;li&gt;대부분의 리액트 개발자들은 이 구조를 더 쉽게 작성할 수 있게 해주는 JSX라는 특별한 문법을 사용한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div /&amp;gt;&lt;/code&gt; syntax is transformed at build time to &lt;code class=&quot;highlighter-rouge&quot;&gt;React.createElement('div')&lt;/code&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div /&amp;gt;&lt;/code&gt; 문법은 빌드 시에 &lt;code class=&quot;highlighter-rouge&quot;&gt;React.createElement('div')&lt;/code&gt;로 변환된다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The example above is equivalent to:
+    &lt;ul&gt;
+      &lt;li&gt;위의 예제는 아래와 동일하다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;s2&quot;&gt;&quot;div&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;shopping-list&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+   &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+   	&lt;span class=&quot;s2&quot;&gt;&quot;h1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&quot;Shopping List for &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+   &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+   	&lt;span class=&quot;s2&quot;&gt;&quot;ul&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      	&lt;span class=&quot;s2&quot;&gt;&quot;li&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+         &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+         &lt;span class=&quot;s2&quot;&gt;&quot;Instagram&quot;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      	&lt;span class=&quot;s2&quot;&gt;&quot;li&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+         &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+         &lt;span class=&quot;s2&quot;&gt;&quot;WhatsApp&quot;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      	&lt;span class=&quot;s2&quot;&gt;&quot;li&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+         &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+         &lt;span class=&quot;s2&quot;&gt;&quot;Oculus&quot;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://babeljs.io/repl/#?presets=react&amp;amp;code_lz=DwEwlgbgBAxgNgQwM5IHIILYFMC8AiJACwHsAHUsAOwHMBaOMJAFzwD4AoKKYQgRlYDKJclWpQAMoyZQAZsQBOUAN6l5ZJADpKmLAF9gAej4cuwAK5wTXbg1YBJSswTV5mQ7c7XgtgOqEETEgAguTuYFamtgDyMBZmSGFWhhYchuAQrADc7EA&quot;&gt;전체 코드 확인&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If you’re curious, &lt;code class=&quot;highlighter-rouge&quot;&gt;createElement()&lt;/code&gt; is described in more detail in the &lt;a href=&quot;https://reactjs.org/docs/react-api.html#createelement&quot;&gt;API reference&lt;/a&gt;,
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;createElement()&lt;/code&gt;에 대해 더 많은 내용이 궁금하다면, &lt;a href=&quot;https://reactjs.org/docs/react-api.html#createelement&quot;&gt;여기&lt;/a&gt;에 자세한 설명이 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;but we won’t be using it directly in this tutorial.
+    &lt;ul&gt;
+      &lt;li&gt;그러나 이 튜토리얼에서는 직접적으로 사용하지 않을 것이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Instead, we will keep using JSX.
+    &lt;ul&gt;
+      &lt;li&gt;대신에, 계속 JSX를 사용할 것이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You can put any JavaScript expression within braces inside JSX.
+    &lt;ul&gt;
+      &lt;li&gt;JSX에서는 중괄호 안에 어느 JS 표현이든 사용할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Each React element is a real JavaScript object that you can store in a variable or pass around your program.
+    &lt;ul&gt;
+      &lt;li&gt;각 리액트 엘리먼트는 변수에 저장하거나 프로그램에 전달할 수 있는 실제 JS 객체이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;ShoppingList&lt;/code&gt; component only renders built-in DOM components,
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ShoppingList&lt;/code&gt; 컴포넌트는 내장된 DOM 컴포넌트에만 렌더링할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;but you can compose custom React components just as easily, by writing &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;ShoppingList /&amp;gt;&lt;/code&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;하지만 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;ShoppingList&amp;gt;&lt;/code&gt;를 작성하여 커스텀 리액트 컴포넌트를 쉽게 구성할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Each component is encapsulated so it can operate independently,
+    &lt;ul&gt;
+      &lt;li&gt;각 컴포넌트는 캡슐화되어 독립적으로 작동할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;which allows you to build complex UIs out of simple components.
+    &lt;ul&gt;
+      &lt;li&gt;심플한 컴포넌트로 복잡한 UI를 구현하도록 허용한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;getting-started-시작하기&quot;&gt;Getting Started (시작하기)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Start with this example: &lt;a href=&quot;https://codepen.io/gaearon/pen/oWWQNa?editors=0010&quot;&gt;Starter Code&lt;/a&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://codepen.io/gaearon/pen/oWWQNa?editors=0010&quot;&gt;여기&lt;/a&gt; 예제 코드로 시작하자.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It contains the shell of what we’re building today.
+    &lt;ul&gt;
+      &lt;li&gt;이 코드는 우리가 오늘 만들 틀을 포함한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;We’ve provided the styles so you only need to worry about the JavaScript.
+    &lt;ul&gt;
+      &lt;li&gt;틀을 제공하였기 때문에 JS만 신경쓰면 된다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In particular, we have three components:
+    &lt;ul&gt;
+      &lt;li&gt;3가지 컴포넌트가 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Square (사각형)&lt;/li&gt;
+    &lt;li&gt;Board (보드)&lt;/li&gt;
+    &lt;li&gt;Game (게임)&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The Square component renders a single &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;button&amp;gt;&lt;/code&gt;,
+    &lt;ul&gt;
+      &lt;li&gt;Square 컴포넌트는 하나의 `&lt;button&gt;을 렌더링한다.&lt;/button&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;the Board renders 9 squares,
+    &lt;ul&gt;
+      &lt;li&gt;Board 컴포넌트는 9개의 사각형을 렌더링한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;and the Game component renders a board with some placeholders that we’ll fill in later.
+    &lt;ul&gt;
+      &lt;li&gt;Game 컴포넌트는 우리가 나중에 채워야 할 몇몇의 placeholder가 있는 보드를 렌더링한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;None of the components are interactive at this point.
+    &lt;ul&gt;
+      &lt;li&gt;이 컴포넌트들은 여기에서 아무 작용도 하지 않는다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;passing-data-through-props-props를-통해-데이터-전달하기&quot;&gt;Passing Data Through Props (props를 통해 데이터 전달하기)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Just to get our feet wet, let’s try passing some data from the Board component to the Square component.
+    &lt;ul&gt;
+      &lt;li&gt;본격적으로 시작하기 위해 Board 컴포넌트에서 Square 컴포넌트로 데이터를 전달해 보자.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In Board’s &lt;code class=&quot;highlighter-rouge&quot;&gt;renderSquare&lt;/code&gt; method, change the code to pass a &lt;code class=&quot;highlighter-rouge&quot;&gt;value&lt;/code&gt; prop to the Square:
+    &lt;ul&gt;
+      &lt;li&gt;Board의 &lt;code class=&quot;highlighter-rouge&quot;&gt;renderSquare&lt;/code&gt; 메소드에서 Square 컴포넌트의 prop로 &lt;code class=&quot;highlighter-rouge&quot;&gt;value&lt;/code&gt; 값을 전달하도록 코드를 변경해라.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Board&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;nx&quot;&gt;renderSquare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Square&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&amp;gt;;&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Then change Square’s &lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt; method to show that value by replacing &lt;code class=&quot;highlighter-rouge&quot;&gt;{/* TODO */ }&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;{this.props.value}&lt;/code&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;그런 다음, value 값을 보여주기 위해 Square 컴포넌트의 &lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt; 메소드를 변경해라.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;{/* TODO */}&lt;/code&gt;를 &lt;code class=&quot;highlighter-rouge&quot;&gt;{this.props.value}&lt;/code&gt;로&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Square&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      	&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;className=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;square&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+         	&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;
+         &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Before:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Users/song/Desktop/Before.png&quot; alt=&quot;Before&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;After: You should see a number in each square in the rendered output.
+    &lt;ul&gt;
+      &lt;li&gt;각 사각형 안에 출력된 숫자들을 확인할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Users/song/Desktop/After.png&quot; alt=&quot;After&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://codepen.io/gaearon/pen/aWWQOG?editors=0010&quot;&gt;여기까지의 코드 확인&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;an-interactive-component-대화형-컴포넌트&quot;&gt;An Interactive Component (대화형 컴포넌트)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Wed, 18 Apr 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/react/2018/04/18/react-tutorial-trans/</link>
+        <guid isPermaLink="true">http://localhost:4000/react/2018/04/18/react-tutorial-trans/</guid>
+        
+        <category>React</category>
+        
+        <category>translation</category>
+        
+        
+        <category>react</category>
+        
+      </item>
     
       <item>
         <title>러닝 리액트(Learning React) - 라우팅</title>
@@ -534,240 +1276,6 @@
         
         
         <category>react</category>
-        
-      </item>
-    
-      <item>
-        <title>about Node.js</title>
-        <description>&lt;h6 id=&quot;참조-poiemaweb&quot;&gt;참조: poiemaweb,&lt;/h6&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Node.js는 주로 서버 사이드 애플리케이션 개발에 사용되는 소프트웨어 플랫폼이다.&lt;/li&gt;
-  &lt;li&gt;Node.js는 브라우저 외부 환경에서 JS 애플리케이션 개발에 사용되며 이에 필요한 모듈, 파일 시스템, HTTP 등 Built-in API를 제공한다.&lt;/li&gt;
-  &lt;li&gt;언어로는 JavaScript를 사용한다.&lt;/li&gt;
-  &lt;li&gt;Front-end와 Back-end에서 JS를 사용할 수 있다는 동형성(isomorphic)은 별도의 언어 학습 시간을 단축시켜주는 장점을 갖는다.&lt;/li&gt;
-  &lt;li&gt;Node.js는 &lt;code class=&quot;highlighter-rouge&quot;&gt;Non-blocking I/O&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;단일 스레드 이벤트 루프&lt;/code&gt;를 통한 높은 Request 처리 성능을 가지고 있다.&lt;/li&gt;
-  &lt;li&gt;Node.js의 모든 API는 비동기 방식으로 동작하여 Non-blocking I/O가 가능하고, 단일 스레드 이벤트 루프 모델을 사용하여 보다 가벼운 환경에서도 높은 Request 처리 성능을 가지고 있다.&lt;/li&gt;
-  &lt;li&gt;Node.js는 데이터를 실시간 처리하여 빈번한 I/O가 발생하는 SPA(Single Page Application)에 적합하다. 하지만 CPU 사용률이 높은 애플리케이션에는 권장하지 않는다.&lt;/li&gt;
-  &lt;li&gt;Node.js에는 &lt;code class=&quot;highlighter-rouge&quot;&gt;Socket.io&lt;/code&gt;라는 실시간 통신을 실현하는 라이브러리를 사용할 수 있어서 대량의 데이터 처리와 실시간 통신을 구현할 수 있다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;install&quot;&gt;Install&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;버전 확인
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ node -v&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ npm -v&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;update&quot;&gt;Update&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Node.js 업데이트를 위해 버전 매니저 &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; 설치
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ sudo npm install -g n&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ npm cache clean -f&lt;/code&gt; (캐시 강제 삭제)&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ n stable&lt;/code&gt; (안정된 버전 설치)&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ node -v&lt;/code&gt; (버전 확인)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;npm 업데이트
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ npm install -g npm@latest&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ npm -v&lt;/code&gt; (버전 확인)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;http-server-맛보기&quot;&gt;HTTP Server (맛보기)&lt;/h3&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// app.js&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'http'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;// 1&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createServer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// 2&lt;/span&gt;
-   &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;statusCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setHeader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Content-Type'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'text/plain'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-   &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Hello World'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// 3&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Server running at http://127.0.0.1:3000'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;http 모듈을 로딩하여 변수 http에 할당하였다.&lt;/li&gt;
-  &lt;li&gt;http 모듈의 &lt;code class=&quot;highlighter-rouge&quot;&gt;createServer([requestListener])&lt;/code&gt; 메소드를 사용하여 HTTP 서버 객체를 생성한다. HTTP 서버 객체는 &lt;strong&gt;EventEmitter&lt;/strong&gt; 클래스를 상속한 것으로 request 이벤트가 발생하면 HTTP request를 처리하여 response를 반환하는 request Listener 함수를 호출한다. 이 request Listener 함수는 request와 response 객체를 전달받으며 HTTP request 이벤트가 발생할 때마다 한 번씩 호출된다.&lt;/li&gt;
-  &lt;li&gt;createServer 메소드가 반환한 HTTP 서버 객체의 listen 메소드에 포트번호 3000을 전달하여 서버를 가동시킨다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ node app.js&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;브라우저에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:3000/&lt;/code&gt; 접속&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Hello World&lt;/code&gt; 출력&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctr&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;c&lt;/code&gt; 서버 종료&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;모듈화와-commonjs&quot;&gt;모듈화와 CommonJS&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;모듈이란 애플리케이션을 구성하는 개별적 요소를 말한다. 일반적으로 파일 단위로 분리되어 있으며 필요에 따라 애플리케이션은 명시적으로 모듈을 로드한다. 모듈은 분리되어 개별적으로 존재하다가 애플리케이션의 로드에 의해 비로소 애플리케이션의 일원이 된다. 모듈은 기능별로 분리되어 작성되므로 개발 효율성과 유지보수성의 향상을 기대할 수 있다.&lt;/li&gt;
-  &lt;li&gt;JS를 Client-side에 국한하지 않고 범용적으로 사용하고자 하는 움직임이 생기면서 모듈 기능은 반드시 해결해야하는 핵심 과제가 되었고 이런 상황에서 제안된 것이 &lt;code class=&quot;highlighter-rouge&quot;&gt;CommonJS&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;AMD(Asynchronous Module Definition)&lt;/code&gt;이다.&lt;/li&gt;
-  &lt;li&gt;브라우저에서의 모듈 사용은, 대부분의 브라우저가 ES6의 모듈을 지원하지 않고 있으므로 &lt;code class=&quot;highlighter-rouge&quot;&gt;Browserify&lt;/code&gt; 또는 &lt;code class=&quot;highlighter-rouge&quot;&gt;webpack&lt;/code&gt;과 같은 모듈 번들러를 사용해야 한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;npm&quot;&gt;npm&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;npm(node package manager)은 JS 패키지 매니저다.&lt;/li&gt;
-  &lt;li&gt;Node.js에서 사용할 수 있는 모듈들을 패키지화하여 모아둔 저장소 역할과 패키지 설치 및 관리를 위한 CLI(Command line interface)를 제공한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;packagejson과-의존성dependency-관리&quot;&gt;package.json과 의존성(dependency) 관리&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Node.js 프로젝트에서는 많은 의존 패키지를 사용하게 되고 패키지의 버전도 빈번하게 업데이트 되기 때문에 프로젝트가 의존하고 있는 패키지를 일괄 관리할 필요가 있다.&lt;/li&gt;
-  &lt;li&gt;npm은 &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; 파일을 통해서 프로젝트 정보와 패키지의 의존성을 관리한다.&lt;/li&gt;
-  &lt;li&gt;이미 작성된 package.json은 팀 내에 배포하여 동일한 개발 환경을 빠르게 구축할 수 있는 장점을 가진다.&lt;/li&gt;
-  &lt;li&gt;package.json을 생성하기 위해서는 &lt;code class=&quot;highlighter-rouge&quot;&gt;$ npm init&lt;/code&gt; 명령어를 사용한다.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;dependencies&lt;/code&gt;에는 해당 프로젝트가 의존하는 패키지들의 이름과 버전을 명시한다.&lt;/li&gt;
-  &lt;li&gt;npm install 명령어에 &lt;code class=&quot;highlighter-rouge&quot;&gt;--save&lt;/code&gt; 옵션을 사용하면 패키지 설치와 함께 package.json의 dependencies에 설치된 &lt;strong&gt;패키지와 버전이 기록&lt;/strong&gt;된다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;nodejs-모듈&quot;&gt;Node.js 모듈&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;모듈은 &lt;code class=&quot;highlighter-rouge&quot;&gt;module.exports&lt;/code&gt; 또는 &lt;code class=&quot;highlighter-rouge&quot;&gt;exports 객체&lt;/code&gt;를 통해 정의하고 외부로 공개한다.&lt;/li&gt;
-  &lt;li&gt;공개된 모듈은 &lt;code class=&quot;highlighter-rouge&quot;&gt;require 함수&lt;/code&gt;를 사용하여 import한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;exports&quot;&gt;exports&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;모듈은 독립적인 파일 스코프를 갖기 때문에 모듈 안에 선언한 모든 것들은 기본적으로 해당 모듈 내부에서만 참조 가능하다.&lt;/li&gt;
-  &lt;li&gt;만약 모듈 안에 선언한 항목을 외부에 공개하여 다른 모듈들이 사용할 수 있게 하고 싶다면 exports 객체를 사용해야 한다.&lt;/li&gt;
-  &lt;li&gt;모듈을 파일로 작성하고 외부에 공개할 대상을 exports 객체의 프로퍼티 또는 메소드를 정의한다. 그리고 모듈을 전역 함수 require()를 이용하여 추출한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// circle.js&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;PI&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;area&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;PI&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;circumference&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;PI&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;circle.js는 독립적인 파일 스코프를 갖는 모듈이다.&lt;/li&gt;
-  &lt;li&gt;circle 모듈에서 area와 circumference를 exports 객체의 메소드로 정의하였다.&lt;/li&gt;
-  &lt;li&gt;변수 PI는 circle 모듈에서만 유효한 private 변수가 되고, area와 circumference는 외부에 공개된다.&lt;/li&gt;
-  &lt;li&gt;require 함수를 사용하여 임의의 이름으로 circle 모듈을 import한다.&lt;/li&gt;
-  &lt;li&gt;모듈의 확장자는 생략할 수 있다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// app.js&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;circle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'./circle.js'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// = ('./circle);&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`지름이 4인 원의 면적: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`지름이 4인 원의 둘레: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;circumference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;circle 모듈은 객체로 반환된다. 따라서 circle.area, circle.circumference와 같은 형식으로 공개된 circle 모듈을 참조한다.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ node app&lt;/code&gt; (app.js 실행)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// terminal&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;지름이&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;인&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;원의&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;면적&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;50.26548245743669&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;지름이&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;인&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;원의&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;둘레&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;25.132741228718345&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;moduleexports&quot;&gt;module.exports&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;exports 객체는 프로퍼티 또는 메소드를 여러 개 정의할 수 있었다. 하지만 module.exports에는 하나의 값(기본 자료형, 함수, 객체)을 할당할 수 있다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// circle.js&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;PI&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;PI&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;circumference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;PI&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;circle 모듈의 module.exports에는 하나의 함수를 할당하였다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// app.js&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;circle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'./circle'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myCircle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`지름이 4인 원의 면적: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;myCircle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`지름이 4인 원의 둘레: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;myCircle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;circumference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;require 함수를 통해 circle 모듈을 import하여 circle 변수에 할당하였다. 이때 circle 변수는 circle 모듈에서 module.exports에 할당한 값 자체, 즉 객체를 반환하는 함수이다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// primitive.js&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'primitive value'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// app.js&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'./primitive'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// 'primitive value'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;module.exports 객체에 할당한 값이 전달된다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;moduleexports에-함수를-할당하는-방식&quot;&gt;module.exports에 함수를 할당하는 방식&lt;/h4&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// foo.js&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-</description>
-        <pubDate>Sun, 01 Apr 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/nodejs/2018/04/01/nodejs-Node-JS/</link>
-        <guid isPermaLink="true">http://localhost:4000/nodejs/2018/04/01/nodejs-Node-JS/</guid>
-        
-        
-        <category>nodejs</category>
         
       </item>
     
