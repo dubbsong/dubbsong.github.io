@@ -4,5 +4,5 @@ title: Terminal
 slug: terminal
 category: dev
 menu: false
-order: 2
+order: 6
 ---
