@@ -125,28 +125,31 @@ tags: React translation
 
 - If you want to do it, here are the steps to follow:
   - 이 방법을 원한다면 따라야 할 몇 가지 절차가 있다.
-- 1. Make sure you have a recent version of [Node.js](https://nodejs.org/en/) installed.
-     - 설치된 [Node.js](https://nodejs.org/en/)가 최신 버전인지 확인해라.
-- 2. Follow the [installation instructions](https://reactjs.org/docs/add-react-to-a-new-app.html) to create a new project.
-     - 새로운 프로젝트를 만들기 위해 [설치 방법](https://reactjs.org/docs/add-react-to-a-new-app.html)을 따라라.
+
+<br>
+
+- Make sure you have a recent version of [Node.js](https://nodejs.org/en/) installed.
+  - 설치된 [Node.js](https://nodejs.org/en/)가 최신 버전인지 확인해라.
+- Follow the [installation instructions](https://reactjs.org/docs/add-react-to-a-new-app.html) to create a new project.
+  - 새로운 프로젝트를 만들기 위해 [설치 방법](https://reactjs.org/docs/add-react-to-a-new-app.html)을 따라라.
 
 > $ npm install -g create-react-app
 >
 > $ create-react-app my-app
 
-- 3. Delete all files in the `src/` folder of the new project(don't delete the folder, just its contents).
-     - `src/` 폴더에 있는 모든 파일을 삭제해라(폴더는 지우지 않고, 파일만 삭제).
+- Delete all files in the `src/` folder of the new project(don't delete the folder, just its contents).
+  - `src/` 폴더에 있는 모든 파일을 삭제해라(폴더는 지우지 않고, 파일만 삭제).
 
 > $ cd my-app
 >
 > $ -f src/*
 
-- 4. Add a file named `index.css` in the `src/` folder with [this CSS code](https://codepen.io/gaearon/pen/oWWQNa?editors=0100).
-     - `src/` 폴더 안에 `index.css` 파일을 생성하고 [이 CSS code](https://codepen.io/gaearon/pen/oWWQNa?editors=0100)를 작성해라.
-- 5. Add a file named `index.js` in the `src/` folder with [this JS code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010).
-     - `src/` 폴더 안에 `index.js` 파일을 생성하고 [이 JS code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010)를 작성해라.
-- 6. Add these three lines to the top of `index.js` in the `src/` folder:
-     - `src/` 폴더 안의 `index.js` 파일 맨 위에 아래 3줄을 추가해라.
+- Add a file named `index.css` in the `src/` folder with [this CSS code](https://codepen.io/gaearon/pen/oWWQNa?editors=0100).
+  - `src/` 폴더 안에 `index.css` 파일을 생성하고 [이 CSS code](https://codepen.io/gaearon/pen/oWWQNa?editors=0100)를 작성해라.
+- Add a file named `index.js` in the `src/` folder with [this JS code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010).
+  - `src/` 폴더 안에 `index.js` 파일을 생성하고 [이 JS code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010)를 작성해라.
+- Add these three lines to the top of `index.js` in the `src/` folder:
+  - `src/` 폴더 안의 `index.js` 파일 맨 위에 아래 3줄을 추가해라.
 
 ```react
 // index.js
@@ -230,7 +233,7 @@ class ShoppingList extends React.Component {
 
 <br>
 
-- Here, ShoppingList is a **React component class, **or **React component type**.
+- Here, ShoppingList is a **React component class,** or **React component type**.
   - 여기에서, ShoppingList는 **리액트 컴포넌트 클래스**이거나 **리액트 컴포넌트 타입**이다.
 - A component takes in parameters, called `props`,
   - 컴포넌트는 `props`라 불리는 파라미터를 가져오고,
@@ -339,7 +342,7 @@ React.createElement(
 <br>
 
 - The Square component renders a single `<button>`,
-  - Square 컴포넌트는 하나의 `<button>을 렌더링한다.
+  - Square 컴포넌트는 하나의 `<button>`을 렌더링한다.
 - the Board renders 9 squares,
   - Board 컴포넌트는 9개의 사각형을 렌더링한다.
 - and the Game component renders a board with some placeholders that we'll fill in later.
