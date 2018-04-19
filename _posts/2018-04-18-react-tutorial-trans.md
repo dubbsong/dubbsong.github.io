@@ -411,14 +411,162 @@ class Square extends React.Component {
 
 ### An Interactive Component (대화형 컴포넌트)
 
+- Let's make the Square component fill in an "X" when you click it.
+  - 클릭하면 "X"로 채워지는 Square 컴포넌트를 만들자.
+- Try changing the button tag returned in the `render()` function of the Square like this:
+  - Square의 `render()` 함수에서 반환된 버튼 태그를 이렇게 변경해봐라.
+
+
+```react
+class Square extends React.Component {
+   render() {
+      return (
+      	<button className="square" onClick={() => alert('click')}>
+         	{this.props.value}
+         </button>
+      );
+   }
+}
+```
+
+- If you click on a square now, you should get an alert in your browser.
+  - 이제 사각형을 누르면, 브라우저에 알림이 뜰 것이다.
+
+<br>
+
+- This uses the new JavaScript arrow [function syntax](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
+  - 새로운 JS 문법인 [화살표 함수](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)를 사용했다.
+- Note that we're passing a function as the `onClick` prop.
+  - `onClick` prop에 함수를 전달했다.
+- Doing `onClick={alert('click')}` would alert immediately instead of when the button is clicked.
+  - `onClick={alert('click')}` 코드를 작성하고 버튼을 클릭하면 즉시 알림이 뜰 것이다.
+
+<br>
+
+- React components can have state by setting `this.state` in the constructor, 
+  - 리액트 컴포넌트는 생성자에서 `this.state`를 설정하여 상태를 가질 수 있다.
+- which should be considered private to the component.
+  - ??
+- Let's store the current value of the square in state,
+  - 사각형의 현재 값을 저장해보자.
+- and change it when the square is clicked.
+  - 그리고 사격형을 클릭했을 때 바뀌도록 만들어보자.
+
+<br>
+
+- First, add a constructor to the class to initialize the state:
+  - 우선, 상태를 초기화하기 위해 클래스에 생성자를 추가하자.
+
+```react
+class Square extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         value: null,
+      };
+   }
+   
+   render() {
+      return (
+      	<button className="square" onClick={() => alert('click')}>
+         	{this.props.value}
+         </button>
+      );
+   }
+}
+```
+
+- In [JavaScript classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), you need to explicitly call `super();` when defining the constructor of a subclass.
+  - JS 클래스에서, 서브클래스 생성자를 정의할 때 `super();`를 명시적으로 호출해야 한다.
+
+<br>
+
+- Now change the Square `render` method to display the value from the current state, and to toggle it on click:
+  - 이제 Square `render` 메소드를 변경해서 현재 상태의 값을 보여주고, 클릭 시 전환하자.
+- - Replace `this.props.value` with `this.state.value` inside the `<button>` tag.
+    - `<button>` 태그 안에서 `this.props.value`를 `this.state.value`로 변경해라.
+- - Replace the `() => alert()` event handler with `() => this.setState({value: 'X'})`.
+    - `() => alert()` 이벤트 핸들러를 `() => this.setState({value: 'X'})`로 변경해라.
+
+<br>
+
+- Now the `<button>` tag looks like this:
+  - 이제 `<button>` 태그는 다음과 같다.
+
+```react
+class Square extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         value: null,
+      };
+   }
+   
+   render() {
+      return (
+      	<button className="square" onClick={() => this.setState({value: 'X'})}>
+         	{this.state.value}
+         </button>
+      );
+   }
+}
+```
+
+- Whenever `this.setState` is called, an update to the component is scheduled,
+  - `this.setState`가 호출될 때마다, 컴포넌트 업데이트가 예정되어 있으므로,
+- causing React to merge in the passed state update and rerender the component along with its descendants.
+  - 업데이트된 상태가 전달되어 리액트가 이를 병합하고 하위 컴포넌트와 함께 다시 렌더링한다.
+- When the component rerenders,
+  - 컴포넌트가 다시 렌더링될 때,
+- `this.state.value` will be `'X'` so you'll see an X in the grid.
+  - `this.state.value`는 `'X'`가 되어 그리드 안의 X를 확인할 수 있다.
+
+<br>
+
+- If you click on any square, an X should show up in it.
+  - 아무 사각형이나 클릭해도, X가 보이게 된다.
+
+<br>
+
+[여기까지의 코드 확인](https://codepen.io/gaearon/pen/VbbVLg?editors=0010)
+
+<br>
+
+### Developer Tools (개발자 도구)
+
+- The React Devtools extension for [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/) lets you inspect a React component tree in your browser devtools.
+  - [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)과 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)의 리액트 개발자 도구 확장 프로그램은 리액트 컴포넌트 트리를 브라우저의 개발자 도구에서 검사할 수 있게 해준다.
+
+![devTools](/assets/img/devTools.png)
+
+- It lets you inspect the props and state of any of the components in your tree.
+  - 이것은 트리 안 컴포넌트의 props와 state를 검사할 수 있게 해준다.
+
+<br.
+
+- After installing it, you can right-click any element on the page, click "Inspect" to open the developer tools,
+  - 이것을 설치 후, 페이지 내의 요소를 우클릭해서, "Inspect"를 클릭하면 개발자 도구를 열 수 있다.
+- and the React tab will appear as the last tab to the right.
+  - 우측 마지막 탭에 리액트 탭이 보일 것이다.
+
+<br>
+
+- **However, note there are a few extra steps to get it working with CodePen:**
+  - 그러나 CodePen을 사용하여 작동시키고 싶다면 추가적인 작업이 있다.
+- - Log in or register and confirm your email (required to prevent spam).
+    - 로그인 또는 회원가입을 하고 이메일 인증을 받아야 한다(스팸 방지를 필요로 한다).
+- - Click the "Fork" button.
+    - "Fork" 버튼을 클릭해라.
+- - Click "Change View" and then choose "Debug mode".
+    - "Change View" 버튼을 클릭하고, "Debug mode"를 선택해라.
+- - In the new tab that opens, the devtools should now have a React tab.
+    - 새로운 탭에서 리액트 탭이 있는 개발자 도구를 볼 수 있다.
+
+------
+
+## Lifting State Up
+
 - ​
-
-
-
-
-
-
-
 
 
 
