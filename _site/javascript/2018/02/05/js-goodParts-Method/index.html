@@ -485,8 +485,183 @@ on <span>Javascript</span>
 <h3 id="functionapplythisarg-argarray">function.apply(thisArg, argArray)</h3>
 
 <ul>
+  <li>apply 메소드는 this에 연결된 객체(thisArg)와 옵션인 인수 배열(argArray)을 넘기면서 함수를 호출한다.</li>
+  <li>apply 메소드는 apply 호출 패턴에서 사용한다.</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">Function</span><span class="p">.</span><span class="nx">method</span><span class="p">(</span><span class="s1">'bind'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">that</span><span class="p">)</span> <span class="p">{</span>
+   <span class="c1">// 특정 함수를 that 객체의 메소드처럼 호출하는 함수 반환</span>
+   <span class="kd">var</span> <span class="nx">method</span> <span class="o">=</span> <span class="k">this</span><span class="p">,</span>
+       <span class="nx">slice</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">,</span>
+       <span class="nx">args</span> <span class="o">=</span> <span class="nx">slice</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="kr">arguments</span><span class="p">,</span> <span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+   <span class="k">return</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">method</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">that</span><span class="p">,</span> <span class="nx">args</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">slice</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="kr">arguments</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">])));</span>
+   <span class="p">};</span>
+<span class="p">});</span>
+
+<span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+   <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+<span class="p">}.</span><span class="nx">bind</span><span class="p">({</span><span class="na">value</span><span class="p">:</span> <span class="mi">666</span><span class="p">});</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">x</span><span class="p">());</span>	<span class="c1">/// 666</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="숫자">숫자</h2>
+
+<p><br /></p>
+
+<h3 id="numbertoexponentialfractiondigits">number.toExponential(fractionDigits)</h3>
+
+<ul>
+  <li>toExponential 메소드는 숫자를 지수 형태의 문자열로 반환한다.</li>
+  <li>옵션인 fractionDigits 매개변수는 소수점 아래 몇 째 자리까지 표시할 것인지를 지정한다.</li>
+  <li>이 값은 0에서 20 사이의 값이어야 한다.</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toExponential</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>	<span class="c1">// 3e+0</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toExponential</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span>	<span class="c1">// 3.14e+0</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toExponential</span><span class="p">(</span><span class="mi">7</span><span class="p">));</span>	<span class="c1">// 3.1415927e+0</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toExponential</span><span class="p">(</span><span class="mi">16</span><span class="p">));</span>	<span class="c1">// 3.1415926535897930e+0</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toExponential</span><span class="p">());</span>	<span class="c1">// 3.141592653589793e+0</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h3 id="numbertofixedfractiondigits">number.toFixed(fractionDigits)</h3>
+
+<ul>
+  <li>toFixed 메소드는 숫자를 고정 소수점 형태로 반환한다.</li>
+  <li>옵션인 fractionDigits 매개변수는 소수점 아래 몇 째 자리까지 표시할 것인지를 지정한다.</li>
+  <li>이 값은 0에서 20 사이의 값이어야 하며 기본값은 0이다.</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>	<span class="c1">// 3</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span>	<span class="c1">// 3.14</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">7</span><span class="p">));</span>	<span class="c1">// 3.1415927</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">16</span><span class="p">));</span>	<span class="c1">// 3.1415926535897930</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">());</span>	<span class="c1">// 3</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h3 id="numbertoprecisionprecision">number.toPrecision(precision)</h3>
+
+<ul>
+  <li>toPrecision 메소드는 숫자를 10진수 형태의 문자열로 반환한다.</li>
+  <li>옵션인 precision 매개변수는 반환되는 문자열에 포함된 숫자의 개수이다.</li>
+  <li>이 값은 1에서 21 사이이다.</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toPrecision</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span>	<span class="c1">// 3.1</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toPrecision</span><span class="p">(</span><span class="mi">7</span><span class="p">));</span>	<span class="c1">// 3.141593</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toPrecision</span><span class="p">(</span><span class="mi">16</span><span class="p">));</span>	<span class="c1">// 3.141592653589793</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toPrecision</span><span class="p">());</span>	<span class="c1">// 3.141592653589793</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h3 id="numbertostringradix">number.toString(radix)</h3>
+
+<ul>
+  <li>toString 메소드는 숫자를 문자열로 변환한다.</li>
+  <li>옵션인 radix 매개변수는 기수(또는 진법)를 지정한다.</li>
+  <li>이 값은 2에서 36 사이의 값이어야 한다.</li>
+  <li>radix의 기본값은 10이다.</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toString</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span>	<span class="c1">// 11.001001000011111101101010100010001000010110100011</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toString</span><span class="p">(</span><span class="mi">8</span><span class="p">));</span>	<span class="c1">// 3.1103755242102643</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toString</span><span class="p">(</span><span class="mi">16</span><span class="p">));</span>	<span class="c1">// 3.243f6a8885a3</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>	<span class="c1">// 3.141592653589793</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="객체">객체</h2>
+
+<p><br /></p>
+
+<h3 id="objecthasownpropertyname">object.hasOwnProperty(name)</h3>
+
+<ul>
+  <li>hasOwnProperty 메소드는 객체가 매개변수 name과 같은 이름의 속성이 있으면 true를 반환하고, 그렇지 않으면 false를 반환한다.</li>
+  <li>해당 이름이 프로토타입 체인 상에 있는지는 확인하지 않는다.</li>
+  <li>이 메소드는 name의 값이 hasOwnProperty일 경우에는 무용지물이다.</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">{</span><span class="na">member</span><span class="p">:</span> <span class="kc">true</span><span class="p">};</span>
+<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">a</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s1">'member'</span><span class="p">);</span>	<span class="c1">// true</span>
+<span class="kd">var</span> <span class="nx">u</span> <span class="o">=</span> <span class="nx">b</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s1">'member'</span><span class="p">);</span>	<span class="c1">// false</span>
+<span class="kd">var</span> <span class="nx">v</span> <span class="o">=</span> <span class="nx">b</span><span class="p">.</span><span class="nx">member</span><span class="p">;</span>			<span class="c1">// true</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="정규표현식-객체-regexp">정규표현식 객체 (RegExp)</h2>
+
+<p><br /></p>
+
+<h3 id="regexpexecstring">regexp.exec(string)</h3>
+
+<ul>
+  <li>exec 메소드는 정규표현식을 사용하는 메소드들 중에서 가장 강력한(가장 느리기도 한) 메소드이다.</li>
+  <li>이 메소드는 regexp를 string에 적용해서 일치하는 경우 배열을 반환한다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="regexpteststring">regexp.test(string)</h3>
+
+<ul>
+  <li>test 메소드는 정규표현식을 사용하는 메소드 가운데 가장 간단하고 가장 빠르다.</li>
+  <li>regexp가 문자열에 일치하면 true를 반환하고, 그렇지 않으면 false를 반환한다.</li>
+  <li>이 메소드와 g 플래그는 같이 사용해서는 안 된다.</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="sr">/&amp;.+;/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s1">'frank &amp;amp; beans'</span><span class="p">);</span>	<span class="c1">// true</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="문자열">문자열</h2>
+
+<p><br /></p>
+
+<h3 id="stringcharatpos">string.charAt(pos)</h3>
+
+<ul>
+  <li>charAt 메소드는 문자열에서 pos 위치에 있는 문자를 반환한다.</li>
+  <li>pos 값이 0보다 작거나 문자열의 .length 값보다 크거나 같으면 빈 문자열을 반환한다.</li>
+  <li>JS는 문자 데이터 타입이 없다. 그러므로 이 메소드의 결과는 문자 하나지만 문자열이다.</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s1">'Curly'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">initial</span> <span class="o">=</span> <span class="nx">name</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>	<span class="c1">// C</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h3 id="stringcharcodeatpos">string.charCodeAt(pos)</h3>
+
+<ul>
+  <li>charCodeAt 메소드는 charAt과 같은데, 다만 문자열 대신 해당 위치 문자의 코드를 반환하는 것이 다르다.</li>
+  <li>pos의 값이 0보다 작거나 문자열의 .length 값보다 크거나 같으면 NaN을 반환한다.</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s1">'Curly'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">initial</span> <span class="o">=</span> <span class="nx">name</span><span class="p">.</span><span class="nx">charCodeAt</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>	<span class="c1">// 67</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h3 id="stringconcatstring">string.concat(string…)</h3>
+
+<ul>
   <li>​</li>
 </ul>
+
 
       
     </div>

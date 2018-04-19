@@ -34,7 +34,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/react/2018/04/04/react-Learning-React-routing/</loc>
+      <loc>http://localhost:4000/react/2018/04/04/react-LearningReact-routing/</loc>
       
         <lastmod>2018-04-04T00:00:00+09:00</lastmod>
       
@@ -50,7 +50,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/react/2018/04/04/react-Learning-React-redux/</loc>
+      <loc>http://localhost:4000/react/2018/04/04/react-LearningReact-redux/</loc>
       
         <lastmod>2018-04-04T00:00:00+09:00</lastmod>
       
@@ -66,9 +66,25 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/react/2018/04/02/react-Learning-React-webpack/</loc>
+      <loc>http://localhost:4000/react/2018/04/02/react-LearningReact-webpack/</loc>
       
         <lastmod>2018-04-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/react/2018/04/01/react-LearningReact-intro/</loc>
+      
+        <lastmod>2018-04-01T00:00:00+09:00</lastmod>
       
 
       
@@ -178,7 +194,55 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/codewars/2018/01/17/codewars-removeVowels-8kyu/</loc>
+      <loc>http://localhost:4000/codewars/2018/01/18/codewars-removeVowels-8kyu/</loc>
+      
+        <lastmod>2018-01-18T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/18/codewars-abbreviateName-8kyu/</loc>
+      
+        <lastmod>2018-01-18T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/18/codewars-ES6Class-8kyu/</loc>
+      
+        <lastmod>2018-01-18T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/17/codewars-validateUser-8kyu/</loc>
       
         <lastmod>2018-01-17T00:00:00+09:00</lastmod>
       
@@ -194,39 +258,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/codewars/2018/01/17/codewars-abbreviateName-8kyu/</loc>
-      
-        <lastmod>2018-01-17T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/codewars/2018/01/17/codewars-ES6Class-8kyu/</loc>
-      
-        <lastmod>2018-01-17T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/codewars/2018/01/16/codewars-validateUser-8kyu/</loc>
+      <loc>http://localhost:4000/codewars/2018/01/16/codewars-mergeSort-8kyu/</loc>
       
         <lastmod>2018-01-16T00:00:00+09:00</lastmod>
       
@@ -242,7 +274,71 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/codewars/2018/01/15/codewars-mergeSort-8kyu/</loc>
+      <loc>http://localhost:4000/codewars/2018/01/16/codewars-countLowercase-8kyu/</loc>
+      
+        <lastmod>2018-01-16T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/16/codewars-checkExam-8kyu/</loc>
+      
+        <lastmod>2018-01-16T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/16/codewars-century-8kyu/</loc>
+      
+        <lastmod>2018-01-16T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/16/codewars-bigToSmall-8kyu/</loc>
+      
+        <lastmod>2018-01-16T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/15/codewars-toFreud-8kyu/</loc>
       
         <lastmod>2018-01-15T00:00:00+09:00</lastmod>
       
@@ -258,55 +354,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/codewars/2018/01/15/codewars-countLowercase-8kyu/</loc>
-      
-        <lastmod>2018-01-15T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/codewars/2018/01/15/codewars-checkExam-8kyu/</loc>
-      
-        <lastmod>2018-01-15T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/codewars/2018/01/15/codewars-century-8kyu/</loc>
-      
-        <lastmod>2018-01-15T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/codewars/2018/01/15/codewars-bigToSmall-8kyu/</loc>
+      <loc>http://localhost:4000/codewars/2018/01/15/codewars-contamination-8kyu/</loc>
       
         <lastmod>2018-01-15T00:00:00+09:00</lastmod>
       
@@ -1301,22 +1349,6 @@
       <loc>http://localhost:4000/codewars/2018/01/02/codewars-animal-8kyu/</loc>
       
         <lastmod>2018-01-02T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/react/2018/01/01/react-Learning-React/</loc>
-      
-        <lastmod>2018-01-01T00:00:00+09:00</lastmod>
       
 
       
