@@ -260,4 +260,192 @@ Array.method('unshift', function() {
 
 ### function.apply(thisArg, argArray)
 
+- apply 메소드는 this에 연결된 객체(thisArg)와 옵션인 인수 배열(argArray)을 넘기면서 함수를 호출한다.
+- apply 메소드는 apply 호출 패턴에서 사용한다.
+
+```javascript
+Function.method('bind', function(that) {
+   // 특정 함수를 that 객체의 메소드처럼 호출하는 함수 반환
+   var method = this,
+       slice = Array.prototype.slice,
+       args = slice.apply(arguments, [i]);
+   return function() {
+      return method.apply(that, args.concat(slice.apply(arguments, [0])));
+   };
+});
+
+var x = function() {
+   return this.value;
+}.bind({value: 666});
+alert(x());	/// 666
+```
+
+<br>
+
+## 숫자
+
+<br>
+
+### number.toExponential(fractionDigits)
+
+- toExponential 메소드는 숫자를 지수 형태의 문자열로 반환한다.
+- 옵션인 fractionDigits 매개변수는 소수점 아래 몇 째 자리까지 표시할 것인지를 지정한다.
+- 이 값은 0에서 20 사이의 값이어야 한다.
+
+```javascript
+document.writeln(Math.PI.toExponential(0));	// 3e+0
+document.writeln(Math.PI.toExponential(2));	// 3.14e+0
+document.writeln(Math.PI.toExponential(7));	// 3.1415927e+0
+document.writeln(Math.PI.toExponential(16));	// 3.1415926535897930e+0
+document.writeln(Math.PI.toExponential());	// 3.141592653589793e+0
+```
+
+<br>
+
+### number.toFixed(fractionDigits)
+
+- toFixed 메소드는 숫자를 고정 소수점 형태로 반환한다.
+- 옵션인 fractionDigits 매개변수는 소수점 아래 몇 째 자리까지 표시할 것인지를 지정한다.
+- 이 값은 0에서 20 사이의 값이어야 하며 기본값은 0이다.
+
+```javascript
+document.writeln(Math.PI.toFixed(0));	// 3
+document.writeln(Math.PI.toFixed(2));	// 3.14
+document.writeln(Math.PI.toFixed(7));	// 3.1415927
+document.writeln(Math.PI.toFixed(16));	// 3.1415926535897930
+document.writeln(Math.PI.toFixed());	// 3
+```
+
+<br>
+
+### number.toPrecision(precision)
+
+- toPrecision 메소드는 숫자를 10진수 형태의 문자열로 반환한다.
+- 옵션인 precision 매개변수는 반환되는 문자열에 포함된 숫자의 개수이다.
+- 이 값은 1에서 21 사이이다.
+
+```javascript
+document.writeln(Math.PI.toPrecision(2));	// 3.1
+document.writeln(Math.PI.toPrecision(7));	// 3.141593
+document.writeln(Math.PI.toPrecision(16));	// 3.141592653589793
+document.writeln(Math.PI.toPrecision());	// 3.141592653589793
+```
+
+<br>
+
+### number.toString(radix)
+
+- toString 메소드는 숫자를 문자열로 변환한다.
+- 옵션인 radix 매개변수는 기수(또는 진법)를 지정한다.
+- 이 값은 2에서 36 사이의 값이어야 한다.
+- radix의 기본값은 10이다.
+
+```javascript
+document.writeln(Math.PI.toString(2));	// 11.001001000011111101101010100010001000010110100011
+document.writeln(Math.PI.toString(8));	// 3.1103755242102643
+document.writeln(Math.PI.toString(16));	// 3.243f6a8885a3
+document.writeln(Math.PI.toString());	// 3.141592653589793
+```
+
+<br>
+
+## 객체
+
+<br>
+
+### object.hasOwnProperty(name)
+
+- hasOwnProperty 메소드는 객체가 매개변수 name과 같은 이름의 속성이 있으면 true를 반환하고, 그렇지 않으면 false를 반환한다.
+- 해당 이름이 프로토타입 체인 상에 있는지는 확인하지 않는다.
+- 이 메소드는 name의 값이 hasOwnProperty일 경우에는 무용지물이다.
+
+```javascript
+var a = {member: true};
+var b = Object.create(a);
+var t = a.hasOwnProperty('member');	// true
+var u = b.hasOwnProperty('member');	// false
+var v = b.member;			// true
+```
+
+<br>
+
+## 정규표현식 객체 (RegExp)
+
+<br>
+
+### regexp.exec(string)
+
+- exec 메소드는 정규표현식을 사용하는 메소드들 중에서 가장 강력한(가장 느리기도 한) 메소드이다.
+- 이 메소드는 regexp를 string에 적용해서 일치하는 경우 배열을 반환한다.
+
+<br>
+
+### regexp.test(string)
+
+- test 메소드는 정규표현식을 사용하는 메소드 가운데 가장 간단하고 가장 빠르다.
+- regexp가 문자열에 일치하면 true를 반환하고, 그렇지 않으면 false를 반환한다.
+- 이 메소드와 g 플래그는 같이 사용해서는 안 된다.
+
+```javascript
+var b = /&.+;/.test('frank &amp; beans');	// true
+```
+
+<br>
+
+## 문자열
+
+<br>
+
+### string.charAt(pos)
+
+- charAt 메소드는 문자열에서 pos 위치에 있는 문자를 반환한다.
+- pos 값이 0보다 작거나 문자열의 .length 값보다 크거나 같으면 빈 문자열을 반환한다.
+- JS는 문자 데이터 타입이 없다. 그러므로 이 메소드의 결과는 문자 하나지만 문자열이다.
+
+```javascript
+var name = 'Curly';
+var initial = name.charAt(0);	// C
+```
+
+<br>
+
+### string.charCodeAt(pos)
+
+- charCodeAt 메소드는 charAt과 같은데, 다만 문자열 대신 해당 위치 문자의 코드를 반환하는 것이 다르다.
+- pos의 값이 0보다 작거나 문자열의 .length 값보다 크거나 같으면 NaN을 반환한다.
+
+```javascript
+var name = 'Curly';
+var initial = name.charCodeAt(0);	// 67
+```
+
+<br>
+
+### string.concat(string...)
+
 - ​
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
