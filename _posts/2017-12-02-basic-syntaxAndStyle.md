@@ -51,8 +51,8 @@ var obj3 = { animal: 'dog', noise: 'bark', age: 3, type: 'Labrador' };
 
 
 console.log(obj1);	// { firstName: 'Leo', lastName: 'Song'}
-console.log(obj1);	// { a: 1, b: 2, c: 3, d: 4 }
-console.log(obj1);	// { animal: 'dog', noise: 'bark', age: 3, type: 'Labrador' }
+console.log(obj2);	// { a: 1, b: 2, c: 3, d: 4 }
+console.log(obj3);	// { animal: 'dog', noise: 'bark', age: 3, type: 'Labrador' }
 ```
 
 <br>
