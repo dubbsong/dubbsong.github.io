@@ -31,7 +31,7 @@ function isReallyNaN(value) {
 
 isReallyNaN(1234);		// false
 isReallyNaN('1234');		// false
-isReallyNaN(undefined);	// false
+isReallyNaN(undefined);		// false
 isReallyNaN(NaN);		// true
 ```
 
@@ -56,7 +56,7 @@ function isReallyNaN(value) {
 
 isReallyNaN(1234);		// false
 isReallyNaN('1234');		// false
-isReallyNaN(undefined);	// false
+isReallyNaN(undefined);		// false
 isReallyNaN(NaN);		// true
 ```
 
