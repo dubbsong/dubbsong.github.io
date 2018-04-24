@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "러닝 리액트(Learning React) - ES6 변수 선언하기 (const / let)"
+title: "러닝 리액트 - ES6 const, let"
 categories: javascript
 tags: javascript react
 ---
@@ -15,7 +15,7 @@ tags: javascript react
 
 <br>
 
-#### const
+## const
 
 - `상수(constant)`는 값을 변경할 수 없는 변수다.
 - 상수가 없던 시절에는 모든 값을 변수에 넣어 사용했다. 변수는 값을 변경할 수 있다.
@@ -42,7 +42,7 @@ pizza = false
 
 <br>
 
-#### let
+## let
 
 - JS도 이제는 **구문적인 변수 영역 규칙(lexical variable scoping)**을 지원한다.
 - JS에서는 중괄호 {}를 사용해 코드 블럭을 만든다.
