@@ -29,7 +29,7 @@ words will always be separated by a space.
 
 ```javascript
 function addLength(string) {
-   let splitted = string.split(' ');
+   const splitted = string.split(' ');
    
    for (let i = 0; i < splitted.length; i++) {
       splitted[i] = splitted[i] + ' ' + splitted[i].length;
@@ -47,7 +47,7 @@ addLength('Wassup bro?');	// ['Wassup 6', 'bro? 4']
 
 ```javascript
 function addLength(string) {
-   let splitted = string.split(' ');
+   const splitted = string.split(' ');
    let result = [];
    
    for (let i = 0; i < splitted.length; i++) {

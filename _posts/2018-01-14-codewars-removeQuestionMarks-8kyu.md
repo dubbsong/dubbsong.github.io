@@ -43,8 +43,8 @@ removeQuestionMarks('Wassup bro??');	// Wassup bro
 
 ```javascript
 function removeQuestionMarks(string) {
+   const splitted = string.split('');
    let result = '';
-   let splitted = string.split('');
    
    for (let i = 0; i < string.length; i++) {
       if (splitted[i] === '?') {

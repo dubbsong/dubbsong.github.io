@@ -37,8 +37,8 @@ sorted in '`ascending order`'.
 
 ```javascript
 function mergeSort(array1, array2) {
-   let merged = array1.concat(array2);
-   let sorted = merged.sort((a, b) => a - b);
+   const merged = array1.concat(array2);
+   const sorted = merged.sort((a, b) => a - b);
    let result = [];
    
    for (let i = 0; i < sorted.length; i++) {
@@ -61,7 +61,7 @@ mergeSort([1, 3], [1, 10]);	// [1, 3, 10]
 
 ```javascript
 function mergeSort(array1, array2) {
-   let mergeSorted = array1.concat(array2).sort((a, b) => a - b);
+   const mergeSorted = array1.concat(array2).sort((a, b) => a - b);
    let result = [];
    
    for (let i = 0; i < mergeSorted.length; i++) {
@@ -84,8 +84,8 @@ mergeSort([1, 3], [1, 10]);	// [1, 3, 10]
 
 ```javascript
 function mergeSort(array1, array2) {
-   let merged = [...array1, ...array2];
-   let sorted = merged.sort((a, b) => a - b);
+   const merged = [...array1, ...array2];
+   const sorted = merged.sort((a, b) => a - b);
    let result = [];
    
    for (let i = 0; i < sorted.length; i++) {

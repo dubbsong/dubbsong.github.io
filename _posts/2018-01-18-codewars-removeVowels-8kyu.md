@@ -53,7 +53,7 @@ removeVowels('Wassup bro?');	// Wssp br?
 
 ```javascript
 function removeVowels(string) {
-   let vowels = 'aeiou';
+   const vowels = 'aeiou';
    let result = '';
    
    for (let i = 0; i < string.length; i++) {

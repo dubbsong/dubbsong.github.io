@@ -26,7 +26,7 @@ on the given object whose values are strings.
 ## solution
 
 ```javascript
-let obj = { name: 'Sam', age: 28 };
+const obj = { name: 'Sam', age: 28 };
 
 function removeStringValues(obj) {
    for (let i in obj) {

@@ -27,7 +27,7 @@ with a dot seperating them.
 
 ```javascript
 function abbreviateName(name) {
-   let splitted = name.split(' ');
+   const splitted = name.split(' ');
    return splitted[0][0] + "." + splitted[1][0].toUpperCase();
 }
 
@@ -47,7 +47,7 @@ abbreviateName('Ralph Donovan');	// R.D
 
 ```javascript
 function abbreviateName(name) {
-   let splitted = name.split(' ');
+   const splitted = name.split(' ');
    return `${splitted[0][0]}.${splitted[1][0]}`.toUpperCase();
 }
 

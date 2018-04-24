@@ -33,7 +33,7 @@ should result in the output being empty string('').
 
 ```javascript
 function toFreud(string) {
-   let splitted = string.split(' ').map(a => a = 'ssup');
+   const splitted = string.split(' ').map(a => a = 'ssup');
    return string.length > 0 ? splitted.join(' ') : '';
 }
 
@@ -120,7 +120,7 @@ toFreud('talk anything');	// ssup ssup
 ```javascript
 function toFreud(string) {
    let result = [];
-   let splitted = string.split(' ');
+   const splitted = string.split(' ');
    
    if (string === '') {
       return '';

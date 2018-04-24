@@ -23,7 +23,7 @@ calculate the total cost of the mangoes.
 
 ```javascript
 function mango(quantity, price) {
-   let free = quantity / 3;
+   const free = quantity / 3;
    return (quantity - free) * price;
 }
 
@@ -58,7 +58,7 @@ mango(9, 5);	// 30
 
 ```javascript
 function mango(quantity, price) {
-   let free = Math.floor(quantity / 3);
+   const free = Math.floor(quantity / 3);
    return (quantity - free) * price;
 }
 

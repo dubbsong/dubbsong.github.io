@@ -32,7 +32,7 @@ do not construct a cloned object that omits the properties.
 ## solution 01
 
 ```javascript
-let obj = { a: 2, b: 3, c: 4 };
+const obj = { a: 2, b: 3, c: 4 };
 
 function removeEvenValues(obj) {
    for (let i in obj) {
@@ -52,7 +52,7 @@ removeEvenValues(obj);	// { b: 3 }
 ## solution 02
 
 ```javascript
-let obj = { a: 2, b: 3, c: 4 };
+const obj = { a: 2, b: 3, c: 4 };
 
 function removeEvenValues(obj) {
    for (let i in obj) {
