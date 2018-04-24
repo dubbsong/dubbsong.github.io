@@ -51,6 +51,7 @@ pizza = false
 
 - **함수의 경우 코드 블럭이 별도의 변수 영역을 이룬다. 하지만 if/else 문 같은 경우는 다르다.**
 - if/else 블럭 안에서 변수를 새로 만들면 그 변수의 영역이 그 블럭 안으로만 한정되지 않는다.
+- if 블럭 안의 topic 변수의 값을 변경하면, if 블럭 밖의 topic 변수의 값도 변경된다.
 
 ```javascript
 var topic = '자바스크립트'
@@ -62,8 +63,6 @@ if (topic) {
 
 console.log('글로벌', topic)	// 글로벌 리액트
 ```
-
-- if 블럭 안의 topic 변수의 값을 변경하면, if 블럭 밖의 topic 변수의 값도 변경된다.
 
 <br>
 
