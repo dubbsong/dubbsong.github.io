@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Git
-slug: git
+title: Python
+slug: python
 category: dev
 menu: false
-order: 4
+order: 5
 ---
