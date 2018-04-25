@@ -196,12 +196,12 @@ import './index.css';
 ### What is React? (리액트란?)
 
 - React is a declarative, efficient, and flexible JavaScript library for building user interfaces.
-  - 리액트는 유저 인터페이스를 만들기 위한 선언적이고, 효율적이며, 유연한 JS 라이브러리이다.
+  - React는 유저 인터페이스를 만들기 위한 선언적이고, 효율적이며, 유연한 JS 라이브러리이다.
 
 <br>
 
 - React has a few different kinds of components, but we'll start with `React.Component` subclasses:
-  - 리액트는 조금 여러 종류의 컴포넌트를 가지고 있지만, 우리는 서브클래스 `React.Componen`로 시작할 것이다.
+  - React는 조금 여러 종류의 컴포넌트를 가지고 있지만, 우리는 서브클래스 `React.Componen`로 시작할 것이다.
 
 <br>
 
@@ -227,14 +227,14 @@ class ShoppingList extends React.Component {
 - We'll get to the funny XML-like tags in a second.
   - XML 같은 태그를 잠깐 사용할 것이다.
 - Your components tell React what you want to render -
-  - 작성한 컴포넌트는 니가 렌더하고 싶은 것을 리액트에게 알려준다.
+  - 작성한 컴포넌트는 니가 렌더하고 싶은 것을 React에게 알려준다.
 - then React will efficiently update and render just the right components when your data changes.
-  - 그리고 리액트는 데이터가 변경될 때 컴포넌트를 효율적으로 업데이트 하고 렌더링한다.
+  - 그리고 React는 데이터가 변경될 때 컴포넌트를 효율적으로 업데이트 하고 렌더링한다.
 
 <br>
 
 - Here, ShoppingList is a **React component class,** or **React component type**.
-  - 여기에서, ShoppingList는 **리액트 컴포넌트 클래스**이거나 **리액트 컴포넌트 타입**이다.
+  - 여기에서, ShoppingList는 **React 컴포넌트 클래스**이거나 **React 컴포넌트 타입**이다.
 - A component takes in parameters, called `props`,
   - 컴포넌트는 `props`라 불리는 파라미터를 가져오고,
 - and returns a hierarchy of views to display via the `render` method.
@@ -245,11 +245,11 @@ class ShoppingList extends React.Component {
 - The `render` method returns a *description* of what you want to render,
   - `render` 메소드는 렌더링하기를 원하는 내용을 반환하고,
 - and then React takes that description and renders it to the screen.
-  - 리액트는 그 내용을 가져와서 스크린에 렌더링한다.
+  - React는 그 내용을 가져와서 스크린에 렌더링한다.
 - In particular, `render` returns a **React element**, which is a lightweight description of what to render.
-  - 특히, `render`는 렌더링할 간단한 내용인 **리액트 엘리먼트**를 반환한다.
+  - 특히, `render`는 렌더링할 간단한 내용인 **React 엘리먼트**를 반환한다.
 - Most React developers use a special syntax called JSX which makes it easier to write these structures.
-  - 대부분의 리액트 개발자들은 이 구조를 더 쉽게 작성할 수 있게 해주는 JSX라는 특별한 문법을 사용한다.
+  - 대부분의 React 개발자들은 이 구조를 더 쉽게 작성할 수 있게 해주는 JSX라는 특별한 문법을 사용한다.
 - The `<div />` syntax is transformed at build time to `React.createElement('div')`.
   - `<div />` 문법은 빌드 시에 `React.createElement('div')`로 변환된다.
 - The example above is equivalent to:
@@ -303,14 +303,14 @@ React.createElement(
 - You can put any JavaScript expression within braces inside JSX.
   - JSX에서는 중괄호 안에 어느 JS 표현이든 사용할 수 있다.
 - Each React element is a real JavaScript object that you can store in a variable or pass around your program.
-  - 각 리액트 엘리먼트는 변수에 저장하거나 프로그램에 전달할 수 있는 실제 JS 객체이다.
+  - 각 React 엘리먼트는 변수에 저장하거나 프로그램에 전달할 수 있는 실제 JS 객체이다.
 
 <br>
 
 - The `ShoppingList` component only renders built-in DOM components,
   - `ShoppingList` 컴포넌트는 내장된 DOM 컴포넌트에만 렌더링할 수 있다.
 - but you can compose custom React components just as easily, by writing `<ShoppingList />`.
-  - 하지만 `<ShoppingList>`를 작성하여 커스텀 리액트 컴포넌트를 쉽게 구성할 수 있다.
+  - 하지만 `<ShoppingList>`를 작성하여 커스텀 React 컴포넌트를 쉽게 구성할 수 있다.
 - Each component is encapsulated so it can operate independently,
   - 각 컴포넌트는 캡슐화되어 독립적으로 작동할 수 있다.
 - which allows you to build complex UIs out of simple components.
@@ -444,7 +444,7 @@ class Square extends React.Component {
 <br>
 
 - React components can have state by setting `this.state` in the constructor, 
-  - 리액트 컴포넌트는 생성자에서 `this.state`를 설정하여 상태를 가질 수 있다.
+  - React 컴포넌트는 생성자에서 `this.state`를 설정하여 상태를 가질 수 있다.
 - which should be considered private to the component.
   - ??
 - Let's store the current value of the square in state,
@@ -515,7 +515,7 @@ class Square extends React.Component {
 - Whenever `this.setState` is called, an update to the component is scheduled,
   - `this.setState`가 호출될 때마다, 컴포넌트 업데이트가 예정되어 있으므로,
 - causing React to merge in the passed state update and rerender the component along with its descendants.
-  - 업데이트된 상태가 전달되어 리액트가 이를 병합하고 하위 컴포넌트와 함께 다시 렌더링한다.
+  - 업데이트된 상태가 전달되어 React가 이를 병합하고 하위 컴포넌트와 함께 다시 렌더링한다.
 - When the component rerenders,
   - 컴포넌트가 다시 렌더링될 때,
 - `this.state.value` will be `'X'` so you'll see an X in the grid.
@@ -535,7 +535,7 @@ class Square extends React.Component {
 ### Developer Tools (개발자 도구)
 
 - The React Devtools extension for [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/) lets you inspect a React component tree in your browser devtools.
-  - [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)과 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)의 리액트 개발자 도구 확장 프로그램은 리액트 컴포넌트 트리를 브라우저의 개발자 도구에서 검사할 수 있게 해준다.
+  - [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)과 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)의 React 개발자 도구 확장 프로그램은 React 컴포넌트 트리를 브라우저의 개발자 도구에서 검사할 수 있게 해준다.
 
 ![devTools](/assets/img/devTools.png)
 
@@ -547,7 +547,7 @@ class Square extends React.Component {
 - After installing it, you can right-click any element on the page, click "Inspect" to open the developer tools,
   - 이것을 설치 후, 페이지 내의 요소를 우클릭해서, "Inspect"를 클릭하면 개발자 도구를 열 수 있다.
 - and the React tab will appear as the last tab to the right.
-  - 우측 마지막 탭에 리액트 탭이 보일 것이다.
+  - 우측 마지막 탭에 React 탭이 보일 것이다.
 
 <br>
 
@@ -560,13 +560,74 @@ class Square extends React.Component {
 - - Click "Change View" and then choose "Debug mode".
     - "Change View" 버튼을 클릭하고, "Debug mode"를 선택해라.
 - - In the new tab that opens, the devtools should now have a React tab.
-    - 새로운 탭에서 리액트 탭이 있는 개발자 도구를 볼 수 있다.
+    - 새로운 탭에서 React 탭이 있는 개발자 도구를 볼 수 있다.
 
 ------
 
 ## Lifting State Up
 
-- ​
+- We now have the basic building blocks for a tic-tac-toe game.
+  - 틱택토 게임을 만들기 위한 블럭들이 있다.
+- But right now, the state is encapsulated in each Square component.
+  - 하지만 아직 각 Square 컴포넌트 안에 상태들이 캡슐화되어 있다.
+- To make a fully-working game, we now need to check if one player has won the game,
+  - 완벽하게 동작하는 게임을 만들기 위해서, 우리는 한 플레이어가 이겼는지 확인해야 하고,
+- and alternate placing X and O in the squares.
+  - 사각형들 안에 X와 O를 번갈아 표시해야 한다.
+- To check if someone has won,
+  - 누가 이겼는지 확인하기 위해서,
+- we'll need to have the value of all 9 squares in one place,
+  - 한 장소에서 모든 9개 사각형들의 값을 가지고 있어야 한다.
+- rather than split up across the Square components.
+  - Square 컴포넌트들을 나누기 보다는
+
+
+<br>
+
+- You might think that Board should just inquire what the current state of each Square is.
+  - Board가 각 Square의 현재 상태가 무엇인지 확인해야 한다고 생각할 수도 있다.
+- Although it is technically possible to do this in React,
+  - React에서 이것은 기술적으로 가능하기는 하지만,
+- it is discouraged because it tends to make code difficult to understand, more brittle,
+  - 코드를 이해하는 것을 어렵고, 불안정하게 만들기 때문에 낙담하게 만든다.
+- and harder to refactor.
+  - 그리고 리팩토링하기 힘들게 만든다.
+
+<br>
+
+- Instead, the best solution here is to store this state in the Board component instead of in each Square
+  - 가장 좋은 방법은 각 Square에 상태를 저장하는 대신에 Board 컴포넌트에 저장하는 것이다.
+- and the Board component can tell each Square what to display,
+  - Board 컴포넌트는 각 Square에게 무엇을 보여줄지 알릴 수 있다.
+- like how we made each square display its index earlier.
+  - 이전에 각 사각형에 인덱스를 보여준 방법처럼.
+
+<br>
+
+- **When you want to aggregate data from multiple children or to have two child components communicate with each other,**
+  - 여러 자식 컴포넌트로부터 데이터를 모으거나 두 개의 자식 컴포넌트들이 서로 통신하기를 원한다면,
+- **move the state upwards so that it lives in the parent component.**
+  - 상태를 부모 컴포넌트로 이동해라.
+- **The parent can then pass the state back down to the children via props,**
+  - 부모 컴포넌트는 props를 통해 자식 컴포넌트로 상태를 전달할 수 있다.
+- **so that the child components are always in sync with each other and with the parent.**
+  - 그러면 자식 컴포넌트들은 항상 자식 컴포넌트나 부모 컴포넌트와 동기화할 수 있다.
+
+<br>
+
+- Pulling state upwards like this is common when refactoring React components,
+  - 상태를 들어올리는 것은 React 컴포넌트들을 리팩토링할 대 가장 많이 사용하는 방법이다.
+- so let's take this opportunity to try it out.
+  - 이 기회에 시도해보자.
+- Add a constructor to the Board and set its initial state to contain an array with 9 nulls, corresponding to the 9 squares:
+  - Board에 생성자를 추가하고 9개의 사각형과 일치하는 9개의 null을 가진 배열을 포함한 상태로 초기화해라.
+
+```react
+class Board extends React.Component {
+   
+}
+```
+
 
 
 
