@@ -624,9 +624,187 @@ class Square extends React.Component {
 
 ```react
 class Board extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         squares: Array(9).fill(null),
+      };
+   }
+   
+   renderSquare(i) {
+      return <Square value={i} />;
+   }
+   
+   render() {
+      const status = 'Next player: X';
+      
+      return (
+         <div>
+	      	<div className="status">{status}</div>
+            <div className="board-row">
+            	{this.renderSquare(0)}
+               {this.renderSquare(1)}
+               {this.renderSquare(2)}
+            </div>
+            <div className="board-row">
+            	{this.renderSquare(3)}
+               {this.renderSquare(4)}
+               {this.renderSquare(5)}
+            </div>
+            <div className="board-row">
+            	{this.renderSquare(6)}
+               {this.renderSquare(7)}
+               {this.renderSquare(8)}
+            </div>
+			</div>
+      );
+   }
+}
+```
+
+- We'll fill it in later so that a board looks something like
+  - 나중에 다음과 같은 보드로 채울 예정이다.
+
+```react
+[
+   'O', null, 'X',
+   'X', 'X', 'O',
+   'O', null, null,
+]
+```
+
+- Board's `renderSquare` method currently looks like this:
+  - 지금 Board의 `renderSquare` 메소드는 다음과 같다.
+
+```react
+renderSquare(i) {
+   return <Square value={i} />;
+}
+```
+
+- Modify it to pass a `value` prop to Square.
+  - Square에 `value` prop을 전달하도록 수정해라.
+
+```react
+renderSquare(i) {
+   return <Square value={this.state.squares[i]} />;
+}
+```
+
+[여기까지의 코드 확인](https://codepen.io/gaearon/pen/gWWQPY?editors=0010)
+
+<br>
+
+- Now we need to change what happens when a square is clicked.
+  - 이제 우리는 사각형이 클릭되었을 때 발생할 변경이 필요하다.
+- The Board component now stores which squares are filled,
+  - Board 컴포넌트는 어떤 사각형이 채워졌는지 저장하고 있다.
+- which means we need some way for Square to update the state of Board.
+  - 그래서 Square가 Board의 상태를 업데이트할 방법이 필요하다.
+- Since component state is considered private, we can't update Board's state directly from Square.
+  - 컴포넌트 상태가 비공개로 간주되므로, Square에서 Board의 상태를 직접적으로 업데이트 할 수 없다.
+
+<br>
+
+- The usual pattern here is pass down a function from Board to Square that gets called when the square is clicked.
+  - 일반적으로 패턴은 사각형이 클릭될 때 호출되는 함수를 Board에서 Square로 전달한다.
+- Change `renderSquare` in Board again so that it reads:
+  - Board 안에 있는 `renderSquare`를 다시 변경해라.
+
+```react
+renderSquare(i) {
+   return (
+   	<Square
+         value={this.state.squares[i]}
+         onClick={() => this.handleClick(i)}
+		/>
+   );
+}
+```
+
+- We split the returned element into multiple lines for readability,
+  - 가독성을 위해 반환된 요소들을 여러 줄로 나누었다.
+- and added parentheses around it so that JavaScript doesn't insert a semicolon after `return` and break our code.
+  - 그리고 JavaScript가 `return` 후 세미콜론을 삽입하고 코드를 중단하지 않도록 괄호를 추가한다.
+
+<br>
+
+- Now we're passing down two props from Board to Square: `value` and `onClick`.
+  - 이제 Board에서 Square로 두 개의 props를 전달한다: `value`와 `onClick`을.
+- The latter is a function that Square can call.
+  - 후자는 Square에서 호출할 수 있는 함수이다.
+- Let's make the following changes to Square:
+  - Square에서 다음과 같이 변경해보자.
+
+<br>
+
+1. Replace `this.state.value` with `this.props.value` in Square's `render`.
+   - Square의 `render`에서 `this.state.value`를 `this.props.value`로 대체해라.
+2. Replace `this.setState()` with `this.props.onClick()` in Square's `render`.
+   - Square의 `render`에서 `this.setState()`를 `this.props.onClick()`으로 대체해라.
+3. Delete `constructor` definition from Square because it doesn't have state anymore.
+   - 더 이상 상태가 없으므로 Square에서 정의한 `constructor`를 삭제해라.
+
+<br>
+
+- After these changes, the whole Square component looks like this:
+  - 이 변경들을 한 후에, 모든 Square 컴포넌트는 다음과 같다.
+
+```react
+class Square extends React.Component {
+   render() {
+      return (
+      	<button className="square" onClick={() => this.props.onClick()}>
+         	{this.props.value}
+         </button>
+      );
+   }
+}
+```
+
+<br>
+
+- Now when the square is clicked, it calls the `onClick` function that was passed by Board.
+  - 이제 사각형이 클릭될 때, Board에서 전달된 `onClick` 함수가 호출된다.
+- Let's recap what happens here:
+  - 어떤 일이 일어나는지 요약해보자.
+
+<br>
+
+1. The `onClick` prop on the built-in DOM `<button>` component tells React to set up a click event listener.
+   - 내장된 DOM `<button>` 컴포넌트의 `onClick` props는 React에게 클릭 이벤트 리스너를 설정하도록 지시한다.
+2. When the button is clicked, React will call the `onClick` event handler defined in Square's `render()` method.
+   - 버튼이 클릭될 때, React는 Square의 `render()` 메소드에 정의된 `onClick` 이벤트 핸들러를 호출한다.
+3. This event handler calls `this.props.onClick()`. Square's props were specified by the Board.
+   - 이 이벤트 핸들러는 `this.props.onClick()`을 호출한다. Square의 props는 Board에 의해 명시되었다.
+4. Board passed `onClick={() => this.handleClick(i)}` to Square, so, when called, it runs `this.handleClick(i)` on the Board.
+   - Board는 `onClick={() => this.handleClick(i)}`를 Square로 전달했으므로, 호출될 때, Board에서 `this.handleClick(i)`을 실행한다.
+5. We have not defined the `handleClick()` method on the Board yet, so the code crashes.
+   - 아직 Board에서 `handleClick()` 메소드를 정의하지 않았으므로, 코드가 깨진다.
+
+<br>
+
+- Note that DOM `<button>` element's `onClick` attribute has a special meaning to React,
+  - DOM `<button>` 요소의 `onClick` 속성은 React에서 특별한 의미를 가진다.
+- but we could have named Square's `onClick` prop or Board's `handleClick` method differently.
+  - 하지만 Square의 `onClick` prop이나 Board의 `handleClick` 메소드를 다르게 명명했을 수도 있다.
+- It is, however, conventional in React apps to use `on*` names for the attributes and `handle*` for the handler methods.
+  - 그러나 React 애플리케이션에서는 속성에 `on*` 이름을 사용하고 핸들러 메소드에 `handle*`을 사용하는 것이 일반적이다.
+
+<br>
+
+- Try clicking a square - you should get an error because we haven't defined `handleClick` yet.
+  - 사각형을 클릭해보자. 아직 `handleClick`을 정의하지 않았기 때문에 에러가 발생할 것이다.
+- Add it to the Board class.
+  - Board 클래스에 `handleClick`을 추가해라.
+
+```react
+class Board extends React.Component {
    
 }
 ```
+
+
 
 
 
