@@ -226,7 +226,126 @@ class Square extends React.Component {
 
 1. The `onClick` prop on the built-in DOM `<button>` component tells React to set up a click event listener.
    - 내장된 DOM `<button>` 컴포넌트의 `onClick` prop은 React에게 클릭 이벤트 리스너를 설정하도록 지시한다.
+2. When the button is clicked, React will call the `onClick` event handler defined in Square's `render()` method.
+   - 버튼을 클릭하면, React는 Square의 `render()` 메소드에 정의된 `onClick` 이벤트 핸들러를 호출한다.
+3. This event handler calls `this.props.onClick()`. Square's props were specified by the Board.
+   - 이 이벤트 핸들러는 `this.props.onClick()`을 호출한다. Square의 props는 Board에 의해 명시되었다.
+4. Board passed `onClick={() => this.handleClick(i)}` to Square, so, when called, it runs `this.handleClick(i)` on the Board.
+   - Board는 `onClick={() => this.handleClick(i)}`를 Square에 전달했으므로, 호출될 때, Board에서 `this.handleClick(i)`을 실행한다.
+5. We have not defined the `handleClick()` method on the Board yet, so the code crashes.
+   - 아직 Board에서 `handleClick()` 메소드를 정의하지 않았으므로, 코드가 깨진다.
 
+
+<br>
+
+- Note that DOM `<button>` element's `onClick` attribute has a special meaning to React,
+  - DOM `<button>` 요소의 `onClick` 속성은 React에 특별한 의미를 가진다.
+- but we could have named Square's `onClick` prop or Board's `handleClick` method differently.
+  - 하지만 Square의 `onClick` prop 또는 Board의 `handleClick` 메소드의 이름을 다르게 지정할 수 있다.
+- It is, however, conventional in React apps to use `on*` names for the attributes and `handle*` for the handler methods.
+  - 그러나 React 애플리케이션에서 속성에 `on*` 이름을 사용하고, 핸들러 메소드에 `handle*`을 사용하는 것이 일반적이다.
+
+<br>
+
+- Try clicking a square - you should get an error because we haven't defined `handleClick` yet.
+  - 사각형을 클릭해보자. 아직 `handleClick`을 정의하지 않았기 때문에 오류가 발생할 것이다.
+- Add it to the Board class.
+  - Board 클래스에 `handleClick`을 추가해라.
+
+```react
+class Board extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         squares: Array(9).fill(null),
+      };
+   }
+   
+   handleClick(i) {
+      const squares = this.state.squares.slice();
+      squares[i] = 'X';
+      this.setState({squares: squares});
+   }
+   
+   renderSquare(i) {
+      return (
+      	<Square
+            value={this.state.squares[i]}
+            onClick={() => this.handleClick(i)}
+			/>
+      );
+   }
+   
+   render() {
+      const status = 'Next player: X';
+      
+      return (
+      	<div>
+         	<div className="status">{status}</div>
+            <div className="board-row">
+            	{this.renderSquare(0)}
+               {this.renderSquare(1)}
+               {this.renderSquare(2)}
+            </div>
+            <div className="board-row">
+            	{this.renderSquare(3)}
+               {this.renderSquare(4)}
+               {this.renderSquare(5)}
+            </div>
+            <div className="board-row">
+            	{this.renderSquare(6)}
+               {this.renderSquare(7)}
+               {this.renderSquare(8)}
+            </div>
+         </div>
+      );
+   }
+}
+```
+
+[현재 코드 확인 링크](https://codepen.io/gaearon/pen/ybbQJX?editors=0010)
+
+<br>
+
+- We call `.slice()` to copy the `squares` array instead of mutating the existing array.
+  - 기존 배열을 변경하는 대신 `.slice()`를 호출해서 `squares` 배열을 복사한다.
+- Jump ahead a [section](https://reactjs.org/tutorial/tutorial.html#why-immutability-is-important) to learn why immutability is important.
+  - 왜 불변성이 중요한지 배우기 위해 [section](https://reactjs.org/tutorial/tutorial.html#why-immutability-is-important)으로 이동해라.
+
+<br>
+
+- Now you should be able to click in squares to fill them again,
+  - 이제 사각형을 클릭해서 다시 채울 수 있어야 하지만,
+- but the state is stored in the Board component instead of in each Square,
+  - state는 각 Square가 아닌 Board 컴포넌트에 저장되므로,
+- which lets us continue building the game.
+  - 게임을 계속 만들 수 있다.
+- Note how whenever Board's state changes,
+  - Board의 state가 바뀔 때마다,
+- the Square components rerender automatically.
+  - Square 컴포넌트는 자동으로 다시 렌더링된다.
+
+<br>
+
+- Square no longer keeps its own state;
+  - Square는 더 이상 자체 state를 유지하지 않는다;
+- it receives its value from its parent Board and informs its parent when it's clicked.
+  - 그것은 부모 Board로부터 그 값을 받고, 그것을 클릭했을 때 그 부모에게 알린다.
+- We call components like this **controlled components**.
+  - 이러한 **제어된 컴포넌트**와 같은 컴포넌트를 호출한다.
+
+<br>
+
+### Why Immutability Is Important (왜 불변성이 중요한가)
+
+- In the previous code example,
+  - 이전 예제 코드에서,
+- We suggest using the `.slice()` operator to copy the `squares` array prior to making changes and to prevent mutating the existing array.
+  - `.slice()` 연산자를 사용해서 기존 배열을 수정하지 않고 `squares` 배열 복사를 제안했다.
+
+
+
+- ​
 
 
 
