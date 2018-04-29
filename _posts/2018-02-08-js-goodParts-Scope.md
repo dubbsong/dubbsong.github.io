@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "jS 핵심 가이드 - 유효범위"
+title: "JS 핵심 가이드 - 유효범위"
 categories: javascript
 tags: JavaScript
 ---
