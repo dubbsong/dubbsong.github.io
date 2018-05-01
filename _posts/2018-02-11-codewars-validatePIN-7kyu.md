@@ -11,7 +11,7 @@ tags: Algorithm Codewars
 
 ## problem
 
-ATM machines allow 4 or 6 digit PIN codes
+ATM machines allow `4` or `6` digit PIN codes
 
 and PIN codes cannot contain anything
 

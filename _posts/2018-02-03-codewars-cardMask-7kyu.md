@@ -34,7 +34,7 @@ function cardMask(cardNumber) {
 cardMask('35902105131');	// #######5131
 cardMask('1');			// 1
 cardMask('');			// ''
-cardMask('Wassup');	// ##ssup
+cardMask('Wassup');		// ##ssup
 ```
 
 <br>
@@ -50,7 +50,7 @@ function cardMask(cardNumber) {
 cardMask('35902105131');	// #######5131
 cardMask('1');			// 1
 cardMask('');			// ''
-cardMask('Wassup');	// ##ssup
+cardMask('Wassup');		// ##ssup
 ```
 
 > `.repeat()` 메소드
@@ -70,7 +70,7 @@ function cardMask(cardNumber) {
 cardMask('35902105131');	// #######5131
 cardMask('1');			// 1
 cardMask('');			// ''
-cardMask('Wassup');	// ##ssup
+cardMask('Wassup');		// ##ssup
 ```
 
 > `.slice()` 메소드
@@ -100,7 +100,7 @@ function cardMask(cardNumber) {
 cardMask('35902105131');	// #######5131
 cardMask('1');			// 1
 cardMask('');			// ''
-cardMask('Wassup');	// ##ssup
+cardMask('Wassup');		// ##ssup
 ```
 
 > 이해 필요
@@ -118,7 +118,7 @@ function cardMask(cardNumber) {
 cardMask('35902105131');	// #######5131
 cardMask('1');			// 1
 cardMask('');			// ''
-cardMask('Wassup');	// ##ssup
+cardMask('Wassup');		// ##ssup
 ```
 
 > 이해 필요
