@@ -2,22 +2,6 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
-      <loc>http://localhost:4000/react/2018/04/18/react-tutorial-trans/</loc>
-      
-        <lastmod>2018-04-18T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
       <loc>http://localhost:4000/dev/2018/04/18/etc-terminal-alias/</loc>
       
         <lastmod>2018-04-18T00:00:00+09:00</lastmod>
@@ -34,7 +18,71 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/react/2018/04/04/react-LearningReact-routing/</loc>
+      <loc>http://localhost:4000/react/2018/04/08/react-LearningReact-routing/</loc>
+      
+        <lastmod>2018-04-08T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/react/2018/04/07/react-LearningReact-redux/</loc>
+      
+        <lastmod>2018-04-07T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/react/2018/04/06/react-LearningReact-webpack/</loc>
+      
+        <lastmod>2018-04-06T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/react/2018/04/05/react-LearningReact-intro/</loc>
+      
+        <lastmod>2018-04-05T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/react/2018/04/04/react-tutorial-storingAHistory-trans/</loc>
       
         <lastmod>2018-04-04T00:00:00+09:00</lastmod>
       
@@ -50,9 +98,9 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/react/2018/04/04/react-LearningReact-redux/</loc>
+      <loc>http://localhost:4000/react/2018/04/03/react-tutorial-liftingStateUp-trans/</loc>
       
-        <lastmod>2018-04-04T00:00:00+09:00</lastmod>
+        <lastmod>2018-04-03T00:00:00+09:00</lastmod>
       
 
       
@@ -66,7 +114,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/react/2018/04/02/react-LearningReact-webpack/</loc>
+      <loc>http://localhost:4000/react/2018/04/02/react-tutorial-overview-trans/</loc>
       
         <lastmod>2018-04-02T00:00:00+09:00</lastmod>
       
@@ -82,7 +130,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/react/2018/04/01/react-LearningReact-intro/</loc>
+      <loc>http://localhost:4000/react/2018/04/01/react-tutorial-beforeWeStart-trans/</loc>
       
         <lastmod>2018-04-01T00:00:00+09:00</lastmod>
       
@@ -162,6 +210,102 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/codewars/2018/02/11/codewars-validatePIN-7kyu/</loc>
+      
+        <lastmod>2018-02-11T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/11/codewars-removeSmallest-7kyu/</loc>
+      
+        <lastmod>2018-02-11T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/javascript/2018/02/08/js-goodParts-Scope/</loc>
+      
+        <lastmod>2018-02-08T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/06/codewars-xo-7kyu/</loc>
+      
+        <lastmod>2018-02-06T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/06/codewars-twoToOne-7kyu/</loc>
+      
+        <lastmod>2018-02-06T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/06/codewars-getSum-7kyu/</loc>
+      
+        <lastmod>2018-02-06T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/javascript/2018/02/05/js-goodParts-Method/</loc>
       
         <lastmod>2018-02-05T00:00:00+09:00</lastmod>
@@ -181,6 +325,262 @@
       <loc>http://localhost:4000/javascript/2018/02/04/js-goodParts-RegExp/</loc>
       
         <lastmod>2018-02-04T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/04/codewars-highAndLow.js/</loc>
+      
+        <lastmod>2018-02-04T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/04/codewars-getMiddle-7kyu/</loc>
+      
+        <lastmod>2018-02-04T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/04/codewars-addBinary-7kyu/</loc>
+      
+        <lastmod>2018-02-04T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/03/codewars-findShort-7kyu/</loc>
+      
+        <lastmod>2018-02-03T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/03/codewars-cardMask-7kyu/</loc>
+      
+        <lastmod>2018-02-03T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/03/codewars-binaryArrayToNumber-7kyu/</loc>
+      
+        <lastmod>2018-02-03T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/02/codewars-rowSumOdd-7kyu/</loc>
+      
+        <lastmod>2018-02-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/02/codewars-friendOrFoe-7kyu/</loc>
+      
+        <lastmod>2018-02-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/02/codewars-descendingOrder-7kyu/</loc>
+      
+        <lastmod>2018-02-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/02/codewars-accum-7kyu/</loc>
+      
+        <lastmod>2018-02-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/01/sumTwoSmall-7kyu/</loc>
+      
+        <lastmod>2018-02-01T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/01/isTriangle-7kyu/</loc>
+      
+        <lastmod>2018-02-01T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/02/01/codewars-filterList-7kyu/</loc>
+      
+        <lastmod>2018-02-01T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/20/codewars-toBinary-8kyu/</loc>
+      
+        <lastmod>2018-01-20T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/20/codewars-binaryToDecimal-8kyu/</loc>
+      
+        <lastmod>2018-01-20T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/19/codewars-correctChar-8kyu/</loc>
+      
+        <lastmod>2018-01-19T00:00:00+09:00</lastmod>
       
 
       
@@ -642,6 +1042,38 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/codewars/2018/01/11/codewars-isThisMyTail-8kyu/</loc>
+      
+        <lastmod>2018-01-11T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/11/codewars-isReallyNaN-8kyu/</loc>
+      
+        <lastmod>2018-01-11T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/codewars/2018/01/11/codewars-isDivideBy-8kyu/</loc>
       
         <lastmod>2018-01-11T00:00:00+09:00</lastmod>
@@ -789,6 +1221,22 @@
       <loc>http://localhost:4000/codewars/2018/01/09/codewars-countSheeps-8kyu/</loc>
       
         <lastmod>2018-01-09T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/08/codewars-whatDay-8kyu/</loc>
+      
+        <lastmod>2018-01-08T00:00:00+09:00</lastmod>
       
 
       
@@ -1106,9 +1554,57 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/codewars/2018/01/05/codewars-fixPipe-8kyu/</loc>
+      
+        <lastmod>2018-01-05T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/codewars/2018/01/05/codewars-countBy-8kyu/</loc>
       
         <lastmod>2018-01-05T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/javascript/2018/01/04/js-LearningReact-transpiling/</loc>
+      
+        <lastmod>2018-01-04T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/javascript/2018/01/04/js-LearningReact-arrowFunction/</loc>
+      
+        <lastmod>2018-01-04T00:00:00+09:00</lastmod>
       
 
       
@@ -1155,6 +1651,22 @@
   
     <url>
       <loc>http://localhost:4000/codewars/2018/01/04/codewars-removeDuplicates-8kyu/</loc>
+      
+        <lastmod>2018-01-04T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/04/codewars-pickElements-8kyu/</loc>
       
         <lastmod>2018-01-04T00:00:00+09:00</lastmod>
       
@@ -1221,6 +1733,38 @@
       <loc>http://localhost:4000/codewars/2018/01/04/codewars-betterThanAverage-8kyu/</loc>
       
         <lastmod>2018-01-04T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2018/01/04/books-%EC%95%84%EB%A7%88%EC%A1%B4-%EC%9B%B9-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EB%8B%A4%EB%A3%A8%EB%8A%94-%EA%B8%B0%EC%88%A0/</loc>
+      
+        <lastmod>2018-01-04T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/javascript/2018/01/03/js-LearningReact-defaultString/</loc>
+      
+        <lastmod>2018-01-03T00:00:00+09:00</lastmod>
       
 
       
@@ -1314,6 +1858,54 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/dev/2018/01/03/books-%EC%86%8C%ED%94%84%ED%8A%B8-%EC%8A%A4%ED%82%AC/</loc>
+      
+        <lastmod>2018-01-03T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/javascript/2018/01/02/js-LearningReact-templateString/</loc>
+      
+        <lastmod>2018-01-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/codewars/2018/01/02/codewars-sumMixedArray-8kyu/</loc>
+      
+        <lastmod>2018-01-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/codewars/2018/01/02/codewars-sumArray-8kyu/</loc>
       
         <lastmod>2018-01-02T00:00:00+09:00</lastmod>
@@ -1349,6 +1941,38 @@
       <loc>http://localhost:4000/codewars/2018/01/02/codewars-animal-8kyu/</loc>
       
         <lastmod>2018-01-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2018/01/02/books-%EC%BD%94%EB%94%A9%EC%9D%84-%EC%A7%80%ED%83%B1%ED%95%98%EB%8A%94-%EA%B8%B0%EC%88%A0/</loc>
+      
+        <lastmod>2018-01-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/javascript/2018/01/01/js-LearningReact-variable/</loc>
+      
+        <lastmod>2018-01-01T00:00:00+09:00</lastmod>
       
 
       
@@ -1410,7 +2034,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2018/01/01/books-%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%80%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8C%E1%85%B3%E1%86%B7-%E1%84%92%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%8B%E1%85%A7%E1%84%92%E1%85%A2%E1%86%BC%E1%84%8C%E1%85%A1%E1%84%83%E1%85%B3%E1%86%AF%E1%84%8B%E1%85%B3%E1%86%AF-%E1%84%8B%E1%85%B1%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A2%E1%84%89%E1%85%A5/</loc>
+      <loc>http://localhost:4000/dev/2018/01/01/books-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%96%89%EC%84%B1-%EC%97%AC%ED%96%89%EC%9E%90%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%95%88%EB%82%B4%EC%84%9C/</loc>
       
         <lastmod>2018-01-01T00:00:00+09:00</lastmod>
       
@@ -1426,343 +2050,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/12/09/basic-thisKeyword/</loc>
-      
-        <lastmod>2017-12-09T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/12/08/basic-extend/</loc>
-      
-        <lastmod>2017-12-08T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/12/07/basic-select/</loc>
-      
-        <lastmod>2017-12-07T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/12/07/basic-countCharacters/</loc>
-      
-        <lastmod>2017-12-07T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/12/06/basic-countWords/</loc>
-      
-        <lastmod>2017-12-06T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/12/05/basic-removeOddValues/</loc>
-      
-        <lastmod>2017-12-05T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/12/05/basic-cleanAnObject/</loc>
-      
-        <lastmod>2017-12-05T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/12/05/basic-arrayOfObjects/</loc>
-      
-        <lastmod>2017-12-05T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/12/04/basic-fullName/</loc>
-      
-        <lastmod>2017-12-04T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/12/03/basic-objectWithinObjects/</loc>
-      
-        <lastmod>2017-12-03T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/12/02/basic-syntaxAndStyle/</loc>
-      
-        <lastmod>2017-12-02T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/12/01/basic-keep/</loc>
-      
-        <lastmod>2017-12-01T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/30/basic-stringReverse/</loc>
-      
-        <lastmod>2017-11-30T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/30/basic-evenLengthWords/</loc>
-      
-        <lastmod>2017-11-30T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/30/basic-countChar/</loc>
-      
-        <lastmod>2017-11-30T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/29/basic-remove/</loc>
-      
-        <lastmod>2017-11-29T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/28/basic-shortestWord/</loc>
-      
-        <lastmod>2017-11-28T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/28/basic-longestWord/</loc>
-      
-        <lastmod>2017-11-28T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/28/basic-average/</loc>
-      
-        <lastmod>2017-11-28T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/27/basic-min/</loc>
-      
-        <lastmod>2017-11-27T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/27/basic-max/</loc>
-      
-        <lastmod>2017-11-27T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/26/basic-sumOfArray/</loc>
+      <loc>http://localhost:4000/dev/2017/11/26/basic-thisKeyword/</loc>
       
         <lastmod>2017-11-26T00:00:00+09:00</lastmod>
       
@@ -1778,7 +2066,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/26/basic-onlyEvenElements/</loc>
+      <loc>http://localhost:4000/dev/2017/11/26/basic-extend/</loc>
       
         <lastmod>2017-11-26T00:00:00+09:00</lastmod>
       
@@ -1794,55 +2082,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/26/basic-eachElementSquared/</loc>
-      
-        <lastmod>2017-11-26T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/26/basic-cons/</loc>
-      
-        <lastmod>2017-11-26T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/26/basic-conj/</loc>
-      
-        <lastmod>2017-11-26T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/25/basic-rest/</loc>
+      <loc>http://localhost:4000/dev/2017/11/25/basic-select/</loc>
       
         <lastmod>2017-11-25T00:00:00+09:00</lastmod>
       
@@ -1858,7 +2098,23 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/24/basic-butLast/</loc>
+      <loc>http://localhost:4000/dev/2017/11/25/basic-countCharacters/</loc>
+      
+        <lastmod>2017-11-25T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/24/basic-countWords/</loc>
       
         <lastmod>2017-11-24T00:00:00+09:00</lastmod>
       
@@ -1874,7 +2130,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/23/basic-nthElement/</loc>
+      <loc>http://localhost:4000/dev/2017/11/23/basic-removeOddValues/</loc>
       
         <lastmod>2017-11-23T00:00:00+09:00</lastmod>
       
@@ -1890,7 +2146,39 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/22/basic-oddToEven/</loc>
+      <loc>http://localhost:4000/dev/2017/11/23/basic-cleanAnObject/</loc>
+      
+        <lastmod>2017-11-23T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/23/basic-arrayOfObjects/</loc>
+      
+        <lastmod>2017-11-23T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/22/basic-fullName/</loc>
       
         <lastmod>2017-11-22T00:00:00+09:00</lastmod>
       
@@ -1906,39 +2194,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/22/basic-lastElement/</loc>
-      
-        <lastmod>2017-11-22T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/22/basic-firstElement/</loc>
-      
-        <lastmod>2017-11-22T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/21/basic-sum/</loc>
+      <loc>http://localhost:4000/dev/2017/11/21/basic-objectWithinObjects/</loc>
       
         <lastmod>2017-11-21T00:00:00+09:00</lastmod>
       
@@ -1954,135 +2210,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/21/basic-stringLength/</loc>
-      
-        <lastmod>2017-11-21T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/21/basic-repeatString/</loc>
-      
-        <lastmod>2017-11-21T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/21/basic-rangeSum/</loc>
-      
-        <lastmod>2017-11-21T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/21/basic-modulo/</loc>
-      
-        <lastmod>2017-11-21T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/21/basic-indexOf/</loc>
-      
-        <lastmod>2017-11-21T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/21/basic-fibonacci/</loc>
-      
-        <lastmod>2017-11-21T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/21/basic-factorial/</loc>
-      
-        <lastmod>2017-11-21T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/21/basic-countChars/</loc>
-      
-        <lastmod>2017-11-21T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/20/basic-counter/</loc>
+      <loc>http://localhost:4000/dev/2017/11/20/basic-syntaxAndStyle/</loc>
       
         <lastmod>2017-11-20T00:00:00+09:00</lastmod>
       
@@ -2098,7 +2226,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/19/basic-letterGradeHelper/</loc>
+      <loc>http://localhost:4000/dev/2017/11/19/basic-keep/</loc>
       
         <lastmod>2017-11-19T00:00:00+09:00</lastmod>
       
@@ -2114,23 +2242,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/19/basic-convertScoreToGradeWithPlusAndMinus/</loc>
-      
-        <lastmod>2017-11-19T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>weekly</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/dev/2017/11/18/basic-scoreToGrade/</loc>
+      <loc>http://localhost:4000/dev/2017/11/18/basic-stringReverse/</loc>
       
         <lastmod>2017-11-18T00:00:00+09:00</lastmod>
       
@@ -2146,7 +2258,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/18/basic-bouncerBlackList/</loc>
+      <loc>http://localhost:4000/dev/2017/11/18/basic-evenLengthWords/</loc>
       
         <lastmod>2017-11-18T00:00:00+09:00</lastmod>
       
@@ -2162,7 +2274,23 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/17/basic-generateRandomInteger/</loc>
+      <loc>http://localhost:4000/dev/2017/11/18/basic-countChar/</loc>
+      
+        <lastmod>2017-11-18T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/17/basic-remove/</loc>
       
         <lastmod>2017-11-17T00:00:00+09:00</lastmod>
       
@@ -2178,7 +2306,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/16/basic-isEven/</loc>
+      <loc>http://localhost:4000/dev/2017/11/16/basic-shortestWord/</loc>
       
         <lastmod>2017-11-16T00:00:00+09:00</lastmod>
       
@@ -2194,7 +2322,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/16/basic-getLargerString/</loc>
+      <loc>http://localhost:4000/dev/2017/11/16/basic-longestWord/</loc>
       
         <lastmod>2017-11-16T00:00:00+09:00</lastmod>
       
@@ -2210,7 +2338,23 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/15/basic-getMax/</loc>
+      <loc>http://localhost:4000/dev/2017/11/16/basic-average/</loc>
+      
+        <lastmod>2017-11-16T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/15/basic-min/</loc>
       
         <lastmod>2017-11-15T00:00:00+09:00</lastmod>
       
@@ -2226,7 +2370,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/15/basic-bouncer/</loc>
+      <loc>http://localhost:4000/dev/2017/11/15/basic-max/</loc>
       
         <lastmod>2017-11-15T00:00:00+09:00</lastmod>
       
@@ -2258,7 +2402,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/14/basic-isPasswordLongEnough/</loc>
+      <loc>http://localhost:4000/dev/2017/11/14/basic-sumOfArray/</loc>
       
         <lastmod>2017-11-14T00:00:00+09:00</lastmod>
       
@@ -2274,7 +2418,55 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/14/basic-areSameLength/</loc>
+      <loc>http://localhost:4000/dev/2017/11/14/basic-onlyEvenElements/</loc>
+      
+        <lastmod>2017-11-14T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/14/basic-eachElementSquared/</loc>
+      
+        <lastmod>2017-11-14T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/14/basic-cons/</loc>
+      
+        <lastmod>2017-11-14T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/14/basic-conj/</loc>
       
         <lastmod>2017-11-14T00:00:00+09:00</lastmod>
       
@@ -2306,9 +2498,441 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/dev/2017/11/13/basic-isOldEnoughToDrink/</loc>
+      <loc>http://localhost:4000/dev/2017/11/13/basic-rest/</loc>
       
         <lastmod>2017-11-13T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/12/basic-butLast/</loc>
+      
+        <lastmod>2017-11-12T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/11/basic-nthElement/</loc>
+      
+        <lastmod>2017-11-11T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/10/basic-oddToEven/</loc>
+      
+        <lastmod>2017-11-10T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/10/basic-lastElement/</loc>
+      
+        <lastmod>2017-11-10T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/10/basic-firstElement/</loc>
+      
+        <lastmod>2017-11-10T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/09/basic-sum/</loc>
+      
+        <lastmod>2017-11-09T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/09/basic-stringLength/</loc>
+      
+        <lastmod>2017-11-09T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/09/basic-repeatString/</loc>
+      
+        <lastmod>2017-11-09T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/09/basic-rangeSum/</loc>
+      
+        <lastmod>2017-11-09T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/09/basic-modulo/</loc>
+      
+        <lastmod>2017-11-09T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/09/basic-indexOf/</loc>
+      
+        <lastmod>2017-11-09T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/09/basic-fibonacci/</loc>
+      
+        <lastmod>2017-11-09T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/09/basic-factorial/</loc>
+      
+        <lastmod>2017-11-09T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/09/basic-countChars/</loc>
+      
+        <lastmod>2017-11-09T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/08/basic-counter/</loc>
+      
+        <lastmod>2017-11-08T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/07/basic-letterGradeHelper/</loc>
+      
+        <lastmod>2017-11-07T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/07/basic-convertScoreToGradeWithPlusAndMinus/</loc>
+      
+        <lastmod>2017-11-07T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/06/basic-scoreToGrade/</loc>
+      
+        <lastmod>2017-11-06T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/06/basic-bouncerBlackList/</loc>
+      
+        <lastmod>2017-11-06T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/05/basic-generateRandomInteger/</loc>
+      
+        <lastmod>2017-11-05T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/04/basic-isEven/</loc>
+      
+        <lastmod>2017-11-04T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/04/basic-getLargerString/</loc>
+      
+        <lastmod>2017-11-04T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/03/basic-getMax/</loc>
+      
+        <lastmod>2017-11-03T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/03/basic-bouncer/</loc>
+      
+        <lastmod>2017-11-03T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/02/basic-isPasswordLongEnough/</loc>
+      
+        <lastmod>2017-11-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/02/basic-areSameLength/</loc>
+      
+        <lastmod>2017-11-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/dev/2017/11/01/basic-isOldEnoughToDrink/</loc>
+      
+        <lastmod>2017-11-01T00:00:00+09:00</lastmod>
       
 
       

@@ -67,11 +67,11 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <link rel="alternate" type="application/atom+xml" title="ㅇㅁㅂ Feed" href="http://localhost:4000/feed.xml">
 
 
-  <link rel="prev" href="http://localhost:4000/dev/2017/11/14/basic-isPasswordLongEnough/">
+  <link rel="prev" href="http://localhost:4000/dev/2017/11/14/basic-sumOfArray/">
 
 
 
-  <link rel="next" href="http://localhost:4000/dev/2017/11/15/basic-bouncer/">
+  <link rel="next" href="http://localhost:4000/dev/2017/11/15/basic-max/">
 
 
 <link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
@@ -215,23 +215,11 @@ on <span>Javascript</span>
 
 <ul>
   <li>함수의 일급 객체(first-class object) 특성을 이용하여 <code class="highlighter-rouge">함수 리터럴</code> 방식으로 함수를 정의하고 변수에 할당할 수 있다.</li>
-</ul>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">multiply</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
-   <span class="k">return</span> <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><br /></p>
-
-<h2 id="익명-함수-anonymous-function">익명 함수 (anonymous function)</h2>
-
-<ul>
   <li><code class="highlighter-rouge">함수 표현식</code>에서는 함수명을 생략하는 것이 일반적이다.</li>
-  <li>이러한 함수를 <code class="highlighter-rouge">익명 함수</code>라 한다.</li>
+  <li>이러한 함수를 <code class="highlighter-rouge">익명 함수(anonymous function)</code>라 한다.</li>
 </ul>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">multiply</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
    <span class="k">return</span> <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
@@ -354,6 +342,22 @@ on <span>Javascript</span>
 
 
 <li class="h4">
+  <a href="/javascript/2018/02/08/js-goodParts-Scope/" data-flip="title">
+    <span>JS 핵심 가이드 - 유효범위</span>
+  </a>
+  <small><time datetime="2018-02-08T00:00:00+09:00">
+    08 Feb 2018
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
   <a href="/javascript/2018/02/05/js-goodParts-Method/" data-flip="title">
     <span>JS 핵심 가이드 - 메소드</span>
   </a>
@@ -366,23 +370,7 @@ on <span>Javascript</span>
       
         
         
-          
-
-
-<li class="h4">
-  <a href="/javascript/2018/02/04/js-goodParts-RegExp/" data-flip="title">
-    <span>JS 핵심 가이드 - 정규표현식</span>
-  </a>
-  <small><time datetime="2018-02-04T00:00:00+09:00">
-    04 Feb 2018
-  </time></small>
-</li>
-
-        
       
-        
-          
-          
     
   </ul>
 </aside>
@@ -462,6 +450,10 @@ on <span>Javascript</span>
          
            
          
+           
+         
+           
+         
      </ul>
     </li>
 
@@ -485,6 +477,10 @@ on <span>Javascript</span>
          
            
          
+           
+         
+           
+         
      </ul>
     </li>
 
@@ -493,11 +489,15 @@ on <span>Javascript</span>
     <li>
       <input type="checkbox" id="list-item-3"/>
       <div  class="list-wrapper">
-      <a class="sidebar-nav-item" href="/category/javascript/">JavaScript</a>
+      <a class="sidebar-nav-item" href="/category/react/">React</a>
        
     </div>
      <ul class="list-body">
        
+           
+         
+           
+         
            
          
            
@@ -516,11 +516,15 @@ on <span>Javascript</span>
     <li>
       <input type="checkbox" id="list-item-4"/>
       <div  class="list-wrapper">
-      <a class="sidebar-nav-item" href="/category/react/">React</a>
+      <a class="sidebar-nav-item" href="/category/javascript/">JavaScript</a>
        
     </div>
      <ul class="list-body">
        
+           
+         
+           
+         
            
          
            
@@ -539,14 +543,47 @@ on <span>Javascript</span>
     <li>
       <input type="checkbox" id="list-item-5"/>
       <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/news/">Dev News</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-6"/>
+      <div  class="list-wrapper">
       <a class="sidebar-nav-item" href="/category/dev/">about Dev</a>
-       <label class="folder" for="list-item-5">▾</label>
+       <label class="folder" for="list-item-6">▾</label>
     </div>
      <ul class="list-body">
        
            
              <li>
                <a class="sidebar-nav-subitem" href="/tag/dev-basical/">Basic Algorithm</a>
+             </li>
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-books/">Books</a>
              </li>
            
          
@@ -564,7 +601,13 @@ on <span>Javascript</span>
          
            
              <li>
-               <a class="sidebar-nav-subitem" href="/tag/dev-books/">Books</a>
+               <a class="sidebar-nav-subitem" href="/tag/dev-python/">Python</a>
+             </li>
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-django/">Django</a>
              </li>
            
          
