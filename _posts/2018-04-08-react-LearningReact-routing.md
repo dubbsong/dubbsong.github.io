@@ -267,7 +267,5 @@ export const About = ({ match }) =>
 - '회사소개' 섹션의 하위 메뉴를 만들자.
 
 ```react
-358p
+358 page
 ```
-
-
