@@ -111,6 +111,7 @@ class Board extends React.Component {
 <br>
 
 - We'll fill in later so that a board looks something like
+  - 나중에 다음과 같이 생긴 보드로 채울 것이다.
 
 ```react
 [
@@ -231,7 +232,7 @@ class Square extends React.Component {
 3. This event handler calls `this.props.onClick()`. Square's props were specified by the Board.
    - 이 이벤트 핸들러는 `this.props.onClick()`을 호출한다. Square의 props는 Board에 의해 명시되었다.
 4. Board passed `onClick={() => this.handleClick(i)}` to Square, so, when called, it runs `this.handleClick(i)` on the Board.
-   - Board는 `onClick={() => this.handleClick(i)}`를 Square에 전달했으므로, 호출될 때, Board에서 `this.handleClick(i)`을 실행한다.
+   - Board는 `onClick={() => this.handleClick(i)}`을 Square에 전달했으므로, 호출될 때, Board에서 `this.handleClick(i)`을 실행한다.
 5. We have not defined the `handleClick()` method on the Board yet, so the code crashes.
    - 아직 Board에서 `handleClick()` 메소드를 정의하지 않았으므로, 코드가 깨진다.
 
@@ -254,52 +255,52 @@ class Square extends React.Component {
 
 ```react
 class Board extends React.Component {
-   constructor(props) {
-      super(props);
-      this.state = {
-         squares: Array(9).fill(null),
-      };
-   }
-   
-   handleClick(i) {
-      const squares = this.state.squares.slice();
-      squares[i] = 'X';
-      this.setState({squares: squares});
-   }
-   
-   renderSquare(i) {
-      return (
-      	<Square
-            value={this.state.squares[i]}
-            onClick={() => this.handleClick(i)}
-			/>
-      );
-   }
-   
-   render() {
-      const status = 'Next player: X';
-      
-      return (
-      	<div>
-         	<div className="status">{status}</div>
-            <div className="board-row">
-            	{this.renderSquare(0)}
-               {this.renderSquare(1)}
-               {this.renderSquare(2)}
-            </div>
-            <div className="board-row">
-            	{this.renderSquare(3)}
-               {this.renderSquare(4)}
-               {this.renderSquare(5)}
-            </div>
-            <div className="board-row">
-            	{this.renderSquare(6)}
-               {this.renderSquare(7)}
-               {this.renderSquare(8)}
-            </div>
-         </div>
-      );
-   }
+  constructor(props) {
+    super(props);
+    this.state = {
+      squares: Array(9).fill(null),
+    };
+  }
+
+  handleClick(i) {
+    const squares = this.state.squares.slice();
+    squares[i] = 'X';
+    this.setState({squares: squares});
+  }
+
+  renderSquare(i) {
+    return (
+      <Square
+        value={this.state.squares[i]}
+        onClick={() => this.handleClick(i)}
+      />
+    );
+  }
+
+  render() {
+    const status = 'Next player: X';
+
+    return (
+      <div>
+        <div className="status">{status}</div>
+        <div className="board-row">
+          {this.renderSquare(0)}
+          {this.renderSquare(1)}
+          {this.renderSquare(2)}
+        </div>
+        <div className="board-row">
+          {this.renderSquare(3)}
+          {this.renderSquare(4)}
+          {this.renderSquare(5)}
+        </div>
+        <div className="board-row">
+          {this.renderSquare(6)}
+          {this.renderSquare(7)}
+          {this.renderSquare(8)}
+        </div>
+      </div>
+    );
+  }
 }
 ```
 
@@ -341,7 +342,7 @@ class Board extends React.Component {
 - In the previous code example,
   - 이전 예제 코드에서,
 - We suggest using the `.slice()` operator to copy the `squares` array prior to making changes and to prevent mutating the existing array.
-  - 기존 배열을 수정하지 않고 변경하기 전에 `.slice()` 연산자를 사용해서 `squares` 배열을 복사하는 것이 좋다.
+  - 기존 배열을 수정하지 않고 변경하기 전에 `.slice()` 연산자를 사용해서 `squares` 배열을 복사하는 것이 좋다고 했다.
 
 
 
@@ -568,56 +569,56 @@ render() {
 
 ```react
 class Board extends React.Component {
-   constructor(props) {
-      super(props);
-      this.state = {
-         squares: Array(9).fill(null),
-         xIsNext: true,
-      };
-   }
-   
-   handleClici(i) {
-      const squares = this.state.squares.slice();
-      squares[i] = this.state.xIsNext ? 'X' : 'O';
-      this.setState({
-         squares: squares,
-         xIsNext: !this.state.xIsNext,
-      });
-   }
-   
-   renderSquare(i) {
-      return (
-      	<Square
-				value={this.state.squares[i]}
-            onClick={() => this.handleClick(i)}
-			/>
-      );
-   }
-   
-   render() {
-      const status = 'Next plater: ' + (this.state.xIsNext ? 'X' : 'O');
-      
-      return (
-      	<div>
-         	<div className="status">{status}</div>
-            <div className="board-row">
-            	{this.renderSquare(0)}
-               {this.renderSquare(1)}
-               {this.renderSquare(2)}
-            </div>
-            <div className="board-row">
-            	{this.renderSquare(3)}
-               {this.renderSquare(4)}
-               {this.renderSquare(5)}
-            </div>
-            <div className="board-row">
-            	{this.renderSquare(6)}
-               {this.renderSquare(7)}
-               {this.renderSquare(8)}
-            </div>
-         </div>
-      );
-   }
+  constructor(props) {
+    super(props);
+    this.state = {
+      squares: Array(9).fill(null),
+      xIsNext: true,
+    };
+  }
+
+  handleClick(i) {
+    const squares = this.state.squares.slice();
+    squares[i] = this.state.xIsNext ? 'X' : 'O';
+    this.setState({
+      squares: squares,
+      xIsNext: !this.state.xIsNext,
+    });
+  }
+
+  renderSquare(i) {
+    return (
+      <Square
+        value={this.state.squares[i]}
+        onClick={() => this.handleClick(i)}
+      />
+    );
+  }
+
+  render() {
+    const status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+
+    return (
+      <div>
+        <div className="status">{status}</div>
+        <div className="board-row">
+          {this.renderSquare(0)}
+          {this.renderSquare(1)}
+          {this.renderSquare(2)}
+        </div>
+        <div className="board-row">
+          {this.renderSquare(3)}
+          {this.renderSquare(4)}
+          {this.renderSquare(5)}
+        </div>
+        <div className="board-row">
+          {this.renderSquare(6)}
+          {this.renderSquare(7)}
+          {this.renderSquare(8)}
+        </div>
+      </div>
+    );
+  }
 }
 ```
 
