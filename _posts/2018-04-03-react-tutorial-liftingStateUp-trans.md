@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "리액트 공식 문서 번역 - Lifting State Up"
+title: "리액트 공식 문서 번역 - 3. Lifting State Up"
 categories: react
 tags: react tutorial
 ---

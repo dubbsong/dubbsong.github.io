@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "리액트 공식 문서 번역 - Before We start"
+title: "리액트 공식 문서 번역 - 1. Before We start"
 categories: react
 tags: react tutorial
 ---

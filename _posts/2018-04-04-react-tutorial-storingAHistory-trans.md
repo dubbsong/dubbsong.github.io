@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "리액트 공식 문서 번역 - Storing a History"
+title: "리액트 공식 문서 번역 - 4. Storing a History"
 categories: react
 tags: react tutorial
 ---
