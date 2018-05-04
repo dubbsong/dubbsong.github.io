@@ -217,17 +217,17 @@ ReactDOM.render(<Game />, document.getElementById('root'));
 
 // class Square extends React.Component {
 //   render() {
-		return (
-         <button className="square">
-      		{this.props.value}
-      	</button>
-		)
+//     return (
+<button className="square">
+	{this.props.value}
+</button>
+//     )
 //   }
 // }
 
 // class Board extends React.Component {
 //   renderSquare(i) {
-		return <Square value={i} />;
+return <Square value={i} />;
 //   }
 
 ...
@@ -275,6 +275,40 @@ ReactDOM.render(<Game />, document.getElementById('root'));
 ![Alert](/assets/img/Alert.png)
 
 <br>
+
+#### state 초기화
+
+- React 컴포넌트는 생성자에서 `this.state`를 설정함으로써 state를 가질 수 있다.
+- 사각형이 클릭되었을 때 변경해보자.
+- 클래스에 생성자를 추가해서 state를 초기화한다.
+- **index.js**
+
+```react
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import './index.css';
+
+// class Square extends React.Component {
+		constructor(props) {
+   		super(props);
+   		this.state = {
+				value: null,
+			};
+		}
+
+//   render() {
+//     return (
+//       <button className="square" onClick={() => alert('click')}>
+//         {this.props.value}
+//       </button>
+//     )
+//   }
+// }
+
+...
+```
+
+
 
 
 
