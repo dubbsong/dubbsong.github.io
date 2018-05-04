@@ -254,9 +254,9 @@ ReactDOM.render(<Game />, document.getElementById('root'));
 // class Square extends React.Component {
 //   render() {
 //     return (
-			<button className="square" onClick={() => alert('click')}>
-				{this.props.value}
-			</button>
+	<button className="square" onClick={() => alert('click')}>
+		{this.props.value}
+	</button>
 //     )
 //   }
 // }
@@ -279,6 +279,7 @@ ReactDOM.render(<Game />, document.getElementById('root'));
 #### state 초기화
 
 - React 컴포넌트는 생성자에서 `this.state`를 설정함으로써 state를 가질 수 있다.
+- subclass의 생성자를 정의할 때는 명시적으로 `super();`를 호출해야 한다.
 - 사각형이 클릭되었을 때 변경해보자.
 - 클래스에 생성자를 추가해서 state를 초기화한다.
 - **index.js**
@@ -289,12 +290,12 @@ ReactDOM.render(<Game />, document.getElementById('root'));
 // import './index.css';
 
 // class Square extends React.Component {
-		constructor(props) {
-   		super(props);
-   		this.state = {
-				value: null,
-			};
-		}
+	constructor(props) {
+   	super(props);
+   	this.state = {
+      	value: null,
+   	};
+	}
 
 //   render() {
 //     return (
@@ -307,6 +308,18 @@ ReactDOM.render(<Game />, document.getElementById('root'));
 
 ...
 ```
+
+<br>
+
+#### 클릭 시 전환
+
+- **index.js**
+
+```react
+
+```
+
+
 
 
 
