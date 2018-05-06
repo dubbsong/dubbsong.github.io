@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - What is Python?"
+title: "SoloLearn - 01. What is Python?"
 categories: dev
 tags: python
 ---
@@ -21,7 +21,7 @@ tags: python
 
 <br>
 
->Python is processed at runtime by the interpreter.
+>Python is processed at runtime by the `interpreter`.
 >
 >Python은 인터프리터에 의한 런타임에서 처리된다.
 
@@ -55,7 +55,7 @@ tags: python
 
 > An interpreter is a program that runs scripts written in an interpreted language such as Python.
 >
-> 인터프리터는 Python과 같이 해석된 언어로 작성된 스크립트를 실행하는 프로그램이다.
+> 인터프리터는 Python과 같이 인터프리터 언어로 작성된 스크립트를 실행하는 프로그램이다.
 
 <br>
 
