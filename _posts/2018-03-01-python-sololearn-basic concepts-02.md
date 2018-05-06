@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 02. Your First Program"
+title: "SoloLearn - 02. Your First Program (basic concepts)"
 categories: dev
 tags: python
 ---

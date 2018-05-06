@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 03. Simple Operations"
+title: "SoloLearn - 03. Simple Operations (basic concepts)"
 categories: dev
 tags: python
 ---

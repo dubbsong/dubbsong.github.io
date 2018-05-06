@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 07. Simple Input & Output"
+title: "SoloLearn - 07. Simple Input & Output (basic concepts)"
 categories: dev
 tags: python
 ---

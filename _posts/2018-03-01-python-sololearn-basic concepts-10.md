@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 10. Variables"
+title: "SoloLearn - 10. Variables (basic concepts)"
 categories: dev
 tags: python
 ---

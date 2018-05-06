@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 01. What is Python?"
+title: "SoloLearn - 01. What is Python? (basic concepts)"
 categories: dev
 tags: python
 ---

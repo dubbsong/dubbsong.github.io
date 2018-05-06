@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 05. Other Numerical Operations"
+title: "SoloLearn - 05. Other Numerical Operations (basic concepts)"
 categories: dev
 tags: python
 ---
