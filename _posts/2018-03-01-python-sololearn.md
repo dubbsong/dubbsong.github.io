@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Python 3 Tutorial (SOLOLEARN)"
-categories: python
+title: "Python 3 Tutorial (SoloLearn)"
+categories: dev
 tags: python
 ---
 
