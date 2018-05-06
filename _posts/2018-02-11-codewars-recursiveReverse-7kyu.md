@@ -53,8 +53,8 @@ function recursiveReverse(string) {
 }
 
 
-recursiveReverse('a');	// a
-recursiveReverse('ab');	// ba
+recursiveReverse('a');		// a
+recursiveReverse('ab');		// ba
 recursiveReverse('ssup');	// puss
 ```
 
@@ -74,8 +74,8 @@ function recursiveReverse(string) {
 }
 
 
-recursiveReverse('a');	// a
-recursiveReverse('ab');	// ba
+recursiveReverse('a');		// a
+recursiveReverse('ab');		// ba
 recursiveReverse('ssup');	// puss
 ```
 
