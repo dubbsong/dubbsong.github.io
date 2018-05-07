@@ -71,8 +71,8 @@ flight.departure.IATA	// "SYD"
 stooge["middle-name"]	// undefined
 flight.status		// undefined
 
-flight.equipment			// undefined
-flight.equipment.model			// throw "TypeError"
+flight.equipment				// undefined
+flight.equipment.model				// throw "TypeError"
 flight.equipment && flight.equipment.model	// undefined
 ```
 
