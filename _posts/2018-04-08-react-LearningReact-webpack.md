@@ -2,7 +2,7 @@
 layout: post
 title: "러닝 리액트(Learning React) - 웹팩"
 categories: react
-tags: react webpack
+tags: react
 ---
 
 ###### \<Learning React>, Alex Banks, Eve Porcello 저 | 오현석 역
