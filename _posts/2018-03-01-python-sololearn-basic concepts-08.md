@@ -5,7 +5,7 @@ categories: dev
 tags: python
 ---
 
-## Concatenation 01 (연결)
+## Concatenation (연결)
 
 - As with integers and floats, string in Python can be added, using a process called `concatenation`, which can be done on any two strings.
   - 정수와 부동 소수점과 마찬가지로, 두 문자열에서 수행할 수 있는 `concatenation` 프로세스를 사용해서 Python의 문자열을 추가할 수 있다.

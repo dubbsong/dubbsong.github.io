@@ -5,7 +5,7 @@ categories: dev
 tags: python
 ---
 
-## In-Place Operators 01
+## In-Place Operators (대입 연산자)
 
 - **In-place operators** allow you to write code like 'x = x + 3' more concisely, as 'x += 3'.
   - **In-place** 연산자를 사용하면, 'x = x + 3'과 같은 코드를 'x += 3'과 같이 더 간결하게 작성할 수 있다.

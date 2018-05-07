@@ -5,7 +5,7 @@ categories: dev
 tags: python
 ---
 
-## Floats 01
+## Floats (부동 소수점)
 
 - **Floats** are used in Python to represent numbers that aren't integers.
   - Python에서 **부동 소수점**은 정수가 아닌 숫자를 나타내는 데 사용된다.

@@ -5,7 +5,7 @@ categories: dev
 tags: python
 ---
 
-## Output
+## Output (출력)
 
 - Usually, programs take **input** and process it to produce **output**.
   - 일반적으로, 프로그램은 입력을 받아 출력을 생성한다.
@@ -31,7 +31,7 @@ World!
 
 <br>
 
-## Input
+## Input (입력)
 
 - To get input from the user in Python, you can use the intuitively named **input** function.
   - Python에서 유저의 입력을 얻으려면, 직감적으로 명명된 **input** 함수를 사용할 수 있다.

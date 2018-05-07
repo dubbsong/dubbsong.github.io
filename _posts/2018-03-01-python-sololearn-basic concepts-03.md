@@ -5,7 +5,7 @@ categories: dev
 tags: python
 ---
 
-## Simple Operations 01
+## Simple Operations (기본 연산자)
 
 - Python has the capability of carrying out calculations.
   - Python에는 계산을 수행할 수 있는 기능이 있다.

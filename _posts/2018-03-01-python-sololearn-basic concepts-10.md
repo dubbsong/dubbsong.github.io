@@ -5,7 +5,7 @@ categories: dev
 tags: python
 ---
 
-## Variables 01
+## Variables (변수)
 
 - **Variables** play a very important role in most programming languages, and Python is no exception.
   - **변수**는 대부분의 프로그래밍 언어에서 매우 중요한 역할을 하고, Python도 예외는 아니다.

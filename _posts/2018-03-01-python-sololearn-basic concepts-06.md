@@ -5,7 +5,7 @@ categories: dev
 tags: python
 ---
 
-## Strings 01
+## Strings (문자열)
 
 - If you want to use text in Python, you have to use a `string`.
   - Python에서 텍스트를 사용하려면, `문자열`을 사용해야 한다.
@@ -68,7 +68,7 @@ tags: python
 
 <br>
 
-## Newlines
+## Newlines (개행)
 
 - Python provides an easy way to avoid manually writing "\n" to escape newlines in a string.
   - Python은 "\n"을 작성해서 문자열의 개행 문자를 이스케이프하지 않도록 하는 쉬운 방법을 제공한다.

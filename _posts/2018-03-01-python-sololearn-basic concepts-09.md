@@ -5,7 +5,7 @@ categories: dev
 tags: python
 ---
 
-## Type Conversion 01 (형 변환)
+## Type Conversion (형 변환)
 
 - In Python, it's impossible to complete certain operations due to the types involved.
   - Python에서는, 관련 유형 때문에 확실한 연산을 완료하는 것이 불가능하다.

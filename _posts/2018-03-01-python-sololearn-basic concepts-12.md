@@ -5,7 +5,7 @@ categories: dev
 tags: python
 ---
 
-## Using an Editor
+## Using an Editor (에디터 사용)
 
 - So far, we've only used Python with the console, entering and running one line of code at a time.
   - 지금까지, 우리는 한 번에 한 줄의 코드를 입력하고 실행하여 콘솔에서 Python만 사용했다.

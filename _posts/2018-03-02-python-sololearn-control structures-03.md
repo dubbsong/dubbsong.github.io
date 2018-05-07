@@ -5,7 +5,7 @@ categories: dev
 tags: python
 ---
 
-## else Statements 01
+## else Statements (else 문)
 
 - An **else** statement follows an if statement, and contains code that is called when the if statement evaluates to **False**.
   - **else** 문은 if 문 다음에 나오며, if 문이 **False**로 평가될 때 호출되는 코드를 포함한다.
@@ -32,7 +32,7 @@ No
 
 <br>
 
-## else Statements
+## else Statements 02
 
 - You can chain **if** and **else** statements to determine which option in a series of possibilities is true.
   - **if** 문과 **else** 문을 연결해서 일련의 가능성 중에서 어떤 옵션이 사실인지 확인할 수 있다.
@@ -64,7 +64,7 @@ Number is 7
 
 <br>
 
-## elif Statements
+## elif Statements 03
 
 - The `elif` (short for else if) statement is a shortcut to use when chaining if and else statements.
   - `elif` (else if 의 축약) 문은 if 문과 else 문을 연결할 때 사용하기 위한 축약형이다.

@@ -5,7 +5,7 @@ categories: dev
 tags: python
 ---
 
-## if Statements 01 (if 문)
+## if Statements (if 문)
 
 - You can use if statements to run code if a certain condition holds.
   - 특정 조건이 충족되면 if 문을 사용해서 코드를 실행할 수 있다.

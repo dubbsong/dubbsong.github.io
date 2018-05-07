@@ -5,12 +5,12 @@ categories: dev
 tags: python
 ---
 
-## Booleans (불린)
+## Booleans (불리언)
 
 - Another type in Python is the `Boolean` type.
-  - Python의 또 다른 타입은 불린 타입이다.
+  - Python의 또 다른 타입은 boolean 타입이다.
 - There are two Boolean values: **True** and **False**.
-  - 두 가지 불린 값이 있다: **True**와 **False**.
+  - 두 가지 boolean 값이 있다: **True**와 **False**.
 - They can be created by comparing values, for instance by using the equal operator ==.
   - 값을 비교하는 비교 연산자 ==를 사용해서 생성할 수 있다.
 
@@ -33,7 +33,7 @@ True
 
 <br>
 
-## Comparison 01 (비교)
+## Comparison (비교)
 
 - Another comparison operator, the **not equal** (!=), evaluates to **True** if the items being compared aren't equal, and **False** if they are.
   - 다른 비교 연산자인 **부등 비교 연산자**는, 비교되는 항목이 같지 않으면 **True**로 평가하고, 아니면 **False**로 평가한다.
