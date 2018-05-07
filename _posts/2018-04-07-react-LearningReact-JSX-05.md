@@ -52,7 +52,7 @@ tags: react
 - JS에서는 class가 예약어이므로 class 애트리뷰트 대신 className을 사용한다.
 
 ```react
-<h1 className="fnacy">Baked Salmon</h1>
+<h1 className="fancy">Baked Salmon</h1>
 ```
 
 <br>
