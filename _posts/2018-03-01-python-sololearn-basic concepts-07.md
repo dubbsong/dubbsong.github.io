@@ -29,6 +29,8 @@ World!
 >
 > 문자열이 출력되었을 때, 주위의 따옴표는 표시되지 않는다.
 
+------
+
 <br>
 
 ## Input (입력)
@@ -54,6 +56,8 @@ Enter something please: This is what\nthe user enters!
 > However, they are very useful in actual programs.
 >
 > 하지만, 실제 프로그램에서는 매우 유용하다.
+
+------
 
 <br>
 

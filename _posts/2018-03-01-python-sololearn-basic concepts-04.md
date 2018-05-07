@@ -30,6 +30,8 @@ tags: python
 >
 > 컴퓨터는 부동 소수점을 완전히 정확하게 저장할 수 없다. 1/3의 완전한 10진법 확장을 쓸 수 없는 것처럼.
 
+------
+
 <br>
 
 ## Floats 02
@@ -59,6 +61,8 @@ tags: python
 > However, this implicit conversion is the exception rather the rule in Python - usually you have to convert values manually if you want to operate on them.
 >
 > 하지만, 이 암시형 변환은 Python의 규칙보다는 예외이다. 일반적으로 연산을 원할 경우 수동으로 값을 변환해야 한다.
+
+------
 
 <br>
 

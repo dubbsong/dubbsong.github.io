@@ -30,6 +30,8 @@ No
 >>>
 ```
 
+------
+
 <br>
 
 ## else Statements 02
@@ -61,6 +63,8 @@ else:
 Number is 7
 >>>
 ```
+
+------
 
 <br>
 
@@ -99,6 +103,8 @@ Number is 7
 > In other programming languages, equivalents to the **elif** statement have varying names, including **else if**, **elseif** or **elsif**.
 >
 > 다른 프로그래밍 언어에서는, **else if**, **elseif** 또는 **elsif**를 포함해서, **elif** 문에 해당하는 이름이 다양하다.
+
+------
 
 <br>
 

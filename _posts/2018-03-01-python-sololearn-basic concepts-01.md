@@ -29,6 +29,8 @@ tags: python
 >
 > 프로그램을 실행하기 전에 컴파일 할 필요가 없다.
 
+------
+
 <br>
 
 ## Welcome to Python!
@@ -56,6 +58,8 @@ tags: python
 > An interpreter is a program that runs scripts written in an interpreted language such as Python.
 >
 > 인터프리터는 Python과 같이 인터프리터 언어로 작성된 스크립트를 실행하는 프로그램이다.
+
+------
 
 <br>
 

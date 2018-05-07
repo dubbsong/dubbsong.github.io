@@ -34,6 +34,8 @@ tags: python
 >
 > 변환하는 데에 사용되는 함수는 각각 **int**, **float**, **str**이다.
 
+------
+
 <br>
 
 ## Type Conversion 02
@@ -48,6 +50,8 @@ Enter another number: 2
 
 42.0
 ```
+
+------
 
 <br>
 

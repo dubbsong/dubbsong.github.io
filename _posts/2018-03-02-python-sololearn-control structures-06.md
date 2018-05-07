@@ -55,6 +55,8 @@ Finished!
 >
 > 이를 **iteration**이라고 한다.
 
+------
+
 <br>
 
 ## while Loops 02
@@ -82,6 +84,8 @@ while 1 == 1:
 > You can stop the program's execution by using the Ctrl-C shortcut or by closing the program.
 >
 > Ctrl-C 단축키를 사용하거나 프로그램을 닫아 프로그램 실행을 멈출 수 있다.
+
+------
 
 <br>
 
@@ -125,6 +129,8 @@ Finished
 > Using the **break** statement outside of a loop causes an error.
 >
 > 루프 밖에서 **break** 문을 사용하면 에러가 발생한다.
+
+------
 
 <br>
 
@@ -173,6 +179,8 @@ Finished
 > Using the **continue** statement outside of a loop causes an error.
 >
 > 루프 밖에서 **continue** 문을 사용하면 에러가 발생한다.
+
+------
 
 <br>
 

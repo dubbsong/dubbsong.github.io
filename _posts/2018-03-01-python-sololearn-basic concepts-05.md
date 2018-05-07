@@ -24,6 +24,8 @@ tags: python
 3.0
 ```
 
+------
+
 <br>
 
 ## Quotient & Remainder (몫 && 나머지)
@@ -49,6 +51,8 @@ tags: python
 >>> 1.25 % 0.5
 0.25
 ```
+
+------
 
 <br>
 

@@ -31,6 +31,8 @@ True
 >
 > **할당**(등호 하나)과 **비교**(등호 두 개)를 혼동하지 않도록 주의해라.
 
+------
+
 <br>
 
 ## Comparison (비교)
@@ -49,6 +51,8 @@ True
 True
 ```
 
+------
+
 <br>
 
 ## Comparison 02
@@ -65,6 +69,8 @@ True
 >>> 10 < 10
 False
 ```
+
+------
 
 <br>
 
@@ -92,6 +98,8 @@ True
 > (the alphabetical order of words is based on the alphabetical order of their component letters)
 >
 > 단어의 알파벳 순서는 구성 요소 문자의 알파벳 순서를 기반으로 한다.
+
+------
 
 <br>
 

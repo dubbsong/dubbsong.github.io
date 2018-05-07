@@ -20,6 +20,8 @@ tags: python
 First string, second string
 ```
 
+------
+
 <br>
 
 ## Concatenation 02
@@ -44,6 +46,8 @@ TypeError. unsupported operand type(s) for +: 'int' and 'str'
 > In future lessons, only the final line of error messages will be displayed, as it is the only one that gives details about the type of error that has occurred.
 >
 > 이후 강의에서는, 마지막 에러 메시지만 표시된다.
+
+------
 
 <br>
 
@@ -76,6 +80,8 @@ TypeError: can not multiply sequence by non-int of type 'str'
 >>> 'pythonisfun' * 7.0
 TypeError: can not multiply sequence by non-int of type 'float'
 ```
+
+------
 
 <br>
 

@@ -22,6 +22,8 @@ tags: python
 5
 ```
 
+------
+
 <br>
 
 ## In-Place Operators 02
@@ -48,6 +50,8 @@ spameggs
 > Python **does not** have these.
 >
 > Python에는 이것들이 없다.
+
+------
 
 <br>
 

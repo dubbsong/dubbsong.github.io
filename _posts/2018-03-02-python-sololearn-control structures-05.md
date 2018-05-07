@@ -38,6 +38,8 @@ True
 >
 > 먼저 괄호가, 그 다음이 거듭제곱, 그 다음이 곱셈과 나눗셈, 그 다음이 덧셈과 뺄셈이다.
 
+------
+
 <br>
 
 ## Operator Precedence 02
@@ -46,6 +48,8 @@ True
   - 다음 표는 Python의 연산자를 나열한다. 높은 우선순위에서 낮은 우선순위까지.
 
 ![operatorTable](/assets/img/operatorTable.jpeg)
+
+------
 
 <br>
 

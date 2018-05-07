@@ -41,6 +41,8 @@ tags: python
 >
 > 보다시피, 변수는 프로그램 전체에 걸쳐 값을 저장한다.
 
+------
+
 <br>
 
 ## Variables 02
@@ -59,6 +61,8 @@ tags: python
 >>> print(x + "!")
 This is a string!
 ```
+
+------
 
 <br>
 
@@ -92,6 +96,8 @@ SyntaxError: invalid syntax
 > Thus, **Lastname** and **lastname** are two different variable names in Python.
 >
 > 따라서, **Lastname**과 **lastname**은 Python에서 두 개의 다른 변수 이름이다.
+
+------
 
 <br>
 
@@ -135,6 +141,8 @@ Enter a number: 7
 > The variables **foo** and **bar** are called **metasyntactic** variables, meaning that they are used as placeholder names in example code to demonstrate something.
 >
 > 변수 **foo**와 **bar**는 **metasyntactic** 변수로 불린다. 이는 무언가를 보여주기 위해 예제 코드에서 placeholder 이름으로 사용된다는 것을 의미한다.
+
+------
 
 <br>
 

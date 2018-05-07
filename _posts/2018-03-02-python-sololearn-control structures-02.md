@@ -39,6 +39,8 @@ if expression:
 >
 > 보다시피, if 문은 들여쓰기 되어야 한다.
 
+------
+
 <br>
 
 ## if Statements 02
@@ -82,6 +84,8 @@ Program ended
 >
 > 프로그램에 여러 줄의 코드가 포함되어 있으므로, 별도의 파일로 만들어서 실행해야 한다.
 
+------
+
 <br>
 
 ## if Statements 03
@@ -115,6 +119,8 @@ Bigger than 5
 Between 5 and 47
 >>>
 ```
+
+------
 
 <br>
 

@@ -47,6 +47,8 @@ tags: python
 >
 > Python은 프로그램 작성과 디버깅을 위한 통합 개발 환경인 <u>IDLE</u>이 포함되어 있다.
 
+------
+
 <br>
 
 ## Printing Text
@@ -75,6 +77,8 @@ Spam and eggs
 > This is why the words, "spam" and "eggs" are often used as placeholder variables in Python where "foo" and "bar" would be used in other programming languages.
 >
 > Python에서 "spam"과 "eggs"가 placeholder 변수로 종종 사용되는 이유는 "foo"와 "bar"가 다른 프로그래밍 언어에서 사용되는 것과 비슷하다.
+
+------
 
 <br>
 

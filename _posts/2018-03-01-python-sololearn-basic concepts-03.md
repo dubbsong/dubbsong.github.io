@@ -26,6 +26,8 @@ tags: python
 >
 > 플러스와 마이너스 기호 주변 공백은 **선택 사항**이지만, 공백을 사용하면 가독성이 좋다.
 
+------
+
 <br>
 
 ## Simple Operations 02
@@ -58,6 +60,8 @@ tags: python
 >
 > 나중 수업에서 부동 소수점에 대해 더 알아볼 것이다.
 
+------
+
 <br>
 
 ## Simple Operations 03
@@ -83,6 +87,8 @@ tags: python
 >
 > 그리고 코드의 가독성을 높이기 위해 숫자가 양수임을 강조하는 데에 주로 사용된다.
 
+------
+
 <br>
 
 ## Simple Operations 04
@@ -106,6 +112,8 @@ ZeroDivisionError: division by zero
 > Read error messages carefully, as they often tell you how to fix a program!
 >
 > 주의해서 에러 메시지를 읽어라. 프로그램을 어떻게 수정할지 종종 알려준다.
+
+------
 
 <br>
 

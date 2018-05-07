@@ -27,6 +27,8 @@ tags: python
 'Always look on the bright side of life'
 ```
 
+------
+
 <br>
 
 ## Strings 02
@@ -66,6 +68,8 @@ tags: python
 >
 > 이러한 문자는 이스케이프 문자라고 한다.
 
+------
+
 <br>
 
 ## Newlines (개행)
@@ -87,6 +91,8 @@ Owner: Good morning, Sir. Welcome to the National Cheese Emporium."""
 > As you can see, the **\n** was automatically put in the output, where we pressed Enter.
 >
 > 보다시피, **\n**이 자동으로 출력에 입력되고, Enter키를 누른다.
+
+------
 
 <br>
 

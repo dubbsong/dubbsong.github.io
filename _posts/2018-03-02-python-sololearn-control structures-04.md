@@ -36,6 +36,8 @@ False
 >
 > Python은 Boolean 연산자에 단어를 사용하지만, 대부분의 다른 언어는 &&, ||, ! 같은 기호를 사용한다.
 
+------
+
 <br>
 
 ## Boolean Or
@@ -58,6 +60,8 @@ True
 >>> 2 < 1 or 3 > 6
 False
 ```
+
+------
 
 <br>
 
@@ -82,6 +86,8 @@ True
 > You can chain multiple conditional statements in an if statement using the Boolean operators.
 >
 > Boolean 연산자를 사용해서 if 문에 여러 조건문을 연결할 수 있다.
+
+------
 
 <br>
 
