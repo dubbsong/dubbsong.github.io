@@ -48,7 +48,13 @@ tags: React Tutorial
 
 <br>
 
-#### create-react-app
+#### create-react-app 설치
+
+- `$ npm install -g create-react-app`
+
+<br>
+
+#### create-react-app 프로젝트 생성
 
 1. open **terminal**
 2. `$ cd Desktop`
