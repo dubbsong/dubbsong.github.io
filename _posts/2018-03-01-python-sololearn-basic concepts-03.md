@@ -58,7 +58,7 @@ tags: python
 
 > We'll have more about **floats** in a later lesson.
 >
-> 나중 수업에서 부동 소수점에 대해 더 알아볼 것이다.
+> 이후 강의에서 부동 소수점에 대해 더 알아볼 것이다.
 
 ------
 

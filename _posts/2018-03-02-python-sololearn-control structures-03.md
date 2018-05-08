@@ -138,6 +138,6 @@ else:
 <br>
 
 - A shorter option for an "else if" statement is:
-  - elif
+  - **elif**
 
 <br>

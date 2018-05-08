@@ -51,7 +51,7 @@ print(x)
 
 > Reference this lesson if you need to install the software on your computer.
 >
-> 컴퓨터에 소프트웨어를 설치가 필요한 경우에는 이 수업을 참조해라.
+> 컴퓨터에 소프트웨어 설치가 필요한 경우에는 이 강의를 참조해라.
 
 ------
 

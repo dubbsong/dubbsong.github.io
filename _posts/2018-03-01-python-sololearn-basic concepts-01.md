@@ -33,7 +33,7 @@ tags: python
 
 <br>
 
-## Welcome to Python!
+## Welcome to Python! 02
 
 - The three major versions of Python are 1.x, 2.x and 3.x.
   - Python의 주요 3가지 버전은 1.x, 2.x, 3.x이다.
@@ -58,6 +58,8 @@ tags: python
 > An interpreter is a program that runs scripts written in an interpreted language such as Python.
 >
 > 인터프리터는 Python과 같이 인터프리터 언어로 작성된 스크립트를 실행하는 프로그램이다.
+
+> `interpreter`: a program that runs scripts written in an interpreted language search as Python
 
 ------
 

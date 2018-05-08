@@ -226,6 +226,6 @@ while True:
 <br>
 
 - Which statement ends the current iteration and continues with the next one?
-  - continue
+  - **continue**
 
 <br>
