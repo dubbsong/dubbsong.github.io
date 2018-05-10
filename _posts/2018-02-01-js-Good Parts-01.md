@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JS 핵심 가이드 - 1. JS의 좋은 점들"
+title: "JS 핵심 가이드 - 01. JS의 좋은 점들"
 categories: javascript
 tags: JavaScript
 ---

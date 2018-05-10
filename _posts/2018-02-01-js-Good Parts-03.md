@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JS 핵심 가이드 - 3. 객체"
+title: "JS 핵심 가이드 - 03. 객체"
 categories: javascript
 tags: JavaScript
 ---
