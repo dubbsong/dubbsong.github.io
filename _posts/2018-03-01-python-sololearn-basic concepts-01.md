@@ -10,9 +10,9 @@ tags: python
 - **Python** is a high-level programming language,
   - **Python**은 고급 프로그래밍 언어이다.
 - with applications in numerous areas,
-  - 다양한 분야의 애플리케이션과 함께
+  - 다양한 분야의 애플리케이션에서 사용되는
 - including web programming, scripting, scientific computing, and artificial intelligence.
-  - 웹 프로그래밍, 스크립팅, 과학적인 컴퓨팅, 인공 지능을 포함하는
+  - 웹 프로그래밍, 스크립팅, 과학적인 컴퓨팅, 인공 지능을 비롯한
 
 <br>
 
