@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 02. Functions (Function & Modules)"
+title: "SoloLearn 번역 - 02. Functions (Function & Modules)"
 categories: dev
 tags: python
 ---
@@ -47,6 +47,8 @@ spam
 >
 > 모든 함수 내의 코드 블록은 콜론 (:)으로 시작되고 들여쓰기 된다.
 
+------
+
 <br>
 
 ## Functions 02
@@ -69,6 +71,8 @@ def hello():
 >>>
 NameError: name 'hello' is not defined
 ```
+
+------
 
 <br>
 

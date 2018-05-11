@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 13. Module 1 Quiz (basic concepts)"
+title: "SoloLearn 번역 - 13. Module 1 Quiz (basic concepts)"
 categories: dev
 tags: python
 ---

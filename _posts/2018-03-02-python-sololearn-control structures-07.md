@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 07. Lists (Control Structures)"
+title: "SoloLearn 번역 - 07. Lists (Control Structures)"
 categories: dev
 tags: python
 ---
@@ -15,6 +15,9 @@ tags: python
   - 배열은 항목을 구분하는 **쉼표**와 **대괄호**를 사용해서 만들어진다.
 - The certain item in the list can be accessed by using its index in square brackets.
   - 배열의 특정 항목은 대괄호 안에 인덱스를 사용해서 엑세스 할 수 있다.
+
+<br>
+
 - For example:
 
 ```python
@@ -41,6 +44,8 @@ world
 > The first list item's index is **0**, rather than 1, as might be expected.
 >
 > 배열의 첫 번째 인덱스는 1이 아니라, **0**이다.
+
+------
 
 <br>
 
@@ -73,6 +78,8 @@ print(empty_list)
 > However, it is perfectly valid to place one there, and it is encouraged in some cases.
 >
 > 하지만, 어떤 경우에는 마지막 항목에 배치하는 것이 완벽하게 유효하고, 권장되기도 한다.
+
+------
 
 <br>
 
@@ -111,6 +118,8 @@ print(things[2][2])
 >
 > Python에는 다차원 배열이 없기 때문에, 다른 언어에서 사용되는 것처럼.
 
+------
+
 <br>
 
 ## Lists 04
@@ -138,6 +147,8 @@ print(str[6])
 W
 >>>
 ```
+
+------
 
 <br>
 

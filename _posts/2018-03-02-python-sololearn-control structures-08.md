@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 08. List Operations (Control Structures)"
+title: "SoloLearn 번역 - 08. List Operations (Control Structures)"
 categories: dev
 tags: python
 ---
@@ -9,6 +9,9 @@ tags: python
 
 - The item at a certain index in a list can be reassigned.
   - 배열의 특정 인덱스에 있는 항목을 재할당 할 수 있다.
+
+<br>
+
 - For example:
 
 ```python
@@ -27,12 +30,17 @@ print(nums)
 >>>
 ```
 
+------
+
 <br>
 
 ## List Operations 02
 
 - Lists can be added and multiplied in the same way as strings.
   - 배열은 문자열과 동일한 방법으로 추가하거나 곱할 수 있다.
+
+<br>
+
 - For example:
 
 ```python
@@ -61,6 +69,8 @@ print(nums * 3)
 > strings can be thought of as lists of characters that can't be changed.
 >
 > 문자열은 변경할 수 없는 문자 배열로 생각할 수 있다.
+
+------
 
 <br>
 
@@ -96,6 +106,8 @@ False
 >
 > **in** 연산자는 문자열이 다른 문자열의 하위 문자열인지 확인하는 데에도 사용된다.
 
+------
+
 <br>
 
 ## List Operations 04
@@ -123,6 +135,8 @@ False
 False
 >>>
 ```
+
+------
 
 <br>
 

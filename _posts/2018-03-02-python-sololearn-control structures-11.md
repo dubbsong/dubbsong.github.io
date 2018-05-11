@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 11. for Loops (Control Structures)"
+title: "SoloLearn 번역 - 11. for Loops (Control Structures)"
 categories: dev
 tags: python
 ---
@@ -11,6 +11,9 @@ tags: python
   - 가끔은, 배열의 각 항목에 대해 코드를 수행해야 한다.
 - This is called iteration, and it can be accomplished with a **while** loop and a counter variable.
   - 이를 반복이라고 부르고, **while** 루프와 카운터 변수를 사용해서 수행할 수 있다.
+
+<br>
+
 - For example:
 
 ```python
@@ -43,9 +46,11 @@ eggs!
 >
 > 위의 예제는 배열의 모든 항목을 반복하고, 인덱스를 사용해서 엑세스하고, 느낌표와 함께 출력한다.
 
+------
+
 <br>
 
-## for Loop
+## for Loop (for 루프)
 
 - Iterating through a list using a **while** loop requires quite a lot of code, so Python provides the **for** loop as a shortcut that accomplishes the same thing.
   - **while** 루프를 사용해서 반복하면 코드가 많이 필요하므로, Python은 동일한 작업을 수행하는 간단한 방법인 **for** 루프를 제공한다.
@@ -76,6 +81,8 @@ eggs!
 > The **for** loop in Python is like the **foreach** loop in other languages.
 >
 > Python의 **for** 루프는 다른 언어의 **foreach**와 유사하다.
+
+------
 
 <br>
 
@@ -112,6 +119,8 @@ hello!
 > **range** 객체가 **for** 루프에서 사용될 때, **range** 객체에서 배열을 호출할 필요가 없다.
 >
 > 인덱싱되지 않기 때문에 배열이 필요하지 않다.
+
+------
 
 <br>
 

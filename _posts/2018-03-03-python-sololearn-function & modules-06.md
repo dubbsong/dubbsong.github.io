@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 06. Functions as Objects (Function & Modules)"
+title: "SoloLearn 번역 - 06. Functions as Objects (Function & Modules)"
 categories: dev
 tags: python
 ---
@@ -42,6 +42,8 @@ print(operation(a, b))
 >
 > 이제, 이름 **operation**을 사용해서 함수를 호출할 수도 있다.
 
+------
+
 <br>
 
 ## Functions 02
@@ -77,6 +79,8 @@ print(do_twice(add, a, b))
 > As you can see, the function **do_twice** takes a function as its argument and calls it in its body.
 >
 > 보다시피, **do_twice** 함수는 함수를 인수로 취해서 본문에서 호출한다.
+
+------
 
 <br>
 

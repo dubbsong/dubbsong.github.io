@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 07. Modules (Function & Modules)"
+title: "SoloLearn 번역 - 07. Modules (Function & Modules)"
 categories: dev
 tags: python
 ---
@@ -46,6 +46,8 @@ for i in range(5):
 > The code uses the **randint** function defined in the **random** module to print 5 random numbers in the range 1 to 6.
 >
 > 이 코드는 **random** 모듈에 정의된 **randint** 함수를 사용해서 1부터 6까지 범위의 5개 난수를 출력한다.
+
+------
 
 <br>
 
@@ -93,6 +95,8 @@ from math import pi, sqrt
 >
 > 이것은 코드의 변수와 외부 모듈의 변수를 혼동시키므로, 보통 권장하지 않는다.
 
+------
+
 <br>
 
 ## Modules 03
@@ -112,6 +116,8 @@ import some_module
 >>>
 ImportError: No module named 'some_module'
 ```
+
+------
 
 <br>
 
@@ -140,6 +146,8 @@ print(square_root(100))
 10.0
 >>>
 ```
+
+------
 
 <br>
 

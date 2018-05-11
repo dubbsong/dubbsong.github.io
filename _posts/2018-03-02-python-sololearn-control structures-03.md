@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 03. else Statements (Control Structures)"
+title: "SoloLearn 번역 - 03. else Statements (Control Structures)"
 categories: dev
 tags: python
 ---
@@ -38,6 +38,9 @@ No
 
 - You can chain **if** and **else** statements to determine which option in a series of possibilities is true.
   - **if** 문과 **else** 문을 연결해서 일련의 가능성 중에서 어떤 옵션이 사실인지 확인할 수 있다.
+
+<br>
+
 - For example:
 
 ```python
@@ -74,6 +77,9 @@ Number is 7
   - `elif` (else if 의 축약) 문은 if 문과 else 문을 연결할 때 사용하기 위한 축약형이다.
 - A series of if elif statements can have a final else block, which is called if none of the if or elif expressions is True.
   - 일련의 if elif 문은 마지막에 else 블록을 가질 수 있다. if 또는 elif 표현식 중 아무것도 True가 아닌 경우 호출된다.
+
+<br>
+
 - For example:
 
 ```python

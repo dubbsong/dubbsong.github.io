@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "SoloLearn - 08. The Standard Library & pip (Function & Module)"
+title: "SoloLearn 번역 - 08. The Standard Library & pip (Function & Module)"
 categories: dev
 tags: python
 ---
 
-## Modules
+## Modules (모듈)
 
 - There are three main types of modules in Python, those you write yourself, those you install from external sources, and those that are preinstalled with Python.
   - Python에는 3가지 주요한 모듈의 타입이 있다. 그것은 직접 작성하는 타입, 외부 소스에서 설치하는 타입, Python이 기본으로 설치한 타입이다.
@@ -25,6 +25,8 @@ tags: python
 >
 > Python의 광범위한 standard library는 언어로서의 주요 강점 중 하나이다.
 
+------
+
 <br>
 
 ## The Standard Library
@@ -43,6 +45,8 @@ tags: python
 > The complete documentation for the standard library is available online at www.python.org.
 >
 > standard library에 대한 전체 문서는 www.python.org에서 온라인으로 볼 수 있다.
+
+------
 
 <br>
 
@@ -75,6 +79,8 @@ tags: python
 > It's important to enter **pip** commands at the command line, not the Python interpreter.
 >
 > 이것은 Python 인터프리터가 아닌, 커맨드 라인에서 **pip** 명령을 입력하는 것이 중요하다.
+
+------
 
 <br>
 

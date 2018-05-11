@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "SoloLearn - 04. Boolean Logic (Control Structures)"
+title: "SoloLearn 번역 - 04. Boolean Logic (Control Structures)"
 categories: dev
 tags: python
 ---
 
-## Boolean Logic
+## Boolean Logic (불리언 논리)
 
 - Boolean logic is used to make more complicated conditions for if statements that rely on more than one condition.
   - Boolean logic은 하나 이상의 조건에 의존하는 if 문에 대해 더 복잡한 조건을 만드는 데 사용된다.
@@ -40,7 +40,7 @@ False
 
 <br>
 
-## Boolean Or
+## Boolean Or (불리언 or 연산자)
 
 - The **or** operator also takes two arguments.
   - **or** 연산자도 두 개의 인수를 취한다.
@@ -65,7 +65,7 @@ False
 
 <br>
 
-## Boolean Not
+## Boolean Not (불리언 not 연산자)
 
 - Unlike other operators we've seen so far, **not** only takes one argument, and inverts it.
   - 지금까지 본 다른 연산자와는 다르게, **not**은 하나의 인수만 취하고, 반전시킨다.

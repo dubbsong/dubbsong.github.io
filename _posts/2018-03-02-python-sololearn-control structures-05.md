@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 05. Operator Precedence (Control Structures)"
+title: "SoloLearn 번역 - 05. Operator Precedence (Control Structures)"
 categories: dev
 tags: python
 ---

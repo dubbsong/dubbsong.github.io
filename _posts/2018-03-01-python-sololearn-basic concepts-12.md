@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 12. Using an Editor (basic concepts)"
+title: "SoloLearn 번역 - 12. Using an Editor (basic concepts)"
 categories: dev
 tags: python
 ---
@@ -63,9 +63,5 @@ print(x)
   - **Every line**
   - The first 100 lines
   - The first line only
-
-<br>
-
-- 
 
 <br>

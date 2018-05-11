@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "SoloLearn - 10. Range (Control Structures)"
+title: "SoloLearn 번역 - 10. Range (Control Structures)"
 categories: dev
 tags: python
 ---
 
-## Range
+## Range (range 함수)
 
 - The **range** function creates a sequential list of numbers.
   - **range** 함수는 일련의 숫자 배열을 만든다.
@@ -35,6 +35,8 @@ print(numbers)
 >
 > 그리고 이것을 하나로 사용하려면 **배열**로 변환해야 한다.
 
+------
+
 <br>
 
 ## Range 02
@@ -44,6 +46,9 @@ print(numbers)
   - `argument`: a value passed to a function (or method) when calling it
 - If it is called with two arguments, it produces values from the first to the second.
   - 두 개의 인수를 호출된다면, 첫 번째부터 두 번째까지의 값을 생성한다.
+
+<br>
+
 - For example:
 
 ```python
@@ -64,6 +69,8 @@ print(range(20) == range(0, 20))
 True
 >>>
 ```
+
+------
 
 <br>
 
@@ -88,6 +95,8 @@ print(numbers)
 [5, 7, 9, 11, 13, 15, 17, 19]
 >>>
 ```
+
+------
 
 <br>
 

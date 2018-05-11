@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 02. if Statements (Control Structures)"
+title: "SoloLearn 번역 - 02. if Statements (Control Structures)"
 categories: dev
 tags: python
 ---

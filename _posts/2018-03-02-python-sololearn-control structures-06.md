@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 06. while Loops (Control Structures)"
+title: "SoloLearn 번역 - 06. while Loops (Control Structures)"
 categories: dev
 tags: python
 ---

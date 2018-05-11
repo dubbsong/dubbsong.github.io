@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 01. What is Python? (basic concepts)"
+title: "SoloLearn 번역 - 01. What is Python? (basic concepts)"
 categories: dev
 tags: python
 ---

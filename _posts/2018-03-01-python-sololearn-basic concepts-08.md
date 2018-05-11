@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 08. String Operations (basic concepts)"
+title: "SoloLearn 번역 - 08. String Operations (basic concepts)"
 categories: dev
 tags: python
 ---

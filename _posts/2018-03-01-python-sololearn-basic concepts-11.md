@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 11. In-Place Operators (basic concepts)"
+title: "SoloLearn 번역 - 11. In-Place Operators (basic concepts)"
 categories: dev
 tags: python
 ---

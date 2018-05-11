@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 04. Returning from Functions (Function & Modules)"
+title: "SoloLearn 번역 - 04. Returning from Functions (Function & Modules)"
 categories: dev
 tags: python
 ---
@@ -45,6 +45,8 @@ print(z)
 >
 > **return** 문은 함수 정의 외부에서 사용할 수 없다.
 
+------
+
 <br>
 
 ## Returning from Functions 02
@@ -76,6 +78,8 @@ print(add_numbers(4, 5))
 9
 >>>
 ```
+
+------
 
 <br>
 

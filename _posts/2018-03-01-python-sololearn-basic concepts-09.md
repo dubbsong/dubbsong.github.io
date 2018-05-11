@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 09. Type Conversion (basic concepts)"
+title: "SoloLearn 번역 - 09. Type Conversion (basic concepts)"
 categories: dev
 tags: python
 ---

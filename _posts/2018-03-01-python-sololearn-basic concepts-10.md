@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 10. Variables (basic concepts)"
+title: "SoloLearn 번역 - 10. Variables (basic concepts)"
 categories: dev
 tags: python
 ---
@@ -66,7 +66,7 @@ This is a string!
 
 <br>
 
-## Variable Names
+## Variable Names (변수 이름)
 
 - Certain restrictions apply in regard to the characters that may be used in Python variable names.
   - Python 변수 이름에서 사용할 수 있는 문자와 관련하여 특정 제한이 적용된다.

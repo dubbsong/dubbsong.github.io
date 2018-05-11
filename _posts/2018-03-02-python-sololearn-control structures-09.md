@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 09. List Functions (Control Structures)"
+title: "SoloLearn 번역 - 09. List Functions (Control Structures)"
 categories: dev
 tags: python
 ---
@@ -39,9 +39,11 @@ print(nums)
 >
 > 메소드는 이후 강의에서 설명할 것이다.
 
+------
+
 <br>
 
-## List Functions
+## List Functions 02
 
 - To get the number of items in a list, you can use the **len** function.
   - 배열에서 항목의 수를 얻기 위해서는, **len** 함수를 사용할 수 있다.
@@ -72,6 +74,8 @@ print(len(nums))
 >
 > 즉, 점(.) 없이, 배열이 호출되기 전에 작성된다.
 
+------
+
 <br>
 
 ## List Functions 03
@@ -95,6 +99,8 @@ print(words)
 ['Python', 'is', 'fun']
 >>>
 ```
+
+------
 
 <br>
 
@@ -139,6 +145,8 @@ ValueError: 'z' is not in list
 > `list.remove(obj)`: Removes an object from a list
 >
 > `list.reverse()`: Reverses objects in a list
+
+------
 
 <br>
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 01. Booleans & Comparisons (Control Structures)"
+title: "SoloLearn 번역 - 01. Booleans & Comparisons (Control Structures)"
 categories: dev
 tags: python
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 03. Function Arguments (Function & Modules)"
+title: "SoloLearn 번역 - 03. Function Arguments (Function & Modules)"
 categories: dev
 tags: python
 ---
@@ -41,6 +41,8 @@ python!
 >
 > 보다시피, 인수는 괄호 안에 정의되어 있다.
 
+------
+
 <br>
 
 ## Arguments 02
@@ -66,6 +68,8 @@ print_sum_twice(5, 8)
 13
 >>>
 ```
+
+------
 
 <br>
 
@@ -104,6 +108,8 @@ NameError: name 'variable' is not defined
 > Technically, **parameters** are the variables in a function definition, and **arguments** are the values put into parameters when functions are called.
 >
 > 기술적으로, **매개변수**는 함수 정의 내의 변수이며, **인수**는 함수가 호출될 때 매개변수에 입력되는 값이다.
+
+------
 
 <br>
 

@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "SoloLearn - 13. Module 2 Quiz (Control Structures)"
+title: "SoloLearn 번역 - 13. Module 2 Quiz (Control Structures)"
 categories: dev
 tags: python
 ---
+
+## QUIZ
 
 - What is the output of this code?
 

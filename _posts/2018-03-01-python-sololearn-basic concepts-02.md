@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 02. Your First Program (basic concepts)"
+title: "SoloLearn 번역 - 02. Your First Program (basic concepts)"
 categories: dev
 tags: python
 ---
@@ -55,6 +55,9 @@ tags: python
 
 - The **print** statement can also be used to output multiple lines of text.
   - **print** 문은 여러 줄의 텍스트를 출력하는 데에도 사용할 수 있다.
+
+<br>
+
 - For Example:
 
 ```python

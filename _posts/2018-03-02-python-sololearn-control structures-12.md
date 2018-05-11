@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 12. A Simple Calculator (Control Structures)"
+title: "SoloLearn 번역 - 12. A Simple Calculator (Control Structures)"
 categories: dev
 tags: python
 ---
@@ -54,6 +54,8 @@ while True:
 >
 > break 문은 유저가 "quit"을 입력한 경우, while 루프를 멈추는 데 사용된다.
 
+------
+
 <br>
 
 ## Creating a Calculator 02
@@ -86,6 +88,8 @@ elif user_input == "add":
 >
 > 다음 모듈에서 이와 같은 문제를 해결할 것이다.
 
+------
+
 <br>
 
 ## Creating a Calculator 03
@@ -117,6 +121,8 @@ elif user_input == "add":
 > The output line could be put outside the if statements to omit repetition of code.
 >
 > 출력 라인은 코드의 반복을 생략하기 위해 if 문 외부에 놓일 수 있다.
+
+------
 
 <br>
 

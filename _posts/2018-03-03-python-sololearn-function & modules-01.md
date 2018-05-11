@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 01. Code Reuse (Function & Modules)"
+title: "SoloLearn 번역 - 01. Code Reuse (Function & Modules)"
 categories: dev
 tags: python
 ---
@@ -23,6 +23,8 @@ tags: python
 > Bad, repetitive code is said to abide by the **WET** principle, which stands for **Write Everything Twice**, or **We Enjoy Typing**.
 >
 > 잘못되었거나, 반복적인 코드는 **Write Everything Twice** 또는 **We Enjoy Typing**을 나타내는 **WET** 원칙을 준수한다고 한다.
+
+------
 
 <br>
 
@@ -47,6 +49,8 @@ range(10, 20, 3)
 > The words in front of the parentheses are function **names**, and the comma-separated values inside the parentheses are function **arguments**.
 >
 > 괄호 앞의 단어는 함수 **이름**이고, 괄호 안의 쉼표로 구분된 값은 함수 **인수**이다.
+
+------
 
 <br>
 

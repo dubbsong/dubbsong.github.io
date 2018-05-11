@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "SoloLearn - 03. Simple Operations (basic concepts)"
+title: "SoloLearn 번역 - 03. Simple Operations (basic concepts)"
 categories: dev
 tags: python
 ---
 
-## Simple Operations (기본 연산자)
+## Simple Operations (기본 연산)
 
 - Python has the capability of carrying out calculations.
   - Python에는 계산을 수행할 수 있는 기능이 있다.

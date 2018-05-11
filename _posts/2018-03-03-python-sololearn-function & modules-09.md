@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 09. Module 3 Quiz (Function & Module)"
+title: "SoloLearn 번역 - 09. Module 3 Quiz (Function & Module)"
 categories: dev
 tags: python
 ---

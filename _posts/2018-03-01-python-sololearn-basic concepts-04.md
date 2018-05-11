@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 04. Floats (basic concepts)"
+title: "SoloLearn 번역 - 04. Floats (basic concepts)"
 categories: dev
 tags: python
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 06. Strings (basic concepts)"
+title: "SoloLearn 번역 - 06. Strings (basic concepts)"
 categories: dev
 tags: python
 ---

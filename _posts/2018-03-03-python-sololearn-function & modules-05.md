@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn - 05. Comments & Docstrings (Function & Modules)"
+title: "SoloLearn 번역 - 05. Comments & Docstrings (Function & Modules)"
 categories: dev
 tags: python
 ---
@@ -46,6 +46,8 @@ print(x % y) # find the remainder
 >
 > Python은 C와 같은 프로그래밍 언어처럼 일반적인 목적의 여러 행 주석을 가지고 있지 않다.
 
+------
+
 <br>
 
 ## Docstrings (한글로 어떻게?)
@@ -87,6 +89,8 @@ spam!
 > This allows the programmer to inspect these comments at run time.
 >
 > 이를 통해 프로그래머는 런타임에서 이러한 주석을 검사할 수 있다.
+
+------
 
 <br>
 
