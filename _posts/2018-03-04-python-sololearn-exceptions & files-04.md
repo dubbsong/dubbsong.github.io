@@ -33,6 +33,8 @@ ValueError
 >
 > 발생된 예외의 타입을 지정해야 한다.
 
+------
+
 <br>
 
 ## Raising Exceptions 02
@@ -58,6 +60,8 @@ raise NameError("Invalid name!")
 NameError: Invalid name!
 >>>
 ```
+
+------
 
 <br>
 
@@ -89,6 +93,8 @@ An error occurred
 ZeroDivisionError: division by zero
 >>>
 ```
+
+------
 
 <br>
 

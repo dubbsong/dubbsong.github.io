@@ -36,6 +36,8 @@ This code will run no matter what
 >>>
 ```
 
+------
+
 <br>
 
 ## finally 02
@@ -67,6 +69,8 @@ During handling of the above exception, another exception occurred:
 NameError: name 'unknown_var' is not defined
 >>>
 ```
+
+------
 
 <br>
 

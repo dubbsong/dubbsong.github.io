@@ -48,6 +48,8 @@ due to zero division
 >
 > 위의 코드에서, except 문은 처리할 예외 타입을 정의한다 (이 경우에는, **ZeroDivisionError**).
 
+------
+
 <br>
 
 ## Exception Handling 02
@@ -77,6 +79,8 @@ except (ValueError, TypeError):
 Error occurred
 >>>
 ```
+
+------
 
 <br>
 
@@ -114,6 +118,8 @@ An error occurred
 > Exception handling is particularly useful when dealing with user input.
 >
 > 예외 처리는 유저 입력을 처리할 때 특히 유용하다.
+
+------
 
 <br>
 
