@@ -31,7 +31,7 @@ function flatten(array) {
 }
 
 
-flatten([1, 2]);			// [1, 2]
+flatten([1, 2]);		// [1, 2]
 flatten([[1], ['a'], [2]]);	// [1, 'a', 2]
 flatten([[[1], [2]], 3]);	// [[1], [2], 3]
 ```
@@ -55,7 +55,7 @@ function flatten(array) {
 }
 
 
-flatten([1, 2]);			// [1, 2]
+flatten([1, 2]);		// [1, 2]
 flatten([[1], ['a'], [2]]);	// [1, 'a', 2]
 flatten([[[1], [2]], 3]);	// [[1], [2], 3]
 ```
@@ -81,7 +81,7 @@ function flatten(array) {
 }
 
 
-flatten([1, 2]);			// [1, 2]
+flatten([1, 2]);		// [1, 2]
 flatten([[1], ['a'], [2]]);	// [1, 'a', 2]
 flatten([[[1], [2]], 3]);	// [[1], [2], 3]
 ```
@@ -100,7 +100,7 @@ function flatten(array) {
 }
 
 
-flatten([1, 2]);			// [1, 2]
+flatten([1, 2]);		// [1, 2]
 flatten([[1], ['a'], [2]]);	// [1, 'a', 2]
 flatten([[[1], [2]], 3]);	// [[1], [2], 3]
 ```
