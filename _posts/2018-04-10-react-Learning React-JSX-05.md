@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "러닝 리액트(Learning React) - 5. JSX"
+title: "러닝 리액트(Learning React) - 05. JSX"
 categories: react
 tags: react
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "러닝 리액트(Learning React) - 4. 순수 리액트"
+title: "러닝 리액트(Learning React) - 04. 순수 리액트"
 categories: react
 tags: react
 ---

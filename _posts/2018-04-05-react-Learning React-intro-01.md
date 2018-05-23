@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "러닝 리액트(Learning React) - 1. 소개"
+title: "러닝 리액트(Learning React) - 01. 소개"
 categories: react
 tags: react
 ---
