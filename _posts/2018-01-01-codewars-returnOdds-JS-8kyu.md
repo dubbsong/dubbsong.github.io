@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "evenOrOdd.js (8kyu)"
+title: "returnOdds.js (8kyu)"
 categories: codewars
 tags: Algorithm
 ---
