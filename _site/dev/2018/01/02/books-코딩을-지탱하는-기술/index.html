@@ -992,20 +992,223 @@ LBB1_2:
 <h4 id="내포-구조-데이터의-효율적-처리">내포 구조 데이터의 효율적 처리</h4>
 
 <ul>
-  <li>​</li>
+  <li>‘어떤 처리를 하고 있는 도중에 동일한 처리를 다른 대상(인수)에 대해 실행한다’는 내포(nesting) 형태의 처리다.</li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="내포-구조를-다루는-방법">내포 구조를 다루는 방법</h4>
+
+<ul>
+  <li>[1, 2, [3, 4], 5]라는 리스트를 생각해보자. 이것은 [1, 2, ?, 5]라는 리스트의 ? 부분에 [3, 4]라는 별도의 리스트가 내포되어 있다. 이 내포 리스트에 있는 숫자를 전부 합산하고 싶을 때는 어떻게 하면 될까?</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">//</span> <span class="n">Python</span>
+
+<span class="k">def</span> <span class="nf">total</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+   <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">xs</span><span class="p">:</span>
+      <span class="c"># 리스트 xs에서 요소를 하나씩 꺼내 x라고 한다.</span>
+      <span class="k">if</span> <span class="n">is_integer</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+         <span class="c"># x가 정수이면 더한다.</span>
+         <span class="n">result</span> <span class="o">+=</span> <span class="n">x</span>
+		<span class="k">else</span><span class="p">:</span>
+         <span class="c"># x가 리스트이기 때문에 for 문으로 돌린다.</span>
+         <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">is_integer</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
+               <span class="n">result</span> <span class="o">+=</span> <span class="n">y</span>
+		<span class="k">else</span><span class="p">:</span>
+         <span class="c"># 추가로 리스트가 나오면 어떻게 하면 좋을까?</span>
+	<span class="k">return</span> <span class="n">result</span>
+</code></pre></div></div>
+
+<ul>
+  <li>추가로 for 문을 써도 ‘3중 내포까지 처리 가능한 코드’ 밖에 되지 않는다.</li>
+  <li>만약 데이터가 4중, 5중 내포 관계가 되면 처리할 수 없다.</li>
+  <li>그래서 존재하는 것이 재귀 호출이다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">//</span> <span class="n">Python</span>
+
+<span class="k">def</span> <span class="nf">total</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+   <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">xs</span><span class="p">:</span>
+      <span class="k">if</span> <span class="n">is_integer</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+         <span class="n">result</span> <span class="o">+=</span> <span class="n">x</span>
+		<span class="k">else</span><span class="p">:</span>
+         <span class="c"># x는 내포 리스트이기 때문에 total로 안에 든 값을 합산한다.</span>
+         <span class="n">result</span> <span class="o">+=</span> <span class="n">total</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+         
+	<span class="k">return</span> <span class="n">result</span>
+</code></pre></div></div>
+
+<ul>
+  <li>함수 total은 몇 중으로 된 내포 리스트가 전달되어도 안에 있는 모든 수를 합산할 수 있도록 되었다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="정리-4">정리</h3>
+
+<ul>
+  <li>프로그램의 규모가 커지면 전체적인 구조를 파악하기 어려워진다.</li>
+  <li>비슷한 처리를 몇 번이고 반복해서 쓰고 싶어지는 경우도 생긴다.</li>
+  <li>함수는 이 문제를 해결하기 위해 탄생했다.</li>
+  <li>한 그룹인 코드를 배내어 의미 있는 이름을 붙여서, 그 코드가 무엇을 하고 있는지 파악하기 쉬워진다.</li>
+  <li>그리고 그 함수를 다른 장소에서 호출하여 사용함으로 재사용도 가능해진다.</li>
+  <li>함수를 사용함으로 ‘재귀 호출’이라는 코딩 기술이 탄생했다.</li>
+  <li>재귀 호출은 내포 구조로 된 데이터를 다루기에 적합한 기법이다.</li>
+</ul>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="6장-에러-처리">6장 에러 처리</h2>
+
+<p><br /></p>
+
+<h3 id="프로그램도-실패를-한다">프로그램도 실패를 한다</h3>
+
+<ul>
+  <li>프로그램도 실패를 한다. 파일에 무엇을 기록하려고 할 때 하드 디스크가 이미 꽉 차 있는 경우 기록에 실패한다.</li>
+  <li>파일에 기록하려고 했는데 실패한 경우에 어떤 경고도 없다면 사용자는 실패를 알아차리기 힘들다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="실패를-어떻게-전달할까">실패를 어떻게 전달할까?</h3>
+
+<p><br /></p>
+
+<h4 id="반환값으로-실패를-전달한다">반환값으로 실패를 전달한다</h4>
+
+<ul>
+  <li>예를 들어 shippai 함수가 반환하는 값을 ‘성공했을 때 0을 반환, 실패했을 때 그 이외의 값을 반환한다’고 정해두는 방법이다.</li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// C언어</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">shippai</span><span class="p">()){</span>
+   <span class="cm">/* 에러 처리 */</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h3 id="어떤-경우에-예외를-던질까">어떤 경우에 예외를 던질까?</h3>
+
+<p><br /></p>
+
+<h4 id="함수-호출-시-인수가-부족한-경우">함수 호출 시 인수가 부족한 경우</h4>
+
+<ul>
+  <li>예를 들어 인수 두 개를 가진 함수가 인수 한 개만 호출한 경우 어떤 일이 벌어질까?</li>
+  <li>Python과 Ruby는 함수 호출 시점에서 예외를 던진다. 그러나 JavaScript는 인수에 ‘미정의를 의미하는 특수한 값(undefined)’을 사용해서 처리를 계속한다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">//</span> <span class="n">Python</span>
+
+<span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+   <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span>
+   
+<span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sr">//</span> <span class="no">Ruby</span>
+
+<span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+   <span class="nb">p</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span>
+<span class="k">end</span>
+
+<span class="n">foo</span> <span class="mi">1</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h4 id="틀리면-바로-예외를-던진다">틀리면 바로 예외를 던진다</h4>
+
+<ul>
+  <li>프로그래머도 사람인 이상, 실수를 피할 수는 없다.</li>
+  <li>코드의 품질을 높이기 위해서는 버그가 존재하는 것을 빨리 알아채고 수정하는 수밖에 없다.</li>
+  <li>예외의 이점은 ‘실패를 놓치지 않는 것’이다.</li>
+  <li>‘이상하면 처리를 정지하고 빨리 보고해야 한다’는 설계 이념을 ‘fail first’라고 한다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="정리-5">정리</h3>
+
+<ul>
+  <li>실패를 전달하는 방법은 크게 2가지로 나눌 수 있다.
+    <ul>
+      <li>반환값으로 알린다</li>
+      <li>실패하면 점프한다</li>
+    </ul>
+  </li>
+  <li>어느 쪽에도 장단점이 있어서 각각의 장단점을 잘 파악한 후 적재적소에 사용하는 것이 중요하다.</li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="7장-이름과-스코프">7장 이름과 스코프</h2>
+
+<p><br /></p>
+
+<h3 id="왜-이름이-필요할까">왜 이름이 필요할까?</h3>
+
+<ul>
+  <li>변수나 함수의 이름은 50년 이상 전에 발명되었다.</li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="어떻게-이름을-붙일까">어떻게 이름을 붙일까?</h4>
+
+<ul>
+  <li>어떻게 하면 ‘책꽂이의 좌측 끝에서 36번째 책을 꺼내’라고 말하는 대신, ‘영어 사전을 꺼내’라고 말할 수 있게 될까?</li>
+  <li>컴퓨터가 이름과 물건을 대응시키는 표를 가지고 있으면 된다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="스코프의-진화">스코프의 진화</h3>
+
+<ul>
+  <li>스코프(scope)란 이름의 유효 범위다.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="정리-6">정리</h3>
+
+<ul>
+  <li>이름의 유효 범위는 정적 스코프가 주로 사용되고 있다.</li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="8장-형">8장 형</h2>
+
+<p><br /></p>
+
+<h3 id="형型이란">형(型)이란?</h3>
+
+<ul>
+  <li></li>
 </ul>
 
 <p><br /></p>
 
 <blockquote>
-  <table>
-    <tbody>
-      <tr>
-        <td>칼럼</td>
-        <td>이해력을 확인하기 위해서는 결과물(Output)을 확인한다</td>
-      </tr>
-    </tbody>
-  </table>
+  <p>칼럼 이해력을 확인하기 위해서는 결과물(Output)을 확인한다</p>
 
   <p>이해한 것이 맞는지를 확인하기 위해서는 결과물(Output)이 필요하다.</p>
 
@@ -1019,14 +1222,7 @@ LBB1_2:
 <p><br /></p>
 
 <blockquote>
-  <table>
-    <tbody>
-      <tr>
-        <td>칼럼</td>
-        <td>무엇을 배우면 좋을지 모르는 이유</td>
-      </tr>
-    </tbody>
-  </table>
+  <p>칼럼 무엇을 배우면 좋을지 모르는 이유</p>
 
   <p>‘무엇을 배우면 좋을까?’라는 질문에 대답하기 전에 한 가지 물어보고 싶다.</p>
 
@@ -1052,14 +1248,7 @@ LBB1_2:
 <p><br /></p>
 
 <blockquote>
-  <table>
-    <tbody>
-      <tr>
-        <td>칼럼</td>
-        <td>이름</td>
-      </tr>
-    </tbody>
-  </table>
+  <p>칼럼 이름</p>
 
   <p>함수를 사용한 처리에 이름을 붙이는 행위는</p>
 
@@ -1069,6 +1258,29 @@ LBB1_2:
 </blockquote>
 
 <p><br /></p>
+
+<blockquote>
+  <p>칼럼 이빨로 씹다</p>
+
+  <p>큰 고기를 한 입에 먹을 수는 없다.</p>
+
+  <p>우선은 입에 넣을 수 있는 크기로 잘라서, 이빨로 씹은 후 삼켜야 한다.</p>
+
+  <p>‘이해’란 것도 같다.</p>
+
+  <p>저자도 방대한 정보를 앞에 두고 좌절한 것이 한두 번이 아니다.</p>
+
+  <p>그럴 때 사용할 수 있는 3가지 전략이 있다.</p>
+
+  <p>‘필요한 부분부터 흡수한다’,</p>
+
+  <p>‘대략적인 부분을 잡아서 조금씩 상세화한다’,</p>
+
+  <p>‘끝에서부터 차례대로 베껴간다’이다.</p>
+</blockquote>
+
+<p><br /></p>
+
 
       
     </div>
@@ -1280,6 +1492,10 @@ LBB1_2:
          
            
          
+           
+         
+           
+         
      </ul>
     </li>
 
@@ -1293,6 +1509,10 @@ LBB1_2:
     </div>
      <ul class="list-body">
        
+           
+         
+           
+         
            
          
            
@@ -1334,6 +1554,10 @@ LBB1_2:
          
            
          
+           
+         
+           
+         
      </ul>
     </li>
 
@@ -1361,6 +1585,10 @@ LBB1_2:
          
            
          
+           
+         
+           
+         
      </ul>
     </li>
 
@@ -1374,6 +1602,10 @@ LBB1_2:
     </div>
      <ul class="list-body">
        
+           
+         
+           
+         
            
          
            
@@ -1434,6 +1666,18 @@ LBB1_2:
            
              <li>
                <a class="sidebar-nav-subitem" href="/tag/dev-django/">Django</a>
+             </li>
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-structure/">Data Structure</a>
+             </li>
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-db/">DB</a>
              </li>
            
          

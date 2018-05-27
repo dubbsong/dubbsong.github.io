@@ -33,8 +33,8 @@ function evenOrOdd(number) {
 }
 
 
-evenOrOdd(1);	// Odd
-evenOrOdd(2);	// Even
+console.log(evenOrOdd(1));	// Odd
+console.log(evenOrOdd(2));	// Even
 ```
 
 <br>
@@ -51,8 +51,8 @@ function evenOrOdd(number) {
 }
 
 
-evenOrOdd(1);	// Odd
-evenOrOdd(2);	// Even
+console.log(evenOrOdd(1));	// Odd
+console.log(evenOrOdd(2));	// Even
 ```
 
 <br>
@@ -65,8 +65,8 @@ function evenOrOdd(number) {
 }
 
 
-evenOrOdd(1);	// Odd
-evenOrOdd(2);	// Even
+console.log(evenOrOdd(1));	// Odd
+console.log(evenOrOdd(2));	// Even
 ```
 
 > 삼항 연산자 (Ternary operator)
@@ -83,8 +83,8 @@ function evenOrOdd(number) {
 }
 
 
-evenOrOdd(1);	// Odd
-evenOrOdd(2);	// Even
+console.log(evenOrOdd(1));	// Odd
+console.log(evenOrOdd(2));	// Even
 ```
 
 <br>
@@ -95,8 +95,8 @@ evenOrOdd(2);	// Even
 const evenOrOdd = number => number % 2 ? 'Odd' : 'Even';
 
 
-evenOrOdd(1);	// Odd
-evenOrOdd(2);	// Even
+console.log(evenOrOdd(1));	// Odd
+console.log(evenOrOdd(2));	// Even
 ```
 
 <br>

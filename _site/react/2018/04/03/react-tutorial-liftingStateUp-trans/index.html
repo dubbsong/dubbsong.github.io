@@ -30,7 +30,7 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
-<meta property="og:title" content="리액트 공식 문서 번역 - Lifting State Up">
+<meta property="og:title" content="리액트 공식 문서 번역 - 3. Lifting State Up">
 <meta property="og:type" content="article">
 
 
@@ -45,7 +45,7 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 
 
 
-  <title>리액트 공식 문서 번역 - Lifting State Up &middot; ㅇㅁㅂ</title>
+  <title>리액트 공식 문서 번역 - 3. Lifting State Up &middot; ㅇㅁㅂ</title>
 
 
 
@@ -162,7 +162,7 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
   <header>
     <h1 class="post-title">
       
-        리액트 공식 문서 번역 - Lifting State Up
+        리액트 공식 문서 번역 - 3. Lifting State Up
       
     </h1>
 
@@ -381,7 +381,11 @@ on <span>React</span>, <span>Tutorial</span>
 <p><br /></p>
 
 <ul>
-  <li>We’ll fill in later so that a board looks something like</li>
+  <li>We’ll fill in later so that a board looks something like
+    <ul>
+      <li>나중에 다음과 같이 생긴 보드로 채울 것이다.</li>
+    </ul>
+  </li>
 </ul>
 
 <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span>
@@ -584,7 +588,7 @@ on <span>React</span>, <span>Tutorial</span>
   </li>
   <li>Board passed <code class="highlighter-rouge">onClick={() =&gt; this.handleClick(i)}</code> to Square, so, when called, it runs <code class="highlighter-rouge">this.handleClick(i)</code> on the Board.
     <ul>
-      <li>Board는 <code class="highlighter-rouge">onClick={() =&gt; this.handleClick(i)}</code>를 Square에 전달했으므로, 호출될 때, Board에서 <code class="highlighter-rouge">this.handleClick(i)</code>을 실행한다.</li>
+      <li>Board는 <code class="highlighter-rouge">onClick={() =&gt; this.handleClick(i)}</code>을 Square에 전달했으므로, 호출될 때, Board에서 <code class="highlighter-rouge">this.handleClick(i)</code>을 실행한다.</li>
     </ul>
   </li>
   <li>We have not defined the <code class="highlighter-rouge">handleClick()</code> method on the Board yet, so the code crashes.
@@ -630,52 +634,52 @@ on <span>React</span>, <span>Tutorial</span>
 </ul>
 
 <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Board</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
-   <span class="kd">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">super</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span>
-      <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
-         <span class="na">squares</span><span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">9</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="kc">null</span><span class="p">),</span>
-      <span class="p">};</span>
-   <span class="p">}</span>
-   
-   <span class="nx">handleClick</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
-      <span class="kd">const</span> <span class="nx">squares</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">squares</span><span class="p">.</span><span class="nx">slice</span><span class="p">();</span>
-      <span class="nx">squares</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'X'</span><span class="p">;</span>
-      <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">squares</span><span class="p">:</span> <span class="nx">squares</span><span class="p">});</span>
-   <span class="p">}</span>
-   
-   <span class="nx">renderSquare</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="p">(</span>
-      	<span class="p">&lt;</span><span class="nc">Square</span>
-            <span class="na">value=</span><span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">squares</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="si">}</span>
-            <span class="na">onClick=</span><span class="si">{</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span><span class="si">}</span>
-			<span class="p">/&gt;</span>
-      <span class="p">);</span>
-   <span class="p">}</span>
-   
-   <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-      <span class="kd">const</span> <span class="nx">status</span> <span class="o">=</span> <span class="s1">'Next player: X'</span><span class="p">;</span>
-      
-      <span class="k">return</span> <span class="p">(</span>
-      	<span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-         	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"status"</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">status</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
-            	<span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="si">}</span>
-               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="si">}</span>
-               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span>
-            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
-            	<span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="si">}</span>
-               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span>
-               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="si">}</span>
-            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
-            	<span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="si">}</span>
-               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="si">}</span>
-               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="si">}</span>
-            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-         <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">);</span>
-   <span class="p">}</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">squares</span><span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">9</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="kc">null</span><span class="p">),</span>
+    <span class="p">};</span>
+  <span class="p">}</span>
+
+  <span class="nx">handleClick</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">squares</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">squares</span><span class="p">.</span><span class="nx">slice</span><span class="p">();</span>
+    <span class="nx">squares</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'X'</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">squares</span><span class="p">:</span> <span class="nx">squares</span><span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="nx">renderSquare</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="p">&lt;</span><span class="nc">Square</span>
+        <span class="na">value=</span><span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">squares</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="si">}</span>
+        <span class="na">onClick=</span><span class="si">{</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span><span class="si">}</span>
+      <span class="p">/&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">status</span> <span class="o">=</span> <span class="s1">'Next player: X'</span><span class="p">;</span>
+
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"status"</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">status</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="si">}</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="si">}</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="si">}</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="si">}</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="si">}</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="si">}</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="si">}</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
@@ -758,7 +762,7 @@ on <span>React</span>, <span>Tutorial</span>
   </li>
   <li>We suggest using the <code class="highlighter-rouge">.slice()</code> operator to copy the <code class="highlighter-rouge">squares</code> array prior to making changes and to prevent mutating the existing array.
     <ul>
-      <li>기존 배열을 수정하지 않고 변경하기 전에 <code class="highlighter-rouge">.slice()</code> 연산자를 사용해서 <code class="highlighter-rouge">squares</code> 배열을 복사하는 것이 좋다.</li>
+      <li>기존 배열을 수정하지 않고 변경하기 전에 <code class="highlighter-rouge">.slice()</code> 연산자를 사용해서 <code class="highlighter-rouge">squares</code> 배열을 복사하는 것이 좋다고 했다.</li>
     </ul>
   </li>
   <li>
@@ -1133,56 +1137,56 @@ on <span>React</span>, <span>Tutorial</span>
 </ul>
 
 <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Board</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
-   <span class="kd">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">super</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span>
-      <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
-         <span class="na">squares</span><span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">9</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="kc">null</span><span class="p">),</span>
-         <span class="na">xIsNext</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-      <span class="p">};</span>
-   <span class="p">}</span>
-   
-   <span class="nx">handleClici</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
-      <span class="kd">const</span> <span class="nx">squares</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">squares</span><span class="p">.</span><span class="nx">slice</span><span class="p">();</span>
-      <span class="nx">squares</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">xIsNext</span> <span class="p">?</span> <span class="s1">'X'</span> <span class="p">:</span> <span class="s1">'O'</span><span class="p">;</span>
-      <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span>
-         <span class="na">squares</span><span class="p">:</span> <span class="nx">squares</span><span class="p">,</span>
-         <span class="na">xIsNext</span><span class="p">:</span> <span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">xIsNext</span><span class="p">,</span>
-      <span class="p">});</span>
-   <span class="p">}</span>
-   
-   <span class="nx">renderSquare</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="p">(</span>
-      	<span class="p">&lt;</span><span class="nc">Square</span>
-				<span class="na">value=</span><span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">squares</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="si">}</span>
-            <span class="na">onClick=</span><span class="si">{</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span><span class="si">}</span>
-			<span class="p">/&gt;</span>
-      <span class="p">);</span>
-   <span class="p">}</span>
-   
-   <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-      <span class="kd">const</span> <span class="nx">status</span> <span class="o">=</span> <span class="s1">'Next plater: '</span> <span class="o">+</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">xIsNext</span> <span class="p">?</span> <span class="s1">'X'</span> <span class="p">:</span> <span class="s1">'O'</span><span class="p">);</span>
-      
-      <span class="k">return</span> <span class="p">(</span>
-      	<span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-         	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"status"</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">status</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
-            	<span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="si">}</span>
-               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="si">}</span>
-               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span>
-            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
-            	<span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="si">}</span>
-               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span>
-               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="si">}</span>
-            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
-            	<span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="si">}</span>
-               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="si">}</span>
-               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="si">}</span>
-            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-         <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">);</span>
-   <span class="p">}</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">squares</span><span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">9</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="kc">null</span><span class="p">),</span>
+      <span class="na">xIsNext</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="p">};</span>
+  <span class="p">}</span>
+
+  <span class="nx">handleClick</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">squares</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">squares</span><span class="p">.</span><span class="nx">slice</span><span class="p">();</span>
+    <span class="nx">squares</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">xIsNext</span> <span class="p">?</span> <span class="s1">'X'</span> <span class="p">:</span> <span class="s1">'O'</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span>
+      <span class="na">squares</span><span class="p">:</span> <span class="nx">squares</span><span class="p">,</span>
+      <span class="na">xIsNext</span><span class="p">:</span> <span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">xIsNext</span><span class="p">,</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="nx">renderSquare</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="p">&lt;</span><span class="nc">Square</span>
+        <span class="na">value=</span><span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">squares</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="si">}</span>
+        <span class="na">onClick=</span><span class="si">{</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span><span class="si">}</span>
+      <span class="p">/&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">status</span> <span class="o">=</span> <span class="s1">'Next player: '</span> <span class="o">+</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">xIsNext</span> <span class="p">?</span> <span class="s1">'X'</span> <span class="p">:</span> <span class="s1">'O'</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"status"</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">status</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="si">}</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="si">}</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="si">}</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="si">}</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="si">}</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="si">}</span>
+          <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="si">}</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
@@ -1333,7 +1337,7 @@ on <span>React</span>, <span>Tutorial</span>
   <div class="share">
       <h2>Share this post</h2>
       <div class="share-body">
-        <a href="http://twitter.com/share?text=리액트 공식 문서 번역 - Lifting State Up&amp;url=http://localhost:4000/react/2018/04/03/react-tutorial-liftingStateUp-trans/"
+        <a href="http://twitter.com/share?text=리액트 공식 문서 번역 - 3. Lifting State Up&amp;url=http://localhost:4000/react/2018/04/03/react-tutorial-liftingStateUp-trans/"
     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
             <span class="icon-twitter">
             </span>
@@ -1401,11 +1405,11 @@ on <span>React</span>, <span>Tutorial</span>
 
 
 <li class="h4">
-  <a href="/react/2018/04/08/react-LearningReact-routing/" data-flip="title">
+  <a href="/react/2018/04/17/react-Learning-React-routing/" data-flip="title">
     <span>러닝 리액트(Learning React) - 라우팅</span>
   </a>
-  <small><time datetime="2018-04-08T00:00:00+09:00">
-    08 Apr 2018
+  <small><time datetime="2018-04-17T00:00:00+09:00">
+    17 Apr 2018
   </time></small>
 </li>
 
@@ -1417,11 +1421,11 @@ on <span>React</span>, <span>Tutorial</span>
 
 
 <li class="h4">
-  <a href="/react/2018/04/07/react-LearningReact-redux/" data-flip="title">
+  <a href="/react/2018/04/16/react-Learning-React-redux/" data-flip="title">
     <span>러닝 리액트(Learning React) - 리덕스</span>
   </a>
-  <small><time datetime="2018-04-07T00:00:00+09:00">
-    07 Apr 2018
+  <small><time datetime="2018-04-16T00:00:00+09:00">
+    16 Apr 2018
   </time></small>
 </li>
 
@@ -1433,11 +1437,11 @@ on <span>React</span>, <span>Tutorial</span>
 
 
 <li class="h4">
-  <a href="/react/2018/04/06/react-LearningReact-webpack/" data-flip="title">
+  <a href="/react/2018/04/15/react-Learning-React-webpack/" data-flip="title">
     <span>러닝 리액트(Learning React) - 웹팩</span>
   </a>
-  <small><time datetime="2018-04-06T00:00:00+09:00">
-    06 Apr 2018
+  <small><time datetime="2018-04-15T00:00:00+09:00">
+    15 Apr 2018
   </time></small>
 </li>
 
@@ -1460,7 +1464,7 @@ on <span>React</span>, <span>Tutorial</span>
   <div id="disqus_thread"></div>
 
   <script>
-    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="리액트 공식 문서 번역 - Lifting State Up",this.page.identifier="/react/2018/04/03/react-tutorial-liftingStateUp-trans",this.page.url="http://localhost:4000/react/2018/04/03/react-tutorial-liftingStateUp-trans/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//dubbsong.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="리액트 공식 문서 번역 - 3. Lifting State Up",this.page.identifier="/react/2018/04/03/react-tutorial-liftingStateUp-trans",this.page.url="http://localhost:4000/react/2018/04/03/react-tutorial-liftingStateUp-trans/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//dubbsong.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
 
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
@@ -1529,6 +1533,10 @@ on <span>React</span>, <span>Tutorial</span>
          
            
          
+           
+         
+           
+         
      </ul>
     </li>
 
@@ -1542,6 +1550,10 @@ on <span>React</span>, <span>Tutorial</span>
     </div>
      <ul class="list-body">
        
+           
+         
+           
+         
            
          
            
@@ -1583,6 +1595,10 @@ on <span>React</span>, <span>Tutorial</span>
          
            
          
+           
+         
+           
+         
      </ul>
     </li>
 
@@ -1610,6 +1626,10 @@ on <span>React</span>, <span>Tutorial</span>
          
            
          
+           
+         
+           
+         
      </ul>
     </li>
 
@@ -1623,6 +1643,10 @@ on <span>React</span>, <span>Tutorial</span>
     </div>
      <ul class="list-body">
        
+           
+         
+           
+         
            
          
            
@@ -1683,6 +1707,18 @@ on <span>React</span>, <span>Tutorial</span>
            
              <li>
                <a class="sidebar-nav-subitem" href="/tag/dev-django/">Django</a>
+             </li>
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-structure/">Data Structure</a>
+             </li>
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-db/">DB</a>
              </li>
            
          
