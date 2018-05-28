@@ -1,3 +1,10 @@
+---
+layout: post
+title: "SoloLearn 번역 - 02. Adding JavaScript to a Web Page (Overview)"
+categories: javascript
+tags: JS
+---
+
 ## JavaScript in \<head>
 
 - You can place any number of scripts in an HTML document.

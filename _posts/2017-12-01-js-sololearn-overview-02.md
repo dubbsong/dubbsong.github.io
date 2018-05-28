@@ -1,3 +1,10 @@
+---
+layout: post
+title: "SoloLearn 번역 - 02. Creating Your First JavaScript (Overview)"
+categories: javascript
+tags: JS
+---
+
 ## Creating Your First JavaScript
 
 - Let's start with adding JavaScript to a webpage.
