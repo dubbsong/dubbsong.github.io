@@ -17,7 +17,7 @@ tags: python
 def summation(n):
    return sum(range(1, n + 1))
 
-# sum(iterable, start) 메소드
+# sum() 메소드
 # 반복 가능한 항목을 추가하고, 합을 반환한다.
 
 
@@ -36,7 +36,7 @@ SyntaxError: Non-ASCII character
 def summation(n):
    return sum(range(1, n + 1))
 
-# sum(iterable, start) 메소드
+# sum() 메소드
 # 반복 가능한 항목을 추가하고, 합을 반환한다.
 
 
