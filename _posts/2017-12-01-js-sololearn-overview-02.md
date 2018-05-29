@@ -28,7 +28,7 @@ tags: JS
 - In the example below, we placed it within the **\<body>** tag.
   - 아래 예제에서는, **\<body>** 태그 안에 위치해있다.
 
-![SoloLearn img](/assets/img/sololearn img.png)
+![SoloLearn img](/assets/img/sololearn img1.png)
 
 ------
 
