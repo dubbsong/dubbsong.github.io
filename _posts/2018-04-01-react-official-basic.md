@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "리액트 공식 문서 번역 - React"
+title: "리액트 공식 문서 번역 - React (basic)"
 categories: react
-tags: React공식문서
+tags: React basic
 ---
 
+[React 공식 문서 링크](https://reactjs.org/)
 
+<br>
 
 ## React (리액트)
 
