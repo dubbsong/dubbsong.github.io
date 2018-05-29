@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoloLearn 번역 - 02. Adding JavaScript to a Web Page (Overview)"
+title: "SoloLearn 번역 - 03. Adding JavaScript to a Web Page (Overview)"
 categories: javascript
 tags: JS
 ---
