@@ -167,7 +167,7 @@ document.write(x);
 2. Be sure that you do not use any of the following JavaScript reserved words.
    - 다음 JavaScript 예약어를 사용하지 마라.
 
-![SoloLearn img](/assets/img/sololearn-js-01.png)
+![SoloLearn img](/assets/img/sololearn-js-basic concepts-01-02.png)
 
 <br>
 
