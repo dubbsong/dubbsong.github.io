@@ -36,7 +36,7 @@ print(x)
 
 #### Result:
 
-![soloLearnImage](/assets/img/soloLearnImage.png)
+![soloLearnImage](/assets/img/sololearn-python-basic concepts-12-01.png)
 
 <br>
 
