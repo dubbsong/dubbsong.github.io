@@ -97,7 +97,7 @@ tags: JS
 
 - Result:
 
-![SoloLearn img4](/assets/img/sololearn img4.png)
+![SoloLearn img4](/assets/img/sololearn-js-overview-03-01.png)
 
 <br>
 

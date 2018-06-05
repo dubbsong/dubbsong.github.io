@@ -28,7 +28,7 @@ tags: JS
 - In the example below, we placed it within the **\<body>** tag.
   - 아래 예제에서는, **\<body>** 태그 안에 위치해있다.
 
-![SoloLearn img](/assets/img/sololearn img1.png)
+![SoloLearn img](/assets/img/sololearn-js-overview-02-01.png)
 
 ------
 
@@ -63,7 +63,7 @@ tags: JS
 - The above code displays the following result:
   - 위의 코드는 다음과 같은 결과를 표시한다.
 
-![SoloLearn img2](/assets/img/sololearn img2.png)
+![SoloLearn img2](/assets/img/sololearn-js-overview-02-02.png)
 
 <br>
 
@@ -101,7 +101,7 @@ tags: JS
 
 - Result:
 
-![SoloLearn img3](/assets/img/sololearn img3.png)
+![SoloLearn img3](/assets/img/sololearn-js-overview-02-03.png)
 
 ------
 

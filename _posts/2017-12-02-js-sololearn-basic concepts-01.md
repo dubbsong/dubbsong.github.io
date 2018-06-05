@@ -82,7 +82,7 @@ document.write(x);
 
 - Result:
 
-![SoloLearn img](/assets/img/sololearn-js-variable-01)
+![SoloLearn img](/assets/img/sololearn-js-basic concepts-01-01.png)
 
 <br>
 

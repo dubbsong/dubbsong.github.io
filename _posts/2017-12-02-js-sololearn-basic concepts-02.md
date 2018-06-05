@@ -46,7 +46,7 @@ var num = 42;	// A number without decimals
 
 - Result:
 
-![SoloLearn img](/assets/img/sololearn-css-basic concepts-02-01.png)
+![SoloLearn img](/assets/img/sololearn-js-basic concepts-02-01.png)
 
 <br>
 
@@ -101,7 +101,7 @@ document.write(sayHello);
 
 - Result:
 
-![SoloLearn img](/assets/img/sololearn-css-basic concepts-02-02.png)
+![SoloLearn img](/assets/img/sololearn-js-basic concepts-02-02.png)
 
 <br>
 
@@ -110,7 +110,7 @@ document.write(sayHello);
 - These special characters can be added to a text string using the backslash sign.
   - 이러한 특수 문자는 백슬래시 기호를 사용해서 덱스트 문자열에 추가할 수 있다.
 
-![SoloLearn img](/assets/img/sololearn-css-basic concepts-02-03.png)
+![SoloLearn img](/assets/img/sololearn-js-basic concepts-02-03.png)
 
 <br>
 
