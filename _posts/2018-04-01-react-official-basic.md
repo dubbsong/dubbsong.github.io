@@ -1,22 +1,29 @@
 ---
 layout: post
-title: "리액트 공식 문서 번역 - React (basic)"
+title: "공식 리액트 문서 번역 - React (BASIC)"
 categories: react
 tags: React basic
 ---
 
-[React 공식 문서 링크](https://reactjs.org/)
+[공식 리액트 문서 링크](https://reactjs.org/)
 
 <br>
 
 ## React (리액트)
 
-- A JavaScript library for building user interfaces.
-  - 유저 인터페이스 구축을 위한 JS 라이브러리.
+#### A JavaScript library for building user interfaces
+
+###### 유저 인터페이스 구축을 위한 JS 라이브러리
+
+------
 
 <br>
 
-#### Declarative (선언적)
+### Declarative
+
+###### 선언적
+
+<br>
 
 - React makes it painless to create interactive UIs.
   - React는 대화형 UI를 어렵지 않게 만들 수 있다.
@@ -28,7 +35,11 @@ tags: React basic
 
 <br>
 
-#### Component-Based (컴포넌트 기반)
+### Component-Based
+
+###### 컴포넌트 기반
+
+<br>
 
 - Build encapsulated components that manage their own state, then compose them to make complex UIs.
   - 자체 state를 관리하는 캡슐화된 컴포넌트를 작성한 다음, 복잡한 UI를 만들 수 있도록 구성해봐라.
@@ -37,16 +48,26 @@ tags: React basic
 
 <br>
 
-#### Learn Once, Write Anywhere (한 번 배우고, 어디서나 사용해라)
+### Learn Once, Write Anywhere
+
+###### 한 번 배우고, 어디서나 사용해라
+
+<br>
 
 - We don't make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.
   - 기술 스택의 나머지 부분에 대해서는 가정하지 않았으므로, 기존 코드를 다시 작성하지 않고, React에서 새로운 기능을 개발할 수 있다.
 - React can also render on the server using Node and power mobile apps using [React Native](https://facebook.github.io/react-native/).
   - React는 [React Native](https://facebook.github.io/react-native/)를 사용하고, Node와 power 모바일 앱을 사용해서, 서버에 렌더링도 할 수 있다.
 
+------
+
 <br>
 
-## A simple Component (단순 컴포넌트)
+## A simple Component
+
+###### 단순 컴포넌트
+
+<br>
 
 - React components implement a `render()` method that takes input data and returns what to display.
   - React 컴포넌트는 입력 데이터를 가져와서 표시할 항목을 반환하는 `render()` 메소드를 구현한다.
@@ -101,9 +122,15 @@ ReactDOM.render(
 Hello Song
 ```
 
+------
+
 <br>
 
-## A Stateful Component (state 변화가 있는 컴포넌트)
+## A Stateful Component
+
+###### state 변화가 있는 컴포넌트
+
+<br>
 
 - In addition to taking input data (accessed via `this.props`), a component can maintain internal state data (accessed via `this.state`).
   - 입력 데이터(`this.props`를 통해 액세스된 데이터)를 취하는 것뿐만 아니라, 컴포넌트는 내부 state 데이터(`this.state`를 통해 액세스된 데이터)를 유지할 수 있다.
@@ -150,6 +177,8 @@ ReactDOM.render(<Timer />, mountNode);
 
 Seconds: (계속 1초씩 증가하는 숫자가 표시된다)
 ```
+
+------
 
 <br>
 
@@ -241,9 +270,15 @@ What needs to be done?
 [ Add #2 버튼 ]
 ```
 
+------
+
 <br>
 
-## A Component Using External Plugins (외부 플러그인을 사용한 컴포넌트)
+## A Component Using External Plugins
+
+###### 외부 플러그인을 사용한 컴포넌트
+
+<br>
 
 - React is flexible and provides hooks that allow you to interface with other libraries and frameworks.
   - React는 유연하며 다른 라이브러리나 프레임워크와 인터페이스 할 수 있는 후킹을 제공한다.
@@ -303,5 +338,7 @@ Enter some markdown
 Output
 (input 창에 입력한 내용이 그대로 표시된다)
 ```
+
+------
 
 <br>
