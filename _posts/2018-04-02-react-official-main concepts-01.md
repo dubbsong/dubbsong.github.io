@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "공식 리액트 문서 번역 - 01. Hello World (Quick Start)"
+title: "공식 리액트 문서 번역 - 01. Hello World (Main Concepts)"
 categories: react
 tags: react
 ---
