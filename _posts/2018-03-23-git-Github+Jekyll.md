@@ -11,7 +11,7 @@ tags: git
 
 ## 1. Jekyll 설치
 
-- `$ cd~`
+- `$ cd ~`
 
 
 - `$ sudo gem install jekyll`
