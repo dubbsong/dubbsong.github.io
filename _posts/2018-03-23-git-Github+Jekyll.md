@@ -18,26 +18,25 @@ tags: git
 
 <br>
 
-## 2. 디렉토리 생성
+## 2. 로컬에서 블로그 생성
 
 - `$ cd Desktop`
-- `$ mkdir BLOG`
-- `$ cd BLOG`
-
-<br>
-
-## 3. 로컬에서 블로그 생성
-
 - `$ jekyll new dubbsong.github.io`
 - `$ cd dubbsong.github.io`
-- `$ jekyll serve —watch`
+- `$ jekyll serve —-watch`
   - 브라우저에서 `http://localhost:4000`로 확인 가능
 
 <br>
 
-## 4. Github에 온라인 저장소 만들기
+## 3. Github에 온라인 저장소 만들기
 
 - 동일한 이름(dubbsong.github.io)으로 Github 온라인 저장소에 저장소 생성
+  1. `Repositories` 클릭
+  2. `New` 클릭
+  3. `Repository name` 설정 후 `Create repository` 클릭
+  4. `https://github.com/dubbsong/dubbsong.github.io.git` 복사 (**저장소 URL**)
+- `$ cd Desktop`
+- `$ cd dubbsong.github.io`
 - `$ git init`
 - `$ git remote add origin [저장소 URL]`
 - `$ git add .`
