@@ -24,8 +24,8 @@ tags: html
    <body>
       <ol>
          <li>Red</li>
-         <li>Green</li>
          <li>Blue</li>
+         <li>Green</li>
       </ol>
    </body>
 </html>
@@ -64,8 +64,8 @@ tags: html
    <body>
       <ul>
          <li>Red</li>
-         <li>Green</li>
          <li>Blue</li>
+         <li>Green</li>
       </ul>
    </body>
 </html>
