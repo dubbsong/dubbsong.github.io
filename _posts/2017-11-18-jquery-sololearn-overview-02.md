@@ -2,7 +2,7 @@
 layout: post
 title: "SoloLearn jQuery 번역 - 02. Getting Started (Overview)"
 categories: dev
-tags: html
+tags: jquery
 ---
 
 ## Getting Started

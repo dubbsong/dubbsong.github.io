@@ -2,7 +2,7 @@
 layout: post
 title: "SoloLearn jQuery 번역 - 01. What is jQuery (Overview)"
 categories: dev
-tags: html
+tags: jquery
 ---
 
 ## What is jQuery

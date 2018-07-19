@@ -2,7 +2,7 @@
 layout: post
 title: "SoloLearn jQuery 번역 - 03. Selectors (Overview)"
 categories: dev
-tags: html
+tags: jquery
 ---
 
 ## Selectors
