@@ -2,7 +2,7 @@
 layout: post
 title: "SoloLearn jQuery 번역 - 04. Module 1 Quiz (Overview)"
 categories: dev
-tags: html
+tags: jquery
 ---
 
 ## QUIZ
