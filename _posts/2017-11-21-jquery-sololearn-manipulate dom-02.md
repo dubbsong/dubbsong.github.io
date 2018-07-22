@@ -1,0 +1,172 @@
+---
+layout: post
+title: "SoloLearn jQuery 번역 - 02. Traversing (Manipulate DOM)"
+categories: dev
+tags: jQuery
+---
+
+## DOM Traversal
+
+###### DOM 순회
+
+<br>
+
+- jQuery has many useful methods for DOM traversal.
+  - jQuery에는 DOM 순회를 위한 유용한 메소드가 많이 있다.
+- The `parent()` method returns the direct parent element of the selected element.
+  - `parent()` 메소드는 선택한 element의 직접적인 부모 element를 반환한다.
+
+<br>
+
+- HTML:
+
+```html
+<div> div element
+   <p>paragraph</p>
+</div>
+```
+
+<br>
+
+- JS:
+
+```js
+var e = $("p").parent();
+e.css("border", "2px solid red");
+```
+
+[코드 실행 확인 링크](https://code.sololearn.com/1122/#js)
+
+<br>
+
+- The code above selects the parent element of the paragraph and sets a red border for it.
+  - 위의 코드는 p의 부모 element를 선택하고, 빨간색 테두리를 설정한다.
+
+------
+
+<br>
+
+## DOM Traversal 02
+
+- The `parent()` method can only traverse a single level up the DOM tree.
+  - `parent()` 메소드는 DOM 트리의 단일 레벨을 순회할 수 있다.
+- To get all ancestors of the selected element you can use the `parents()` method.
+  - 선택한 element의 모든 조상을 가져오기 위해서 `parents()` 메소드를 사용할 수 있다.
+
+<br>
+
+- HTML:
+
+```html
+<body> body
+   <div style="width:300px;">
+      <ul> ul
+         <li> li
+         	<p>paragraph</p>
+         </li>
+      </ul>
+   </div>
+</body>
+```
+
+<br>
+
+- JS:
+
+```js
+$(function() {
+   var e = $("p").parents();
+   e.css("border", "2px solid red");
+});
+```
+
+[코드 실행 확인 링크](https://code.sololearn.com/1123/#js)
+
+<br>
+
+- The code above sets a red border for all parents of the paragraph.
+  - 위의 코드는 P의 모든 부모에 대해 빨간색 테두리를 설정한다.
+
+<br>
+
+- Some of the most used taversal methods are presented below:
+  - 가장 많이 사용되는 순회 메소드는 다음과 같다.
+
+![sololearn img](/assets/img/sololearn-jquery-manipulate dom-02-01.png)
+
+------
+
+<br>
+
+## DOM Traversal 03
+
+- The `eq()` method can be used to select a specific element from multiple selected elements.
+  - `eq()` 메소드는 여러 선택된 element에서 특정 element를 선택하는 데 사용할 수 있다.
+- For example, if the page contains multiple div elements and we want to select the third one:
+  - 예를 들어, 페이지에 여러 div element가 있고, 세 번째 element를 선택하려는 경우:
+
+```js
+$("div").eq(2);
+```
+
+<br>
+
+> The index numbers start at 0, so the first element will have the index number 0.
+>
+> index 숫자는 0부터 시작하므로, 첫 번째 element는 index 숫자 0을 갖는다.
+
+------
+
+<br>
+
+## QUIZ
+
+- Which element is the parent of the \<p> element in the following HTML?
+  - 다음 HTML에서 \<p>의 부모 element는 어떤 것인가?
+
+```html
+<div>
+   <ul>
+      <li><p></p></li>
+   </ul>
+</div>
+```
+
+> [ ] \<p>
+>
+> [ ] \<ul>
+>
+> [ ] \<div>
+>
+> [ ] `<li>`
+
+<br>
+
+- Fill in the blanks to select all siblings of the div element and call the hide() method on them.
+  - 빈칸을 채워서 div element의 모든 형제를 선택하고, hide() 메소드를 호출해라.
+
+```js
+var items = $("div").siblings();
+items.hide();
+```
+
+<br>
+
+- What is the output of this code?
+  - 이 코드의 출력은 무엇인가?
+
+```html
+<p>a</p><p>b</p><p>c</p>
+
+<script>
+	alert($("p").eq(1).text());
+</script>
+```
+
+> [ ] a
+>
+> [ ] `b`
+>
+> [ ] c
+
+<br>
