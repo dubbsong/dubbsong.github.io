@@ -2,7 +2,7 @@
 layout: post
 title: "SoloLearn jQuery 번역 - 04. Module 3 Quiz (Manipulating CSS)"
 categories: dev
-tags: jQuerty
+tags: jquerty
 ---
 
 ## QUIZ

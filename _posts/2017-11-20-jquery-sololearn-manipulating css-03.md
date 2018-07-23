@@ -2,7 +2,7 @@
 layout: post
 title: "SoloLearn jQuery 번역 - 03. Dimensions (Manipulating CSS)"
 categories: dev
-tags: jQuery
+tags: jquery
 ---
 
 ## Dimensions

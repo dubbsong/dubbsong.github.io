@@ -2,7 +2,7 @@
 layout: post
 title: "SoloLearn jQuery 번역 - 02. CSS Properties (Manipulating CSS)"
 categories: dev
-tags: jQuery
+tags: jquery
 ---
 
 ## CSS Properties

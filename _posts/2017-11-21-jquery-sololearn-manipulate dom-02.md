@@ -2,7 +2,7 @@
 layout: post
 title: "SoloLearn jQuery 번역 - 02. Traversing (Manipulate DOM)"
 categories: dev
-tags: jQuery
+tags: jquery
 ---
 
 ## DOM Traversal

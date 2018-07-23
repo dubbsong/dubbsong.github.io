@@ -2,7 +2,7 @@
 layout: post
 title: "SoloLearn jQuery 번역 - 01. Adding & Removing Classes (Manipulating CSS)"
 categories: dev
-tags: jQuery
+tags: jquery
 ---
 
 ## Manipulating CSS
