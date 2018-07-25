@@ -1,0 +1,51 @@
+---
+layout: post
+title: "SoloLearn jQuery 번역 - 04. Module 6 Quiz (Effects)"
+categories: dev
+tags: jquery
+---
+
+## QUIZ
+
+- Fill in the blanks to hide all paragraphs upon clicking the div element.
+  - div element를 클릭해서 모든 p를 숨겨라.
+
+```js
+$("div").click(function() {
+   $("p").hide();
+});
+```
+
+<br>
+
+- For how many seconds will the following animation group run?
+  - 다음 애니메이션 그룹은 몇 초 동안 실행되는가?
+
+```js
+$("p").animate({height:"10px"}, 1000);
+$("p").animate({width:"10px"}, 1000);
+$("p").animate({opacity:0.5}, 3000);
+```
+
+> [ ] `5`
+>
+> [ ] 3
+>
+> [ ] 2
+>
+> [ ] 4
+
+<br>
+
+- Fill in the blanks to create a valid animation.
+  - 유효한 애니메이션을 만들어라.
+
+```js
+$("p").animate({
+   height:"10px",
+   width:"+=100px",
+   opacity: 0.5
+}, 1000);
+```
+
+<br>
