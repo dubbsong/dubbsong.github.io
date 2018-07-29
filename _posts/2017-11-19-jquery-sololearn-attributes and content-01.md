@@ -1,13 +1,17 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 01. Get & Set Attribute Values (Attributes and Content)"
+title: "01. Get & Set 속성값 (Attributes and Content)"
 categories: dev
 tags: jquery
 ---
 
-## Attributes
+###### [SoloLearn](www.sololearn.com) jQuery 번역
 
-###### 속성
+<br>
+
+# Attributes
+
+###### jQuery 속성
 
 <br>
 
@@ -33,7 +37,7 @@ tags: jquery
 
 <br>
 
-- JavaScript:
+- JS:
 
 ```js
 $(function() {
@@ -52,11 +56,7 @@ $(function() {
 >
 > 위의 코드에서 \<a> element의 `href` 속성 값을 선택하고 alert 하도록 했다.
 
-------
-
 <br>
-
-## Attributes 02
 
 - The `attr()` method also allows us to set a value for an attribute by specifying it as the second parameter.
   - `attr()` 메소드를 사용하면, 두 번째 매개변수로 속성을 지정해서 값을 설정할 수도 있다.
@@ -77,7 +77,7 @@ $(function() {
 
 > This will change the `href` attribute of the \<a> element to the provided value.
 >
-> 이렇게 하면 \<a> element의 `href` 속성이 제공된 값으로 변경된다.
+> 이렇게 하면, \<a> element의 `href` 속성이 제공된 값으로 변경된다.
 
 ------
 
@@ -86,21 +86,20 @@ $(function() {
 ## QUIZ
 
 - Which of the following are HTML attributes?
-  - 다음 중 HTML 속성은 어떤 것인가?
-  - Select all that apply
+  - 다음 중 HTML 속성을 모두 골라라.
 
-> [ ] img
+> img
 >
-> [ ] `src`
+> div
 >
-> [ ] `class`
+> `src`
 >
-> [ ] div
+> `class`
 
 <br>
 
 - Fill in the blanks to change the image to the file "1.jpg".
-  - 빈칸을 채워서 이미지를 "1.jpg" 파일로 변경해라.
+  - 이미지를 "1.jpg"로 변경해라.
 
 ```js
 $("img").attr("src", "1.jpg");
