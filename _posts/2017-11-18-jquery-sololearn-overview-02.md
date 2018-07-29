@@ -1,22 +1,26 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 02. Getting Started (Overview)"
+title: "02. jQuery 시작하기 (Overview)"
 categories: dev
 tags: jquery
 ---
 
-## Getting Started
-
-###### 시작하기
+###### [SoloLearn](https://www.sololearn.com/) jQuery 번역
 
 <br>
 
-- You can download a copy of the jQuery library from www.jquery.com, or, as an alternative, you can include it from a CDN (Content Delivery Network), like Google or Microsoft.
-  - www.jquery.com에서 jQuery 라이브러리 사본을 다운로드하거나, Google 또는 Microsoft와 같은 CDN(Content Delivery Network)에서 포함할 수 있다.
+# Getting Started with jQuery
+
+###### jQuery 시작하기
+
+<br>
+
+- You can download a copy of the jQuery library from [www.jquery.com](www.jquery.com), or as an alternative, you can include it from a CDN (Content Delivery Network), like Google or Microsoft.
+  - [www.jquery.com](www.jquery.com)에서 jQuery 라이브러리 사본을 다운로드하거나, Google 또는 Microsoft와 같은 CDN(Content Delivery Network)에서 포함할 수 있다.
 - We will use the CDN from the official jQuery website.
-  - 공식 jQuery 웹사이트의 CDN을 사용할 것이다.
+  - 우리는 공식 jQuery 웹사이트의 CDN을 사용할 것이다.
 - To start using jQuery, we first need to add it to the head of our HTML document using the script tag:
-  - jQuery를 사용해서 시작하려면, 우선 script 태그를 사용해서 HTML document의 head에 추가해야 한다.
+  - jQuery를 시작하려면, 우선 script 태그를 사용해서 HTML document의 head에 추가해야 한다.
 
 ```html
 <!DOCTYPE html>
@@ -36,17 +40,13 @@ tags: jquery
 >
 > jQuery는 JavaScript 라이브러리이므로, `.js` 파일 확장자를 갖는다.
 
-------
-
 <br>
-
-## Getting Started 02
 
 - It is a good practice to wait for the HTML document to be fully loaded and ready before working with it.
   - HTML document가 완전히 로딩되고 준비될 때까지 기다리는 게 좋다.
 - For that we use the `ready` event of the document `object`:
   - 이를 위해 document `object`의 `ready` 이벤트를 사용한다.
-  - `object`: containers for named values / 지정된 값의 컨테이너
+  - `object`: containers for named values (지정된 값의 컨테이너)
 
 ```js
 $(document).ready(function() {
@@ -59,10 +59,10 @@ $(document).ready(function() {
 - The `$` is used to access jQuery.
   - `$`는 jQuery에 액세스하는 데 사용된다.
 - From here, the code accesses the document object and defines a function to be called when the document's ready event is fired.
-  - 여기에서 코드는, document object에 액세스한다.
-  - 그리고 document의 ready 이벤트가 발생하면 호출할 함수를 정의한다.
+  - 코드는 document object에 액세스한다.
+  - 그리고 document의 ready 이벤트가 발생하면, 호출할 함수를 정의한다.
 - This prevents any jQuery code from running before the document is finished loading.
-  - 이렇게 하면, document의 로딩이 끝나기 전에 jQuery 코드는 실행되지 않는다.
+  - 이렇게 한다면, document의 로딩이 끝나기 전에는 모든 jQuery 코드의 실행이 방지된다.
 - Since the code above is used in almost all cases when using jQuery, there is a handy shortcut for writing it:
   - 위의 코드는 jQuery를 사용할 때 거의 모든 경우에 사용되므로, 작성하기 편리한 단축코드가 있다.
 
@@ -83,11 +83,7 @@ $(function() {
 >
 > jQuery 문법이 다소 혼란스러울지라도 걱정하지 마라. 자세히 설명할 것이다.
 
-------
-
 <br>
-
-## Getting Started 03
 
 - Now, having the jQuery library in our head section and having defined the document ready event, we can start our first jQuery manipulation.
   - 이제 head 섹션에 jQuery 라이브러리가 있고, document ready 이벤트를 정의한 후, 첫 번째 jQuery 조작을 시작할 수 있다.
@@ -115,7 +111,7 @@ $(function() {
 
 <br>
 
-- The JavaScript:
+- The JS:
 
 ```js
 $(function() {
@@ -123,11 +119,13 @@ $(function() {
 });
 ```
 
+[코드 실행 확인 링크](https://code.sololearn.com/1103/#js)
+
 <br>
 
 > This changes the HTML of the element with id="start" to "Go!".
 >
-> 이렇게 하면 HTML의 id="start" element가 "Go!"로 변경된다.
+> 이렇게 하면, HTML의 id="start" element가 "Go!"로 변경된다.
 
 ------
 
@@ -144,21 +142,24 @@ $(function() {
 - Basic syntax is: `$("selector").action()`
   - 기본 문법은 `$("selector").action()`이다.
 
-<br>
+> The `$` accesses jQuery.
+>
+> `$`는 jQuery에 액세스한다.
 
-1. The $ accesses jQuery.
-   - $은 jQuery에 액세스한다.
-2. The (selector) finds HTML elements.
-   - (selector)는 HTML element를 찾는다.
-3. The action() is then performed on the element(s).
-   - 그런 다음 element에 대해 action()이 수행된다.
+> The `(selector)` finds HTML elements.
+>
+> `(selector)`는 HTML element를 찾는다.
+
+> The `action()` is then performed on the element(s).
+>
+> 그런 다음 element에 대해 `action()`이 수행된다.
 
 <br>
 
 - For example:
 
 ```js
-$("p").hide()	// hides all <p> elements
+$("p").hide()		// hides all \<p> elements
 $(".demo").hide()	// hides all elements with class="demo"
 $("#demo").hide()	// hides the element with id="demo"
 ```
@@ -192,7 +193,7 @@ $("#start").html("Go!");
 ## QUIZ
 
 - Fill in the blanks to include jQuery in your HTML.
-  - 빈간을 채워서 HTML에 jQuery를 포함시켜라.
+  - HTML에 jQuery를 포함시켜라.
 
 ```html
 <html>
@@ -205,33 +206,21 @@ $("#start").html("Go!");
 <br>
 
 - Which event is used to prevent any jQuery code from running before the document is finished loading?
-  - document가 로딩되기 전에 jQuery 코드가 실행되지 않도록 방지하는 이벤트가 어떤 것인가?
+  - document의 로딩이 끝나기 전에 jQuery 코드가 실행되지 않도록 방지하는 이벤트는 무엇인가?
 
-> [ ] function
->
-> [ ] `ready`
->
-> [ ] start
->
-> [ ] load
+> `ready`
 
 <br>
 
 - Which symbol is used to access jQuery?
-  - jQuery에 액세스하는 데 사용되는 기호는 어떤 것인가?
+  - jQuery에 액세스하는 데 사용되는 기호는 무엇인가?
 
-> [ ] #
->
-> [ ] ()
->
-> [ ] %
->
-> [ ] `$`
+> `$`
 
 <br>
 
 - Fill in the blanks to call the show() function for the element with the id="menu".
-  - 빈간을 채워서 id="menu" element에 대해 show() 함수를 호출해라.
+  - id="menu" element에 대해 show() 함수를 호출해라.
 
 ```js
 $("#menu").show()

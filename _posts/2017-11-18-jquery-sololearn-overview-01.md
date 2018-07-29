@@ -58,8 +58,6 @@ $("#start").html("Go");
 
 ## QUIZ
 
-<br>
-
 - What is jQuery?
   - jQuery란 무엇인가?
 
