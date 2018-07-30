@@ -5,6 +5,10 @@ categories: dev
 tags: html
 ---
 
+###### [SoloLearn HTML 번역](www.sololearn.com)
+
+<br>
+
 ## HTML Ordered Lists
 
 ###### HTML 순서가 지정된 리스트 \<ol>

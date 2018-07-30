@@ -5,6 +5,10 @@ categories: dev
 tags: html
 ---
 
+###### [SoloLearn HTML 번역](www.sololearn.com)
+
+<br>
+
 ## HTML5
 
 - When writing HTML5 documents, one of the first new features that you'll notice is the doc type declaration:
