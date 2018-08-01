@@ -1,9 +1,19 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 03. Get & Set Content (Attributes and Content)"
+title: "03. 내용(content) 가져오기 & 설정하기 (Attributes and Content)"
 categories: dev
 tags: jquery
 ---
+
+###### [SoloLearn](www.sololearn.com) jQuery 번역
+
+<br>
+
+# Get & Set Content
+
+###### 내용(content) 가져오기 & 설정하기
+
+<br>
 
 ## Get Content
 
@@ -63,7 +73,7 @@ $(function() {
 
 > The `html()` and `text()` methods can be used for all HTML elements that can contain content.
 >
-> `html()`과 `text()` 메소드는 내용을 포함할 수 있는 모든 HTML element에 사용할 수 있다.
+> `html()`과 `text()` 메소드는 내용을 포함할 수 있는 HTML element에 사용할 수 있다.
 
 ------
 
@@ -86,9 +96,7 @@ $(function() {
 
 ```html
 <div id="test">
-   <p>
-      some text
-   </p>
+   <p>some text</p>
 </div>
 ```
 
@@ -101,6 +109,8 @@ $(function() {
    $("#test").text("hello!");
 });
 ```
+
+[코드 실행 확인 링크](https://code.sololearn.com/1109/#html)
 
 <br>
 
@@ -119,7 +129,7 @@ $(function() {
 
 ## QUIZ
 
-- What is the output of this code?
+- What is the output of this code?
   - 이 코드의 출력은 무엇인가?
 
 ```html
@@ -131,17 +141,13 @@ $(function() {
 </script>
 ```
 
-> [ ] ppp
->
-> [ ] \<p>p\</p>
->
-> [ ] `p`
+> `p`
 
 <br>
 
 - Fill in the blanks to change the content of the paragraphs with id="demo" to "\<b>Hi\</b>" maintaining the HTML markup.
-  - 빈칸을 채워서 id="demo"로 된 p의 내용을 "\<b>Hi\</b>"로 변경해라.
-  - HTML 마크업을 유지해라.
+  - id="demo"로 된 p의 내용을 "\<b>Hi\<b>"로 변경해라.
+  - HTML 마크업을 유지하도록.
 
 ```js
 $(function() {

@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 02. Removing Attributes (Attributes and Content)"
+title: "02. 속성 제거 (Attributes and Content)"
 categories: dev
 tags: jquery
 ---
 
-## Removing Attributes
+###### [SoloLearn](www.sololearn.com) jQuery 번역
+
+<br>
+
+# Removing Attributes
 
 ###### 속성 제거
 
@@ -16,7 +20,7 @@ tags: jquery
 - The `removeAttr()` method is used for removing any attribute of an element.
   - `removeAttr()` 메소드는 element의 속성을 제거하는 데 사용된다.
 - In the example below we remove the `border` and `class` attributes of the table:
-  - 아래 예제에서, table의 `border`와 `class` 속성을 제거한다.
+  - 아래 예제에서 테이블의 `border`와 `class` 속성을 제거한다.
 
 ```js
 $("table").removeAttr("border");
@@ -32,7 +36,7 @@ $("table").removeAttr("class");
 ## QUIZ
 
 - Drag and drop from the options below to remove the border attribute of the element with id="text".
-  - 아래 옵션들에서 drag and drop으로 id="text" element의 border 속성을 제거해라.
+  - id="text" element의 border 속성을 제거해라.
 
 ```js
 $("#text").removeAttr("border");
