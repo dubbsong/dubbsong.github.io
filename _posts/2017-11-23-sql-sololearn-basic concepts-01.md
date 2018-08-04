@@ -5,13 +5,15 @@ categories: dev
 tags: db
 ---
 
-###### [SoloLearn](www.sololearn.com) SQL 번역
+###### [SoloLearn](https://www.sololearn.com/) SQL 번역
 
 <br>
 
 # Introduction to Database
 
 ###### 데이터베이스 소개
+
+------
 
 <br>
 

@@ -1,9 +1,23 @@
 ---
 layout: post
-title: "SoloLearn SQL 번역 - 02. SQL Statements: SELECT (Basic Concepts)"
+title: "02. SQL 문: SELECT (Basic Concepts)"
 categories: dev
 tags: db
 ---
+
+###### [SoloLearn](https://www.sololearn.com/) SQL 번역
+
+<br>
+
+# SQL Statements: SELECT
+
+###### SQL 문: SELECT
+
+------
+
+<br>
+
+<br>
 
 ## Basic SQL Commands
 
@@ -34,14 +48,6 @@ SHOW DATABASES
 >
 > MySQL과 PHPMyAdmin을 얻는 가장 쉬운 방법은, 필요한 모든 설치 프로그램을 포함하는 `XAMPP`나 `WAMP`와 같은 무료 도구를 설치하는 것이다.
 
-------
-
-<br>
-
-## Basic SQL Commands
-
-###### SQL 기본 명령
-
 <br>
 
 - The `SHOW TABLES` command is used to display all of the tables in the currently selected MySQL database.
@@ -55,11 +61,7 @@ SHOW DATABASES
 >
 > 이 예제에서는, `customers`라는 테이블이 있는 `my_database` 데이터베이스를 만들었다.
 
-------
-
 <br>
-
-## Basic SQL Commands 02
 
 - `SHOW COLUMNS` displays information about the columns in a given table.
   - `SHOW COLUMNS`는 주어진 테이블의 column에 대한 정보를 표시한다.

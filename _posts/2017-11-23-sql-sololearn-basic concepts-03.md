@@ -1,17 +1,21 @@
 ---
 layout: post
-title: "SoloLearn SQL 번역 - 03. SQL 문법 (Basic Concepts)"
+title: "03. SQL 문법 (Basic Concepts)"
 categories: dev
 tags: db
 ---
 
-###### [SoloLearn SQL 번역](www.sololearn.com)
+###### [SoloLearn](https://www.sololearn.com/) SQL 번역
 
 ##### <br>
 
 # SQL Syntax Rules
 
 ###### SQL 문법
+
+------
+
+<br>
 
 <br>
 
