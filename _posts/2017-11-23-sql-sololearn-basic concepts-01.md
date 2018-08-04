@@ -1,9 +1,21 @@
 ---
 layout: post
-title: "SoloLearn SQL 번역 - 01. Introduction to Databases (Basic Concepts)"
+title: "01. 데이터베이스 소개 (Basic Concepts)"
 categories: dev
 tags: db
 ---
+
+###### [SoloLearn](www.sololearn.com) SQL 번역
+
+<br>
+
+# Introduction to Database
+
+###### 데이터베이스 소개
+
+<br>
+
+<br>
 
 ## A Database
 
