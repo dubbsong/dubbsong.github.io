@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "03. Selectors (Overview)"
+title: "03. jQuery Selectors (Overview)"
 categories: dev
 tags: jquery
 ---

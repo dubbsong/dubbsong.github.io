@@ -9,7 +9,7 @@ tags: db
 
 <br>
 
-## Selecting Multiple Columns
+# Selecting Multiple Columns
 
 ###### 여러 column 선택하기
 

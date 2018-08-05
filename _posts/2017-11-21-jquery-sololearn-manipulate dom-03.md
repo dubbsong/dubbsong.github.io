@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "03. Removing Elements (Manipulate DOM)"
+title: "03. Element 제거 (Manipulate DOM)"
 categories: dev
 tags: jquery
 ---
