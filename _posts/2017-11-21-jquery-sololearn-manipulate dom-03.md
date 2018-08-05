@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 03. Removing Elements (Manipulate DOM)"
+title: "03. Removing Elements (Manipulate DOM)"
 categories: dev
 tags: jquery
 ---
 
-## Remove Elements
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
+
+# Remove Elements
 
 ###### element 제거
 
@@ -54,7 +58,7 @@ $("p").eq(1).remove();
 
 ## Removing Content
 
-###### content 제거
+###### 내용(content) 제거
 
 <br>
 

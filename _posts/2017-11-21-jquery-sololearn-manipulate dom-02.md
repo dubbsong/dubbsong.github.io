@@ -1,9 +1,23 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 02. Traversing (Manipulate DOM)"
+title: "02. 순회 (Manipulate DOM)"
 categories: dev
 tags: jquery
 ---
+
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
+
+# Traversing
+
+###### 순회
+
+------
+
+<br>
+
+<br>
 
 ## DOM Traversal
 
@@ -42,11 +56,9 @@ e.css("border", "2px solid red");
 - The code above selects the parent element of the paragraph and sets a red border for it.
   - 위의 코드는 p의 부모 element를 선택하고, 빨간색 테두리를 설정한다.
 
-------
-
 <br>
 
-## DOM Traversal 02
+<br>
 
 - The `parent()` method can only traverse a single level up the DOM tree.
   - `parent()` 메소드는 DOM 트리의 단일 레벨을 순회할 수 있다.

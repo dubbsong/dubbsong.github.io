@@ -1,13 +1,17 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 01. Handling Events (Events)"
+title: "01. 이벤트 핸들링 (Events)"
 categories: dev
 tags: jquery
 ---
 
-## Handling Events
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
 
-###### 이벤트 처리
+<br>
+
+# Handling Events
+
+###### 이벤트 핸들링
 
 <br>
 
@@ -160,7 +164,7 @@ $("#name").keydown(function() {
 
 ## Handling Events
 
-###### 이벤트 처리
+###### 이벤트 핸들링
 
 <br>
 

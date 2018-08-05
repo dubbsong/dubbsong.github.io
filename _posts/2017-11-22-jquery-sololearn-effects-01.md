@@ -1,9 +1,21 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 01. Hide/Show, Fade, Slide (Effects)"
+title: "01. Hide/Show, Fade, Slide 메소드 (Effects)"
 categories: dev
 tags: jquery
 ---
+
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
+
+# Hide/Show, Fade, Slide 메소드
+
+------
+
+<br>
+
+<br>
 
 ## Hide/Show
 

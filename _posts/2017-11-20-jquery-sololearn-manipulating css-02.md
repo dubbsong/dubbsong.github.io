@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 02. CSS Properties (Manipulating CSS)"
+title: "02. CSS 속성 (Manipulating CSS)"
 categories: dev
 tags: jquery
 ---
 
-## CSS Properties
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
+
+# CSS Properties
 
 ###### CSS 속성
 

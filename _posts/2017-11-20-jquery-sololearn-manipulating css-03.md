@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 03. Dimensions (Manipulating CSS)"
+title: "03. 치수 (Manipulating CSS)"
 categories: dev
 tags: jquery
 ---
 
-## Dimensions
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
+
+# Dimensions
 
 ###### 치수
 

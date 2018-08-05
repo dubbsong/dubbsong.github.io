@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 04. Module 5 Quiz (Events)"
+title: "04. Module 5 Quiz (Events)"
 categories: dev
 tags: jquery
 ---
+
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
 
 ## QUIZ
 

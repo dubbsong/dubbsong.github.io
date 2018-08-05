@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 04. Module 6 Quiz (Effects)"
+title: "04. Module 6 Quiz (Effects)"
 categories: dev
 tags: jquery
 ---
+
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
 
 ## QUIZ
 

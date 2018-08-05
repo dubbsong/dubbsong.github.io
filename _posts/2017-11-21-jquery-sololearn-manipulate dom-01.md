@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 01. The DOM (Manipulate DOM)"
+title: "01. The DOM (Manipulate DOM)"
 categories: dev
 tags: jquery
 ---
 
-## The DOM
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
+
+# The DOM
 
 ###### DOM
 

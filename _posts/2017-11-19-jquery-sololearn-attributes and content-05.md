@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 05. Adding Content (Attributes and Content)"
+title: "05. 내용(content) 추가하기 (Attributes and Content)"
 categories: dev
 tags: jquery
 ---
 
-## Adding Content
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
+
+# Adding Content
 
 ###### content 추가하기
 
@@ -29,11 +33,9 @@ tags: jquery
 - `before()`: inserts content before the selected elements.
   - 선택한 element 앞에 내용을 삽입한다.
 
-------
-
 <br>
 
-## Adding Content 02
+<br>
 
 - The `append()` method inserts content AT THE END of the selected HTML element.
   - `append()` 메소드는 선택된 HTML element의 끝에 내용을 삽입한다.
@@ -70,11 +72,9 @@ $(function() {
 >
 > 내용에 HTML 마크업을 사용할 수도 있다.
 
-------
-
 <br>
 
-## Adding Content 03
+<br>
 
 - The jQuery `after()` and `before()` methods insert content AFTER and BEFORE the selected HTML element.
   - jQuery `after()`와 `before()` 메소드는 선택한 HTML element의 AFTER와 BEFORE 내용을 삽입한다.

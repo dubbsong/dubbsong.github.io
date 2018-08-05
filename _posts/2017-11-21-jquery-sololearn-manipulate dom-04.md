@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 04. Module 4 Quiz (Manipulate DOM)"
+title: "04. Module 4 Quiz (Manipulate DOM)"
 categories: dev
 tags: jquery
 ---
+
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
 
 ## QUIZ
 

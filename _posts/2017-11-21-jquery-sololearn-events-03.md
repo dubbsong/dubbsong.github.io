@@ -1,9 +1,23 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 03. Creating a To-Do List (Events)"
+title: "03. Creating a To-Do List (Events)"
 categories: dev
 tags: jqeury
 ---
+
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
+
+# Creating a To-Do List
+
+###### To-Do List 만들기
+
+------
+
+<br>
+
+<br>
 
 ## To-Do List
 
@@ -27,11 +41,9 @@ tags: jqeury
 >
 > 버튼을 클릭하면 \<ol> list에 input field의 값이 추가되어야 한다.
 
-------
-
 <br>
 
-## To-Do List 02
+<br>
 
 - Now, having the HTML ready, we can start writing our jQuery code.
   - HTML이 준비되면, jQuery 코드를 작성할 수 있다.
@@ -103,11 +115,9 @@ $(function() {
 >
 > 다음 섹션에서 다룰 것이다.
 
-------
-
 <br>
 
-## To-Do List 03
+<br>
 
 - All that is left to do is handle the click event on the class="rem" button and remove the corresponding \<li> element from the list.
   - 남은 것은 class="rem" 버튼에서 click 이벤트를 처리하고, 해당 \<li> element를 list에서 제거하는 것이다.

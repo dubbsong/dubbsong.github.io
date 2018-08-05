@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 02. animate() (Effects)"
+title: "02. animate() 메소드 (Effects)"
 categories: dev
 tags: jquery
 ---
 
-## animate()
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
+
+# animate()
 
 - The `animate()` method lets you animate to a set value, or to a value relative to the current value.
   - `animate()` 메소드를 사용하면 설정 값이나, 현재 값과 관련된 값에 애니메이션을 적용할 수 있다.
@@ -44,11 +48,9 @@ $("div").click(function() {
 >
 > padding-left 대신 `paddingLeft`를, margin-right 대신 `marginRight`를 사용해야 한다.
 
-------
-
 <br>
 
-## animate() 02
+<br>
 
 - Multiple properties can be animated at the same time by separating them with `commas`.
   - 여러 속성은 `쉼표`로 구분해서 동시에 애니메이션을 적용할 수 있다.

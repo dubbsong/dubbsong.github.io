@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 02. The Event Object (Events)"
+title: "02. 이벤트 객체 (Events)"
 categories: dev
 tags: jquery
 ---
 
-## The Event Object
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
+
+# The Event Object
 
 ###### event 객체
 

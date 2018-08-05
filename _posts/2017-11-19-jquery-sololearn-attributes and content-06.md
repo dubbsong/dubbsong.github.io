@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 06. Module 2 Quiz (Attributes and Content)"
+title: "06. Module 2 Quiz (Attributes and Content)"
 categories: dev
 tags: jquery
 ---
+
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
 
 ## QUIZ
 

@@ -1,9 +1,23 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 01. Adding & Removing Classes (Manipulating CSS)"
+title: "01. 클래스 추가 & 삭제 (Manipulating CSS)"
 categories: dev
 tags: jquery
 ---
+
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
+
+# Adding & Removing Classes
+
+###### 클래스 추가 & 삭제
+
+------
+
+<br>
+
+<br>
 
 ## Manipulating CSS
 
@@ -62,11 +76,9 @@ $("div").addClass("header");
 >
 > 예를 들어, $("div").addClass("class1 class2 class3").
 
-------
-
 <br>
 
-## Manipulating CSS 02
+<br>
 
 - The `removeClass()` method removes one or more class names from the selected elements.
   - `removeClass()` 메소드는 하나 이상의 class name을 선택한 element에서 제거한다.
@@ -95,6 +107,10 @@ $("div").removeClass("red");
 <br>
 
 ## toggleClass()
+
+###### toggleClass() 메소드
+
+<br>
 
 - The `toggleClass()` method toggles between adding/removing classes from the selected elements, meaning that if the specified class exists for the element, it is removed, and if it does not exist, it is added.
   - `toggleClass()` 메소드는 선택한 element에서 class를 추가/삭제로 토글한다.

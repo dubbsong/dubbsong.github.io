@@ -1,9 +1,23 @@
 ---
 layout: post
-title: "SoloLearn jQuery 번역 - 03. Creating a Drop-Down Menu (Effects)"
+title: "03. Drop-Down 메뉴 만들기 (Effects)"
 categories: dev
 tags: jquery
 ---
+
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
+
+<br>
+
+# Creating a Drop-Down Menu
+
+###### Drop-Down 메뉴 만들기
+
+------
+
+<br>
+
+<br>
 
 ## Drop-Down Menu
 
