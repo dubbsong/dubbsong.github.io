@@ -5,7 +5,7 @@ categories: dev
 tags: jquery
 ---
 
-###### [SoloLearn](www.sololearn.com) jQuery 번역
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
 
 <br>
 
@@ -23,7 +23,7 @@ tags: jquery
 <br>
 
 - The `attr()` method is used for getting the value of an attribute.
-  - `attr()` 메소드는 속성 값을 가져오는 데 사용된다.
+  - `attr()` 메소드는 속성값을 가져오는 데 사용된다.
 
 <br>
 
@@ -54,7 +54,7 @@ $(function() {
 
 > In the code above we selected and alerted the value of the `href` attribute of the \<a> element.
 >
-> 위의 코드에서 \<a> element의 `href` 속성 값을 선택하고 alert 하도록 했다.
+> 위의 코드에서 \<a> element의 `href` 속성값을 선택하고 alert 하도록 했다.
 
 <br>
 

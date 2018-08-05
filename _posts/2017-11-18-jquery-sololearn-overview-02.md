@@ -5,7 +5,7 @@ categories: dev
 tags: jquery
 ---
 
-###### [SoloLearn](https://www.sololearn.com/) jQuery 번역
+###### [SoloLearn](https://www.sololearn.com) jQuery 번역
 
 <br>
 
