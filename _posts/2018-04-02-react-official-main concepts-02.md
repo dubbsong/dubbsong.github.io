@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "02. JSX 소개 (Main Concepts)"
+title: "리액트 공식 문서 번역 - 02. JSX 소개 (Main Concepts)"
 categories: react
 tags: React
 ---
 
-###### [공식 React 문서](https://reactjs.org/docs/introducing-jsx.html) 번역
+###### [React 공식 문서](https://reactjs.org/docs/introducing-jsx.html) 번역
 
 <br>
 
-# Introducing JSX
+# React: Introducing JSX
 
 ###### JSX 소개
 

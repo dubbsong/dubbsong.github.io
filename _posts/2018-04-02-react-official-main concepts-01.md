@@ -1,17 +1,15 @@
 ---
 layout: post
-title: "01. Hello World (Main Concepts)"
+title: "리액트 공식 문서 번역 - 01. Hello World (Main Concepts)"
 categories: react
 tags: React
 ---
 
-###### [공식 React 문서](https://reactjs.org/docs/hello-world.html) 번역
+###### [React 공식 문서](https://reactjs.org/docs/hello-world.html) 번역
 
 <br>
 
 # React: Hello World
-
-<br>
 
 <br>
 
