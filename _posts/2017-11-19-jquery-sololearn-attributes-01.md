@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "01. get & set 속성값 (Attributes and Content)"
+title: "01. 속성값 가져오기 & 설정하기 (Attributes and Content)"
 categories: dev
 tags: jquery
 ---
@@ -11,7 +11,7 @@ tags: jquery
 
 # jQuery Get & Set Attribute Values
 
-###### jQuery Get & Set 속성값
+###### jQuery 속성값 가져오기 & 설정하기
 
 ------
 
