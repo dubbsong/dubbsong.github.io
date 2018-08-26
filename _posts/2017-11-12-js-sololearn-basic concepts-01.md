@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "01. 변수 (Basic Concepts)"
-categories: dev
+categories: javascript
 tags: js
 ---
 

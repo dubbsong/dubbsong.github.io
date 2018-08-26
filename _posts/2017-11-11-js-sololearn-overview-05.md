@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "05. JavaScript 주석 (Overview)"
-categories: dev
+categories: javascript
 tags: js
 ---
 

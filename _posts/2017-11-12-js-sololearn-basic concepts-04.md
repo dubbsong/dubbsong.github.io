@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "04. 할당 연산자 (Basic Concepts)"
-categories: dev
+categories: javascript
 tags: js
 ---
 

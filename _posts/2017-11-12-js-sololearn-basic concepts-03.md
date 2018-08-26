@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "03. 수학 연산자 (Basic Concepts)"
-categories: dev
+categories: javascript
 tags: js
 ---
 

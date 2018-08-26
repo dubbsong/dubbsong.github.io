@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "05. 비교 연산자 (Basic Concepts)"
-categories: dev
+categories: javascript
 tags: js
 ---
 

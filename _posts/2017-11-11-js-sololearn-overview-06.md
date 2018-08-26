@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "06. Module 1 Quiz (Overview)"
-categories: dev
+categories: javascript
 tags: js
 ---
 

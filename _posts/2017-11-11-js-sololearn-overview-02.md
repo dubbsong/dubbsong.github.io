@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "02. 첫 번째 JavaScript 만들기 (Overview)"
-categories: dev
+categories: javascript
 tags: js
 ---
 

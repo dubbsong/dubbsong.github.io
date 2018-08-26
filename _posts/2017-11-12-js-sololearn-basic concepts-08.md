@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "08. Module 2 Quiz (Basic Concepts)"
-categories: dev
+categories: javascript
 tags: js
 ---
 

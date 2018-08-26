@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "03. 웹페이지에 JavaScript 추가하기 (Overview)"
-categories: dev
+categories: javascript
 tags: js
 ---
 

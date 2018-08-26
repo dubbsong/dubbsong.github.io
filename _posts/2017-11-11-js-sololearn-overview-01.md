@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "01. JavaScript 소개 (Overview)"
-categories: dev
+categories: javascript
 tags: js
 ---
 

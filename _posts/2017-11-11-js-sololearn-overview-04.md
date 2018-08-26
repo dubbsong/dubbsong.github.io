@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "04. 외부 JavaScript (Overview)"
-categories: dev
+categories: javascript
 tags: js
 ---
 

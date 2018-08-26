@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "06. 논리 연산자 or 불리언 연산자 (Basic Concepts)"
-categories: dev
+categories: javascript
 tags: js
 ---
 

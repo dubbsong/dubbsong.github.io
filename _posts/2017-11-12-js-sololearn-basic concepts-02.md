@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "02. 데이터 타입 (Basic Concepts)"
-categories: dev
+categories: javascript
 tags: js
 ---
 

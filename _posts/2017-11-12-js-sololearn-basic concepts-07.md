@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "07. 문자열 연산자 (Basic Concepts)"
-categories: dev
+categories: javascript
 tags: js
 ---
 
