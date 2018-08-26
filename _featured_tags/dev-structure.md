@@ -4,5 +4,5 @@ title: Data Structure
 slug: structure
 category: dev
 menu: false
-order: 11
+order: 7
 ---

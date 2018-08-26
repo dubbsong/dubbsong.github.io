@@ -4,5 +4,5 @@ title: CSS
 slug: css
 category: dev
 menu: false
-order: 6
+order: 4
 ---

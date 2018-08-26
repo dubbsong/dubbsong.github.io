@@ -4,5 +4,5 @@ title: Django
 slug: django
 category: dev
 menu: false
-order: 4
+order: 10
 ---
