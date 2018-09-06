@@ -79,10 +79,14 @@ const element = <h1>Hello, world</h1>;
 
 ```react
 const element = <h1>Hello, world</h1>;
-ReactDOM.render(element, document.getElementById('root'));
+
+ReactDOM.render(
+   element,
+   document.getElementById('root')
+);
 ```
 
-[코드 실행 확인 링크](https://codepen.io/pen?&editors=0010)
+[코드 실행 확인 링크](https://reactjs.org/redirect-to-codepen/rendering-elements/render-an-element)
 
 <br>
 
@@ -131,7 +135,21 @@ function tick() {
 setInterval(tick, 1000);
 ```
 
-[코드 실행 확인 링크](https://codepen.io/pen?&editors=0010)
+```react
+function tick() {
+   const element = (
+      <div>
+         <h1>Hello, world!</h1>
+         <h2>It is {new Date().toLocaleTimeString()}.</h2>
+      </div>
+   );
+   ReactDOM.render(element, document.getElementById('root'));
+}
+
+setInterval(tick, 1000);
+```
+
+[코드 실행 확인 링크](https://reactjs.org/redirect-to-codepen/rendering-elements/update-rendered-element)
 
 <br>
 
@@ -166,7 +184,7 @@ setInterval(tick, 1000);
 <br>
 
 - You can verify by inspecting the [last example](https://codepen.io/pen?&editors=0010) with the browser tools:
-  - 브라우저 도구로 [마지막 예제](https://codepen.io/pen?&editors=0010)를 검사해서 확인할 수 있다.
+  - 브라우저 도구로 [가장 최근 예제](https://codepen.io/pen?&editors=0010)를 검사해서 확인할 수 있다.
 
 ![official React](/assets/img/react-official-main concepts-03-01.gif)
 

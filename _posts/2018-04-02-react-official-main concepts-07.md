@@ -65,7 +65,7 @@ function Greeting(props) {
 }
 
 ReactDOM.render(
-	// Try changing to isLoggedIn={true}:
+   // isLoggedIn={true}로 변경해라.
    <Greeting isLoggedIn={false} />,
    document.getElementById('root')
 );
@@ -101,16 +101,16 @@ ReactDOM.render(
 ```react
 function LoginButton(props) {
    return (
-   	<button onClick={props.onClick}>
-      	Login
+      <button onClick={props.onClick}>
+         Login
       </button>
    );
 }
 
 function LogoutButton(props) {
    return (
-   	<button onClick={props.onClick}>
-      	Logout
+      <button onClick={props.onClick}>
+         Logout
       </button>
    );
 }
@@ -156,48 +156,16 @@ class LoginControl extends React.Component {
       }
       
       return (
-      	<div>
-         	<Greeting isLoggedIn={isLoggedIn} />
+         <div>
+            <Greeting isLoggedIn={isLoggedIn} />
             {button}
          </div>
       );
    }
 }
 
-function UserGreeting(props) {
-   return <h1>Welcome back!</h1>;
-}
-
-function GuestGreeting(props) {
-   return <h1>Please sign up.</h1>;
-}
-
-function Greeting(props) {
-   const isLoggedIn = props.isLoggedIn;
-   if (isLoggedIn) {
-      return <UserGreeting />;
-   }
-   return <GuestGreeting />;
-}
-
-function LoginButton(props) {
-   return (
-   	<button onClick={props.onClick}>
-      	Login
-      </button>
-   );
-}
-
-function LogoutButton(props) {
-   return (
-   	<button onClick={props.onClick}>
-      	Logout
-      </button>
-   );
-}
-
 ReactDOM.render(
-	<LoginControl />,
+   <LoginControl />,
    document.getElementById('root')
 );
 ```
@@ -230,11 +198,11 @@ ReactDOM.render(
 function Mailbox(props) {
    const unreadMessages = props.unreadMessages;
    return (
-   	<div>
-      	<h1>Hello!</h1>
+      <div>
+         <h1>Hello!</h1>
          {unreadMessages.length > 0 &&
-         	<h2>
-            	You have {unreadMessages.length} unread messages.
+            <h2>
+               You have {unreadMessages.length} unread messages.
             </h2>
          }
       </div>
@@ -244,7 +212,7 @@ function Mailbox(props) {
 const messages = ['React', 'Re: React', 'Re:Re: React'];
 
 ReactDOM.render(
-	<Mailbox unreadMessages={messages} />,
+   <Mailbox unreadMessages={messages} />,
    document.getElementById('root')
 );
 ```
@@ -286,9 +254,7 @@ ReactDOM.render(
 render() {
    const isLoggedIn = this.state.isLoggedIn;
    return (
-   	<div>
-      	The user is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in.
-      </div>
+      The user is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in.
    );
 }
 ```
@@ -302,11 +268,11 @@ render() {
 render() {
    const isLoggedIn = this.state.isLoggedIn;
    return (
-   	<div>
-      	{isLoggedIn ? (
-         	<LogoutButton onClick={this.handleLogoutClick} />
-         ) : (
-         	<LoginButton onClick={this.handleLoginClick} />
+      <div>
+         {isLoggedIn ? (
+            <LogoutButton onClick={this.handleLogoutClick} />
+            ) : (
+            <LoginButton onClick={this.handleLoginClick} />
          )}
       </div>
    );
@@ -347,8 +313,8 @@ function WarningBanner(props) {
    }
    
    return (
-   	<div className="warning">
-      	Warning!
+      <div className="warning">
+         Warning!
       </div>
    );
 }
@@ -361,17 +327,17 @@ class Page extends React.Component {
    }
    
    handleToggleClick() {
-      this.setState(prevState => ({
-         showWarning: !prevState.showWarning
+      this.setState(state => ({
+         showWarning: !state.showWarning
       }));
    }
    
    render() {
       return (
-      	<div>
-         	<WarningBanner warn={this.state.showWarning} />
+         <div>
+            <WarningBanner warn={this.state.showWarning} />
             <button onClick={this.handleToggleClick}>
-            	{this.state.showWarning ? 'Hide' : 'Show'}
+               {this.state.showWarning ? 'Hide' : 'Show'}
             </button>
          </div>
       );
@@ -379,7 +345,7 @@ class Page extends React.Component {
 }
 
 ReactDOM.render(
-	<Page />,
+   <Page />,
    document.getElementById('root')
 );
 ```

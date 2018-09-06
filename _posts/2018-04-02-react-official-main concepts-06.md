@@ -46,7 +46,7 @@ tags: React
 
 ```react
 <button onClick={activateLasers}>
-	Activate Lasers
+   Activate Lasers
 </button>
 ```
 
@@ -61,7 +61,7 @@ tags: React
 
 ```html
 <a href="#" onclick="console.log('The link was clicked.'); return false">
-	Click me
+   Click me
 </a>
 ```
 
@@ -78,8 +78,8 @@ function ActionLink() {
    }
    
    return (
-   	<a href="#" onClick={handleClick}>
-      	Click me
+      <a href="#" onClick={handleClick}>
+         Click me
       </a>
    );
 }
@@ -111,32 +111,33 @@ function ActionLink() {
 ```react
 class Toggle extends React.Component {
    constructor(props) {
-      super(props);
-      this.state = {isToggleOn: true};
+      super(props) {
+         this.state = {isToggleOn: true};
+         
+         // 이 바인딩은 콜백에서 'this'를 작동시키기 위해 필요하다
+         this.handleClick = this.handleClick.bind(this);
+      }
       
-      // This binding is necessary to make 'this' work in the callback
-      this.handleClick = this.handleClick.bind(this);
+      handleClick() {
+         this.setState(state => ({
+            isToggleOn: !state.isToggleOn
+         }));
+      }
+      
+      render() {
+         return (
+            <button onClick={this.handleClick}>
+               {this.state.isToggleOn ? 'ON' : 'OFF'}
+            </button>
+         );
+      }
    }
    
-   handleClick() {
-      this.setState(prevState => ({
-         isToggleOn: !prevState.isToggleOn
-      }));
-   }
-   
-   render() {
-      return (
-      	<button onClick={this.handleClick}>
-         	{this.state.isToggleOn ? 'ON' : 'OFF'}
-         </button>
-      );
-   }
+   ReactDOM.render(
+      <Toggle />,
+      document.getElementById('root')
+   );
 }
-
-ReactDOM.render(
-	<Toggle />,
-   document.getElementById('root')
-);
 ```
 
 [코드 실행 확인 링크](https://codepen.io/gaearon/pen/xEmzGg?editors=0010)
@@ -167,16 +168,16 @@ ReactDOM.render(
 
 ```react
 class LoggingButton extends React.Component {
-   // This syntax ensures 'this' is bound within handleClick.
-   // Warning: this is *experimental* syntax.
+   // 이 구문은 'this'가 handleClick 내에서 바인딩 되도록 한다.
+   // 경고: 이것은 *experimental* 구문이다.
    handleClick = () => {
       console.log('this is:', this);
    }
    
    render() {
       return (
-      	<button onClick={this.handleClick}>
-         	Click me
+         <button onClick={this.handleClick}>
+            Click me
          </button>
       );
    }
@@ -200,10 +201,10 @@ class LoggingButton extends React.Component {
    }
    
    render() {
-      // This syntax ensures 'this' is bound within handleClick
+      // 이 구문은 'this'가 handleClick 내에서 바인딩 되도록 한다.
       return (
-      	<button onClick={(e) => this.handleClick(e)}>
-         	Click me
+         <button onClick={(e) => this.handleClick(e)}>
+            Click me
          </button>
       );
    }

@@ -86,7 +86,7 @@ const name = 'Josh Perez';
 const element = <h1>Hello, {name}</h1>;
 
 ReactDOM.render(
-	element,
+   element,
    document.getElementById('root')
 );
 ```
@@ -113,19 +113,17 @@ const user = {
    lastName: 'Perez'
 };
 
-const element = {
-   <h1>
-   	Hello, {formatName(user)}!
-   </h1>
-};
+const element = (
+   <h1>Hello, {formatName(user)}!</h1>
+);
 
 ReactDOM.render(
-	element,
+   element,
    document.getElementById('root')
 );
 ```
 
-[코드 실행 확인 링크](https://codepen.io/pen?&editors=0010)
+[코드 실행 확인 링크](https://reactjs.org/redirect-to-codepen/introducing-jsx)
 
 <br>
 
@@ -230,8 +228,8 @@ const element = <img src={user.avatarUrl} />;
 
 ```react
 const element = (
-	<div>
-   	<h1>Hello!</h1>
+   <div>
+      <h1>Hello!</h1>
       <h2>Good to see you here.</h2>
    </div>
 );
@@ -274,7 +272,7 @@ const element = <h1>{title}</h1>;
 
 ## JSX Represents Objects
 
-###### JSX는 개체를 나타낸다
+###### JSX는 객체를 나타낸다
 
 <br>
 
@@ -288,8 +286,8 @@ const element = <h1>{title}</h1>;
 
 ```react
 const element = (
-	<h1 className="greeting">
-   	Hello, world!
+   <h1 className="greeting">
+      Hello, world!
    </h1>
 );
 ```
@@ -298,7 +296,7 @@ const element = (
 
 ```react
 const element = React.createElement(
-	'h1',
+   'h1',
    {className: 'greeting'},
    'Hello, world!'
 );
@@ -310,7 +308,7 @@ const element = React.createElement(
   - `React.createElement()`는 버그 없는 코드를 작성하는 데 도움이 되는 몇 가지 검사를 수행하지만, 기본적으로 다음과 같은 객체를 생성한다.
 
 ```react
-// Note: this structure is simplified
+// Note: 이 구조는 단순하다
 
 const element = {
    type: 'h1',

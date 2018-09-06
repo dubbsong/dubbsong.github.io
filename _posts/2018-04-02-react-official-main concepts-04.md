@@ -122,13 +122,14 @@ function Welcome(props) {
 }
 
 const element = <Welcome name="Sara" />;
+
 ReactDOM.render(
-	element,
+   element,
    document.getElementById('root')
 );
 ```
 
-[코드 실행 확인 링크](https://codepen.io/pen?&editors=0010)
+[코드 실행 확인 링크](https://reactjs.org/redirect-to-codepen/components-and-props/rendering-a-component)
 
 <br>
 
@@ -207,7 +208,28 @@ ReactDOM.render(
 );
 ```
 
-[코드 실행 확인 링크](https://codepen.io/pen?&editors=0010)
+```react
+function Welcome(props) {
+   return <h1>Hello, {props.name}</h1>;
+}
+
+function App() {
+   return (
+      <div>
+         <Welcome name="Sara" />
+         <Welcome name="Cahal" />
+         <Welcome name="Edite" />
+      </div>
+   );
+}
+
+ReactDOM.render(
+   <App />,
+   document.getElementById('root')
+);
+```
+
+[코드 실행 확인 링크](https://reactjs.org/redirect-to-codepen/components-and-props/composing-components)
 
 <br>
 
@@ -235,58 +257,30 @@ ReactDOM.render(
   - 예를 들어, 이 `Comment` 컴포넌트를 고려해보자.
 
 ```react
-function formatDate(date) {
-   return date.toLocaleDateString();
-}
-
 function Comment(props) {
    return (
-   	<div className="Comment">
-      	<div className="UserInfo">
-         	<img className="Avatar"
-               src={props.author.avatarUrl}
+      <div className="Comment">
+         <div className="UserInfo">
+            <img className="Avatar"
+               src={props.author.avaterUrl}
                alt={props.author.name}
             />
             <div className="UserInfo-name">
-            	{props.author.name}
+               {props.author.name}
             </div>
          </div>
          <div className="Comment-text">
-         	{props.text}
+            {props.text}
          </div>
          <div className="Comment-date">
-         	{formatDate(props.date)}
+            {formatDate(props.date)}
          </div>
       </div>
    );
 }
-
-const comment = {
-   date: new Date(),
-   text: 'I hope you enjoy learning React!',
-   author: {
-      name: 'Hello Kitty',
-      avatarUrl: 'http://placekitten.com/g/64/64',
-   },
-};
-
-ReactDOM.render(
-	<Comment
-      date={comment.date}
-      text={comment.text}
-      author={comment.author}
-   />,
-   document.getElementById('root')
-);
-
-
-// 이미지
-// Hello Kitty
-// I hope you enjoy learning React!
-// 2018. 8. 14.
 ```
 
-[코드 실행 확인 링크](https://codepen.io/pen?&editors=0010)
+[코드 실행 확인 링크](https://reactjs.org/redirect-to-codepen/components-and-props/extracting-components)
 
 <br>
 
@@ -337,18 +331,18 @@ function Avatar(props) {
 ```react
 function Comment(props) {
    return (
-   	<div className="Comment">
-      	<div className="UserInfo">
-         	<Avatar user={props.author} />
+      <div className="Comment">
+         <div className="UserInfo">
+            <Avatar user={props.author} />
             <div className="UserInfo-name">
-            	{props.author.name}
+               {props.author.name}
             </div>
          </div>
          <div className="Comment-text">
-         	{props.text}
+            {props.text}
          </div>
          <div className="Comment-date">
-         	{formatDate(props.date)}
+            {formatDate(props.date)}
          </div>
       </div>
    );
@@ -363,10 +357,10 @@ function Comment(props) {
 ```react
 function UserInfo(props) {
    return (
-   	<div className="UserInfo">
-      	<Avatar user={props.user} />
+      <div className="UserInfo">
+         <Avatar user={props.user} />
          <div className="UserInfo-name">
-         	{props.user.name}
+            {props.user.name}
          </div>
       </div>
    );
@@ -385,8 +379,7 @@ function formatDate(date) {
 
 function Avatar(props) {
    return (
-   	<img
-         className="Avatar"
+      <img className="Avatar"
          src={props.user.avatarUrl}
          alt={props.user.name}
       />
@@ -395,8 +388,8 @@ function Avatar(props) {
 
 function UserInfo(props) {
    return (
-   	<div className="UserInfo">
-      	<Avatar user={props.user} />
+      <div className="UserInfo">
+         <Avatar user={props.user} />
          <div className="UserInfo-name">{props.user.name}</div>
       </div>
    );
@@ -404,13 +397,11 @@ function UserInfo(props) {
 
 function Comment(props) {
    return (
-   	<div className="Comment">
-      	<UserInfo user={props.author} />
-         <div className="Comment-text">
-         	{props.text}
-         </div>
+      <div className="Comment">
+         <UserInfo user={props.author} />
+         <div className="Comment-text">{props.text}</div>
          <div className="Comment-date">
-         	{formatDate(props.date)}
+            {formatDate(props.date)}
          </div>
       </div>
    );
@@ -426,7 +417,7 @@ const comment = {
 };
 
 ReactDOM.render(
-	<Comment
+   <Comment
       date={comment.date}
       text={comment.text}
       author={comment.author}
@@ -435,7 +426,7 @@ ReactDOM.render(
 );
 ```
 
-[코드 실행 확인 링크](https://codepen.io/pen?editors=0010)
+[코드 실행 확인 링크](https://reactjs.org/redirect-to-codepen/components-and-props/extracting-components-continued)
 
 <br>
 

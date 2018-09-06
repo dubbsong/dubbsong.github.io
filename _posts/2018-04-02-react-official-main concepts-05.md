@@ -32,14 +32,13 @@ tags: React
 ```react
 function tick() {
    const element = (
-   	<div>
-      	<h1>Hello, world!</h1>
+      <div>
+         <h1>Hello, world!</h1>
          <h2>It is {new Date().toLocaleTimeString()}.</h2>
       </div>
    );
-   
    ReactDOM.render(
-   	element,
+      element,
       document.getElementById('root')
    );
 }
@@ -47,7 +46,7 @@ function tick() {
 setInterval(tick, 1000);
 ```
 
-[코드 실행 확인 링크](https://codepen.io/gaearon/pen/gwoJZk?editors=0010)
+[코드 실행 확인 링크](http://codepen.io/gaearon/pen/gwoJZk?editors=0010)
 
 <br>
 
@@ -64,8 +63,8 @@ setInterval(tick, 1000);
 ```react
 function Clock(props) {
    return (
-   	<div>
-      	<h1>Hello, world!</h1>
+      <div>
+         <h1>Hello, world!</h1>
          <h2>It is {props.date.toLocaleTimeString()}.</h2>
       </div>
    );
@@ -73,7 +72,7 @@ function Clock(props) {
 
 function tick() {
    ReactDOM.render(
-   	<Clock date={new Date()} />,
+      <Clock date={new Date()} />,
       document.getElementById('root')
    );
 }
@@ -96,7 +95,7 @@ setInterval(tick, 1000);
 
 ```react
 ReactDOM.render(
-	<Clock />,
+   <Clock />,
    document.getElementById('root')
 );
 ```
@@ -148,8 +147,8 @@ ReactDOM.render(
 class Clock extends React.Component {
    render() {
       return (
-      	<div>
-         	<h1>Hello, world!</h1>
+         <div>
+            <h1>Hello, world!</h1>
             <h2>It is {this.props.date.toLocaleTimeString()}.</h2>
          </div>
       );
@@ -158,7 +157,7 @@ class Clock extends React.Component {
 
 function tick() {
    ReactDOM.render(
-   	<Clock date={new Date()} />,
+      <Clock date={new Date()} />,
       document.getElementById('root')
    );
 }
@@ -202,8 +201,8 @@ setInterval(tick, 1000);
 class Clock extends React.Component {
    render() {
       return (
-      	<div>
-         	<h1>Hello, world!</h1>
+         <div>
+            <h1>Hello, world!</h1>
             <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
          </div>
       );
@@ -225,8 +224,8 @@ class Clock extends React.Component {
    
    render() {
       return (
-      	<div>
-         	<h1>Hello, world!</h1>
+         <div>
+            <h1>Hello, world!</h1>
             <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
          </div>
       );
@@ -258,7 +257,7 @@ constructor(props) {
 
 ```react
 ReactDOM.render(
-	<Clock />,
+   <Clock />,
    document.getElementById('root')
 );
 ```
@@ -282,8 +281,8 @@ class Clock extends React.Component {
    
    render() {
       return (
-      	<div>
-         	<h1>Hello, world!</h1>
+         <div>
+            <h1>Hello, world!</h1>
             <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
          </div>
       );
@@ -291,7 +290,7 @@ class Clock extends React.Component {
 }
 
 ReactDOM.render(
-	<Clock />,
+   <Clock />,
    document.getElementById('root')
 );
 ```
@@ -352,8 +351,8 @@ class Clock extends React.Component {
    
    render() {
       return (
-      	<div>
-         	<h1>Hello, world!</h1>
+         <div>
+            <h1>Hello, world!</h1>
             <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
          </div>
       );
@@ -376,7 +375,7 @@ class Clock extends React.Component {
 ```react
 componentDidMount() {
    this.timerID = setInterval(
-   	() => this.tick(),
+      () => this.tick(),
       1000
    );
 }
@@ -423,7 +422,7 @@ class Clock extends React.Component {
    
    componentDidMount() {
       this.timerID = setInterval(
-      	() => this.tick(),
+         () => this.tick(),
          1000
       );
    }
@@ -440,8 +439,8 @@ class Clock extends React.Component {
    
    render() {
       return (
-      	<div>
-         	<h1>Hello, world!</h1>
+         <div>
+            <h1>Hello, world!</h1>
             <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
          </div>
       );
@@ -449,7 +448,7 @@ class Clock extends React.Component {
 }
 
 ReactDOM.render(
-	<Clock />,
+   <Clock />,
    document.getElementById('root')
 );
 ```
@@ -614,8 +613,7 @@ this.setState({comment: 'Hello'});
 // Wrong
 
 this.setState({
-   counter: this.state.counter +
-this.props.increment,
+   counter: this.state.counter + this.props.increment,
 });
 ```
 
@@ -759,7 +757,7 @@ class Clock extends React.Component {
    
    componentDidMount() {
       this.timerID = setInterval(
-      	() => this.tick(),
+         () => this.tick(),
          1000
       );
    }
@@ -776,8 +774,8 @@ class Clock extends React.Component {
    
    render() {
       return (
-      	<div>
-         	<h1>Hello, world!</h1>
+         <div>
+            <h1>Hello, world!</h1>
             <FormattedDate date={this.state.date} />
          </div>
       );
@@ -785,7 +783,7 @@ class Clock extends React.Component {
 }
 
 ReactDOM.render(
-	<Clock />,
+   <Clock />,
    document.getElementById('root')
 );
 ```
@@ -810,47 +808,12 @@ ReactDOM.render(
   - 모든 컴포넌트가 완전히 분리되어 있음을 보여주기 위해, 세 개의 `<Clock>`을 렌더링 하는 `App` 컴포넌트를 만들 수 있다.
 
 ```react
-function FormattedDate(props) {
-   return <h2>It is {props.date.toLocaleTimeString()}.</h2>;
-}
-
-class Clock extends React.Component {
-   constructor(props) {
-      super(props);
-      this.state = {date: new Date()};
-   }
-   
-   componentDidMount() {
-      this.timerID = setInterval(
-      	() => this.tick(),
-         1000
-      );
-   }
-   
-   componentWillUnmount() {
-      clearInterval(this.timerID);
-   }
-   
-   tick() {
-      this.setState({
-         date: new Date()
-      });
-   }
-   
-   render() {
-      return (
-      	<div>
-         	<h1>Hello, world!</h1>
-            <FormattedDate date={this.state.date} />
-         </div>
-      );
-   }
-}
+...
 
 function App() {
    return (
-   	<div>
-      	<Clock />
+      <div>
+         <Clock />
          <Clock />
          <Clock />
       </div>
@@ -858,7 +821,7 @@ function App() {
 }
 
 ReactDOM.render(
-	<App />,
+   <App />,
    document.getElementById('root')
 );
 ```
