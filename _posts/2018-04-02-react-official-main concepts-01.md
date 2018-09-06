@@ -23,7 +23,7 @@ ReactDOM.render(
 );
 ```
 
-[코드 실행 확인 링크](https://codepen.io/pen?&editors=0010)
+[코드 실행 확인 링크](https://reactjs.org/redirect-to-codepen/hello-world)
 
 <br>
 
