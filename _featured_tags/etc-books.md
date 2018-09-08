@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: PHP
-slug: php
-category: dev
+title: Books
+slug: books
+category: etc
 menu: false
 order: 5
 ---

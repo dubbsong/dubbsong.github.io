@@ -2,7 +2,7 @@
 layout: tag-blog
 title: Data Structure
 slug: structure
-category: dev
+category: etc
 menu: false
-order: 2
+order: 1
 ---

@@ -2,7 +2,7 @@
 layout: tag-blog
 title: Basic Algorithm
 slug: algo
-category: dev
+category: etc
 menu: false
-order: 3
+order: 2
 ---
