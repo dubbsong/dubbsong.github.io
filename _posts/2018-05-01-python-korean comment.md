@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Python 파일에서 한글 주석 사용하는 방법"
-categories: dev
-tags: python
+categories: python
 ---
 
 ## Python 파일에서 한글 주석 사용하기
