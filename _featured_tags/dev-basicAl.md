@@ -4,7 +4,5 @@ title: Basic Algorithm
 slug: algo
 category: dev
 menu: false
-order: 1
-description: >
-  Basic Algorithm
+order: 3
 ---
