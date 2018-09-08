@@ -1,10 +1,10 @@
 ---
 layout: list
-title: React
-slug: react
+title: Python
+slug: python
 menu: true
 submenu: false
-order: 6
+order: 7
 description: >
-  about React
+  about Python
 ---

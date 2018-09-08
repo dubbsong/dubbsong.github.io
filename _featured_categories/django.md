@@ -1,10 +1,10 @@
 ---
 layout: list
-title: React
-slug: react
+title: Django
+slug: django
 menu: true
 submenu: false
-order: 6
+order: 8
 description: >
-  about React
+  about Django
 ---

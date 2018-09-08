@@ -1,10 +1,10 @@
 ---
 layout: list
-title: React
-slug: react
+title: HTML
+slug: html
 menu: true
 submenu: false
-order: 6
+order: 3
 description: >
-  about React
+  about HTML
 ---
