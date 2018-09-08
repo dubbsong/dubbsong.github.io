@@ -154,7 +154,7 @@ categories: html
 - What tag should be used to add an image?
   - 이미지를 추가할 때 어떤 태그를 사용해야 하는가?
 
-> \<img />
+> `<img />`
 
 <br>
 
@@ -165,7 +165,7 @@ categories: html
 >
 > [ ] address
 >
-> [x] `src`
+> [ ] `src`
 >
 > [ ] url
 
@@ -180,9 +180,9 @@ categories: html
 >
 > [ ] quantity
 >
-> [x] `height`
+> [ ] `height`
 >
-> [x] `width`
+> [ ] `width`
 
 <br>
 

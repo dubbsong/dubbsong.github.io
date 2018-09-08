@@ -134,7 +134,7 @@ categories: html
 - What is the role of an attribute in HTML?
   - HTML에서 속성의 역할은 무엇인가?
 
-> [x] `it modifies the tag`
+> [ ] `it modifies the tag`
 >
 > [ ] the tag cannot have attributes
 >
@@ -149,7 +149,7 @@ categories: html
 >
 > [ ] km and meter
 >
-> [x] `pixel and %`
+> [ ] `pixel and %`
 >
 > [ ] all existing measurement units
 
@@ -158,7 +158,7 @@ categories: html
 - What attribute is used to align the contents of an element to the right, center or left?
   - element의 내용을 오른쪽, 가운데, 왼쪽으로 정렬하는 데 사용되는 속성은 무엇인가?
 
-> [x] `align`
+> [ ] `align`
 >
 > [ ] alignment
 >

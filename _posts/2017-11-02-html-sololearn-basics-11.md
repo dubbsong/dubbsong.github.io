@@ -207,7 +207,7 @@ categories: html
 - What tag is used to create columns in a row?
   - 행에서 열을 만드는 데 사용되는 태그가 무엇인가?
 
-> [x] `td`
+> [ ] `td`
 >
 > [ ] cell
 >
@@ -222,7 +222,7 @@ categories: html
 
 > [ ] stretch
 >
-> [x] `colspan`
+> [ ] `colspan`
 >
 > [ ] rowspan
 >
@@ -251,7 +251,7 @@ categories: html
 >
 > [ ] cellColor
 >
-> [x] `bgcolor`
+> [ ] `bgcolor`
 >
 > [ ] background
 

@@ -61,6 +61,6 @@ categories: html
 >
 > [ ] multipletext
 >
-> [x] `textarea`
+> [ ] `textarea`
 
 <br>

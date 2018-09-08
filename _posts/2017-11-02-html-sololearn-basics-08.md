@@ -100,14 +100,14 @@ categories: html
 - What tag is used to create a link to a web page?
   - 어떤 태그가 웹 페이지에 대한 링크를 만드는 데 사용되는가?
 
-> \<a href="">
+> `<a href="">`
 
 <br>
 
 - Which attribute of the link tag contains the URL location that you are trying to link to?
   - 링크하려는 URL 위치는 링크 태그의 어떤 속성이 포함하는가?
 
-> [x] `href`
+> [ ] `href`
 >
 > [ ] location
 >

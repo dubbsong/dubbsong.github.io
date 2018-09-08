@@ -155,7 +155,7 @@ categories: html
 
 > [ ] heading
 >
-> [x] `h1 - h6`
+> [ ] `h1 - h6`
 >
 > [ ] header
 >
@@ -166,7 +166,7 @@ categories: html
 - How do you create a horizontal line in HTML?
   - HTML에서 가로선을 어떻게 만드는가?
 
-> \<hr/>
+> `<hr/>`
 
 <br>
 

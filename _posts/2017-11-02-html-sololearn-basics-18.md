@@ -44,7 +44,7 @@ categories: html
 - The sections in the blog project are created using the following tag:
   - 블로그 프로젝트의 섹션은 다음 태그를 사용해서 생성된다.
 
-> [x] `div`
+> [ ] `div`
 >
 > [ ] table
 >

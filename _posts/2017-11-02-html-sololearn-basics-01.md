@@ -99,7 +99,7 @@ categories: html
 - What tag is used to create a line-break without an extra space between the text blocks?
   - 텍스트 블록 사이에 공간을 추가하지 않고 줄 바꿈을 만들 때 사용되는 태그는 무엇인가?
 
-> [x] `br`
+> [ ] `br`
 >
 > [ ] linebreak
 >

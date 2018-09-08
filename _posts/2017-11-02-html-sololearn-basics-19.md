@@ -17,7 +17,7 @@ categories: html
 >
 > [ ] sometimes
 >
-> [x] `yes`
+> [ ] `yes`
 >
 > [ ] probably
 
@@ -26,7 +26,7 @@ categories: html
 - What does the href attribute contain?
   - href 속성에는 무엇이 포함되어 있는가?
 
-> [x] `the URL of the page to be transferred`
+> [ ] `the URL of the page to be transferred`
 >
 > [ ] the name of the web page to be transferred
 >
@@ -37,14 +37,14 @@ categories: html
 - Which tag contains the cell tags besides the table tag?
   - 어떤 태그가 테이블 태그 외에 cell 태그를 포함하는가?
 
-> \<tr>
+> `<tr>`
 
 <br>
 
 - What does HTML stand for?
   - HTML은 무엇을 나타내는가?
 
-> HyperText Markup Language
+> `HyperText Markup Language`
 
 <br>
 
@@ -53,7 +53,7 @@ categories: html
 
 > [ ] \<head>
 >
-> [x] `<h1>`
+> [ ] `<h1>`
 >
 > [ ] \<heading>
 >
@@ -68,7 +68,7 @@ categories: html
 >
 > [ ] \<thead>\<body>\<tr>
 >
-> [x] `<table><tr><td>`
+> [ ] `<table><tr><td>`
 >
 > [ ] \<table>\<tr>\<tt>
 

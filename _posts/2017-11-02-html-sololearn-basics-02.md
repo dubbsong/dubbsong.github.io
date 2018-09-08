@@ -75,7 +75,7 @@ categories: html
 >
 > [ ] i and em
 >
-> [x] `b and strong`
+> [ ] `b and strong`
 >
 > [ ] ins and del
 

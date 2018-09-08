@@ -80,7 +80,7 @@ categories: html
 
 > [ ] only tags
 >
-> [x] `opening tag, content, closing tag`
+> [ ] `opening tag, content, closing tag`
 >
 > [ ] the body tag
 >

@@ -130,7 +130,7 @@ categories: html
 >
 > [ ] 0 - 9
 >
-> [x] `0 - f`
+> [ ] `0 - f`
 
 <br>
 
@@ -141,7 +141,7 @@ categories: html
 >
 > [ ] HSLA
 >
-> [x] `RGB`
+> [ ] `RGB`
 >
 > [ ] CMYK
 
@@ -150,7 +150,7 @@ categories: html
 - What would be the value of the color black in HTML, expressed by 6 hex characters?
   - 6자리 16진수로 표현되는 HTML의 검정색 값은 무엇인가?
 
-> \#000000
+> `#000000`
 
 <br>
 

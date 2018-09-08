@@ -227,7 +227,7 @@ categories: html
 - Which value for the type attribute turns the input tag into a submit button?
   - type 속성에 대한 어떤 값으로 input 태그를 submit 버튼으로 바꿀 수 있는가?
 
-> [x] submit
+> [ ] `submit`
 >
 > [ ] radio
 >

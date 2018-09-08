@@ -146,11 +146,11 @@ categories: html
   - 다음 중 block level element는 무엇인가?
   - Select all that apply
 
-> [x] `h1`
+> [ ] `h1`
 >
 > [ ] em
 >
-> [x] `div`
+> [ ] `div`
 >
 > [ ] b
 
@@ -161,6 +161,6 @@ categories: html
 
 > [ ] Yes
 >
-> [x] `No`
+> [ ] `No`
 
 <br>
