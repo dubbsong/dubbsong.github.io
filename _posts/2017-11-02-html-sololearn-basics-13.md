@@ -1,11 +1,20 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 13. Inline and Block Elements (Basics)"
-categories: dev
-tags: html
+title: "13. Inline & Block Elements (Basics)"
+categories: html
 ---
 
-###### [SoloLearn HTML 번역](www.sololearn.com)
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
+
+<br>
+
+# HTML Inline & Block Elements
+
+###### HTML inline & block element
+
+------
+
+<br>
 
 <br>
 
@@ -99,11 +108,9 @@ tags: html
 >
 > \<span> element는 문서에서 `inline` 섹션을 정의한다.
 
-------
-
 <br>
 
-## Types of Elements 02
+<br>
 
 - Other elements can be used either as block level elements or inline elements.
   - 다른 element들은 block level element나 inline element로 사용될 수 있다.

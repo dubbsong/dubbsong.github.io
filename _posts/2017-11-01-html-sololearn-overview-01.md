@@ -1,9 +1,22 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 01. What is HTML? (Overview)"
-categories: dev
-tags: html
+title: "01. HTML이란 무엇인가? (Overview)"
+categories: html
 ---
+
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
+
+<br>
+
+# What is HTML?
+
+###### HTML이란 무엇인가?
+
+------
+
+<br>
+
+<br>
 
 ## Welcome to HTML!
 

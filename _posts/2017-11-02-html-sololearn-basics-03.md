@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 03. Headings, Lines, Comments (Basics)"
-categories: dev
-tags: html
+title: "03. Headings, 가로선, 주석 (Basics)"
+categories: html
 ---
 
-###### [SoloLearn HTML 번역](www.sololearn.com)
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
 
 <br>
 
-## HTML Headings
+# HTML Headings
 
 ###### HTML headings
 

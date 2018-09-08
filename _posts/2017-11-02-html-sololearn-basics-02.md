@@ -1,13 +1,16 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 02. Text Formatting (Basics)"
-categories: dev
-tags: html
+title: "02. 텍스트 서식 (Basics)"
+categories: html
 ---
 
-## Formatting Elements
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
 
-###### element 서식 지정
+<br>
+
+# HTML Formatting Elements
+
+###### element 서식
 
 <br>
 
@@ -36,11 +39,9 @@ tags: html
 </html>
 ```
 
-------
-
 <br>
 
-## Formatting Elements 02
+<br>
 
 - Each paragraph in the example is formatted differently to demonstrate what each tag does:
   - 예제의 각 단락은 각 태그의 기능을 보여주기 위해서 다르게 서식이 지정된다.

@@ -1,17 +1,26 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 11. Tables (Basics)"
-categories: dev
-tags: html
+title: "11. 테이블 (Basics)"
+categories: html
 ---
 
-###### [SoloLearn HTML 번역](www.sololearn.com)
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
+
+<br>
+
+# HTML Tables
+
+###### HTML 테이블
+
+------
+
+<br>
 
 <br>
 
 ## Creating a Table
 
-###### 테이블 만들기
+###### 테이블 생성하기
 
 <br>
 
@@ -97,7 +106,7 @@ tags: html
 
 ## Colspan Color
 
-###### colspan 색
+###### colspan 색상
 
 <br>
 

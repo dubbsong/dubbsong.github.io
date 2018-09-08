@@ -1,17 +1,16 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 18. Blog Project: Putting It All Together (Basics)"
-categories: dev
-tags: html
+title: "18. 블로그 프로젝트: Putting It All Together (Basics)"
+categories: html
 ---
 
-###### [SoloLearn HTML 번역](www.sololearn.com)
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
 
 <br>
 
-## Blog Project
+# HTML Blog Project: Putting It All Together
 
-###### 블로그 프로젝트
+###### HTML 블로그 프로젝트: Putting It All Together
 
 <br>
 

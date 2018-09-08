@@ -1,18 +1,21 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 05. Module 1 Quiz (Overview)"
-categories: dev
-tags: html
+title: "05. Module 1 Quiz (Overview)"
+categories: html
 ---
 
-## Module 1 Quiz
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
+
+<br>
+
+## QUIZ
 
 - What is HTML?
   - HTML이란 무엇인가?
 
 > [ ] Hypertext Library
 >
-> [x] `Markup Language`
+> [ ] `Markup Language`
 >
 > [ ] Scripting Language
 >
@@ -27,7 +30,7 @@ tags: html
 >
 > [ ] header and footer
 >
-> [x] `head and body`
+> [ ] `head and body`
 >
 > [ ] hands and feet
 

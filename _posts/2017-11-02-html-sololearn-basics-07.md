@@ -1,11 +1,20 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 07. Images (Basics)"
-categories: dev
-tags: html
+title: "07. Images (Basics)"
+categories: html
 ---
 
-###### [SoloLearn HTML 번역](www.sololearn.com)
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
+
+<br>
+
+# HTML Images
+
+###### HTML 이미지
+
+------
+
+<br>
 
 <br>
 

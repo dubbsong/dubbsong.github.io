@@ -1,17 +1,26 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 04. Blog Project: About Me (Basics)"
-categories: dev
-tags: html
+title: "04. 블로그 프로젝트: About Me (Basics)"
+categories: html
 ---
 
-###### [SoloLearn HTML 번역](www.sololearn.com)
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
+
+<br>
+
+# HTML Blog Project: About Me
+
+###### 블로그 프로젝트: About Me
+
+------
+
+<br>
 
 <br>
 
 ## Formatting Text
 
-###### 텍스트 서식 지정
+###### 텍스트 서식
 
 <br>
 

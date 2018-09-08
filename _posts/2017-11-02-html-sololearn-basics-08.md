@@ -1,11 +1,20 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 08. Links (Basics)"
-categories: dev
-tags: html
+title: "08. 링크 (Basics)"
+categories: html
 ---
 
-###### [SoloLearn HTML 번역](www.sololearn.com)
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
+
+<br>
+
+# HTML Links
+
+###### HTML 링크
+
+------
+
+<br>
 
 <br>
 
@@ -37,7 +46,7 @@ tags: html
 
 ## Creating Your First Link
 
-###### 첫 번째 링크 만들기
+###### 첫 번째 링크 생성하기
 
 <br>
 

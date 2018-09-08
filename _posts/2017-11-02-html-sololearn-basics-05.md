@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 05. Elements (Basics)"
-categories: dev
-tags: html
+title: "05. Elements (Basics)"
+categories: html
 ---
 
 ###### [SoloLearn HTML 번역](www.sololearn.com)
 
 <br>
 
-## HTML Elements
+# HTML Elements
 
 ###### HTML elements
 
@@ -44,11 +43,9 @@ tags: html
 >
 > 일부 HTML element(`<br/>` 같은)에는 종료 태그가 없다.
 
-------
-
 <br>
 
-## HTML Elements 02
+<br>
 
 - Some elements are quite small.
   - 일부 element는 아주 작다.

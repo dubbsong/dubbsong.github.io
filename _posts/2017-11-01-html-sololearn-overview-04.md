@@ -1,13 +1,16 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 04. Creating a Blog (Overview)"
-categories: dev
-tags: html
+title: "04. 블로그 생성하기 (Overview)"
+categories: html
 ---
 
-## Creating a Blog
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
 
-###### 블로그 만들기
+<br>
+
+# HTML: Creating a Blog
+
+###### 블로그 생성하기
 
 <br>
 

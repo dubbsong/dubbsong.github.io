@@ -1,11 +1,20 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 14. Forms (Basics)"
-categories: dev
-tags: html
+title: "14. Forms (Basics)"
+categories: html
 ---
 
-###### [SoloLearn HTML 번역](www.sololearn.com)
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
+
+<br>
+
+# HTML Forms
+
+###### HTML form
+
+------
+
+<br>
 
 <br>
 
@@ -52,7 +61,7 @@ tags: html
 
 ## The method and name Attributes
 
-###### method와 name 속성
+###### method & name 속성
 
 <br>
 
@@ -152,11 +161,9 @@ tags: html
 
 ![sololearn img](/assets/img/sololearn-html-basics-14-03.jpeg)
 
-------
-
 <br>
 
-## Form Elements 02
+<br>
 
 - The submit button `submits a form` to its action attribute:
   - submit 버튼은 action 속성에 `form을 제출`한다.

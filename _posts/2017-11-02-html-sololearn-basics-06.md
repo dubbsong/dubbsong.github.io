@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 06. Attributes (Basics)"
-categories: dev
-tags: html
+title: "06. 속성 (Basics)"
+categories: html
 ---
 
-###### [SoloLearn HTML 번역](www.sololearn.com)
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
 
 <br>
 
-## HTML Attributes
+# HTML Attributes
 
 ###### HTML 속성
 

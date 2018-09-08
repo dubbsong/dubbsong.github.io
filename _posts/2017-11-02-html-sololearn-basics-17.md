@@ -1,11 +1,20 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 17. Frames (Basics)"
-categories: dev
-tags: html
+title: "17. Frames (Basics)"
+categories: html
 ---
 
-###### [SoloLearn HTML 번역](www.sololearn.com)
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
+
+<br>
+
+# HTML Frames
+
+###### HTML frame
+
+------
+
+<br>
 
 <br>
 

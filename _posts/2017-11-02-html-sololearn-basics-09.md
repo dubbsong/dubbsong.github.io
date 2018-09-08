@@ -1,24 +1,33 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 09. Lists (Basics)"
-categories: dev
-tags: html
+title: "09. Lists <ol>, <ul>, <li> (Basics)"
+categories: html
 ---
 
-###### [SoloLearn HTML 번역](www.sololearn.com)
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
+
+<br>
+
+# HTML Lists
+
+###### HTML list \<ol>, \<ul>, \<li>
+
+------
+
+<br>
 
 <br>
 
 ## HTML Ordered Lists
 
-###### HTML 순서가 지정된 리스트 \<ol>
+###### HTML 순서가 지정된 list \<ol>
 
 <br>
 
 - An ordered list starts with the `<ol>` tag, and each list item is defined by the `<li>` tag.
-  - 순서가 지정된 리스트는 `<ol>` 태그로 시작하고, 각 리스트 항목은 `<li>` 태그로 정의된다.
+  - 순서가 지정된 list는 `<ol>` 태그로 시작하고, 각 list 항목은 `<li>` 태그로 정의된다.
 - Here is an example of an `ordered list`:
-  - 다음은 `순서가 지정된 리스트`의 예제이다.
+  - 다음은 `순서가 지정된 list`의 예제이다.
 
 ```html
 <html>
@@ -45,7 +54,7 @@ tags: html
 
 > The list items will be automatically marked with numbers.
 >
-> 리스트 항목에는 자동으로 숫자가 표시된다.
+> list 항목에는 자동으로 숫자가 표시된다.
 
 ------
 
@@ -53,12 +62,12 @@ tags: html
 
 ## HTML Unordered List
 
-###### HTML 순서가 지정되지 않은 리스트 \<ul>
+###### HTML 순서가 지정되지 않은 list \<ul>
 
 <br>
 
 - An unordered list starts with the `<ul>` tag.
-  - 순서가 지정되지 않은 리스트는 `<ul>` 태그로 시작한다.
+  - 순서가 지정되지 않은 list는 `<ul>` 태그로 시작한다.
 
 ```html
 <html>
@@ -85,7 +94,7 @@ tags: html
 
 > The list items will be marked with bullets.
 >
-> 리스트 항목에는 글 머리 기호가 표시된다.
+> list 항목에는 글 머리 기호가 표시된다.
 
 ------
 
@@ -94,7 +103,7 @@ tags: html
 ## QUIZ
 
 - Enter the tag corresponding to the list item:
-  - 리스트 항목에 해당하는 태그를 입력해라.
+  - list 항목에 해당하는 태그를 입력해라.
 
 > \<li>
 

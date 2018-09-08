@@ -1,9 +1,22 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 03. Creating Your First HTML Page (Overview)"
-categories: dev
-tags: html
+title: "03. HTML 페이지 생성하기 (Overview)"
+categories: html
 ---
+
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
+
+<br>
+
+# Creating HTML Page
+
+###### HTML 페이지 생성하기
+
+------
+
+<br>
+
+<br>
 
 ## The HTML File
 
@@ -20,11 +33,9 @@ tags: html
 
 ![sololearn img](/assets/img/sololearn-html-overview-03-01.jpeg)
 
-------
-
 <br>
 
-## The HTML File 02
+<br>
 
 - Add the basic HTML structure to the text editor with "This is a line of text" in the body section.
   - 텍스트 에디터를 사용해서 기본 HTML 구조와, body 섹션에 "This is a line of text"를 추가해라.

@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 19. Module 2 Quiz (Basic)"
-categories: dev
-tags: html
+title: "19. Module 2 Quiz (Basic)"
+categories: html
 ---
 
-###### [SoloLearn HTML 번역](www.sololearn.com)
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
 
 <br>
 

@@ -1,11 +1,14 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 01. Paragraphs (Basics)"
-categories: dev
-tags: html
+title: "01. HTML <p> element (Basics)"
+categories: html
 ---
 
-## The \<p> Element
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
+
+<br>
+
+# HTML \<p> Element
 
 - To create a paragraph, simply type in the `\<p>` element with its opening and closing tags:
   - 단락을 만들려면, `\<p>` element에 여는 태그와 닫는 태그를 입력하기만 하면 된다.
@@ -68,11 +71,9 @@ tags: html
 >
 > 끝 태그가 없다.
 
-------
-
 <br>
 
-## Single Line Break 02
+<br>
 
 - Opening the HTML file in the browser shows that a single line break has been added to the paragraph:
   - 브라우저에서 HTML 파일을 열면 단일 줄 바꿈이 단락에 추가되었음을 알 수 있다.

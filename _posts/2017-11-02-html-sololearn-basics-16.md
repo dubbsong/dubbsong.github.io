@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 16. HTML Colors (Basics)"
-categories: dev
-tags: html
+title: "16. Colors (Basics)"
+categories: html
 ---
 
-###### [SoloLearn HTML 번역](www.sololearn.com)
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
 
 <br>
 
-## HTML Colors
+# HTML Colors
 
 ###### HTML 색상
 
@@ -83,9 +82,9 @@ tags: html
 
 <br>
 
-## Background and Font Colors
+## Background & Font Colors
 
-###### 배경과 폰트 색상
+###### 배경 & 폰트 색상
 
 <br>
 

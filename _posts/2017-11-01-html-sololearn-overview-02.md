@@ -1,9 +1,22 @@
 ---
 layout: post
-title: "SoloLearn HTML 번역 - 02. Basic HTML Document Structure (Overview)"
-categories: dev
-tags: html
+title: "02. HTML 문서 구조 (Overview)"
+categories: html
 ---
+
+###### [SoloLearn](https://www.sololearn.com/) HTML 번역
+
+<br>
+
+# Basic HTML Document Structure
+
+###### HTML 문서 구조
+
+------
+
+<br>
+
+<br>
 
 ## The \<html> Tag
 
