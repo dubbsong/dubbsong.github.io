@@ -30,7 +30,7 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
-<meta property="og:title" content="React">
+<meta property="og:title" content="02. 시작 코드 체크 (Overview)">
 <meta property="og:type" content="article">
 
 
@@ -45,13 +45,15 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 
 
 
-  <title>React &middot; ㅇㅁㅂ</title>
+  <title>02. 시작 코드 체크 (Overview) &middot; ㅇㅁㅂ</title>
 
 
 
-<meta name="description" content="about React
+<meta name="description" content="React 공식 문서 번역
+
 ">
-<meta property="og:description" content="about React
+<meta property="og:description" content="React 공식 문서 번역
+
 ">
 
 
@@ -59,13 +61,13 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
 <!-- =============== -->
 <!-- LINKS           -->
 <!-- =============== -->
-<link rel="canonical" href="http://localhost:4000/category/react/">
-<meta property="og:url" content="http://localhost:4000/category/react/">
+<link rel="canonical" href="http://localhost:4000/react/2018/08/01/react-official-overview-02/">
+<meta property="og:url" content="http://localhost:4000/react/2018/08/01/react-official-overview-02/">
 
 <link rel="alternate" type="application/atom+xml" title="ㅇㅁㅂ Feed" href="http://localhost:4000/feed.xml">
 
 
-  <link rel="prev" href="http://localhost:4000/category/python/">
+  <link rel="prev" href="http://localhost:4000/react/2018/08/01/react-official-overview-01/">
 
 
 
@@ -154,47 +156,296 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
     <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/mainColor.jpg">
       
 
-
-
+<article id="post-react/2018/08/01/react-official-overview-02" class="post" role="article">
   <header>
-    <h1 class="page-title">React</h1>
+    <h1 class="post-title">
+      
+        02. 시작 코드 체크 (Overview)
+      
+    </h1>
+
+    <p class="post-date heading">
+      <time datetime="2018-08-01T00:00:00+09:00">01 Aug 2018</time>
+      
+
+
+
+
+
+
+
+
+
+in <a href="/category/react/" data-flip="title">React</a>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </p>
+
     
-  
-  
-<p class="message">about React</p>
-
-
+  <div class="hr" style="padding-bottom:0"></div>
 
 
   </header>
-  <hr class="sr-only"/>
-
-
+  
 
   
+  
+    <div class="markdown-body">
+
+
+<style>
+.myAd1190 { display:block; width:98%; height: 280px; }
+@media(min-width: 600px) { .myAd1190 { display: none; } }
+</style>
+
+      <h6 id="react-공식-문서-번역"><a href="https://reactjs.org/tutorial/tutorial.html#inspecting-the-starter-code">React 공식 문서</a> 번역</h6>
+
+<p><br /></p>
+
+<h1 id="react-inspecting-the-starter-code">React: Inspecting the Starter Code</h1>
+
+<h6 id="시작-코드-체크">시작 코드 체크</h6>
+
+<p><br /></p>
+
+<ul>
+  <li>If you’re going to work on the tutorial <code class="highlighter-rouge">in your browser</code>, open this code in a new tab: <a href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010">Starter Code</a>
+    <ul>
+      <li>튜토리얼을 <code class="highlighter-rouge">브라우저</code>에서 작성하려면, 이 코드를 새로운 탭에서 열어라: <a href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010">시작 코드</a></li>
+    </ul>
+  </li>
+  <li>If you’re going to work on the tutorial <code class="highlighter-rouge">locally</code>, instead open <code class="highlighter-rouge">src/index.js</code> in your project folder.
+    <ul>
+      <li>튜토리얼을 <code class="highlighter-rouge">로컬</code>에서 작성하려면, 프로젝트 폴더에서 <code class="highlighter-rouge">src/index.js</code>를 열어라.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="starter-code">Starter Code</h3>
+
+<h6 id="시작-코드">시작 코드</h6>
+
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Square</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+   <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="p">(</span>
+         <span class="p">&lt;</span><span class="nt">button</span> <span class="na">className=</span><span class="s2">"square"</span><span class="p">&gt;</span>
+            <span class="si">{</span><span class="cm">/* TODO */</span><span class="si">}</span>
+         <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+      <span class="p">);</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Board</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+   <span class="nx">renderSquare</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="p">&lt;</span><span class="nc">Square</span> <span class="p">/&gt;;</span>
+   <span class="p">}</span>
+   
+   <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+      <span class="kd">const</span> <span class="nx">status</span> <span class="o">=</span> <span class="s1">'Next player: X'</span><span class="p">;</span>
+      
+      <span class="k">return</span> <span class="p">(</span>
+         <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"status"</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">status</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
+               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="si">}</span>
+               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="si">}</span>
+               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
+               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="si">}</span>
+               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span>
+               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="si">}</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"board-row"</span><span class="p">&gt;</span>
+               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="si">}</span>
+               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="si">}</span>
+               <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">renderSquare</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="si">}</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+         <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">);</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Game</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+   <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="p">(</span>
+         <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"game"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"game-board"</span><span class="p">&gt;</span>
+               <span class="p">&lt;</span><span class="nc">Board</span> <span class="p">/&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"game-info"</span><span class="p">&gt;</span>
+               <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="si">{</span><span class="cm">/* status */</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+               <span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span><span class="si">{</span><span class="cm">/* TODO */</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+         <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">);</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// ====================================</span>
+
+<span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+   <span class="p">&lt;</span><span class="nc">Game</span> <span class="p">/&gt;,</span>
+   <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'root'</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<p><a href="https://reactjs.org/tutorial/tutorial.html#passing-data-through-props">코드 실행 확인</a></p>
+
+<p><br /></p>
+
+<ul>
+  <li>This Starter Code is the base of what we’re building.
+    <ul>
+      <li>이 시작 코드는 우리가 만들고자 하는 것의 base다.</li>
+    </ul>
+  </li>
+  <li>We’ve provided the CSS styling so that you only need focus on learning React and programming the tic-tac-toe game.
+    <ul>
+      <li>React를 배우고, tic-tac-toe 게임을 프로그래밍하는 데에만 집중할 수 있도록 CSS 스타일을 제공했다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+  <li>By inspecting the code, you’ll notice that we have three React components:
+    <ul>
+      <li>코드를 확인해보면, 세 가지 React 컴포넌트가 있음을 알 수 있다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<blockquote>
+  <ul>
+    <li>Square</li>
+    <li>Board</li>
+    <li>Game</li>
+  </ul>
+</blockquote>
+
+<p><br /></p>
+
+<ul>
+  <li>The Square component renders a single <code class="highlighter-rouge">&lt;button&gt;</code> and the Board renders 9 squares.
+    <ul>
+      <li>Square 컴포넌트는 하나의 <code class="highlighter-rouge">&lt;button&gt;</code>을 렌더링 하고, Board는 9개의 사각형을 렌더링 한다.</li>
+    </ul>
+  </li>
+  <li>The Game component renders a board with placeholder values which we’ll modify later.
+    <ul>
+      <li>Game 컴포넌트는 board에서 placeholder 값을 렌더링 하고, 나중에 수정할 것이다.</li>
+    </ul>
+  </li>
+  <li>There are currently no interactive components.
+    <ul>
+      <li>현재 대화형 컴포넌트가 없다.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<p><br /></p>
+
+      
+    </div>
+    <script>
+
+    </script>
+  
+
+</article>
+
+  <hr class="dingbat" />
+
+  <div class="share">
+      <h2>Share this post</h2>
+      <div class="share-body">
+        <a href="http://twitter.com/share?text=02. 시작 코드 체크 (Overview)&amp;url=http://localhost:4000/react/2018/08/01/react-official-overview-02/"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <span class="icon-twitter">
+            </span>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/react/2018/08/01/react-official-overview-02/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <span class="icon-facebook">
+            </span>
+        </a>
+    </div>
+  </div>
+  <br/>
+
+
+
+
+
+
+  <aside class="author" role="complementary">
+    <div class="author">
+  <h2 class="page-title hr">
+    About
+  </h2>
+<div class="author-body">
   
     
-    <h2 id="y2018" class="hr">2018</h2>
-    <ul class="related-posts">
+  
+
+  
+
+  <img
+    src="/assets/img/me.png"
+    class="me"
+    alt="dubbsong"
     
-  
-  
+    
+  />
 
 
-<li class="h4">
-  <a href="/react/2018/08/01/react-official-overview-02/" data-flip="title">
-    <span>02. 시작 코드 체크 (Overview)</span>
-  </a>
-  <small><time datetime="2018-08-01T00:00:00+09:00">
-    01 Aug
-  </time></small>
-</li>
+  
+  <div class="author-body-description">
+    <p>오늘도 많이 배웁니다</p>
 
-  
+  </div>
+</div>
+</div>
 
-  
-  
-  
+  </aside>
+
+
+
+
+
+<aside class="related" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
+      
+      
+      
+        
+          
+          
+        
+        
+          
 
 
 <li class="h4">
@@ -202,13 +453,31 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
     <span>01. React란 무엇인가? (Overview)</span>
   </a>
   <small><time datetime="2018-08-01T00:00:00+09:00">
-    01 Aug
+    01 Aug 2018
   </time></small>
 </li>
 
+        
+      
+    
   </ul>
+</aside>
 
 
+
+      
+        <aside class="comments" role="complementary">
+  <h2>Comments</h2>
+  <hr/>
+
+  <div id="disqus_thread"></div>
+
+  <script>
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="02. 시작 코드 체크 (Overview)",this.page.identifier="/react/2018/08/01/react-official-overview-02",this.page.url="http://localhost:4000/react/2018/08/01/react-official-overview-02/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//dubbsong.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
 
       
 
@@ -369,7 +638,7 @@ Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
     <li>
       <input type="checkbox" id="list-item-6"/>
       <div  class="list-wrapper">
-      <a class="sidebar-nav-item active" href="/category/react/">React</a>
+      <a class="sidebar-nav-item" href="/category/react/">React</a>
        
     </div>
      <ul class="list-body">
