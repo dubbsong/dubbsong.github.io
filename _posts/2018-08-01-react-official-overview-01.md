@@ -23,7 +23,7 @@ categories: react
 <br>
 
 - React has a few different kinds of components, but we'll start with `React.Component` subclasses:
-  - React에는 몇 가지 다른 종류의 컴포넌트가 있지만, `React.Component` 하위 클래스로 시작해보자.
+  - React에는 몇 가지 다른 종류의 컴포넌트가 있지만, `React.Component` subclass로 시작해보자.
 
 ```react
 class ShoppingList extends React.Component {
@@ -56,7 +56,7 @@ class ShoppingList extends React.Component {
 <br>
 
 - Here, ShoppingList is a `React component class`, or `React component type`.
-  - 여기서 ShoppingList는 `React 컴포넌트 클래스` 또는 `React 컴포넌트 타입`이다.
+  - 여기서 ShoppingList는 `React 컴포넌트 class` 또는 `React 컴포넌트 타입`이다.
 - A component takes in parameters, called `props` (short for "properties"), and returns a hierarchy of views to display via the `render` method.
   - 컴포넌트는 `props`("properties"의 약자)라는 매개변수를 가져온다.
   - 그리고 `render` 메소드를 통해 나타낼 view의 계층 구조를 반환한다.
