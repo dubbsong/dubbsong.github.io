@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "02. font-size 속성 (Text)"
+title: "(Text 02) font-size 속성"
 categories: css
 ---
 

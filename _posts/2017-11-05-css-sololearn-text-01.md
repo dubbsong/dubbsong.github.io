@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "01. font-family 속성 (Text)"
+title: "(Text 01) font-family 속성"
 categories: css
 ---
 

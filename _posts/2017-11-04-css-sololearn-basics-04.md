@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "04. CSS 주석 (Basics)"
+title: "(Basics 04) CSS 주석"
 categories: css
 ---
 

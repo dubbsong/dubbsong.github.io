@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "05. 종속 & 상속 (Basics)"
+title: "(Basics 05) 종속 & 상속"
 categories: css
 ---
 
