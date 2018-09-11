@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "06. HTML 속성 (Basics)"
+title: "(Basics 06) HTML 속성"
 categories: html
 ---
 

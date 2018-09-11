@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "03. 제목, 가로줄, 주석 (Basics)"
+title: "(Basics 03) 제목, 가로줄, 주석"
 categories: html
 ---
 

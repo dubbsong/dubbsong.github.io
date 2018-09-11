@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "01. HTML이란 무엇인가? (Overview)"
+title: "(Overview 01) HTML이란 무엇인가?"
 categories: html
 ---
 

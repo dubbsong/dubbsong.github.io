@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "04. 블로그 생성하기 (Overview)"
+title: "(Overview 04) 블로그 생성하기"
 categories: html
 ---
 

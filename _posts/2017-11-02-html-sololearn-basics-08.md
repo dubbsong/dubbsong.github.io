@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "08. HTML 링크 (Basics)"
+title: "(Basics 08) HTML 링크"
 categories: html
 ---
 

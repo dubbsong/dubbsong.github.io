@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "07. HTML 이미지 (Basics)"
+title: "(Basics 07) HTML 이미지"
 categories: html
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "01. 토막글(paragraph) (Basics)"
+title: "(Basics 01) 토막글(paragraph)"
 categories: html
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "04. 블로그 프로젝트: About Me (Basics)"
+title: "(Basics 04) 블로그 프로젝트: About Me"
 categories: html
 ---
 

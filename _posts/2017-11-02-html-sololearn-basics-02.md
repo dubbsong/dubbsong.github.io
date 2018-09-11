@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "02. 텍스트 서식 (Basics)"
+title: "(Basics 02) 텍스트 서식"
 categories: html
 ---
 

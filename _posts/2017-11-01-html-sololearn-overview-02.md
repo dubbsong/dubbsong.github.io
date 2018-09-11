@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "02. HTML 문서 구조 (Overview)"
+title: "(Overview 02) HTML 문서 구조"
 categories: html
 ---
 

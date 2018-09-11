@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "05. HTML Element (Basics)"
+title: "(Basics 05) HTML Element"
 categories: html
 ---
 

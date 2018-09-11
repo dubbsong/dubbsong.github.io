@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "03. HTML 페이지 생성하기 (Overview)"
+title: "(Overview 03) HTML 페이지 생성하기"
 categories: html
 ---
 
