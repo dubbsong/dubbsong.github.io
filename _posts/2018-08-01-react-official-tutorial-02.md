@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "02. 시작 코드 체크 (Tutorial)"
+title: "(Tutorial 02) 시작 코드 체크"
 categories: react
 ---
 

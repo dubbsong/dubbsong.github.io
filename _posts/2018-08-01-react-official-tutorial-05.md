@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "05. 개발자 도구 (Tutorial)"
+title: "(Tutorial 05) 개발자 도구"
 categories: react
 ---
 

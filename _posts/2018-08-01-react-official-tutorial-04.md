@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "04. 대화형 컴포넌트 생성 (Tutorial)"
+title: "(Tutorial 04) 대화형 컴포넌트 생성"
 categories: react
 ---
 

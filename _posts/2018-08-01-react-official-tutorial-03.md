@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "03. props를 통한 데이터 전달 (Tutorial)"
+title: "(Tutorial 03) props를 통한 데이터 전달"
 categories: react
 ---
 

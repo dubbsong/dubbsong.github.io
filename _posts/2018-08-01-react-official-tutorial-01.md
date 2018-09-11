@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "01. React란 무엇인가? (Tutorial)"
+title: "(Tutorial 01) React란 무엇인가?"
 categories: react
 ---
 
