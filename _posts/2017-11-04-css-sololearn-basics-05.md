@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "05. Cascade & 상속 (The Basics)"
+title: "05. 종속 & 상속 (Basics)"
 categories: css
 ---
 
@@ -10,7 +10,7 @@ categories: css
 
 # CSS Style Cascade & Inheritance
 
-###### cascade & 상속
+###### 종속 & 상속
 
 ------
 
@@ -20,13 +20,17 @@ categories: css
 
 ## Cascade
 
+###### 종속
+
+<br>
+
 - The final appearance of a webpage is a result of different styling rules.
   - 웹페이지의 최종 모양은 다른 style 규칙의 결과이다.
 
 <br>
 
 - The three main sources of style information that form a cascade are:
-  - cascade를 형성하는 style 정보의 세 가지 주요 소스는 다음과 같다.
+  - 종속을 형성하는 style 정보의 세 가지 주요 소스는 다음과 같다.
 
 <br>
 

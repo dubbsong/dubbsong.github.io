@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "02. inline, embedded, external CSS (The Basics)"
+title: "02. inline, embedded, external CSS (Basics)"
 categories: css
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "06. Module 1 Quiz (The Basics)"
+title: "06. Module 1 Quiz (Basics)"
 categories: css
 ---
 

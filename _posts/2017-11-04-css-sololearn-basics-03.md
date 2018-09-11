@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "03. CSS 규칙 & 선택자 (The Basics)"
+title: "03. CSS 규칙 & 선택자 (Basics)"
 categories: css
 ---
 

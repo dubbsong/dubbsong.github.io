@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "01. CSS란 무엇인가? (The Basics)"
+title: "01. CSS란 무엇인가? (Basics)"
 categories: css
 ---
 
