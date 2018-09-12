@@ -43,7 +43,7 @@ categories: css
 
 - Result:
 
-![img](/assets/img/css-sololearn-the basics-02-01.png)
+![img](/assets/img/css-sololearn-basics-02-01.png)
 
 <br>
 
@@ -87,7 +87,7 @@ categories: css
 - All paragraphs have a white font and a gray background:
   - 모든 토막글은 흰색 글꼴과 회색 배경을 가진다.
 
-![img](/assets/img/css-sololearn-the basics-02-02.png)
+![img](/assets/img/css-sololearn-basics-02-02.png)
 
 <br>
 
@@ -143,7 +143,7 @@ p {
 
 - Result:
 
-![img](/assets/img/css-sololearn-the basics-02-03.png)
+![img](/assets/img/css-sololearn-basics-02-03.png)
 
 <br>
 

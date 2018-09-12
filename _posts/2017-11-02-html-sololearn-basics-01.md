@@ -45,7 +45,7 @@ categories: html
 
 - The result:
 
-![img](/assets/img/html-sololearn-html basics-01-01.jpeg)
+![img](/assets/img/html-sololearn-basics-01-01.jpeg)
 
 <br>
 
@@ -98,7 +98,7 @@ categories: html
 - Opening the HTML file in the browser shows that a single line break has been added to the paragraph:
   - 브라우저에서 HTML 파일을 열면, 줄 바꿈이 토막글에 추가되었음을 알 수 있다.
 
-![img](/assets/img/html-sololearn-html basics-01-02.jpeg)
+![img](/assets/img/html-sololearn-basics-01-02.jpeg)
 
 <br>
 

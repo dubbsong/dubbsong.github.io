@@ -69,7 +69,7 @@ categories: html
 - Each paragraph in the example is formatted differently to demonstrate what each tag does:
   - 예제의 각 토막글은 각 태그의 기능을 보여주기 위해 서식이 다르게 지정된다.
 
-![img](/assets/img/html-sololearn-html basics-02-01.jpeg)
+![img](/assets/img/html-sololearn-basics-02-01.jpeg)
 
 <br>
 

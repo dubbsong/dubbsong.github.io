@@ -50,7 +50,7 @@ categories: html
 
 - Result:
 
-![img](/assets/img/html-sololearn-html basics-09-01.jpeg)
+![img](/assets/img/html-sololearn-basics-09-01.jpeg)
 
 <br>
 
@@ -92,7 +92,7 @@ categories: html
 
 - Result:
 
-![img](/assets/img/html-sololearn-html basics-09-02.jpeg)
+![img](/assets/img/html-sololearn-basics-09-02.jpeg)
 
 <br>
 

@@ -88,7 +88,7 @@ categories: css
 
 - Result:
 
-![img](/assets/img/css-sololearn-the basics-05-01.png)
+![img](/assets/img/css-sololearn-basics-05-01.png)
 
 <br>
 

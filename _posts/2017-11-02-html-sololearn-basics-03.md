@@ -55,7 +55,7 @@ categories: html
 
 - Result:
 
-![img](/assets/img/html-sololearn-html basics-03-01.jpeg)
+![img](/assets/img/html-sololearn-basics-03-01.jpeg)
 
 <br>
 
@@ -101,7 +101,7 @@ categories: html
 
 - Result:
 
-![img](/assets/img/html-sololearn-html basics-03-02.jpeg)
+![img](/assets/img/html-sololearn-basics-03-02.jpeg)
 
 <br>
 
@@ -150,7 +150,7 @@ categories: html
 
 - Result:
 
-![img](/assets/img/html-sololearn-html basics-03-03.jpeg)
+![img](/assets/img/html-sololearn-basics-03-03.jpeg)
 
 <br>
 

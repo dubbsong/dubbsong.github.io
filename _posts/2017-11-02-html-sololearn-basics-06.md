@@ -33,7 +33,7 @@ categories: html
 - In this example, the value of "center" indicates that the content within the p element should be aligned to the center:
   - 이 예제에서 "center" 값은 p element 내의 content가 가운데에 정렬되어야 함을 나타낸다.
 
-![img](/assets/img/html-sololearn-html basics-06-01.jpeg)
+![img](/assets/img/html-sololearn-basics-06-01.jpeg)
 
 <br>
 
@@ -139,7 +139,7 @@ categories: html
 
 <br>
 
-![img](/assets/img/html-sololearn-html basics-06-02.png)
+![img](/assets/img/html-sololearn-basics-06-02.png)
 
 <br>
 

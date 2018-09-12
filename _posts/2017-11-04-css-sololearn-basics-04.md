@@ -48,7 +48,7 @@ p {
 - The comment does not appear in the browser:
   - 주석은 브라우저에 표시되지 않는다.
 
-![img](/assets/img/css-sololearn-the basics-04-01.png)
+![img](/assets/img/css-sololearn-basics-04-01.png)
 
 <br>
 

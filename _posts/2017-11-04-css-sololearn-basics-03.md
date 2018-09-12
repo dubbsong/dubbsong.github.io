@@ -44,7 +44,7 @@ h1 { color: orange; }
 
 - Where:
 
-![img](/assets/img/css-sololearn-the basics-03-01.png)
+![img](/assets/img/css-sololearn-basics-03-01.png)
 
 <br>
 
@@ -143,7 +143,7 @@ p {
 
 - Result:
 
-![img](/assets/img/css-sololearn-the basics-03-02.png)
+![img](/assets/img/css-sololearn-basics-03-02.png)
 
 <br>
 
@@ -240,7 +240,7 @@ p {
 - As a result, only the elements selected will be affected:
   - 결과적으로, 선택한 element만 영향을 받는다.
 
-![img](/assets/img/css-sololearn-the basics-03-03.png)
+![img](/assets/img/css-sololearn-basics-03-03.png)
 
 <br>
 
