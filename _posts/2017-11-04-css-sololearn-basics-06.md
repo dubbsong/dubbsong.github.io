@@ -11,7 +11,7 @@ categories: css
 ## QUIZ
 
 - From the three types of styling, which one is the most useful in terms of website optimization?
-  - style의 세 가지 타입 중, 웹사이트 최적화의 조건에 가장 유용한 것은 무엇인가?
+  - style의 세 가지 type 중, 웹사이트 최적화의 조건에 가장 유용한 것은 무엇인가?
 
 > `External`
 

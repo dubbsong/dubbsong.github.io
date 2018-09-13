@@ -59,7 +59,7 @@ h1 { color: orange; }
 
 > Each declaration includes a property name and a value, separated by a colon.
 >
-> 각 선언에는 콜론으로 구분된 속성 이름과 값이 포함된다.
+> 각 선언에는 콜론(:)으로 구분된 속성 이름과 값이 포함된다.
 
 ------
 

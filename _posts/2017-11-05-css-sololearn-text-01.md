@@ -17,7 +17,7 @@ categories: css
 - The font-family property specifies the font for an element.
   - font-family 속성은 element의 글꼴을 지정한다.
 - There are two types of font family names:
-  - font family 이름에는 두 가지 타입이 있다.
+  - font family 이름에는 두 가지 type이 있다.
 
 > `font family`: a specific font family (특정 글꼴 집합)
 >
