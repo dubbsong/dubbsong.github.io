@@ -67,14 +67,14 @@ h1 { color: orange; }
 
 ## Type Selectors
 
-###### 타입 선택자
+###### type 선택자
 
 <br>
 
 - The most common and easy to understand selectors are `type selectors`.
-  - 가장 일반적이고 이해하기 쉬운 선택자는 `타입 선택자`이다.
+  - 가장 일반적이고 이해하기 쉬운 선택자는 `type 선택자`이다.
 - This selector targets element types on the page.
-  - 이 선택자는 페이지의 element 타입을 겨냥한다.
+  - 이 선택자는 페이지의 element type을 겨냥한다.
 
 <br>
 

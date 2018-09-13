@@ -30,7 +30,7 @@ categories: html
 <br>
 
 - Formatting elements were designed to display special types of text:
-  - element 서식은 특별한 타입의 텍스트를 보여주도록 설계되었다.
+  - element 서식은 특별한 type의 텍스트를 보여주도록 설계되었다.
 
 ```html
 <html>

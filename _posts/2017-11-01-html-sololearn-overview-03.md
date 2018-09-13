@@ -115,7 +115,7 @@ categories: html
 ## QUIZ
 
 - What type of editor is used to edit HTML code?
-  - HTML 코드를 편집하는 데 사용되는 에디터의 타입은 무엇인가?
+  - HTML 코드를 편집하는 데 사용되는 에디터의 type은 무엇인가?
 
 > `text editor`
 
