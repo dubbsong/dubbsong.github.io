@@ -1,10 +1,10 @@
 ---
 layout: list
-title: Python
-slug: python
+title: jQuery
+slug: jquery
 menu: true
 submenu: false
-order: 8
+order: 6
 description: >
-  about Python
+  about jQuery
 ---

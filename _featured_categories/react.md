@@ -4,7 +4,7 @@ title: React
 slug: react
 menu: true
 submenu: false
-order: 6
+order: 7
 description: >
   about React
 ---
