@@ -12,13 +12,7 @@ categories: html
 
 ###### 블로그 프로젝트: My Skills
 
-------
-
 <br>
-
-<br>
-
-## My Skills
 
 - Let's create the `My Skills` section, which is an unordered list of languages you know.
   - 순서가 지정되지 않은 list `My Skills`를 생성해보자.
