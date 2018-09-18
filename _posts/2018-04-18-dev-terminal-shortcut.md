@@ -9,10 +9,12 @@ categories: dev
 1. 터미널 실행
    - `cmd` + `space bar` (Spotlight 검색창 열기)
    - `terminal` 입력
-2. 상단에 경로 설정
-   - `alias [단축키]='cd /Users/[관리자]/Desktop'` 입력
+2. 명령어 입력
+   - `$ nano .bash_profile`
+3. 상단에 경로 설정
+   - alias `단축키`='cd /Users/`관리자`/Desktop'
    - `alias dk='cd /Users/song/Desktop'` (바탕화면 경로의 단축키를 `dk`로 지정)
-3. 설정 저장
+4. 설정 저장
    - `control` + `X`
    - `Y` (Yes)
    - `Enter` (저장 완료)
