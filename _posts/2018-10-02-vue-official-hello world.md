@@ -10,6 +10,8 @@ categories: vue
 
 # VueJS Hello world
 
+<br>
+
 - testVue.html
 
 ```html
@@ -26,7 +28,7 @@ categories: vue
    <body>
       <!-- Vue.js -->
       <div id="app">
-         <p>{{message}}</p>
+         <p>{ { message } }</p>
       </div>
       
       <!-- script -->

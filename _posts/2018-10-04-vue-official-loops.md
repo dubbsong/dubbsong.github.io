@@ -21,7 +21,7 @@ categories: vue
    <div id="app">
       <ol>
          <li v-for="todo in todos">
-            {{ todo.text }}
+            { { todo.text } }
          </li>
       </ol>
    </div>

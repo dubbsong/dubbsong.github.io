@@ -19,7 +19,7 @@ categories: vue
 ```html
 <body>
    <div id="app">
-      <p>{{ message }}</p>
+      <p>{ { message } }</p>
       <button v-on:click="reverseMessage">
          메시지 뒤집기
       </button>

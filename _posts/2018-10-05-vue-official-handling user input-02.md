@@ -19,7 +19,7 @@ categories: vue
 ```html
 <body>
    <div id="app">
-      <p>{{ message }}</p>
+      <p>{ { message } }</p>
       <input v-model="message">
    </div>
    
