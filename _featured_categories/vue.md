@@ -1,10 +1,10 @@
 ---
 layout: list
-title: DataBase
-slug: db
+title: VueJS
+slug: vue
 menu: true
 submenu: false
-order: 11
+order: 7
 description: >
-  about DB
+  about VueJS
 ---
