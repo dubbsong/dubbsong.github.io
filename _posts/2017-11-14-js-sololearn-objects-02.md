@@ -126,7 +126,7 @@ var James = new person("James", 21);
 - Access the object's properties by using the `dot syntax`, as you did before.
   - 이전과 마찬가지로, `dot 구문`을 사용해서 객체의 속성에 액세스한다.
 
-![img](/assets/img/js-sololearn-object-02-01.png)
+![img](/assets/img/js-sololearn-objects-02-01.png)
 
 <br>
 

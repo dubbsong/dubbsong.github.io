@@ -43,7 +43,7 @@ var person = {
 - These values are called `properties`.
   - 이러한 값을 `속성`이라고 한다.
 
-![img](/assets/img/js-sololearn-object-01-01.png)
+![img](/assets/img/js-sololearn-objects-01-01.png)
 
 <br>
 
