@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML DOM
+title: HTML DOM 속성 & 메소드
 categories: html
 ---
 
@@ -8,7 +8,9 @@ categories: html
 
 <br>
 
-# HTML DOM
+# HTML DOM Properties & Methods
+
+###### HTML DOM 속성 & 메소드
 
 ------
 
