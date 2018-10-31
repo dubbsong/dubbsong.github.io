@@ -26,19 +26,19 @@ categories: jquery
 <br>
 
 - Fill in the blanks to select the first child of the div element.
-  - div element의 첫 번째 child(자식)을 선택해라.
+  - div element의 첫 번째 child(자식)를 선택해라.
 
 ```js
-$("div").children().eq(0);
+$('div').children().eq(0);
 ```
 
 <br>
 
 - Drag and drop from the options below to remove all children of the paragraph tag.
-  - 토막글 태그의 모든 children(자식)을 제거해라.
+  - \<p> 태그의 모든 children(자식들)을 제거해라.
 
 ```js
-$("p").children().remove();
+$('p').children().remove();
 ```
 
 <br>
@@ -47,11 +47,15 @@ $("p").children().remove();
   - 이 코드의 출력은 무엇인가?
 
 ```html
-<div><p>1</p></div>
-<div>2</div>
+<div>
+   <p>1</p>
+</div>
+<div>
+   2
+</div>
 
 <script>
-   alert($("p").parent().siblings().eq(0).text());
+   alert($('p').parent().siblings().eq(0).text());
 </script>
 ```
 

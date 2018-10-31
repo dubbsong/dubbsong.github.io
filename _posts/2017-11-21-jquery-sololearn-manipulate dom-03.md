@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(Manipulate DOM 03) element 제거"
+title: "(Manipulate DOM 03) element 제거하기"
 categories: jquery
 ---
 
@@ -8,20 +8,23 @@ categories: jquery
 
 <br>
 
-# jQuery: Remove Elements
+# jQuery Removing Elements
 
-###### element 제거
+###### element 제거하기
 
 <br>
 
 - We remove selected elements from the DOM using the `remove()` method.
-  - `remove()` 메소드를 사용하여 DOM에서 선택한 element를 제거한다.
+  - `remove()` 메소드를 사용해서 DOM에서 선택한 element를 제거한다.
+
+<br>
+
 - HTML:
 
 ```html
-<p style="color:red">Red</p>
-<p style="color:green">Green</p>
-<p style="color:blue">Blue</p>
+<p style="color:red">Red </p>
+<p style="color:green">Green </p>
+<p style="color:blue">Blue </p>
 ```
 
 <br>
@@ -29,7 +32,9 @@ categories: jquery
 - JS:
 
 ```js
-$("p").eq(1).remove();
+$(function() {
+   $('p').eq(1).remove();
+});
 ```
 
 [코드 실행 확인](https://code.sololearn.com/1124/#js)
@@ -37,10 +42,10 @@ $("p").eq(1).remove();
 <br>
 
 - This removes Green, the second paragraph element.
-  - 이렇게 하면 두 번째 토막글 element인 Green이 제거된다.
-- You can also use the `remove()` method on multiple selected elements, for example `$("p").remove()` removes all paragraphs.
-  - 선택한 여러 element에서 `remove()` 메소드를 사용할 수도 있다.
-  - 예를 들어 `$("p").remove()`는 모든 토막글을 제거한다.
+  - 이렇게 하면 두 번째 \<p> element인 Green이 제거된다.
+- You can also use the `remove()` method on multiple selected elements, for example `$('p').remove()` removes all paragraphs.
+  - 여러 선택된 element에서 `remove()` 메소드를 사용할 수도 있다.
+  - `$('p').remove()`는 모든 \<p>를 제거한다.
 
 <br>
 
@@ -54,7 +59,7 @@ $("p").eq(1).remove();
 
 ## Removing Content
 
-###### content 제거
+###### content 제거하기
 
 <br>
 
@@ -67,9 +72,9 @@ $("p").eq(1).remove();
 
 ```html
 <div>
-   <p style="color:red">Red</p>
-   <p style="color:green">Green</p>
-   <p style="color:blue">Blue</p>
+   <p style="color:red">Red </p>
+   <p style="color:green">Green </p>
+   <p style="color:blue">Blue </p>
 </div>
 ```
 
@@ -90,7 +95,9 @@ div {
 - JS:
 
 ```js
-$("div").empty();
+$(function() {
+   $('div').empty();
+});
 ```
 
 [코드 실행 확인](https://code.sololearn.com/1125/#js)
@@ -99,7 +106,7 @@ $("div").empty();
 
 > This removes all the three child elements of the div, leaving it empty.
 >
-> 이렇게 하면 div의 세 child(자식) element가 제거되고 비워진다.
+> 이렇게 하면 div의 세 child(자식) element가 모두 제거되고, 비워진다.
 
 ------
 
@@ -108,10 +115,10 @@ $("div").empty();
 ## QUIZ
 
 - Fill in the blanks to remove all siblings of the element with id="txt".
-  - id="txt" element의 모든 siblings(형제)를 제거해라.
+  - id="txt"로 element의 모든 siblings(형제)를 제거해라.
 
 ```js
-$("#txt").siblings().remove()
+$('#txt').siblings().remove();
 ```
 
 <br>
@@ -120,7 +127,7 @@ $("#txt").siblings().remove()
   - id="nav" element의 두 번째 child(자식) element를 비워라.
 
 ```js
-var e = $("#nav").children();
+var e = $('#nav').children();
 e.eq(1).empty();
 ```
 
