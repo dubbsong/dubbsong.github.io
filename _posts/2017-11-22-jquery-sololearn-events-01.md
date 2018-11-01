@@ -15,13 +15,15 @@ categories: jquery
 <br>
 
 - jQuery provides an efficient way to handle events.
-  - jQuery는 이벤트를 효율적으로 처리할 수 있는 방법을 제공한다.
+  - jQuery는 이벤트를 효율적으로 처리하는 방법을 제공한다.
 - Events occur when the user performs an action, such as clicking an element, moving the mouse, or submitting a form.
-  - 이벤트는 사용자가 element를 클릭하거나, 마우스를 움직이거나, form을 제출하는 등의 동작을 수행할 때 발생한다.
+  - 이벤트는 사용자가 element를 클릭하거나, 마우스를 움직이거나, form을 제출하는 등의 작업을 수행할 때 발생한다.
 - When an event occurs on a target element, a `handler function` is executed.
   - target element에서 이벤트가 발생하면, `핸들러 함수`가 실행된다.
 - For example, let's say we want to handle the `click` event on an element with id="demo" and display the current date when the button is clicked.
-  - 예를 들어, id="demo" element에서 `click` 이벤트를 처리하고 버튼을 클릭하면, 현재 날짜를 표시한다고 가정해보자.
+  - 예들 들어 id="demo" element에서 `click` 이벤트를 처리하고, 버튼을 클릭했을 때 현재 날짜를 표시한다고 가정해보자.
+- Using pure JavaScript, the code looks like:
+  - 순수 JavaScript를 사용하면, 코드는 다음과 같다.
 
 ```js
 var x = document.getElementById("demo");
@@ -31,14 +33,17 @@ x.onclick = function() {
 ```
 
 [코드 실행 확인](https://code.sololearn.com/1126/#js)
+
 <br>
 
 - The same event could be handled using jQuery with the following code:
   - jQuery를 사용해서 동일한 이벤트를 다음 코드로 처리할 수 있다.
 
 ```js
-$("#demo").click(function() {
-   $("body").html(Date());
+$(function() {
+   $("#demo").click(function() {
+      $("body").html(Date());
+   });
 });
 ```
 
@@ -47,10 +52,10 @@ $("#demo").click(function() {
 <br>
 
 - As you can see, the jQuery code is shorter and easier to read and write.
-  - 보다시피, jQuery 코드는 더 짧고, 읽기 쉽고, 쓰기 쉽다.
-- Notice that the event name is provided without the "on" prefix (i.e., `onclick` in JavaScript is `click` in jQuery).
+  - 보다시피 jQuery 코드는 읽거나 작성하기에 짧고 쉽다.
+- Notice, that the event name is provided without the "on" prefix (i.e., `onclick` in JavaScript is `click` in jQuery).
   - 이벤트 이름은 "on" 접두사 없이 제공된다.
-  - (즉, JavaScript의 `onclick`은, jQuery에서 `click`이다)
+  - (JavaScript의 `onclick`은 jQuery에서 `click`이다)
 
 <br>
 
@@ -64,7 +69,7 @@ $("#demo").click(function() {
 
 ## Common Events
 
-###### 공통 이벤트
+###### 일반적인 이벤트
 
 <br>
 
@@ -81,9 +86,9 @@ $("#demo").click(function() {
 
 - `click`: occurs when an element is clicked.
   - element가 클릭될 때 발생한다.
-- `dblclick`: occurs when an element is double-clicked.
-  - element가 더블 클릭될 때 발생한다.
-- `mouseenter`: occurs when the mouse pointer is over (enter) the selected element.
+- `dbclick`: occurs when an element is double-clicked.
+  - element가 두 번 클릭될 때 발생한다.
+- `mouseenter`: occurs when the mouse pointer is over (enters) the selected element.
   - 마우스 포인터가 선택한 element 위에 있을 때 발생한다.
 - `mouseleave`: occurs when the mouse pointer leaves the selected element.
   - 마우스 포인터가 선택한 element를 벗어날 때 발생한다.
@@ -112,35 +117,35 @@ $("#demo").click(function() {
 <br>
 
 - `submit`: occurs when a form is submitted.
-  - form이 제출될 때 발생한다.
+  - form 제출 시에 발생한다.
 - `change`: occurs when the value of an element has been changed.
   - element의 값이 변경되면 발생한다.
 - `focus`: occurs when an element gets focus.
-  - element가 focus를 얻을 때 발생한다.
+  - element가 focus를 얻으면 발생한다.
 - `blur`: occurs when an element loses focus.
-  - element가 focus를 잃을 때 발생한다.
+  - element가 focus를 잃으면 발생한다.
 
 <br>
 
 #### Document Events:
 
-###### 문서 이벤트
+###### document 이벤트
 
 <br>
 
 - `ready`: occurs when the DOM has been loaded.
   - DOM이 로딩될 때 발생한다.
 - `resize`: occurs when the browser window changes size.
-  - 브라우저 창의 사이즈가 변경될 때 발생한다.
+  - 브라우저 창이 크기를 변경하면 발생한다.
 - `scroll`: occurs when the user scrolls in the specified element.
-  - 사용자가 지정된 element에서 scroll 할 때 발생한다.
+  - 사용자가 지정된 element에서 스크롤 할 때 발생한다.
 
 <br>
 
 - As an example, let's change the content of a div when the user types in an input field.
-  - 예를 들어, 사용자가 input field에 입력할 때 div의 content를 변경해보자.
+  - 예를 들어 사용자가 input field에 입력할 때, div의 content를 변경해보자.
 - To do that, we need to handle the `keydown` event, which occurs when a key on the keyboard is pressed:
-  - 이렇게 하려면, 키보드의 key를 누를 때 발생하는 `keydown`  이벤트를 처리해야 한다.
+  - 이렇게 하려면 키보드의 key를 누를 때 발생하는 `keydown` 이벤트를 처리해야 한다.
 
 <br>
 
@@ -156,8 +161,10 @@ $("#demo").click(function() {
 - JS:
 
 ```js
-$("#name").keydown(function() {
-   $("#msg").html($("#name").val());
+$(function() {
+   $("#name").keydown(function() {
+      $("#msg").html($("#name").val());
+   });
 });
 ```
 
@@ -166,7 +173,7 @@ $("#name").keydown(function() {
 <br>
 
 - The code above handles the `keydown` event for the element with id="name" and assigns the content of the div with id="msg" the value of the input field.
-  - 위 코드는 id="name" element에 대한 `keydown` 이벤트를 처리하고, id="msg" div의 content를 input field의 값으로 지정한다.
+  - 위 코드는 id="name" element에 대한 `keydown` 이벤트를 처리하고, id="msg" div의 content를 input field의 값으로 할당한다.
 
 ------
 
@@ -183,13 +190,21 @@ $("#name").keydown(function() {
 - The `on()` method is used to attach an event to the selected element.
   - `on()` 메소드는 선택한 element에 이벤트를 첨부하는 데 사용된다.
 
+<br>
+
+- For example:
+
 ```js
-$("p").on("click", function() {
-   alert("clicked");
+$(function() {
+   $("p").on("click", function() {
+      alert("clicked");
+   });
 });
 ```
 
 [코드 실행 확인](https://code.sololearn.com/1129/#js)
+
+<br>
 
 - As you can see, the event name is passed as the first argument to the `on()` method.
   - 보다시피, 이벤트 이름은 `on()` 메소드의 첫 번째 인수로 전달된다.
@@ -200,15 +215,15 @@ $("p").on("click", function() {
 
 > The `on()` method is useful for binding the same handler function to multiple events.
 >
-> `on()` 메소드는 동일한 핸들러 함수를 여러 이벤트에 바인딩 하는 데 유용하다.
+> `on()` 메소드는 동일한 핸들러 함수를 여러 이벤트에 binding 하는 데 유용하다.
 
 > You can provide multiple event names separated by `spaces` as the first argument.
 >
 > `공백`으로 구분된 여러 이벤트 이름을 첫 번째 인수로 제공할 수 있다.
 
-> For example, you could use the same event handler for the `click` and `dblclick` events.
+> For example, you could use the same event handler for the `click` and `dbclick` events.
 >
-> 예를 들어, `click` 및 `dblclick` 이벤트에 동일한 이벤트 핸들러를 사용할 수 있다.
+> 예를 들어 `click`과 `dbclick` 이벤트에 동일한 이벤트 핸들러를 사용할 수 있다.
 
 ------
 
@@ -223,12 +238,17 @@ $("p").on("click", function() {
 - You can remove event handlers using the `off()` method.
   - `off()` 메소드를 사용해서 이벤트 핸들러를 제거할 수 있다.
 
-```js
-$("div").on("click", function() {
-   alert("Hi there!");
-});
+<br>
 
-$("div").off("click");
+- For example:
+
+```js
+$(function() {
+   $("div").on("click", function() {
+      alert('Hi there!');
+   });
+   $("div").off("click");
+});
 ```
 
 [코드 실행 확인](https://code.sololearn.com/1130/#js)
@@ -246,14 +266,16 @@ $("div").off("click");
 ## QUIZ
 
 - The event handler is a:
-  - 이벤트 핸들러는:
+  - 이벤트 핸들러는 다음과 같다.
 
 > `function`
+>
+> 함수
 
 <br>
 
 - Fill in the blanks to handle the click event on the paragraph tag.
-  - 토막글 태그에서 click 이벤트를 처리해라.
+  - \<p> 태그의 click 이벤트를 처리해라.
 
 ```js
 $("p").click(function() {
@@ -274,7 +296,7 @@ $("form").on("submit", function() {
 
 <br>
 
-- Fill in the blanks to remove the event handler for the focus event on the element with id="test".
+- Fill in. the blanks to remove the event handler for the focus event on the element with id="test".
   - id="test" element에서 focus 이벤트에 대한 이벤트 핸들러를 제거해라.
 
 ```js
