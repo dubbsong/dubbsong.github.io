@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Git
-slug: git
+title: C
+slug: c
 category: etc
 menu: false
-order: 3
+order: 4
 ---

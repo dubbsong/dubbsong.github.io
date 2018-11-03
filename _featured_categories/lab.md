@@ -1,10 +1,10 @@
 ---
 layout: list
-title: Python
-slug: python
+title: 오많배 LAB
+slug: lab
 menu: true
 submenu: false
-order: 10
+order: 7
 description: >
-  about Python
+  오많배 LAB
 ---

@@ -4,7 +4,7 @@ title: Django
 slug: django
 menu: true
 submenu: false
-order: 10
+order: 11
 description: >
   about Django
 ---
