@@ -11,25 +11,25 @@ categories: jquery
 ## QUIZ
 
 - Fill in the blanks to add an event handler to the paragraph.
-  - 토막글에 이벤트 핸들러를 추가해라.
+  - \<p>에 이벤트 핸들러를 추가해라.
 
 ```js
 $("p").on("click", function() {
    // some code
-})
+});
 ```
 
 <br>
 
 - What will be the output after the div is clicked two times?
-  - div가 두 번 클릭된 후의 출력은 무엇인가?
+  - div가 두 번 클릭된 후의 출력은 어떻게 되는가?
 
 ```html
 <div>1</div>
 
 <script>
    $("div").click(function() {
-      $("div").text($("div").text()+1);
+      $("div").text($("div").text() + 1);
    });
 </script>
 ```
@@ -45,12 +45,10 @@ $("p").on("click", function() {
 $("a").off("click");
 ```
 
-
-
 <br>
 
 - How many "a" characters will be output after the div is clicked three times?
-  - div가 세 번 클릭된 후에 "a"가 몇 번 출력되는가?
+  - div가 세 번 클릭된 후 "a" 문자가 몇 번 출력되는가?
 
 ```html
 <div>a</div>
