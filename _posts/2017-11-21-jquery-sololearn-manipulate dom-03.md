@@ -33,7 +33,7 @@ categories: jquery
 
 ```js
 $(function() {
-   $('p').eq(1).remove();
+   $("p").eq(1).remove();
 });
 ```
 
@@ -43,9 +43,9 @@ $(function() {
 
 - This removes Green, the second paragraph element.
   - 이렇게 하면 두 번째 \<p> element인 Green이 제거된다.
-- You can also use the `remove()` method on multiple selected elements, for example `$('p').remove()` removes all paragraphs.
+- You can also use the `remove()` method on multiple selected elements, for example `$("p").remove()` removes all paragraphs.
   - 여러 선택된 element에서 `remove()` 메소드를 사용할 수도 있다.
-  - `$('p').remove()`는 모든 \<p>를 제거한다.
+  - `$("p").remove()`는 모든 \<p>를 제거한다.
 
 <br>
 
@@ -96,7 +96,7 @@ div {
 
 ```js
 $(function() {
-   $('div').empty();
+   $("div").empty();
 });
 ```
 
@@ -118,7 +118,7 @@ $(function() {
   - id="txt"로 element의 모든 siblings(형제)를 제거해라.
 
 ```js
-$('#txt').siblings().remove();
+$("#txt").siblings().remove();
 ```
 
 <br>
@@ -127,7 +127,7 @@ $('#txt').siblings().remove();
   - id="nav" element의 두 번째 child(자식) element를 비워라.
 
 ```js
-var e = $('#nav').children();
+var e = $("#nav").children();
 e.eq(1).empty();
 ```
 

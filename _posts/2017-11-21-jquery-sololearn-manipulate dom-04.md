@@ -29,7 +29,7 @@ categories: jquery
   - div element의 첫 번째 child(자식)를 선택해라.
 
 ```js
-$('div').children().eq(0);
+$("div").children().eq(0);
 ```
 
 <br>
@@ -38,7 +38,7 @@ $('div').children().eq(0);
   - \<p> 태그의 모든 children(자식들)을 제거해라.
 
 ```js
-$('p').children().remove();
+$("p").children().remove();
 ```
 
 <br>
@@ -55,7 +55,7 @@ $('p').children().remove();
 </div>
 
 <script>
-   alert($('p').parent().siblings().eq(0).text());
+   alert($("p").parent().siblings().eq(0).text());
 </script>
 ```
 

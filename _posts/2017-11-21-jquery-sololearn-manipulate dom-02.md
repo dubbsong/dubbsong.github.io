@@ -35,7 +35,7 @@ categories: jquery
 
 ```js
 $(function() {
-   var e = $('p').parent();
+   var e = $("p").parent();
    e.css('border', '2px solid red');
 });
 ```
@@ -78,7 +78,7 @@ $(function() {
 
 ```js
 $(function() {
-   var e = $('p').parents();
+   var e = $("p").parents();
    e.css('border', '2px solid red');
 });
 ```
@@ -124,7 +124,7 @@ $(function() {
   - 예를 들어 페이지에 여러 div element가 있고, 세 번째 element를 선택하려는 경우를 보자.
 
 ```js
-$('div').eq(2);
+$("div").eq(2);
 ```
 
 <br>
@@ -156,7 +156,7 @@ $('div').eq(2);
   - div element의 모든 siblings(형제)를 선택하고, hide() 메소드를 호출해라.
 
 ```js
-var items = $('div').siblings();
+var items = $("div").siblings();
 items.hide();
 ```
 
@@ -169,7 +169,7 @@ items.hide();
 <p>a</p><p>b</p><p>c</p>
 
 <script>
-   alert($('p').eq(1).text());
+   alert($("p").eq(1).text());
 </script>
 ```
 
