@@ -11,7 +11,7 @@ categories: jquery
 ## QUIZ
 
 - Fill in the blanks to hide all paragraphs upon clicking the div element.
-  - div element를 클릭해서 모든 토막글을 숨겨라.
+  - div element를 클릭했을 때 모든 \<p>를 hide 해라.
 
 ```js
 $("div").click(function() {
@@ -25,9 +25,9 @@ $("div").click(function() {
   - 다음 애니메이션 그룹은 몇 초 동안 실행되는가?
 
 ```js
-$("p").animate({height:"10px"}, 1000);
-$("p").animate({width:"10px"}, 1000);
-$("p").animate({opacity:0.5}, 3000);
+$("p").animate({height: '10px'}, 1000);
+$("p").animate({width: '10px'}, 1000);
+$("p").animate({opacity: 0.5}, 3000);
 ```
 
 > `5`
@@ -35,12 +35,12 @@ $("p").animate({opacity:0.5}, 3000);
 <br>
 
 - Fill in the blanks to create a valid animation.
-  - 유효한 애니메이션을 생성해라.
+  - 공백을 채워서 유효한 애니메이션을 생성해라.
 
 ```js
 $("p").animate({
-   height: "10px",
-   width: "+=100px",
+   height: '10px',
+   width: '+=100px',
    opacity: 0.5
 }, 1000);
 ```
