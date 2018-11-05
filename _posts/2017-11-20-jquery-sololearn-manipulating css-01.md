@@ -27,7 +27,7 @@ categories: jquery
 - jQuery has several methods for CSS manipulation.
   - jQuery에는 CSS 조작을 위한 몇 가지 메소드가 있다.
 - The `addClass()` method adds one or more classes to the selected elements.
-  - `addClass()` 메소드는 하나 이상의 class를 선택한 element에 추가한다.
+  - `addClass()` 메소드는 선택한 element에 하나 이상의 class를 추가한다.
 
 <br>
 
@@ -53,7 +53,9 @@ categories: jquery
 - JS:
 
 ```js
-$("div").addClass("header");
+$(function() {
+   $("div").addClass("header");
+});
 ```
 
 [코드 실행 확인](https://code.sololearn.com/1115/#js)
@@ -61,15 +63,15 @@ $("div").addClass("header");
 <br>
 
 - The above code assigns the div element the class "header".
-  - 위 코드는 div element에 class "header"를 할당한다.
+  - 위 코드는 div element에 class="header"를 할당한다.
 
 <br>
 
 > To specify multiple classes within the addClass() method, just separate them using spaces.
 >
-> addClass() 메소드 내에 여러 class를 지정하려면, 공백을 사용해서 class를 구분하면 된다.
->
-> For example: `$("div").addClass("class1 class2 class3")`
+> addClass() 메소드 내에 여러 class를 지정하려면, 공백을 사용해서 구분하면 된다.
+
+> 예: `$("div").addClass("class1 class2 class3");`
 
 <br>
 
@@ -78,12 +80,10 @@ $("div").addClass("header");
 - The `removeClass()` method removes one or more class names from the selected elements.
   - `removeClass()` 메소드는 선택한 element에서 하나 이상의 class name을 제거한다.
 
-<br>
-
-- For example:
-
 ```js
-$("div").removeClass("red");
+$(function() {
+   $("div").removeClass("red");
+});
 ```
 
 [코드 실행 확인](https://code.sololearn.com/1116/#js)
@@ -97,23 +97,23 @@ $("div").removeClass("red");
 
 > Again, multiple class names can be specified by separating them using spaces.
 >
-> 여러 class name은 공백을 사용해 구분해서 지정할 수 있다.
+> 여러 class name은 공백으로 구분해서 지정할 수 있다.
 
 ------
 
 <br>
 
-## toggleClass()
+## toggleClass() Method
 
 ###### toggleClass() 메소드
 
 <br>
 
 - The `toggleClass()` method toggles between adding/removing classes from the selected elements, meaning that if the specified class exists for the element, it is removed, and if it does not exist, it is added.
-  - `toggleClass()` 메소드는 선택한 element에서 class 추가/제거를 toggle 한다.
-  - 즉, 지정된 class가 element에 존재하면 제거되고, 존재하지 않으면 추가된다.
+  - `toggleClass()` 메소드는 선택한 element에서 class를 추가/제거로 토글한다.
+  - 즉, 지정된 class가 element에 대해 존재하면 제거되고, 그렇지 않으면 추가된다.
 - To demonstrate this in action, we will handle a button click event to toggle a class.
-  - 이 동작을 보여주기 위해 버튼 클릭 이벤트를 처리해서 class를 toggle 한다.
+  - 이를 실제로 해보이기 위해, 버튼 click 이벤트를 처리해서 class를 토글해보자.
 
 <br>
 
@@ -153,7 +153,7 @@ $(function() {
 
 > The code above toggles the class name "red" upon clicking the button.
 >
-> 위 코드는 버튼을 클릭할 때 class name "red"를 toggle 한다.
+> 위 코드는 버튼을 클릭할 때 class name "red"를 토글한다.
 
 ------
 
@@ -171,7 +171,7 @@ $("p").addClass("text menu");
 <br>
 
 - Which class name will the \<p class="a b">\</p> element have after the following code?
-  - \<p class="a b">\</p> element는 다음 코드 후에 어떤 class name이 되는가?
+  - \<p class="a b">\</p> element는 다음 코드 후에 어떤 class name을 가지는가?
 
 ```js
 $("p").addClass("c");
@@ -183,12 +183,16 @@ $("p").removeClass("a c");
 <br>
 
 - Will the paragraph have a border after this code?
-  - 이 코드 후 토막글에 테두리가 생기는가?
+  - 아래 코드 이후, \<p>에 테두리가 생기는가?
 
 ```html
 <style>
-   .test { border-style: solid; }
+   .test {
+      border-style: solid;
+   }
 </style>
+
+<p>Some text</p>
 
 <script>
    $(function() {
