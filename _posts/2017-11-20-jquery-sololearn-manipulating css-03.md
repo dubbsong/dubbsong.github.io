@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(Manipulating CSS 03) 치수(Dimension)"
+title: "(Manipulating CSS 03) Dimensions(치수)"
 categories: jquery
 ---
 
@@ -8,7 +8,7 @@ categories: jquery
 
 <br>
 
-# jQuery Dimension
+# jQuery Dimensions
 
 ###### 치수
 
@@ -20,12 +20,14 @@ categories: jquery
 <br>
 
 - Let's set both the width and height of a div to 100px, as well as set a background color for it:
-  - div의 너비와 높이를 100px로 설정하고, 배경색도 설정해보자.
+  - div의 width와 height를 100px로 설정하고, 배경색도 지정해보자.
 
 ```js
-$("div").css("background-color", "red");
-$("div").width(100);
-$("div").height(100);
+$(function() {
+   $("div").css('background-color', 'red');
+   $("div").width(100);
+   $("div").height(100);
+});
 ```
 
 [코드 실행 확인](https://code.sololearn.com/1120/#js)
@@ -37,11 +39,11 @@ $("div").height(100);
 - The `width()` and `height()` methods get and set the dimensions without the padding, borders and margins.
   - `width()`와 `height()` 메소드는 padding, border, margin 없이 치수를 가져오고 설정한다.
 - The `innerWidth()` and `innerHeight()` methods also include the padding.
-  - `innerWidth()`와 `innerHeight()` 메소드에는 padding도 포함된다.
+  - `innerWidth()`와 `innerHeight()` 메소드는 padding이 포함된다.
 - The `outerWidth()` and `outerHeight()` methods include the padding and borders.
-  - `outerWidth()`와 `outerHeight()` 메소드는 padding과 border를 포함한다.
+  - `outerWidth()`와 `outerHeight()` 메소드는 padding과 border가 포함된다.
 - Check out this image to understand how they work:
-  - 이것이 어떻게 작동하는지를 이해하기 위해 아래 이미지를 살펴보자.
+  - 이것들이 어떻게 작동하는지를 이해하기 위해 아래 이미지를 확인해보자.
 
 ![img](/assets/img/jquery-sololearn-manipulating css-03-01.png)
 
@@ -94,6 +96,12 @@ $(function() {
 
 [코드 실행 확인](https://code.sololearn.com/1121/#js)
 
+<br>
+
+> Run the code to see the values returned by the dimension methods.
+>
+> 코드를 실행해 dimension 메소드에서 반환한 값을 확인해보자.
+
 ------
 
 <br>
@@ -101,7 +109,7 @@ $(function() {
 ## QUIZ
 
 - Fill in the blanks to set the height of the paragraph with the id="demo" to 68px.
-  - id="demo" 토막글의 높이를 68px로 설정해라.
+  - id="demo" \<p>의 height를 68px로 설정해라.
 
 ```js
 $("#demo").height(68);
@@ -117,7 +125,7 @@ $("#demo").height(68);
 
 <script>
    $(function() {
-      $("div").css("padding", 5px);
+      $("div").css('padding', '5px');
       alert($("div").innerWidth());
    });
 </script>
