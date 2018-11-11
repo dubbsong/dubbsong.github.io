@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "(Basic 02) Hello World!"
-categories: c
+categories: etc
 ---
 
 ###### [SoloLearn](https://www.sololearn.com/) C 번역

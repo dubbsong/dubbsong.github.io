@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "(Basic 01) C란 무엇인가?"
-categories: c
+categories: etc
 ---
 
 ###### [SoloLearn](https://www.sololearn.com/) C 번역
