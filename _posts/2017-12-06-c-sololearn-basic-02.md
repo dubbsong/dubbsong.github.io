@@ -2,13 +2,14 @@
 layout: post
 title: "(Basic 02) Hello World!"
 categories: etc
+tags: c
 ---
 
 ###### [SoloLearn](https://www.sololearn.com/) C 번역
 
 <br>
 
-# C: Hello World!
+# Hello World!
 
 <br>
 

@@ -2,19 +2,10 @@
 layout: post
 title: "(Basic 01) C란 무엇인가?"
 categories: etc
+tags: c
 ---
 
 ###### [SoloLearn](https://www.sololearn.com/) C 번역
-
-<br>
-
-# What is C?
-
-###### C란 무엇인가?
-
-------
-
-<br>
 
 <br>
 
