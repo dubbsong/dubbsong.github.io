@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "(Basic 01) 데이터베이스 소개"
-categories: sql
+categories: db
 ---
 
 ###### [SoloLearn](https://www.sololearn.com/) SQL 번역
