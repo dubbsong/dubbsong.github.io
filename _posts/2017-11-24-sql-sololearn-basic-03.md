@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "(Basic 03) SQL 구문 규칙"
-categories: etc
-tags: sql
+categories: db
 ---
 
 ###### [SoloLearn](https://www.sololearn.com/) SQL 번역
