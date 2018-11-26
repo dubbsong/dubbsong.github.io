@@ -4,5 +4,5 @@ title: Books
 slug: books
 category: etc
 menu: false
-order: 5
+order: 10
 ---

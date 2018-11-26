@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: C
-slug: c
+title: jQuery
+slug: jquery
 category: etc
 menu: false
-order: 9
+order: 3
 ---

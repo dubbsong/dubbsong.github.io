@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: C
-slug: c
+title: Python
+slug: py
 category: etc
 menu: false
-order: 9
+order: 6
 ---
