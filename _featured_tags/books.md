@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: VueJS
-slug: vue
-category: etc
+title: Books
+slug: books
+category: dev
 menu: false
 order: 4
 ---

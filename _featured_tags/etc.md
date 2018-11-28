@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: React
-slug: react
-category: etc
+title: etc
+slug: etc
+category: dev
 menu: false
 order: 5
 ---

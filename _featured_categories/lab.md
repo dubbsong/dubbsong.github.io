@@ -4,7 +4,7 @@ title: 오많배 LAB
 slug: lab
 menu: true
 submenu: false
-order: 7
+order: 6
 description: >
   오많배 LAB
 ---

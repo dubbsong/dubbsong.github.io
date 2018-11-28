@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: jQuery
-slug: jquery
-category: etc
+title: DataBase
+slug: db
+category: dev
 menu: false
 order: 3
 ---

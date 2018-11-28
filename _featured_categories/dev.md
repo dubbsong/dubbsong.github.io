@@ -3,8 +3,8 @@ layout: list
 title: about Dev
 slug: dev
 menu: true
-submenu: false
-order: 13
+submenu: true
+order: 7
 description: >
   about Dev
 ---
