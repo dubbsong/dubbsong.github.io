@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "(Basic 05) DISTINCT & LIMIT 키워드"
-categories: db
+categories: dev
+tags: db
 ---
 
 ###### [SoloLearn](https://www.sololearn.com/) SQL 번역

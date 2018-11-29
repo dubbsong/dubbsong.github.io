@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "(Basic 04) 여러 column 선택하기"
-categories: db
+categories: dev
+tags: db
 ---
 
 ###### [SoloLearn](https://www.sololearn.com/) SQL 번역

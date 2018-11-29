@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "(Basic 06) 결과 정렬"
-categories: db
+categories: dev
+tags: db
 ---
 
 ###### [SoloLearn](https://www.sololearn.com/) SQL 번역

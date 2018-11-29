@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "(Basic 02) SQL 문: SELECT"
-categories: db
+categories: dev
+tags: db
 ---
 
 ###### [SoloLearn](https://www.sololearn.com/) SQL 번역

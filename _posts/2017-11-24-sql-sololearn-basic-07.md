@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "(Basic 07) Module 1 Quiz"
-categories: db
+categories: dev
+tags: db
 ---
 
 ###### [SoloLearn](https://www.sololearn.com/) SQL 번역
