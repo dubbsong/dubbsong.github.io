@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: jQuery
-slug: jquery
+title: Basic
+slug: basic
 category: dev
 menu: false
-order: 2
+order: 1
 ---
