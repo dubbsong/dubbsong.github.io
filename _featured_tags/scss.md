@@ -4,5 +4,5 @@ title: Sass/SCSS
 slug: scss
 category: dev
 menu: false
-order: 4
+order: 5
 ---

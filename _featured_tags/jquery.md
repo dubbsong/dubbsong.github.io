@@ -4,5 +4,5 @@ title: jQuery
 slug: jquery
 category: dev
 menu: false
-order: 3
+order: 4
 ---
