@@ -2,7 +2,6 @@
 layout: post
 title: "VS Code 단축키로 열기 on 터미널"
 categories: dev
-tags: etc
 ---
 
 # VS Code 단축키로 열기 on 터미널

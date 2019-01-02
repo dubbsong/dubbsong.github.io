@@ -2,7 +2,6 @@
 layout: post
 title: "GitHub + Jekyll 블로그 만들기"
 categories: dev
-tags: etc
 ---
 
 # Jekyll 설치 및 GitHub 온라인 저장소 만들기
