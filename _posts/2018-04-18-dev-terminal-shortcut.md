@@ -2,6 +2,7 @@
 layout: post
 title: "단축키로 쉽게 경로 이동하기 on 터미널"
 categories: dev
+tags: etc
 ---
 
 # 단축키로 쉽게 경로 이동하기 on 터미널
