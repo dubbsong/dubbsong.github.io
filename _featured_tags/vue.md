@@ -4,5 +4,5 @@ title: VueJS
 slug: vue
 category: dev
 menu: false
-order: 6
+order: 5
 ---
