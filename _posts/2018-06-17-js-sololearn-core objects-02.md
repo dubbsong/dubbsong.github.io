@@ -19,9 +19,12 @@ categories: js
 
 ```js
 var courses = new Array(3);
-courses[0] = "HTML";
-courses[1] = "CSS";
-courses[2] = "JS";
+
+courses[0] = 'HTML';
+courses[1] = 'CSS';
+courses[2] = 'JS';
+
+document.write(courses[2]);	// JS
 ```
 
 [코드 실행 확인](https://code.sololearn.com/696/#js)
@@ -41,16 +44,19 @@ courses[2] = "JS";
 <br>
 
 - JavaScript arrays are dynamic, so you can declare an array and not pass any arguments with the Array() constructor.
-  - JavaScript 배열은 동적이므로, 배열을 선언하고 Array() 생성자로 인수를 전달하지 않을 수 있다.
+  - JavaScript 배열은 동적이므로, Array() 생성자를 사용해서 인수를 전달하지 않고 배열을 선언할 수 있다.
 - You can then add the elements dynamically.
-  - 그런 다음 element를 동적으로 추가할 수 있다.
+  - 그런 다음 동적으로 element를 추가할 수 있다.
 
 ```js
 var courses = new Array();
-courses[0] = "HTML";
-courses[1] = "CSS";
-courses[2] = "JS";
-courses[3] = "C++";
+
+courses[0] = 'HTML';
+courses[1] = 'CSS';
+courses[2] = 'JS';
+courses[3] = 'C++';
+
+document.write(courses[2]);	// JS
 ```
 
 [코드 실행 확인](https://code.sololearn.com/695/#js)
@@ -59,7 +65,7 @@ courses[3] = "C++";
 
 > You can add as many elements as you need to.
 >
-> 필요한 만큼 element를 추가할 수 있다.
+> 필요한 만큼 많은 element를 추가할 수 있다.
 
 <br>
 
@@ -70,10 +76,12 @@ courses[3] = "C++";
 <br>
 
 - For greater simplicity, readability, and execution speed, you can also declare arrays using the `array literal` syntax.
-  - 단순성, 가독성, 실행 속도를 높이기 위해 `배열 리터럴` 구문을 사용해서 배열을 선언할 수도 있다.
+  - 단순성, 가독성, 실행 속도를 높이기 위해, `배열 리터럴` 구문을 사용해서 배열을 선언할 수도 있다.
 
 ```js
-var courses = ["HTML", "CSS", "JS"];
+var courses = ['HTML', 'CSS', 'JS'];
+
+document.write(courses[2]);	// JS
 ```
 
 [코드 실행 확인](https://code.sololearn.com/697/#js)
@@ -81,13 +89,13 @@ var courses = ["HTML", "CSS", "JS"];
 <br>
 
 - This results in the same array as the one created with the `new Array()` syntax.
-  - 결과적으로 `new Array()` 구문으로 생성된 배열과 동일한 배열이 된다.
+  - 결과적으로 `new Array()` 구문을 사용해서 생성한 배열과 동일한 배열이 된다.
 
 <br>
 
 > You can access and modify the elements of the array using the index number, as you did before.
 >
-> 이전과 마찬가지로, index number를 사용해서 배열의 element에 액세스하고 수정할 수 있다.
+> 이전과 마찬가지로, index(색인) 번호를 사용해서 배열의 element에 액세스하고 수정할 수 있다.
 
 > The `array literal` syntax is the recommended way to declare arrays.
 >
@@ -99,11 +107,20 @@ var courses = ["HTML", "CSS", "JS"];
 
 ## QUIZ
 
-- By entering var example = new Array(); we create an empty array which can be filled...
-  - var example = new Array();를 입력해서 ... 채울 수 있는 빈 배열을 생성한다.
+- Please insert the missing characters to output the third member of the array.
+  - 배열의 세 번째 member를 출력해라.
 
-> `anytime later'
+```js
+document.write(example[2]);
+```
+
+<br>
+
+- By entering var example = new Array(); we create an empty array which can be filled...
+  - var example = new Array();를 입력해서, ...채워질 수 있는 빈 배열을 생성한다.
+
+> `anytime later`
 >
-> 나중에 언제든
+> 나중에 언제든지
 
 <br>
