@@ -15,7 +15,7 @@ categories: js
 <br>
 
 - Use the `object literal` or `initializer` syntax to create single objects.
-  - 한 객체를 생성하기 위해 `객체 리터럴` 또는 `초기화` 구문을 사용해라.
+  - 객체를 하나 생성하기 위해 `객체 리터럴` 또는 `초기화` 구문을 사용한다.
 
 ```js
 var John = {
@@ -33,11 +33,11 @@ var James = {
 
 > Objects consist of properties, which are used to describe an object.
 >
-> 객체는 객체를 설명하는 데 사용되는 속성들로 구성된다.
+> 객체는 객체를 설명하는 데 사용되는 속성으로 구성된다.
 
 > Values of object properties can either contain primitive data types or other objects.
 >
-> 객체 속성의 값은 초기 데이터 type 또는 다른 객체를 포함시킬 수 있다.
+> 객체 속성의 값은 원시 데이터 type 또는 다른 객체를 포함할 수 있다.
 
 ------
 
@@ -64,18 +64,14 @@ var James = {
    name: "James",
    age: 21
 };
+
+document.write(John.age);	// 25
 ```
 
 <br>
 
 - No matter how the object is created, the syntax for accessing the properties and methods does not change.
-  - 객체가 어떻게 생성되는지 상관없이, 속성과 메소드에 액세스하는 구문은 변경되지 않는다.
-
-```js
-document.write(John.age);	// 25
-```
-
-[코드 실행 확인](https://code.sololearn.com/691/#js)
+  - 객체가 어떻게 생성됐는지 상관없이, 속성과 메소드에 액세스하는 구문은 변경되지 않는다.
 
 ------
 

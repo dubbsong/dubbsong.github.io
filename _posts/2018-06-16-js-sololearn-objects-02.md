@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(Objects 02) 직접 객체 생성하기"
+title: "(Objects 02) 객체 생성하기"
 categories: js
 ---
 
@@ -15,7 +15,7 @@ categories: js
 <br>
 
 - In the previous lesson, we created an object using the `object literal` (or initializer) syntax.
-  - 이전 레슨에서, `객체 리터럴` 구문을 사용해서 객체를 생성했다.
+  - 이젠 레슨에서, `객체 리터럴` 구문(또는 초기화)을 사용해 객체를 생성했다.
 
 ```js
 var person = {
@@ -28,11 +28,11 @@ var person = {
 <br>
 
 - This allows you to create only a single object.
-  - 이렇게 하면 한 객체만 생성할 수 있다.
+  - 이렇게 하면 하나의 객체만 생성할 수 있다.
 - Sometimes, we need to set an `"object type"` that can be used to create a number of objects of a single type.
   - 때로는 한 type의 여러 객체를 생성하는 데 사용할 수 있는 `"객체 type"`을 설정해야 한다.
 - The standard way to create an "object type" is to use an object `constructor function`.
-  - "객체 type"을 생성하는 표준 방법은 객체 `생성자 함수`를 사용하는 것이다.
+  - "객체 type"을 생성하는 일반적인 방법은, 객체 `생성자 함수`를 사용하는 것이다.
 
 ```js
 function person(name, age, color) {
@@ -45,7 +45,7 @@ function person(name, age, color) {
 <br>
 
 - The above function (person) is an object constructor, which takes parameters and assigns them to the object properties.
-  - 위 함수(person)는 매개변수를 가져와서 객체 속성에 가져온 매개변수를 할당하는 객체 생성자다.
+  - 위 함수(person)는 매개변수를 가져와서 객체 속성에 할당하는 객체 생성자이다.
 
 <br>
 
@@ -59,7 +59,7 @@ function person(name, age, color) {
 
 > It is a keyword, and its value cannot be changed.
 >
-> this는 키워드이며, 값을 변경할 수 없다.
+> `this`는 키워드이며, 값을 변경할 수 없다.
 
 ------
 
@@ -72,7 +72,7 @@ function person(name, age, color) {
 <br>
 
 - Once you have an object constructor, you can use the `new` keyword to create new objects of the same type.
-  - 객체 생성자가 있으면, `new` 키워드를 사용해서 동일한 type의 새 객체를 생성할 수 있다.
+  - 객체 생성자가 있다면, `new` 키워드를 사용해서 동일한 type의 새로운 객체를 생성할 수 있다.
 
 ```js
 function person(name, age, color) {
@@ -92,20 +92,20 @@ document.write(p2.name);	// Amy
 
 <br>
 
-> *p1* and *p2* are now objects of the `person` type.
+> p1 and p2 are now objects of the `person` type.
 >
-> p1과 p2는 이제 `person` type의 객체다.
+> p1과 p2는 이제 `person` type의 객체이다.
 
 > Their properties are assigned to the corresponding values.
 >
-> 해당 속성은 해당 값에 할당된다.
+> 속성들이 해당 값에 할당된다.
 
 <br>
 
 <br>
 
 - Consider the following example.
-  - 아래 예제를 살펴보자.
+  - 다음 예제를 살펴보자.
 
 ```js
 function person(name, age) {
@@ -160,14 +160,16 @@ function movie(title, director) {
 <br>
 
 - Which two components are necessary in order to use information contained within an object?
-  - 객체에 포함된 정보를 사용하려면 어떤 두 가지 컴포넌트가 필요한가?
+  - 객체에 포함된 정보를 사용하기 위해 어떤 두 가지 컴포넌트가 필요한가?
+- Select all that apply.
+  - 해당되는 모든 것을 선택해라.
 
+> [ ] `object's name`
+>
 > [ ] constructor function's name
 >
 > [ ] keyword "this"
 >
 > [ ] `property's name`
->
-> [ ] `object's name`
 
 <br>

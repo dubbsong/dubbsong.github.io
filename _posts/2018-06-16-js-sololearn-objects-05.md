@@ -12,9 +12,11 @@ categories: js
 
 - An object's properties are similar to variables; methods are similar to:
   - 객체의 속성은 변수와 유사하다.
-  - 메소드는 다음과 유사하다.
+  - 메소드는 ...와 유사하다.
 
 > `functions`
+>
+> 함수
 
 <br>
 
@@ -22,7 +24,7 @@ categories: js
   - 다음 표현식의 결과는 무엇인가?
 
 ```js
-var myString = "abcdef";
+var myString = 'abcdef';
 document.write(myString.length);
 ```
 
@@ -31,8 +33,7 @@ document.write(myString.length);
 <br>
 
 - Complete the expression to create an object constructor, taking into account that "height" and "weight" are properties and "calculate" is a method for the given object:
-  - "height"와 "weight"는 속성이고, "calculate"는 주어진 객체의 메소드다.
-  - 이를 고려해서 객체 생성자를 생성해라.
+  - "height"와 "weight" 는 속성이고, "calculate"는 주어진 객체에 대한 메소드라는 것을 고려해서, 객체 생성자를 생성하는 표현식을 완성해라.
 
 ```js
 function mathCalc(height, weight) {
