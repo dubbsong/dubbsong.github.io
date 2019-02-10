@@ -11,7 +11,7 @@ categories: js
 ## QUIZ
 
 - Given the array below, please complete the expression to be alerted with "apple".
-  - 아래 주어진 배열을 "apple"로 alert 할 표현식을 완성해라.
+  - 주어진 배열을 참조해서, "apple"을 alert 하는 표현식을 완성해라.
 
 ```js
 var fruits = new Array("pear", "orange", "apple", "grapefruit");
@@ -33,10 +33,11 @@ alert(Math.sqrt(36));
 <br>
 
 - Please fill in the blanks to output the current minutes:
-  - 현재 분을 출력해라.
+  - 현재 분(minutes)을 출력해라.
 
 ```js
 var date = new Date();
+
 alert(date.getMinutes());
 ```
 
@@ -46,7 +47,8 @@ alert(date.getMinutes());
   - 이 코드의 출력은 무엇인가?
 
 ```js
-var arr = new Array("a", "b", "c");
+var arr = new Array('a', 'b', 'c');
+
 alert(arr[1]);
 ```
 
@@ -55,7 +57,7 @@ alert(arr[1]);
 <br>
 
 - Drag and drop from the options below to get alerted with the value of the PI constant.
-  - PI 상수 값을 alert 해라.
+  - PI 상수 값으로 alert 해라.
 
 ```js
 alert(Math.PI);
