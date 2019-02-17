@@ -4,7 +4,7 @@ title: about Dev
 slug: dev
 menu: true
 submenu: true
-order: 7
+order: 6
 description: >
   about Dev
 ---

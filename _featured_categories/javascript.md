@@ -4,7 +4,7 @@ title: JavaScript
 slug: js
 menu: true
 submenu: false
-order: 5
+order: 4
 description: >
   about JavaScript
 ---

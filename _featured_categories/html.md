@@ -4,7 +4,7 @@ title: HTML
 slug: html
 menu: true
 submenu: false
-order: 3
+order: 2
 description: >
   about HTML
 ---
