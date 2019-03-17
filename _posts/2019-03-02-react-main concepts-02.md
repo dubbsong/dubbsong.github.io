@@ -118,7 +118,7 @@ ReactDOM.render(
 );
 ```
 
-[코드 실행 확인](https://codepen.io/pen?&editable=true&editors=0010)
+[코드 실행 확인](https://reactjs.org/redirect-to-codepen/introducing-jsx)
 
 <br>
 

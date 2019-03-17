@@ -81,7 +81,7 @@ const element = <h1>Hello World!</h1>;
 ReactDOM.render(element, document.getElementById('root'));
 ```
 
-[코드 실행 확인](https://codepen.io/pen?&editable=true&editors=0010)
+[코드 실행 확인](https://reactjs.org/redirect-to-codepen/rendering-elements/render-an-element)
 
 <br>
 
@@ -131,7 +131,7 @@ function tick() {
 setInterval(tick, 1000);
 ```
 
-[코드 실행 확인](https://codepen.io/pen?&editable=true&editors=0010)
+[코드 실행 확인](https://reactjs.org/redirect-to-codepen/rendering-elements/update-rendered-element)
 
 <br>
 

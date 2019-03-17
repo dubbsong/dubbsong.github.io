@@ -16,17 +16,17 @@ tags: react
 
 ```react
 ReactDOM.render(
-  <h1>Hello, World!</h1>,
+  <h1>Hello World!</h1>,
   document.getElementById('root')
 );
 ```
 
-[코드 실행 확인](https://codepen.io/pen?&editable=true&editors=0010)
+[코드 실행 확인](https://reactjs.org/redirect-to-codepen/hello-world)
 
 <br>
 
 - It display a heading saying "Hello World!" on the page.
-  - 위 코드는 웹 페이지에 "Hello, World!"를 표시한다.
+  - 위 코드는 웹 페이지에 "Hello World!"를 표시한다.
 
 ------
 
