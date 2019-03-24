@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(공식 리액트 번역) 03. Rendering Elements"
+title: "(공식 리액트 Docs) 03. Rendering Elements"
 categories: dev
 tags: react
 ---

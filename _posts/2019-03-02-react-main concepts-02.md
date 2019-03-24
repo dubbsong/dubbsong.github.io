@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(공식 리액트 번역) 02. Introducing JSX"
+title: "(공식 리액트 Docs) 02. Introducing JSX"
 categories: dev
 tags: react
 ---

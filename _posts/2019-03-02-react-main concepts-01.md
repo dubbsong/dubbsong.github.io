@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(공식 리액트 번역) 01. Hello World"
+title: "(공식 리액트 Docs) 01. Hello World"
 categories: dev
 tags: react
 ---
