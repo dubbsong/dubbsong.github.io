@@ -47,7 +47,7 @@ const element = <h1>Hello World!</h1>;
 <br>
 
 - React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.
-  - React는 렌더링 로직이 다른 UI 로직과 본직적으로 연결되어 있다는 사실을 채택한다.
+  - React는 렌더링 로직이 다른 UI 로직과 본질적으로 연결되어 있다는 사실을 채택한다.
   - (이벤트가 어떻게 처리되는지, 시간이 지남에 따라 state가 어떻게 변하는지, data가 표시되기 위해 어떤 준비가 필요한지)
 
 <br>
@@ -61,7 +61,7 @@ const element = <h1>Hello World!</h1>;
 - React [doesn't require](https://reactjs.org/docs/react-without-jsx.html) using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code.
   - React는 JSX를 사용하지 않아도 되지만, 대부분의 사람들은 JavaScript 코드 내부의 UI와 작업할 때 시각적으로 유용하다고 생각한다.
 - It also allows React to show more useful error and warning messages.
-  - JSX를 사용하면, React가 더 유용한 error 및 경고 메시지를 보여줄 수도 있다.
+  - JSX를 사용하면, React가 더 유용하게 error 및 경고 메시지를 보여준다.
 
 ------
 
