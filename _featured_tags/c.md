@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: etc
-slug: etc
+title: C
+slug: c
 category: dev
 menu: false
-order: 9
+order: 7
 ---
