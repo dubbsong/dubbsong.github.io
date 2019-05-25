@@ -49,7 +49,7 @@ function bar() {
 <br>
 
 - Example: Function Expression
-  - 예: 함수 표현식
+  - 함수 표현식의 예
 
 ```js
 alert(foo());	// Error! foo wasn't loaded yet
@@ -59,7 +59,7 @@ var foo = function() { return 5; }
 <br>
 
 - Example: Function Declaration
-  - 예: 함수 선언식
+  - 함수 선언식의 예
 
 ```js
 alert(foo());	// Alert 5. 선언은 모든 코드가 실행되기 전에 로딩된다.
