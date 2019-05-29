@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Books
-slug: books
+title: Python
+slug: python
 category: dev
 menu: false
-order: 9
+order: 8
 ---
