@@ -343,7 +343,7 @@ person['name']['last'] = 'Leo';
   - 위의 코드를 입력한 다음, member가 변경되었는지 확인해보자.
 
 ```js
-person.age	// 45
+person.age		// 45
 person['name']['last']	// Leo
 ```
 
