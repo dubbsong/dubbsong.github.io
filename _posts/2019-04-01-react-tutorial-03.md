@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(공식 리액트 튜토리얼) 03. props를 통해 데이터 전달하기"
+title: "(공식 리액트 튜토리얼 03) props를 통해 데이터 전달하기"
 categories: dev
 tags: react
 ---
@@ -42,7 +42,7 @@ class Board extends React.Component {
 <br>
 
 - Change Square's `render` method to show that value by replacing `{/* TODO */}` with `{this.props.value}`:
-  - Square의 `render` 메소드를 변경하면 value가 표시된다.
+  - Square의 `render` 메소드를 변경하면, value가 표시된다.
   - `{/* TODO */}`를 `{this.props.value}`로 대체한다.
 
 ```react
@@ -73,11 +73,13 @@ class Square extends React.Component {
 
 <br>
 
-- You've just `passed a prop` from a parent Board component to a child Square component.
-  - parent(부모, 상위) Board 컴포넌트에서 child(자식, 하위) Square 컴포넌트로 `prop을 전달`했다.
+- You've just "passed a prop" from a parent Board component to a child Square component.
+  - parent(부모, 상위) Board 컴포넌트에서 child(자식, 하위) Square 컴포넌트로 "prop을 전달했다".
 - Passing props is how information flows in React apps, from parents to children.
   - React 앱에서 props 전달은, parent에서 children으로 정보가 흐르는 방법이다.
 
 ------
+
+<br>
 
 <br>
