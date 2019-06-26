@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(공식 리액트 튜토리얼) 02. 시작 코드 살펴보기"
+title: "(공식 리액트 튜토리얼 02) 시작 코드 살펴보기"
 categories: dev
 tags: react
 ---
@@ -15,10 +15,10 @@ tags: react
 
 <br>
 
-- If you're going to work on the tutorial `in your browser`, open this code in a new tab: [Starter Code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010).
-  - `브라우저에서` 튜토리얼을 작업하려면, 새 탭에서 [시작 코드](https://codepen.io/gaearon/pen/oWWQNa?editors=0010)를 열어라.
-- If you're going to work on the tutorial `locally`, instead open `src/index.js` in your project folder.
-  - `로컬에서` 튜토리얼을 작업하려면, 프로젝트 폴더의 `src/index.js`를 열어라.
+- If you're going to work on the tutorial `in your browser`, open this code in a new tab: [Starter Code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010)
+  - 브라우저에서 튜토리얼을 작성하려면, 새 탭에서 코드를 연다: [시작 코드](https://codepen.io/gaearon/pen/oWWQNa?editors=0010)
+- If you're going to work on the tutorial `locally`, instead open `src/index.js` in your project folder (you have already touched this file during the [setup](https://reactjs.org/tutorial/tutorial.html#setup-option-2-local-development-environment)).
+  - 로컬에서 튜토리얼을 작성하려면, 프로젝트 폴더의 `src/index.js`를 연다.
 
 <br>
 
@@ -82,18 +82,15 @@ class Game extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <Game />,
-  document.getElementById('root')
-);
+ReactDOM.render(<Game />, document.getElementById('root'));
 ```
 
 <br>
 
 - This Starter Code is the base of what we're building.
-  - 이 시작 코드는, 빌드할 것에 대한 base이다.
+  - 이 시작 코드는 우리가 구현할 tic-tac-toe 게임의 기초가 된다.
 - We've provided the CSS styling so that you only need to focus on learning React and programming the tic-tac-toe game.
-  - CSS style을 제공했으므로, React 학습과 tic-tac-toe 게임 프로그래밍에만 집중해야 한다.
+  - CSS style을 제공했으므로, React 학습과 tic-tac-toe 게임 프로그래밍에만 집중하면 된다.
 
 <br>
 
@@ -109,12 +106,16 @@ ReactDOM.render(
 <br>
 
 - The Square component renders a single `<button>` and the Board renders 9 squares.
-  - Square 컴포넌트는 `<button>`을 렌더링 한다.
+  - Square 컴포넌트는 하나의 `<button>`을 렌더링 한다.
   - Board 컴포넌트는 9개의 사각형을 렌더링 한다.
 - The Game component renders a board with placeholder values which we'll modify later.
-  - Game 컴포넌트는 Board와 placeholder 값을 렌더링 한다.
+  - Game 컴포넌트는 board와 placeholder 값을 렌더링 한다.
   - 이는 나중에 수정할 것이다.
+- There are currently no interactive components.
+  - 현재 대화형 컴포넌트는 없다.
 
 ------
+
+<br>
 
 <br>
