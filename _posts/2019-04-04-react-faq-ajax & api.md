@@ -16,9 +16,9 @@ tags: react
 <br>
 
 - You can use any AJAX library you like with React.
-  - React를 사용하면 원하는 AJAX 라이브러리를 사용할 수 있다.
+  - React에서는, 원하는 AJAX 라이브러리를 사용할 수 있다.
 - Some popular ones are [Axios](https://github.com/axios/axios), [jQuery AJAX](https://api.jquery.com/jQuery.ajax/), and the browser built-in [window.fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
-  - 인기 있는 것들은 [Axios](https://github.com/axios/axios), [jQuery AJAX](https://api.jquery.com/jQuery.ajax/), 브라우저 내장 [window.fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)이다.
+  - [Axios](https://github.com/axios/axios), [jQuery AJAX](https://api.jquery.com/jQuery.ajax/), 브라우저 내장 [window.fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)가 인기 있는 라이브러리이다.
 
 ------
 
