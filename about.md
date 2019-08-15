@@ -19,18 +19,18 @@ order: 1
 - Bootstrap
 
 ## Projects
-1. Notflix | [demo][https://dubbsong.github.io/notflix]
+1. Notflix | [demo](https://dubbsong.github.io/notflix)
   - Netflix 클론 프로젝트
   - Styled-Components 사용
   - Container & Presenter 패턴 적용
   - TMDB API
-2. Ondo | [demo][https://www.ondo.io]
+2. Ondo | [demo](https://www.ondo.io)
   - Ondo 포트폴리오
   - 웹 & 관리자 페이지 구현
-3. Akira | [demo][https://akira.ondo.io]
+3. Akira | [demo](https://akira.ondo.io)
   - 운세, 타로, 심리 서비스
   - 웹 & 관리자 페이지 구현
-4. 품앗이주차 | [demo][https://www.pmcc.co.kr]
+4. 품앗이주차 | [demo](https://www.pmcc.co.kr)
   - 동네 주차 정보 서비스
   - 웹 페이지 구현
 5. 그 외 프로젝트 4개
