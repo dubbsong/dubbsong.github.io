@@ -4,5 +4,5 @@ title: C
 slug: c
 category: dev
 menu: false
-order: 7
+order: 6
 ---
