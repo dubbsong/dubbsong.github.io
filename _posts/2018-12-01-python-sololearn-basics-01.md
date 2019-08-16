@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(Basics) What is Python?"
+title: "(Basics 01) Python이란 무엇인가?"
 categories: dev
 tags: python
 ---
