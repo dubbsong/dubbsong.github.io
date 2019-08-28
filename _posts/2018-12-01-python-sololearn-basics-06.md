@@ -72,8 +72,6 @@ tags: python
 
 ###### 줄 바꿈 문자
 
-<br>
-
 - Python provides an easy way to avoid manually writing "\\n" to escape newlines in a string.
   - Python은 문자열에서 줄 바꿈 문자를 이스케이프 하기 쉬운 방법을 제공한다.
 - Create a string with `three sets of quotes`, and newlines that are created by pressing Enter are automatically escaped for you.
@@ -85,8 +83,6 @@ Owner: Good morning, Sir. Welcome to the National Cheese Emporium."""
 
 # 'Customer: Good morning.\nOwner: Good morning, Sir. Welcome to the National Cheese Emporium.'
 ```
-
-<br>
 
 <br>
 

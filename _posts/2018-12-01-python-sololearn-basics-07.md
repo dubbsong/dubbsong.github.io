@@ -39,8 +39,6 @@ tags: python
 
 ###### 입력
 
-<br>
-
 - To get input from the user in Python, you can use the intuitively named `input` function.
   - 사용자로부터 입력을 받으려면, 명명된 `input` 함수를 사용할 수 있다.
 - The function prompts the user for input, and returns what they enter as a string (with the contents automatically escaped).
