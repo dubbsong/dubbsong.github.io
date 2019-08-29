@@ -11,6 +11,8 @@ tags: basic
 
 ## Summary
 
+###### 요약
+
 - The `Internet` is the backbone of the Web, the technical infrastructure that makes the Web possible.
   - `Internet`은 웹(Web)의 중추이다.
   - 웹을 가능하게 하는 기술 인프라(기반 시설)이다.
