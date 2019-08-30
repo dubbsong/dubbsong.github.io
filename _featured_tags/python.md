@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: ReactJS
-slug: react
+title: Python
+slug: python
 category: dev
 menu: false
-order: 4
+order: 7
 ---
