@@ -2,7 +2,7 @@
 layout: post
 title: "웹은 어떻게 동작하는가?"
 categories: dev
-tags: basic
+tags: basics
 ---
 
 ###### [MDN web docs](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works) 번역

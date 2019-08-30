@@ -2,7 +2,7 @@
 layout: post
 title: "(번역) Put Stylesheets at the Top"
 categories: dev
-tags: basic
+tags: basics
 ---
 
 ###### [YAHOO! 개발자 네트워크](https://developer.yahoo.com/performance/rules.html#css_top) 번역

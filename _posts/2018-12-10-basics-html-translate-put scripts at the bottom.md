@@ -2,7 +2,7 @@
 layout: post
 title: "(번역) Put Scripts at the Bottom"
 categories: dev
-tags: basic
+tags: basics
 ---
 
 ###### [YAHOO! 개발자 네트워크](https://developer.yahoo.com/performance/rules.html#js_bottom) 번역
