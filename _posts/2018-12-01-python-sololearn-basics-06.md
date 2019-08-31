@@ -68,9 +68,11 @@ tags: python
 
 <br>
 
-#### Newlines
+## Newlines
 
 ###### 줄 바꿈 문자
+
+<br>
 
 - Python provides an easy way to avoid manually writing "\\n" to escape newlines in a string.
   - Python은 문자열에서 줄 바꿈 문자를 이스케이프 하기 쉬운 방법을 제공한다.

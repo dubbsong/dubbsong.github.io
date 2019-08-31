@@ -9,9 +9,11 @@ tags: python
 
 <br>
 
-#### Concatenation
+## Concatenation
 
 ###### 연결
+
+<br>
 
 - As with integers and floats, strings in Python can be added, using a process called `concatenation`, which can be done on any two strings.
   - `연결(concatenation)`이라는 프로세스를 사용해서, Python의 문자열을 추가할 수 있다.
@@ -56,9 +58,11 @@ tags: python
 
 <br>
 
-#### String Operations
+## String Operations
 
 ###### 문자열 연산
+
+<br>
 
 - Strings can also be `multiplied` by integers.
   - 문자열에 정수를 곱할 수도 있다.

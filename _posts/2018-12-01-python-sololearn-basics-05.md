@@ -9,9 +9,11 @@ tags: python
 
 <br>
 
-#### Exponentiation
+## Exponentiation
 
 ###### 지수 연산
+
+<br>
 
 - Besides addition, subtraction, multiplication, and division, Python also supports `exponentiation`, which is the raising of one number to the power of another.
   - Python은 더하기, 빼기, 곱하기, 나누기 외에도 `지수 연산`을 지원한다.
@@ -31,9 +33,11 @@ tags: python
 
 <br>
 
-#### Quotient \& Remainder
+## Quotient \& Remainder
 
 ###### 몫 \& 나머지
+
+<br>
 
 - To determine the `quotient` and `remainder` of a division, use the `floor division` and `modulo operators`, respectively.
   - 나눗셈의 `몫`을 얻으려면, `floor division(정수 나눗셈)`을 사용한다.

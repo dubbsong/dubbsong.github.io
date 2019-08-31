@@ -77,9 +77,11 @@ tags: python
 
 <br>
 
-#### Variable Names
+## Variable Names
 
 ###### 변수 이름
+
+<br>
 
 - Certain restrictions apply in regard to the characters that may be used in Python variable names.
   - Python 변수 이름에 사용될 수 있는 글자에 관해서 특정 제한이 적용된다.

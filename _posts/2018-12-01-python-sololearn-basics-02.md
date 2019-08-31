@@ -40,9 +40,11 @@ tags: python
 
 <br>
 
-#### Printing Text
+## Printing Text
 
 ###### 텍스트 출력하기
+
+<br>
 
 - The `print` statement can also be used to output multiple lines of text.
   - `print` 문은 여러 줄의 텍스트를 출력하는 데 사용할 수도 있다.
