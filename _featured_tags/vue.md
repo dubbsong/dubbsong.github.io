@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Python
-slug: python
+title: VueJS
+slug: vue
 category: dev
 menu: false
-order: 8
+order: 5
 ---
