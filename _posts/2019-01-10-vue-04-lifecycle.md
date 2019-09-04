@@ -1,3 +1,10 @@
+---
+layout: post
+title: "(Official VueJS 04) 라이프사이클"
+categories: dev
+tags: vue
+---
+
 ###### [Vue.js](https://kr.vuejs.org/index.html) 참조
 
 <br>
@@ -24,7 +31,7 @@ new Vue({
 
 ## 라이프사이클 다이어그램
 
-![img](/assets/vue_lifecycle_diagram.png)
+![img](/assets/img/vue_lifecycle_diagram.png)
 
 <br>
 

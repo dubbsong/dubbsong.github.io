@@ -1,3 +1,10 @@
+---
+layout: post
+title: "(Official VueJS 03) 인스턴스"
+categories: dev
+tags: vue
+---
+
 ###### [Vue.js](https://kr.vuejs.org/index.html) 참조
 
 <br>
