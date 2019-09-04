@@ -1,0 +1,203 @@
+###### [Vue.js](https://kr.vuejs.org/index.html) 참조
+
+<br>
+
+## 반응형
+
+- Chrome Console
+
+```js
+app.message = 'How are you?'
+```
+
+> `Hello VueJS`가 `How are you?`로 변경된다.
+
+<br>
+
+## 엘리먼트 속성 바인딩
+
+```html
+<div id="app">
+  <span v-bind:title="message">Binding?</span>
+</div>
+```
+
+```js
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: '이 페이지는 ' + new Date() + ' 에 로드 되었다.'
+  }
+})
+```
+
+> 화면에 `Binding?`이 표시된다.
+>
+> 마우스를 올리면, `이 페이지는 Sun Sep 01 2019 18:14:21 GMT+0900 (한국 표준시)에 로드 되었다.`가 표시된다.
+
+<br>
+
+## 디렉티브
+
+- Vue에서 제공하는 특수 속성이다.
+
+- `v-` 접두사가 붙는다.
+- 렌더링 된 DOM에 특수한 반응형 동작을 한다.
+
+<br>
+
+## 조건문
+
+```html
+<div id="app">
+  <p v-if="seen">You can see me now.</p>
+</div>
+```
+
+```js
+var app = new Vue({
+  el: '#app',
+  data: {
+    seen: true
+  }
+})
+```
+
+> 화면에 `You can see me now.`가 표시된다.
+>
+> Chrome Console에 `app.seen = false`를 입력하면, `You can see me now.`가 사라진다.
+
+<br>
+
+## 반복문
+
+```html
+<div id="app">
+  <ol>
+    <li v-for="todo in todos">{{ todo.text }}</li>
+  </ol>
+</div>
+```
+
+```js
+var app = new Vue({
+  el: '#app',
+  data: {
+    todos: [
+      { text: 'HTML' },
+      { text: 'CSS' },
+      { text: 'JS' },
+      { text: 'ReactJS' }
+    ]
+  }
+})
+```
+
+> `1. HTML`
+>
+> `2. CSS`
+>
+> `3. JS`
+>
+> `4. ReactJS`가 표시된다.
+>
+> Chrome Console에 `app.todos.push({ text: 'VueJS' })`를 입력하면,
+>
+> `5. VueJS`가 추가된다.
+
+<br>
+
+## 사용자 입력 핸들링
+
+```html
+<div id="app">
+  <p>{{ message }}</p>
+  <button v-on:click="reverseMessage">메시지 뒤집기</button>
+</div>
+```
+
+```js
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'How are you?'
+  },
+  methods: {
+    reverseMessage: function() {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
+```
+
+> 화면에 `How are you?` 텍스트와 `메시지 뒤집기` 버튼이 표시된다.
+>
+> 버튼을 누르면, `?uoy era woH`로 뒤집힌다.
+
+<br>
+
+## 양방향 바인딩
+
+```html
+<div id="app">
+  <input v-model="message">
+  <p>{{ message }}</p>
+</div>
+```
+
+```js
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: ''
+  }
+})
+```
+
+> input에 입력하는 대로 표시된다.
+
+<br>
+
+## 컴포넌트
+
+- 작고, 그 자체로 제 기능을 하며, 재사용할 수 있다.
+- 대규모 애플리케이션을 구축할 수 있게 해주는 추상적 개념이다.
+- 컴포넌트는 본질적으로 미리 정의된 옵션을 가진 Vue 인스턴스이다.
+
+<br>
+
+```html
+<div id="app">
+  <ol>
+    <todo-item v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+  </ol>
+</div>
+```
+
+```js
+Vue.component('todo-item', {
+  props: ['todo'],
+  template: '<li>{{ todo.text }}</li>'
+})
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    groceryList: [
+      { id: 0, text: 'milk' },
+      { id: 1, text: 'fruits' },
+      { id: 2, text: 'water' }
+    ]
+  }
+})
+```
+
+> `1. milk`
+>
+> `2. fruits`
+>
+> `3. water`가 표시된다.
+
+<br>
+
+<br>
