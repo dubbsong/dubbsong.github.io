@@ -39,7 +39,7 @@ $ touch test_vue.html
   </head>
   <body>
     <div id="app">
-      {{ message }}
+      {%{{ message }}%}
     </div>
     
     <!-- Scripts -->
